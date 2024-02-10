@@ -1,0 +1,80 @@
+
+Course card
+{
+    img : String,
+    title : String ,
+    desc : String (short),
+    numChapters : Number,
+    level : String 
+}
+
+Single Course Data {
+    progress : [Number] //percentage,
+    title : String,
+    desc : String,
+    numChapters : Number,
+    sections : [Section],
+    approxTime : Number,
+    skiilsyouwillgain : [String] //if possible
+}
+
+Section {
+    course : String
+    title : String,
+    desc : String,
+    lessons : [Lesson]
+}
+
+Lesson {
+    topics : [{
+        title : String,
+        content : String,
+        img : {
+            default : null,
+            path : String
+        }
+        surpriseLEmenet : String (table)
+    }],
+    quiz : [Quiz],
+    comments : [{
+        user : ObjectId ,
+        comment : String
+    }]
+}
+
+
+Quiz collection {
+    course : String,
+    lesson : String
+    level : String ,
+    Questions : String,
+    Options : [String]
+    Answer : Number,
+    isAttempted : boolean
+}
+
+
+user : {
+    id : ObjectId,
+    name : String,
+    password : String,
+    enrolledCourses : [{course : {
+        Lesson : [{
+            lessonId : ObjectId 
+            lessonsAttwmpted : Number,
+            lessonsCompleted : Number
+        }],
+        Quiz : [{
+            lessonId : ObjectId 
+            lessonsAttwmpted : Number,
+            lessonsCompleted : Number
+        }]
+    } }],
+    certificates : [String]   
+}
+
+todo : 
+1)user authentication use jwt 
+2)data scraping for each course -> section -> lesson 
+3)Make quiz for every lesson
+4)Create Model

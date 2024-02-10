@@ -1,13 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const userRouter = require("./routes/userRoutes")
 require('dotenv').config(); // Load environment variables from a .env file
 
 const app = express();
 
-
 app.use(cors());
 app.use(express.json());
+app.use("/auth",userRouter)
 
 const dbUri = process.env.MONGODB_URI ;
 mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -21,10 +22,6 @@ db.once('open', () => {
   console.log('Connected to MongoDB');
 });
 
-// Routes
-app.get('/', (req, res) => {
-  res.send('Hello, this is your Express server!');
-});
 
 // Start the server
 const port = process.env.PORT || 7000;
