@@ -9,7 +9,6 @@ Course card
 }
 
 Single Course Data {
-    progress : [Number] //percentage,
     title : String,
     desc : String,
     numChapters : Number,
