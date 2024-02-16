@@ -38,7 +38,12 @@ const Register = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     const response = await register({name:formData.name,email:formData.email,password:formData.password})
-    context.setUser(response)
+    if(response.success){
+      context.setUser(response.data)
+      console.log(response.data)
+    }else{
+      console.log(response.err)
+    }
   };
 
   return (
