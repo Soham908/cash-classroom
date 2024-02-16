@@ -38,7 +38,10 @@ Lesson {
     comments : [{
         user : ObjectId ,
         comment : String
-    }]
+    }],
+    course : String,
+    lesson : String,
+    html : String
 }
 
 
