@@ -1,15 +1,20 @@
 
 import './App.css';
 import { BrowserRouter,Routes,Route } from "react-router-dom"
-import Login from './pages/Login';
+import Register from './pages/Register';
+import { createContext, useState } from 'react';
 
+export const UserContext = createContext()
 function App() {
-  return (
+  
+  const [user,setUser] = useState()
 
-      <Routes>
-        <Route path='/' element={<Login/>}/>
-      </Routes>
-    
+  return (
+      <UserContext.Provider value={{user,setUser}}>
+        <Routes>
+          <Route path='/' element={<Register/>}/>
+        </Routes>
+      </UserContext.Provider>
   );
 }
 
