@@ -1,6 +1,7 @@
 const Course = require("./../models/courses")
 const fs = require("fs")
 const mongoose = require("mongoose")
+const Lesson = require("../models/lesson")
 const path = "./../data/courses_card_data.json"
 
 require("dotenv").config({
@@ -27,4 +28,16 @@ const insertCourses = async()=>{
     }
 }
 
+let jsonLessonData = JSON.parse(fs.readFileSync("./../data/all_post_data.json"))
+const insertLessons = async() => {
+    const lessons = await Lesson.create(jsonLessonData)
+    if (lessons){
+        console.log('Inserted all lesson data');
+    }
+    else {
+        console.log('Lesson insert not done');
+    }
+}
+
+insertLessons()
 insertCourses()
