@@ -5,21 +5,19 @@ import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
-import { register } from '../actions/userActions';
+import { login, register } from '../actions/userActions';
 import { useContext } from 'react';
 import { UserContext } from '../App';
 import { Link } from 'react-router-dom';
 
-const Register = () => {
-
-
-  const context = useContext(UserContext)
+const Login = () => {
+  const context = useContext(UserContext);
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
   });
 
   const [showPassword, setShowPassword] = useState(false);
@@ -36,24 +34,29 @@ const Register = () => {
     setShowPassword((prevShowPassword) => !prevShowPassword);
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await register({name:formData.name,email:formData.email,password:formData.password})
-    context.setUser(response)
+    const response = await login({
+      name: formData.name,
+      email: formData.email,
+      password: formData.password,
+    });
+    context.setUser(response);
   };
 
   return (
+    <>
     <div
       style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        minHeight: '100vh', // Set the minimum height of the viewport
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        minHeight: "100vh", // Set the minimum height of the viewport
       }}
     >
-      <p>Register Page </p>
-      <form onSubmit={handleSubmit} style={{ width: '300px' }}>
+        <p>Login Page </p>
+      <form onSubmit={handleSubmit} style={{ width: "300px" }}>
         <TextField
           label="Username"
           name="name"
@@ -78,7 +81,7 @@ const Register = () => {
         <TextField
           label="Password"
           name="password"
-          type={showPassword ? 'text' : 'password'}
+          type={showPassword ? "text" : "password"}
           value={formData.password}
           onChange={handleChange}
           fullWidth
@@ -98,7 +101,7 @@ const Register = () => {
         <TextField
           label="Confirm Password"
           name="confirmPassword"
-          type={showPassword ? 'text' : 'password'}
+          type={showPassword ? "text" : "password"}
           value={formData.confirmPassword}
           onChange={handleChange}
           fullWidth
@@ -115,16 +118,22 @@ const Register = () => {
           }}
         />
 
-        <Button type="submit" variant="contained" color="primary" style={{ marginTop: '16px' }}>
-          Register
+        <Button
+          type="submit"
+          variant="contained"
+          color="primary"
+          style={{ marginTop: "16px" }}
+        >
+          Login
         </Button>
       </form>
       <p>
-        Already have an account?{' '}
-        <Link to="/">Login</Link>
+        Don't have an account?{' '}
+        <Link to="/register">Register</Link>
       </p>
     </div>
+    </>
   );
 };
 
-export default Register;
+export default Login;
