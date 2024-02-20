@@ -13,10 +13,11 @@ export const register = async (data) => {
 
 export const login = async (data) => {
     try {
-      const response = await axios.post(`${ENDPOINT_URL}/login`, data);
+      const response = await axios.post(`${ENDPOINT_URL}/auth/login`, data);
       console.log('Response:', response.data);
+      localStorage.setItem('userToken', response.data.token)
+      return response.data.token
     } catch (error) {
       console.error('Error:', error.message);
     }
 };
-  
