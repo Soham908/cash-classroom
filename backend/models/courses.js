@@ -23,6 +23,11 @@ const courseSchema = new Schema({
     type: String,
     default: null,
   },
+  order: {
+    unique: true,
+    type: String,
+    default: null
+  }
 });
 
 const Course = mongoose.model("Courses", courseSchema);

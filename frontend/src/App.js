@@ -1,8 +1,10 @@
 
 import './App.css';
-import { BrowserRouter,Routes,Route } from "react-router-dom"
+import { Routes,Route } from "react-router-dom"
+import Login from './pages/Login';
 import Register from './pages/Register';
 import { createContext, useState } from 'react';
+import HomePage from './pages/HomePage';
 
 export const UserContext = createContext()
 function App() {
@@ -12,7 +14,9 @@ function App() {
   return (
       <UserContext.Provider value={{user,setUser}}>
         <Routes>
-          <Route path='/' element={<Register/>}/>
+          <Route path='/register' element={<Register/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/' element={<HomePage/>}/>
         </Routes>
       </UserContext.Provider>
   );
