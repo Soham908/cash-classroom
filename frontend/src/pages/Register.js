@@ -6,15 +6,11 @@ import InputAdornment from '@mui/material/InputAdornment';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { register } from '../actions/userActions';
-import { useContext } from 'react';
-import { UserContext } from '../App';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 const Register = () => {
 
-
-  const context = useContext(UserContext)
-
+  const navigate = useNavigate()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -39,8 +35,14 @@ const Register = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     const response = await register({name:formData.name,email:formData.email,password:formData.password})
-    context.setUser(response)
+    if(response.success){
+      navigate("/login")
+      console.log(response.data)
+    }else{
+      console.log(response.err)
+    }
   };
+
 
   return (
     <div

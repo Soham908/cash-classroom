@@ -27,7 +27,9 @@ exports.register = async(req,res) => {
 
         res.json({
             success : true,
-            token,
+            data : {
+                token
+            }
         })
     }
     catch(err){
