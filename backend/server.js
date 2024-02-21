@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const mongoose = require('mongoose');
 const userRouter = require("./routes/userRoutes")
 const dataRouter = require('./routes/fetchdataRoute')
@@ -11,6 +12,9 @@ app.use(cors());
 app.use(express.json());
 app.use("/auth",userRouter)
 app.use("/data", dataRouter)
+
+const imagesPath = path.join(__dirname, 'images');
+app.use('/images', express.static(imagesPath));
 
 const dbUri = process.env.MONGODB_URI ;
 mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true });
