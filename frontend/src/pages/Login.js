@@ -5,19 +5,18 @@ import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
-import { login, register } from '../actions/userActions';
+import { login} from '../actions/userActions';
 import { useContext } from 'react';
 import { UserContext } from '../App';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
   const context = useContext(UserContext);
-
+  const navigate = useNavigate()
   const [formData, setFormData] = useState({
-    name: "",
     email: "",
     password: "",
-    confirmPassword: "",
   });
 
   const [showPassword, setShowPassword] = useState(false);
@@ -41,7 +40,14 @@ const Login = () => {
       email: formData.email,
       password: formData.password,
     });
-    context.setUser(response);
+    if(response.success){
+      context.setUser(response.token);
+      localStorage.setItem("userToken", response.data.token);
+      navigate("/")
+    }
+    else {
+      console.log(response)
+    }
   };
 
   return (
@@ -52,20 +58,11 @@ const Login = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        minHeight: "100vh", // Set the minimum height of the viewport
+        minHeight: "100vh", 
       }}
     >
         <p>Login Page </p>
       <form onSubmit={handleSubmit} style={{ width: "300px" }}>
-        <TextField
-          label="Username"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          fullWidth
-          margin="normal"
-          required
-        />
 
         <TextField
           label="Email"
@@ -83,26 +80,6 @@ const Login = () => {
           name="password"
           type={showPassword ? "text" : "password"}
           value={formData.password}
-          onChange={handleChange}
-          fullWidth
-          margin="normal"
-          required
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconButton onClick={handleTogglePasswordVisibility} edge="end">
-                  {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
-                </IconButton>
-              </InputAdornment>
-            ),
-          }}
-        />
-
-        <TextField
-          label="Confirm Password"
-          name="confirmPassword"
-          type={showPassword ? "text" : "password"}
-          value={formData.confirmPassword}
           onChange={handleChange}
           fullWidth
           margin="normal"

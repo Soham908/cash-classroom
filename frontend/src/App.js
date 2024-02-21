@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import { createContext, useState } from 'react';
 import HomePage from './pages/HomePage';
+import Navbar from './components/Navbar';
 
 export const UserContext = createContext()
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
   return (
       <UserContext.Provider value={{user,setUser}}>
+        <Navbar/>
         <Routes>
           <Route path='/register' element={<Register/>}/>
           <Route path='/login' element={<Login/>}/>
