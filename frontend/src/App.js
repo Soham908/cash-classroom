@@ -4,8 +4,9 @@ import { Routes,Route } from "react-router-dom"
 import Login from './pages/Login';
 import Register from './pages/Register';
 import { createContext, useState } from 'react';
-import HomePage from './pages/HomePage';
+import Course from './pages/Course';
 import Navbar from './components/Navbar';
+import CourseDetail from './pages/CourseDetail';
 
 export const UserContext = createContext()
 function App() {
@@ -18,7 +19,8 @@ function App() {
         <Routes>
           <Route path='/register' element={<Register/>}/>
           <Route path='/login' element={<Login/>}/>
-          <Route path='/' element={<HomePage/>}/>
+          <Route path='/courses' element={<Course/>}/>
+          <Route path='/courses/:name' element={<CourseDetail/>}/>
         </Routes>
       </UserContext.Provider>
   );

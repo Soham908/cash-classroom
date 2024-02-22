@@ -4,6 +4,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const userRouter = require("./routes/userRoutes")
 const dataRouter = require('./routes/fetchdataRoute')
+const courseRouter = require('./routes/courseRoutes')
 require('dotenv').config(); // Load environment variables from a .env file
 
 const app = express();
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/auth",userRouter)
 app.use("/data", dataRouter)
+app.use("/course",courseRouter)
 
 const imagesPath = path.join(__dirname, 'images');
 app.use('/images', express.static(imagesPath));
