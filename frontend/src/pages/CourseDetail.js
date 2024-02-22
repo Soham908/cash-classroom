@@ -1,19 +1,58 @@
 import { useParams } from "react-router-dom"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { getCourseDetails } from "../actions/courseActions"
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material"
 
 const CouseDetail = () => {
     const params = useParams()
-    
+    const [courseDetails, setCourseDetails] = useState([])
     useEffect(()=>{
-        const response = getCourseDetails(params.name).then(response => console.log(response))
+        const fetchCourseData = async() => {
+        const response = await getCourseDetails(params.name)
         if(response.success){
-            console.log(resposne)
+            setCourseDetails(response.courseDetail)
+            console.log(courseDetails);
         }
+    }
+
+    fetchCourseData()
     },[])
     return (
         <>
-                
+        {
+  courseDetails.map((lessonData, lessonIndex) => {
+    const sectionIndex = Math.floor(lessonIndex / 5); // Calculate the section index
+    const isNewSection = lessonIndex % 5 === 0; // Check if a new section should start
+
+    return (
+      <React.Fragment key={lessonIndex}>
+        {isNewSection && (
+          <Accordion>
+            <AccordionSummary aria-controls={`section-${sectionIndex}-content`} id={`section-${sectionIndex}-header`}>
+              <Typography>{`Section ${sectionIndex + 1}`}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ul>
+                {/* Display the first item in the section */}
+                <li>{`${lessonData.course} ${lessonData.lesson}`}</li>
+              </ul>
+            </AccordionDetails>
+          </Accordion>
+        )}
+
+        {!isNewSection && (
+          <AccordionDetails>
+            <ul>
+              {/* Display the remaining items in the section */}
+              <li>{`${lessonData.course} ${lessonData.lesson}`}</li>
+            </ul>
+          </AccordionDetails>
+        )}
+      </React.Fragment>
+    );
+  })
+}
+
         </>
     )
 }
