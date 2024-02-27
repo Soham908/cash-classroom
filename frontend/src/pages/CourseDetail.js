@@ -19,46 +19,42 @@ const CouseDetail = () => {
       }
     };
 
-    fetchCourseData()
-    },[])
-    return (
-        <>
-        {
-  courseDetails.map((lessonData, lessonIndex) => {
-    const sectionIndex = Math.floor(lessonIndex / 5); // Calculate the section index
-    const isNewSection = lessonIndex % 5 === 0; // Check if a new section should start
+    fetchCourseData();
+  }, []);
 
-    return (
-      <React.Fragment key={lessonIndex}>
-        {isNewSection && (
-          <Accordion>
-            <AccordionSummary aria-controls={`section-${sectionIndex}-content`} id={`section-${sectionIndex}-header`}>
-              <Typography>{`Section ${sectionIndex + 1}`}</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <ul>
-                {/* Display the first item in the section */}
-                <li>{`${lessonData.course} ${lessonData.lesson}`}</li>
-              </ul>
-            </AccordionDetails>
-          </Accordion>
-        )}
-
-        {!isNewSection && (
-          <AccordionDetails>
-            <ul>
-              {/* Display the remaining items in the section */}
-              <li>{`${lessonData.course} ${lessonData.lesson}`}</li>
-            </ul>
-          </AccordionDetails>
-        )}
-      </React.Fragment>
-    );
-  })
-}
-
-        </>
-    )
-}
-
-export default CouseDetail
+  return (
+    <>
+      {(() => {
+        const result = [];
+        for (
+          let i = 0; i < courseDetails[courseDetails.length - 1]?.section; i++) {
+          console.log("got in loop");
+          result.push(
+            <Accordion key={i}>
+              <AccordionSummary
+                aria-controls="lesson-content"
+                id="lesson-header"
+              >
+                <Typography variant="h6">{courseDetails[0].course}</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                {(() => {
+                  const lessonResult = [];
+                  for (let j = 0; j < courseDetails.length; j++) {
+                    if (courseDetails[j].section === i + 1) {
+                      lessonResult.push(
+                        <li key={j}>{courseDetails[j].lesson}</li>
+                      );
+                    }
+                  }
+                  return lessonResult;
+                })()}
+              </AccordionDetails>
+            </Accordion>
+          );
+        }
+        return result;
+      })()}
+    </>
+  );
+};
