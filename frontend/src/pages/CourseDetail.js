@@ -58,5 +58,3 @@ const CouseDetail = () => {
     </>
   );
 };
-
-export default CouseDetail;
