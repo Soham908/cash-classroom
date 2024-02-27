@@ -1,28 +1,29 @@
 
 import './App.css';
 import { Routes,Route } from "react-router-dom"
-import Login from './pages/Login';
-import Register from './pages/Register';
-import { createContext, useState } from 'react';
+import Login from './authFlow/Login';
+import Register from './authFlow/Register';
 import Course from './pages/Course';
 import Navbar from './components/Navbar';
 import CourseDetail from './pages/CourseDetail';
+import NoMatch from "./components/NoMatch"
+import Dashboard from "./pages/Dashboard"
+import Profile from "./pages/Profile"
 
-export const UserContext = createContext()
 function App() {
-  
-  const [user,setUser] = useState()
-
   return (
-      <UserContext.Provider value={{user,setUser}}>
+    <>
         <Navbar/>
         <Routes>
+          <Route path='/' element={<Login/>}/>
+          <Route path='/dashboard' element={<Dashboard/>}/>
           <Route path='/register' element={<Register/>}/>
-          <Route path='/login' element={<Login/>}/>
           <Route path='/courses' element={<Course/>}/>
+          <Route path='/profile' element={<Profile/>}/>
           <Route path='/courses/:name' element={<CourseDetail/>}/>
+          <Route path="*" element={<NoMatch/>} />
         </Routes>
-      </UserContext.Provider>
+    </>
   );
 }
 

@@ -36,7 +36,7 @@ const Register = () => {
     e.preventDefault();
     const response = await register({name:formData.name,email:formData.email,password:formData.password})
     if(response.success){
-      navigate("/login")
+      navigate("/")
       console.log(response.data)
     }else{
       console.log(response.err)
@@ -123,7 +123,7 @@ const Register = () => {
       </form>
       <p>
         Already have an account?{' '}
-        <Link to="/login">Login</Link>
+        <Link to="/">Login</Link>
       </p>
     </div>
   );

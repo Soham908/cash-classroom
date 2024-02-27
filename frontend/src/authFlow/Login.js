@@ -6,13 +6,15 @@ import InputAdornment from '@mui/material/InputAdornment';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { login} from '../actions/userActions';
-import { useContext } from 'react';
-import { UserContext } from '../App';
+import { useAuthStore } from '../store/store';
+import {PreventAuthFlow} from "./../manageRoutes/protectRoutes"
 import { Link,useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
-  const context = useContext(UserContext);
+
+  const setStateUser = useAuthStore(state=>state.setUser)
+
   const navigate = useNavigate()
   const [formData, setFormData] = useState({
     email: "",
@@ -41,9 +43,9 @@ const Login = () => {
       password: formData.password,
     });
     if(response.success){
-      context.setUser(response.token);
-      localStorage.setItem("userToken", response.data.token);
-      navigate("/")
+      localStorage.setItem("userToken", response.token);
+      setStateUser(response.token)
+      navigate("/dashboard")
     }
     else {
       console.log(response)
@@ -51,7 +53,7 @@ const Login = () => {
   };
 
   return (
-    <>
+    <PreventAuthFlow>
     <div
       style={{
         display: "flex",
@@ -109,7 +111,7 @@ const Login = () => {
         <Link to="/register">Register</Link>
       </p>
     </div>
-    </>
+    </PreventAuthFlow>
   );
 };
 

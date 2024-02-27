@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchCardData } from "../actions/dataFetchActions";
 import { Card, CardMedia, CardContent, Typography, CardActions, Button, Grid, Chip } from '@mui/material';
 import { useNavigate } from "react-router-dom"
+import { ProtectRoutes } from "../manageRoutes/protectRoutes";
 const Course = () => {
 
   const [courseCardData, setCourseCardData] = useState([])
@@ -19,7 +20,7 @@ const Course = () => {
   }
 
   return (
-    <>
+    <ProtectRoutes>
       <Grid container spacing={2} justifyContent="center" maxWidth="lg">
       {courseCardData.map((card, index) => (
         <Grid item xs={12} sm={6} md={4} key={index} onClick={()=>goToCourseDetail(card.title)}>
@@ -41,7 +42,7 @@ const Course = () => {
         </Grid>
       ))}
     </Grid>
-    </>
+    </ProtectRoutes>
   );
 };
 
