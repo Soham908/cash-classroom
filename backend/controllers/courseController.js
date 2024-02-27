@@ -3,7 +3,7 @@ const Lesson = require('./../models/lesson')
 exports.getCourseDetails = async(req,res) => {
     
     try {
-        const courseDetail = await Lesson.find({course : req.params.course}, {htmlContent: 0})
+        const courseDetail = await Lesson.find({course : req.params.course}, {htmlContent: 0}).sort({ order: 1 })
         
         if(courseDetail){
             return res.json({
