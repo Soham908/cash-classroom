@@ -30,7 +30,25 @@ const insertCourses = async()=>{
 }
 
 let jsonLessonData = JSON.parse(fs.readFileSync("./../data/all_post_data.json"))
+let count = 0
+let countSection = 1
+let currentCourse = ""
 const insertLessons = async() => {
+    jsonLessonData.map((lessonData, lessonIndex) => {
+        if (currentCourse != lessonData.course){
+            currentCourse = lessonData.course
+            countSection = 1
+            count = 0
+        }
+        lessonData.order = lessonData.lesson.split(".")[0]
+        lessonData.section = countSection
+        count ++
+        if (count === 5){
+            count = 0
+            countSection ++
+        }
+        return lessonData
+    })
     const lessons = await Lesson.create(jsonLessonData)
     if (lessons){
         console.log('Inserted all lesson data');
