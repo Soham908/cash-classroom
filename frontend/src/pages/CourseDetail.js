@@ -7,8 +7,9 @@ import {
   AccordionSummary,
   Typography,
 } from "@mui/material";
+import { ProtectRoutes } from "../manageRoutes/protectRoutes";
 
-const CouseDetail = () => {
+const CourseDetail = () => {
   const params = useParams();
   const [courseDetails, setCourseDetails] = useState([]);
   useEffect(() => {
@@ -23,7 +24,7 @@ const CouseDetail = () => {
   }, []);
 
   return (
-    <>
+    <ProtectRoutes>
       {(() => {
         const result = [];
         for (
@@ -55,6 +56,7 @@ const CouseDetail = () => {
         }
         return result;
       })()}
-    </>
+    </ProtectRoutes>
   );
 };
+export default CourseDetail

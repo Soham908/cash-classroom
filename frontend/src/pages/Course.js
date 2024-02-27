@@ -21,8 +21,8 @@ const Course = () => {
 
   return (
     <ProtectRoutes>
+    
       <Grid container spacing={2} justifyContent="center" maxWidth="lg">
-
       {courseCardData?.map((card, index) => (
       
         <Grid item xs={12} sm={6} md={4} key={index} onClick={()=>goToCourseDetail(card.title)}>
@@ -44,7 +44,8 @@ const Course = () => {
         </Grid>
       ))}
     </Grid>
-    </ProtectRoutes>
+
+   </ProtectRoutes>
   );
 };
 
