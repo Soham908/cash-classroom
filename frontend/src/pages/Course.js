@@ -10,7 +10,7 @@ const Course = () => {
   useEffect(() => {
     const fetchData = async () => {
       const cardData = await fetchCardData();
-      setCourseCardData(cardData)
+      setCourseCardData(cardData.courseData)
     };
     fetchData();
   }, []);
@@ -22,7 +22,9 @@ const Course = () => {
   return (
     <ProtectRoutes>
       <Grid container spacing={2} justifyContent="center" maxWidth="lg">
-      {courseCardData.map((card, index) => (
+
+      {courseCardData?.map((card, index) => (
+      
         <Grid item xs={12} sm={6} md={4} key={index} onClick={()=>goToCourseDetail(card.title)}>
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia sx={{ height: 140 }} image={"http://localhost:7000/images/"+card.img} title={card.title} />

@@ -2,6 +2,7 @@ const Course = require("./../models/courses")
 const fs = require("fs")
 const mongoose = require("mongoose")
 const Lesson = require("../models/lesson")
+const LessonSection = require("../models/lessonSection")
 const path = "./../data/courses_card_data.json"
 
 require("dotenv").config({
@@ -39,5 +40,17 @@ const insertLessons = async() => {
     }
 }
 
+let jsonLessonSection = JSON.parse(fs.readFileSync("./../data/allLessonsSections.json"))
+const insertLessonSection = async () => {
+    const lessonSection = await LessonSection.create(jsonLessonSection)
+    if (lessonSection){
+        console.log('Inserted lesson section');
+    }
+    else{
+        console.log('Lesson section not inserted');
+    }
+}
+
 insertLessons()
+insertLessonSection()
 insertCourses()
