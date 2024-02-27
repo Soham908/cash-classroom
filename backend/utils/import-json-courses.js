@@ -2,6 +2,7 @@ const Course = require("./../models/courses")
 const fs = require("fs")
 const mongoose = require("mongoose")
 const Lesson = require("../models/lesson")
+const LessonSection = require("../models/lessonSection")
 const path = "./../data/courses_card_data.json"
 
 require("dotenv").config({
@@ -29,7 +30,25 @@ const insertCourses = async()=>{
 }
 
 let jsonLessonData = JSON.parse(fs.readFileSync("./../data/all_post_data.json"))
+let count = 0
+let countSection = 1
+let currentCourse = ""
 const insertLessons = async() => {
+    jsonLessonData.map((lessonData, lessonIndex) => {
+        if (currentCourse != lessonData.course){
+            currentCourse = lessonData.course
+            countSection = 1
+            count = 0
+        }
+        lessonData.order = lessonData.lesson.split(".")[0]
+        lessonData.section = countSection
+        count ++
+        if (count === 5){
+            count = 0
+            countSection ++
+        }
+        return lessonData
+    })
     const lessons = await Lesson.create(jsonLessonData)
     if (lessons){
         console.log('Inserted all lesson data');
@@ -39,5 +58,17 @@ const insertLessons = async() => {
     }
 }
 
+let jsonLessonSection = JSON.parse(fs.readFileSync("./../data/allLessonsSections.json"))
+const insertLessonSection = async () => {
+    const lessonSection = await LessonSection.create(jsonLessonSection)
+    if (lessonSection){
+        console.log('Inserted lesson section');
+    }
+    else{
+        console.log('Lesson section not inserted');
+    }
+}
+
 insertLessons()
+insertLessonSection()
 insertCourses()
