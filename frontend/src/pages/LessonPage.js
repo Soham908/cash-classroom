@@ -18,14 +18,16 @@ const LessonPage = () => {
         fetchLesson()
     },[])
 
+    const lessonComplete = () => {
+        navigate(`/courses/${location.course}`)
+
+    }
+
     return (
         <>
             {/* {lessonData} */}
             <div dangerouslySetInnerHTML={{ __html: lessonData }} />
-            <button onClick={()=>{
-                // console.log(`/courses/${lessonData.course}`)
-                navigate(`/courses/${location.course}`)
-            }}>Completed</button>
+            <button onClick={lessonComplete}> Lesson Complete </button>
         </>
     )
 }
