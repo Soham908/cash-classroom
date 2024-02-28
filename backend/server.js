@@ -5,15 +5,17 @@ const mongoose = require('mongoose');
 const userRouter = require("./routes/userRoutes")
 const dataRouter = require('./routes/fetchdataRoute')
 const courseRouter = require('./routes/courseRoutes')
+const lessonRouter = require('./routes/lessonRoute')
 require('dotenv').config(); // Load environment variables from a .env file
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use("/auth",userRouter)
+app.use("/auth", userRouter)
 app.use("/data", dataRouter)
-app.use("/course",courseRouter)
+app.use("/course", courseRouter)
+app.use("/lesson", lessonRouter)
 
 const imagesPath = path.join(__dirname, 'images');
 app.use('/images', express.static(imagesPath));

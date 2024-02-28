@@ -58,17 +58,5 @@ const insertLessons = async() => {
     }
 }
 
-let jsonLessonSection = JSON.parse(fs.readFileSync("./../data/allLessonsSections.json"))
-const insertLessonSection = async () => {
-    const lessonSection = await LessonSection.create(jsonLessonSection)
-    if (lessonSection){
-        console.log('Inserted lesson section');
-    }
-    else{
-        console.log('Lesson section not inserted');
-    }
-}
-
 insertLessons()
-insertLessonSection()
 insertCourses()
