@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const morgan = require('morgan')
 const mongoose = require('mongoose');
 const userRouter = require("./routes/userRoutes")
 const dataRouter = require('./routes/fetchdataRoute')
@@ -11,6 +12,7 @@ require('dotenv').config(); // Load environment variables from a .env file
 const app = express();
 
 app.use(cors());
+app.use(morgan('dev'))
 app.use(express.json());
 app.use("/auth", userRouter)
 app.use("/data", dataRouter)
