@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate,Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getCourseDetails } from "../actions/courseActions";
 import {
@@ -11,6 +11,7 @@ import { ProtectRoutes } from "../manageRoutes/protectRoutes";
 
 const CourseDetail = () => {
   const params = useParams();
+  const navigate = useNavigate()
   const [courseDetails, setCourseDetails] = useState([]);
   useEffect(() => {
     const fetchCourseData = async () => {
@@ -44,7 +45,9 @@ const CourseDetail = () => {
                   for (let j = 0; j < courseDetails.length; j++) {
                     if (courseDetails[j].section === i + 1) {
                       lessonResult.push(
-                        <li key={j}>{courseDetails[j].lesson}</li>
+                        <li>
+                          <Link key={j} to="/lesson" state={{lesson:courseDetails[j].lesson,course:courseDetails[0].course}}>{courseDetails[j].lesson}</Link>
+                        </li>
                       );
                     }
                   }

@@ -6,6 +6,7 @@ import Register from './authFlow/Register';
 import Course from './pages/Course';
 import Navbar from './components/Navbar';
 import CourseDetail from './pages/CourseDetail';
+import LessonPage from './pages/LessonPage';
 import NoMatch from "./components/NoMatch"
 import Dashboard from "./pages/Dashboard"
 import Profile from "./pages/Profile"
@@ -21,6 +22,7 @@ function App() {
           <Route path='/courses' element={<Course/>}/>
           <Route path='/profile' element={<Profile/>}/>
           <Route path='/courses/:name' element={<CourseDetail/>}/>
+          <Route path='/lesson' element={<LessonPage/>}/>
           <Route path="*" element={<NoMatch/>} />
         </Routes>
     </>

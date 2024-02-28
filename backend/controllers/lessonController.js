@@ -2,7 +2,7 @@ const Lesson = require("../models/lesson");
 
 exports.getLessonPost = async(req, res) => {
     try {
-        const lessonPost = await Lesson.find({lesson: req.params.lessonName})
+        const lessonPost = await Lesson.findOne({lesson: req.params.lessonName})
         if(lessonPost){
             res.json({
                 sucess: true,
