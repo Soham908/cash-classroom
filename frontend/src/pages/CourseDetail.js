@@ -1,15 +1,19 @@
 import { useParams,useNavigate,Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getCourseDetails } from "../actions/courseActions";
+import { useAuthStore } from "../store/store"; 
 import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  Button,
   Typography,
 } from "@mui/material";
 import { ProtectRoutes } from "../manageRoutes/protectRoutes";
+import { enrollUserToCourse } from "../actions/userActions";
 
 const CourseDetail = () => {
+  const user = useAuthStore.getState().user
   const params = useParams();
   const navigate = useNavigate()
   const [courseDetails, setCourseDetails] = useState([]);
@@ -24,8 +28,17 @@ const CourseDetail = () => {
     fetchCourseData();
   }, []);
 
+  const enrollCourse = async () => {
+    await enrollUserToCourse({id: user, courseName: params.name})
+    console.log(user);
+  }
+
   return (
     <ProtectRoutes>
+
+      <Button variant="contained" onClick={enrollCourse}> Enroll in this course </Button>
+
+
       {(() => {
         const result = [];
         for (

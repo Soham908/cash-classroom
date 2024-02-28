@@ -75,3 +75,17 @@ exports.login = async(req,res) => {
         })
     }
 }
+
+exports.enrollCourse = async (req, res) => {
+    try {
+        const decrypt = jwt.verify(req.body.id, process.env.JWT_SECRET)
+        console.log(decrypt);
+        const response = await Users.findByIdAndUpdate( decrypt.id, { $push: { enrolledCourses: {course: req.body.courseName} } }, { new: true} )
+        res.json({
+            success: true,
+            response
+        })
+    } catch (error) {
+        console.log(error);
+    }
+}
