@@ -24,13 +24,13 @@ const CourseDetail = () => {
         setCourseDetails(response.courseDetail);
       }
     };
-
+    console.log(user);
     fetchCourseData();
   }, []);
 
   const enrollCourse = async () => {
-    await enrollUserToCourse({id: user, courseName: params.name})
-    console.log(user);
+    const response = await enrollUserToCourse({id: user, courseName: params.name})
+    console.log(response.response.enrolledCourses);
   }
 
   return (
@@ -43,7 +43,6 @@ const CourseDetail = () => {
         const result = [];
         for (
           let i = 0; i < courseDetails[courseDetails.length - 1]?.section; i++) {
-          console.log("got in loop");
           result.push(
             <Accordion key={i}>
               <AccordionSummary

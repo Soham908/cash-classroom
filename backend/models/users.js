@@ -6,6 +6,15 @@ const enrollCourseSchema = new mongoose.Schema({
     },
 })
 
+const lesson = new mongoose.Schema({
+    lessonName : {
+        type : String
+    },
+    lessonId : {
+        type : String
+    }
+})
+
 const userSchema = new mongoose.Schema({
     name : {
         type : String,
@@ -25,6 +34,9 @@ const userSchema = new mongoose.Schema({
     },
     enrolledCourses : [
         enrollCourseSchema
+    ],
+    lessonsCompleted : [
+        lesson
     ]
 })
 
