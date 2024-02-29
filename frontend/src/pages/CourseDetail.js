@@ -25,14 +25,13 @@ const CourseDetail = () => {
         setCourseDetails(response.courseDetail);
       }
     };
-    console.log(user);
     fetchCourseData();
   }, []);
 
   const enrollCourse = async () => {
     const response = await enrollUserToCourse({id: user.token, courseName: params.name})
-    localStorage.setItem("userData", JSON.stringify({...user, data : response.response.enrolledCourses}))
-    setUserState({...user, data : response.response.enrolledCourses})
+    localStorage.setItem("userData", JSON.stringify( {...user, data: response.response } ))
+    setUserState( {...user, data: response.response } )
     console.log(user);
   }
 

@@ -14,7 +14,7 @@ const Profile = () => {
             <h1>Profile</h1>
             <h3> Enrolled Courses </h3>
             {
-                userData.data.enrolledCourses.map((courseData, index) => {
+                userData?.data?.enrolledCourses?.map((courseData, index) => {
                     return(
                         <ul>
                             <li> { courseData.course } </li>
@@ -22,6 +22,7 @@ const Profile = () => {
                     )
                 })
             }
+            <h4> Lessons Completed : { userData?.data?.lessonsCompleted?.length } </h4>
 
         </ProtectRoutes>
     )
