@@ -61,10 +61,12 @@ exports.login = async(req,res) => {
         }
 
         const token = signToken(user._id)
-
+        const userObject = user.toObject()
+        delete userObject.password
         res.json({
             success : true,
-            token
+            token,
+            userObject
         })
     }
     catch(err){
@@ -83,6 +85,19 @@ exports.enrollCourse = async (req, res) => {
         const response = await Users.findByIdAndUpdate( decrypt.id, { $push: { enrolledCourses: {course: req.body.courseName} } }, { new: true} )
         res.json({
             success: true,
+            response
+        })
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+exports.completedLesson = async (req, res) => {
+    try {
+        const decrypt = jwt.verify(req.body.id, process.env.JWT_SECRET)
+        const response = await Users.findByIdAndUpdate(decrypt.id, { $push : { lessonsCompleted : {lessonName : req.body.lessonName, lessonId : req.body.lessonId} } }, { new: true})
+        res.json({
+            success : true,
             response
         })
     } catch (error) {

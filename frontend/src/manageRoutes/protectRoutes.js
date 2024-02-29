@@ -11,8 +11,8 @@ export const PreventAuthFlow = ({children})=>{
 
 export const SetStateProvider = ({children}) => {
     const setLocalUser = useAuthStore(state => state.setUserFromLocalStorage)
-    if (localStorage.getItem('userToken')!== undefined) {
-        setLocalUser((localStorage.getItem('userToken')))
+    if (localStorage.getItem('userData')!== undefined) {
+        setLocalUser(JSON.parse((localStorage.getItem('userData'))))
     }
     return children
 }

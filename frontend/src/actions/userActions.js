@@ -28,3 +28,12 @@ export const enrollUserToCourse = async (data) => {
       console.error("Error:", error.message);
     }
 }
+
+export const userCompleteLesson = async (data) => {
+  try {
+    const response = await axios.patch(`${ENDPOINT_URL}/auth/lesson-completed`, data)
+    return response.data
+  } catch (error) {
+    console.log(error);
+  }
+}

@@ -43,8 +43,9 @@ const Login = () => {
       password: formData.password,
     });
     if(response.success){
-      localStorage.setItem("userToken", response.token);
-      setStateUser(response.token)
+      console.log(response.userObject);
+      localStorage.setItem("userData", JSON.stringify( {token: response.token, data: response.userObject } ));
+      setStateUser({token: response.token, data: response.userObject })
       navigate("/dashboard")
     }
     else {

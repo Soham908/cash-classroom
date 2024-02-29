@@ -15,7 +15,7 @@ const Navbar = () => {
   
   const logout = () => {
     setStateUser(null)
-    localStorage.setItem("userToken","")
+    localStorage.setItem("userData","")
     navigate("/")
   }
   return (
