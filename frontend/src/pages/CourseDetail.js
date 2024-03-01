@@ -14,6 +14,7 @@ import { enrollUserToCourse } from "../actions/userActions";
 
 const CourseDetail = () => {
   const user = useAuthStore.getState().user
+  const setUserState = useAuthStore(state=>state.setUser)
   const params = useParams();
   const navigate = useNavigate()
   const [courseDetails, setCourseDetails] = useState([]);
@@ -24,13 +25,14 @@ const CourseDetail = () => {
         setCourseDetails(response.courseDetail);
       }
     };
-    console.log(user);
     fetchCourseData();
   }, []);
 
   const enrollCourse = async () => {
-    const response = await enrollUserToCourse({id: user, courseName: params.name})
-    console.log(response.response.enrolledCourses);
+    const response = await enrollUserToCourse({id: user.token, courseName: params.name})
+    localStorage.setItem("userData", JSON.stringify( {...user, data: response.response } ))
+    setUserState( {...user, data: response.response } )
+    console.log(user);
   }
 
   return (
