@@ -9,6 +9,7 @@ import {
   Button,
   Typography,
 } from "@mui/material";
+import { ExpandMore } from "@mui/icons-material"
 import { ProtectRoutes } from "../manageRoutes/protectRoutes";
 import { enrollUserToCourse } from "../actions/userActions";
 
@@ -18,11 +19,19 @@ const CourseDetail = () => {
   const params = useParams();
   const navigate = useNavigate()
   const [courseDetails, setCourseDetails] = useState([]);
+  const [enrollButtonState, setEnrollButtonState] = useState(false)
+
   useEffect(() => {
     const fetchCourseData = async () => {
       const response = await getCourseDetails(params.name);
       if (response.success) {
         setCourseDetails(response.courseDetail);
+      }
+      const isCoursePresent = user.data.enrolledCourses.some((courseData) =>
+          courseData.course.includes(response.courseDetail[0]?.course)
+        );
+      if (isCoursePresent) {
+        setEnrollButtonState(true);
       }
     };
     fetchCourseData();
@@ -32,13 +41,16 @@ const CourseDetail = () => {
     const response = await enrollUserToCourse({id: user.token, courseName: params.name})
     localStorage.setItem("userData", JSON.stringify( {...user, data: response.response } ))
     setUserState( {...user, data: response.response } )
+    setEnrollButtonState(true)
     console.log(user);
   }
 
   return (
     <ProtectRoutes>
 
-      <Button variant="contained" onClick={enrollCourse}> Enroll in this course </Button>
+      <Button variant="contained" onClick={enrollCourse} disabled={enrollButtonState}> 
+        { enrollButtonState ? "Enrolled" : "Enroll to course" }
+      </Button>
 
 
       {(() => {
@@ -50,6 +62,7 @@ const CourseDetail = () => {
               <AccordionSummary
                 aria-controls="lesson-content"
                 id="lesson-header"
+                expandIcon={<ExpandMore />}
               >
                 <Typography variant="h6">{courseDetails[0].course}</Typography>
               </AccordionSummary>
