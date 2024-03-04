@@ -82,10 +82,27 @@ exports.enrollCourse = async (req, res) => {
     try {
         const decrypt = jwt.verify(req.body.id, process.env.JWT_SECRET)
         console.log(decrypt);
-        const response = await Users.findByIdAndUpdate( decrypt.id, { $push: { enrolledCourses: {course: req.body.courseName} } }, { new: true} )
+        const user = await Users.findByIdAndUpdate( decrypt.id, { $push: { enrolledCourses: {course: req.body.courseName} } }, { new: true} )
+        const userObject = user.toObject()
+        delete userObject.password
         res.json({
             success: true,
-            response
+            userObject
+        })
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+exports.unEnrollCourse = async (req, res) => {
+    try {
+        const decrypt = jwt.verify(req.body.id, process.env.JWT_SECRET)
+        const user = await Users.findByIdAndUpdate( decrypt.id, { $pull: { enrolledCourses : {course : req.body.courseName} } }, {new : true})
+        const userObject = user.toObject()
+        delete userObject.password
+        res.json({
+            sucess: true,
+            userObject
         })
     } catch (error) {
         console.log(error);
@@ -95,10 +112,12 @@ exports.enrollCourse = async (req, res) => {
 exports.completedLesson = async (req, res) => {
     try {
         const decrypt = jwt.verify(req.body.id, process.env.JWT_SECRET)
-        const response = await Users.findByIdAndUpdate(decrypt.id, { $push : { lessonsCompleted : {lessonName : req.body.lessonName, lessonId : req.body.lessonId} } }, { new: true})
+        const user = await Users.findByIdAndUpdate(decrypt.id, { $push : { lessonsCompleted : {lessonName : req.body.lessonName, lessonId : req.body.lessonId} } }, { new: true})
+        const userObject = user.toObject()
+        delete userObject.password
         res.json({
             success : true,
-            response
+            userObject
         })
     } catch (error) {
         console.log(error);

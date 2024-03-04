@@ -29,6 +29,15 @@ export const enrollUserToCourse = async (data) => {
     }
 }
 
+export const unEnrollCourse = async (data) => {
+  try {
+    const response = await axios.patch(`${ENDPOINT_URL}/auth/unenroll-course`, data)
+    return response.data
+  } catch (error) {
+    console.log(error)
+  }
+}
+
 export const userCompleteLesson = async (data) => {
   try {
     const response = await axios.patch(`${ENDPOINT_URL}/auth/lesson-completed`, data)
