@@ -11,36 +11,31 @@ const LessonPage = () => {
     const navigate = useNavigate()
     const location = useLocation().state
     const [lessonData,setLessonData] = useState(null)
-    const [lessonName,setLessonName] = useState(null)
-    const [lessonId,setLessonId] = useState(null)
     const setStateUser = useAuthStore(state=>state.setUser)
     const isLessonCompleted = user?.data?.lessonsCompleted.some((lessonData)=>
     lessonData.lessonName === location.lesson
     )
-    console.log(isLessonCompleted)
     
     useEffect(()=>{
-        
         const fetchLesson = async() => {
             const response = await getLesson(location.lesson)
-            setLessonData(response.lessonPost.htmlContent)
-            setLessonName(response.lessonPost.lesson)
-            setLessonId(response.lessonPost._id)
+            console.log(response)
+            setLessonData(response.lessonPost)
         }
         fetchLesson()
     },[])
-
+    
     const lessonComplete = async () => {
-        const response = await userCompleteLesson({lessonName, id : user.token, lessonId})
-        localStorage.setItem("userData", JSON.stringify( {...user, data: response.response } ));
-        setStateUser( {...user, data: response.response })
+        const response = await userCompleteLesson({lessonName : lessonData.lesson, id : user.token, lessonId:lessonData._id})
+        localStorage.setItem("userData", JSON.stringify( {...user, data: response.userObject } ));
+        setStateUser( {...user, data: response.userObject })
         navigate(`/courses/${location.course}`)
     }
 
     return (
         <>
             <Button variant="contained" onClick={lessonComplete} disabled={isLessonCompleted}> Lesson Completed </Button>
-            <div dangerouslySetInnerHTML={{ __html: lessonData }} />
+            <div dangerouslySetInnerHTML={{ __html: lessonData?.htmlContent }} />
         </>
     )
 }

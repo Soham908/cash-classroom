@@ -2,7 +2,7 @@ const Course = require("./../models/courses")
 const fs = require("fs")
 const mongoose = require("mongoose")
 const Lesson = require("../models/lesson")
-const LessonSection = require("../models/lessonSection")
+// const LessonSection = require("../models/lessonSection")
 const path = "./../data/courses_card_data.json"
 
 require("dotenv").config({
