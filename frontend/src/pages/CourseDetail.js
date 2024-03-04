@@ -27,7 +27,8 @@ const CourseDetail = () => {
       if (response.success) {
         setCourseDetails(response.courseDetail);
       }
-      const isCoursePresent = user.data.enrolledCourses.some((courseData) =>
+      // console.log(response.courseDetail)
+      const isCoursePresent = user?.data?.enrolledCourses.some((courseData) =>
           courseData.course.includes(response.courseDetail[0]?.course)
         );
       if (isCoursePresent) {
@@ -36,13 +37,12 @@ const CourseDetail = () => {
     };
     fetchCourseData();
   }, []);
-
+  // console.log(user.data)
   const enrollCourse = async () => {
     const response = await enrollUserToCourse({id: user.token, courseName: params.name})
-    localStorage.setItem("userData", JSON.stringify( {...user, data: response.response } ))
-    setUserState( {...user, data: response.response } )
+    localStorage.setItem("userData", JSON.stringify( {...user, data: response.userObject } ))
+    setUserState( {...user, data: response.userObject } )
     setEnrollButtonState(true)
-    console.log(user);
   }
 
   const handleLessonClick = (state) => {
@@ -107,6 +107,10 @@ const CourseDetail = () => {
         }
         return result;
       })()}
+
+      <div style={{border:"2px solid black"}} >
+
+      </div>
     </ProtectRoutes>
   );
 };

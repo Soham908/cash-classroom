@@ -8,15 +8,16 @@ const Profile = () => {
 
     const userAuthStateData = useAuthStore.getState().user
     const setUserStoreState = useAuthStore(state => state.setUser )
+    const [refresh,setRefresh] = useState(false)
     useEffect(() => {
-
-    }, [userAuthStateData])
+        
+    }, [refresh])
     
     const unenrollCourse = async (courseName) => {
         const response = await unEnrollCourse({ id: userAuthStateData.token, courseName: courseName })
         localStorage.setItem("userData", JSON.stringify( {...userAuthStateData, data: response.userObject } ))
         setUserStoreState( {...userAuthStateData, data: response.userObject } )
-        console.log(response);
+        setRefresh(p=>!p)
     }
 
     return (

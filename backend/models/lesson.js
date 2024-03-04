@@ -1,6 +1,16 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-
+const commentsSchema = new Schema({
+  userId :{
+    type : mongoose.Schema.Types.ObjectId,
+    required : true
+  },
+  comment : {
+    type : String,
+    required : true,
+    trim : true
+  }
+})
 const lessonSchema = new Schema({
   course: {
     type: String,
@@ -18,6 +28,10 @@ const lessonSchema = new Schema({
   section: {
     type: Number,
   },
+  comments : {
+    type : [commentsSchema],
+    default : []
+  }
 });
 
 const Lesson = mongoose.model("Lesson", lessonSchema);

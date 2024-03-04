@@ -1,6 +1,18 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+const commentsSchema = new Schema({
+  userId :{
+    type : mongoose.Schema.Types.ObjectId,
+    required : true
+  },
+  comment : {
+    type : String,
+    required : true,
+    trim : true
+  }
+})
+
 const courseSchema = new Schema({
   img: {
     type: String,
@@ -27,6 +39,10 @@ const courseSchema = new Schema({
     unique: true,
     type: String,
     default: null
+  },
+  comments : {
+    type : [commentsSchema],
+    default : []
   }
 });
 
