@@ -1,7 +1,7 @@
 
 import { useNavigate,useLocation } from "react-router-dom"
 import { useEffect,useState } from "react"
-import { getLesson, getNextLesson } from "../actions/lessonAction"
+import { getLesson, getNextLesson,addComment } from "../actions/lessonAction"
 import { Button } from "@mui/material"
 import { userCompleteLesson } from "../actions/userActions"
 import { useAuthStore } from "../store/store"
@@ -11,6 +11,7 @@ const LessonPage = () => {
     const navigate = useNavigate()
     const location = useLocation().state
     const [lessonData,setLessonData] = useState(null)
+    const [comment,setComment] = useState("")
     const setStateUser = useAuthStore(state=>state.setUser)
     const numChapters = location.numChapters
     const [disableNextLessonButton, setDisableNextLessonButton] = useState(false)
@@ -23,8 +24,8 @@ const LessonPage = () => {
     useEffect(()=>{
         const fetchLesson = async() => {
             const response = await getLesson(location.lesson)
-            console.log(response)
             setLessonData(response.lessonPost)
+            // console.log(response)
         }
         fetchLesson()
     },[])
@@ -42,26 +43,22 @@ const LessonPage = () => {
         navigate(`/courses/${location.course}`)
     }
 
-    const toNextLesson = async () => {
-        if (lessonData.order >= 1) setDisablePreviousLessonButton(false)
-        const response = await getNextLesson({ courseName : lessonData.course, nextLesson: lessonData.order + 1 })
-        setLessonData(response.nextLesson)
-        console.log(response);
-    }
-
-    const toPreviousLesson = async () => {
-        if (lessonData.order <=  numChapters) setDisableNextLessonButton(false)
-        const response = await getNextLesson({ courseName : lessonData.course, nextLesson: lessonData.order - 1 })
-        setLessonData(response.nextLesson)
-        console.log(response);
-    }
-
     return (
         <>
             <Button variant="contained" onClick={lessonComplete} disabled={isLessonCompleted}> Lesson Completed </Button>
             <Button variant="outlined" onClick={toNextLesson} disabled={disableNextLessonButton} > Next </Button>
             <Button variant="outlined" onClick={toPreviousLesson} disabled={disablePreviousLessonButton}> Previous </Button>
             <div dangerouslySetInnerHTML={{ __html: lessonData?.htmlContent }} />
+            <div>
+                <h1>Comments : </h1>
+              {lessonData?.comments.map((comment)=>(
+                <div style={{border:"1px solid "}}>
+                    <p> {comment.userName} : {comment.comment}</p>
+                </div>
+              ))}  
+               Write comment : <input type="text" value={comment} onChange={(e)=>setComment(e.target.value)} />
+               <button onClick={submitComment}>Submit</button>
+            </div>
         </>
     )
 }
