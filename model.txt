@@ -100,7 +100,7 @@ user : {
 }
 
 todo : 
-1)user authentication use jwt 
-2)data scraping for each course -> section -> lesson 
-3)Make quiz for every lesson
-4)Create Model
+1)Make quiz for every lesson
+2) Lesson completed button disable 
+3) Lesson access without course enrolled (done)
+4) Password ermove
