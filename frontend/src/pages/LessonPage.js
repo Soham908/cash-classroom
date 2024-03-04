@@ -43,6 +43,29 @@ const LessonPage = () => {
         navigate(`/courses/${location.course}`)
     }
 
+    const submitComment = async() => {
+        const response = await addComment({
+            _id:lessonData._id,
+            commentObj:{
+                comment,
+                userId : user?.data?._id,
+                userName : user?.data?.name
+            }
+        })
+        setLessonData(response.updatedLesson)
+    }
+    const toNextLesson = async () => {
+        if (lessonData.order >= 1) setDisablePreviousLessonButton(false)
+        const response = await getNextLesson({ courseName : lessonData.course, nextLesson: lessonData.order + 1 })
+        setLessonData(response.nextLesson)
+        console.log(response);
+    }
+    const toPreviousLesson = async () => {
+        if (lessonData.order <=  numChapters) setDisableNextLessonButton(false)
+        const response = await getNextLesson({ courseName : lessonData.course, nextLesson: lessonData.order - 1 })
+        setLessonData(response.nextLesson)
+        console.log(response);
+    }
     return (
         <>
             <Button variant="contained" onClick={lessonComplete} disabled={isLessonCompleted}> Lesson Completed </Button>
