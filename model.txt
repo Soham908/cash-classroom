@@ -75,6 +75,30 @@ user : {
     certificates : [String]   
 }
 
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTFmZTNlZmI5ZjM4MjI1MDkyZGNiOSIsImlhdCI6MTcwOTM3NjU4OCwiZXhwIjoxNzE3MTUyNTg4fQ.fjTxduIQKdn0Md_WlHOnoJOEe4o4seaqq6dWwjki2Qo",
+    "data": {
+        "_id": "65e1fe3efb9f38225092dcb9",
+        "name": "demo",
+        "email": "demo@gmail.com",
+        "password": "$2b$12$STb42YT4p7rJl2xzuJJXBO6.43PwO/bs16QCBYF8wrv5CFpICPB8W",
+        "enrolledCourses": [
+            {
+                "course": "Introduction to Stock Markets",
+                "_id": "65e1fea8d6abf817f0cc7196"
+            }
+        ],
+        "lessonsCompleted": [
+            {
+                "lessonName": "11. Corporate actions and impact on stock prices",
+                "lessonId": "65e1fdb08e4c606494d13c80",
+                "_id": "65e1fe5afb9f38225092dcc2"
+            }
+        ],
+        "__v": 0
+    }
+}
+
 todo : 
 1)user authentication use jwt 
 2)data scraping for each course -> section -> lesson 
