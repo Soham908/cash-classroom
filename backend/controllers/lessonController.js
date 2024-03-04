@@ -16,3 +16,16 @@ exports.getLessonPost = async(req, res) => {
         })
     }
 }
+
+exports.getNextLesson = async (req, res) => {
+    try {
+        const nextLesson = await Lesson.findOne({ course: req.query.courseName, order: req.query.nextLesson })
+        res.json({
+            sucess: true,
+            nextLesson
+        })
+        console.log(req.query.courseName, req.query.nextLesson);
+    } catch (error) {
+        console.log(error);
+    }
+}

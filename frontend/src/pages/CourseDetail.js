@@ -91,7 +91,7 @@ const CourseDetail = () => {
                             color:  "blue"
                           }}
                           key={j} 
-                          onClick={()=>handleLessonClick({lesson:courseDetails[j].lesson,course:courseDetails[0].course})} 
+                          onClick={()=>handleLessonClick({ lesson : courseDetails[j].lesson, course : courseDetails[0].course, numChapters : courseDetails.length })} 
                           >
                             {courseDetails[j].lesson}
                           </span>
