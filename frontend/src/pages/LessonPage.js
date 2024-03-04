@@ -69,8 +69,8 @@ const LessonPage = () => {
     return (
         <>
             <Button variant="contained" onClick={lessonComplete} disabled={isLessonCompleted}> Lesson Completed </Button>
-            <Button variant="outlined" onClick={toNextLesson} disabled={disableNextLessonButton} > Next </Button>
             <Button variant="outlined" onClick={toPreviousLesson} disabled={disablePreviousLessonButton}> Previous </Button>
+            <Button variant="outlined" onClick={toNextLesson} disabled={disableNextLessonButton} > Next </Button>
             <div dangerouslySetInnerHTML={{ __html: lessonData?.htmlContent }} />
             <div>
                 <h1>Comments : </h1>
