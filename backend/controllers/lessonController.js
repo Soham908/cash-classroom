@@ -17,6 +17,22 @@ exports.getLessonPost = async(req, res) => {
     }
 }
 
+exports.appendComment = async (req,res) => {
+    try {
+        console.log(req.body)
+        const updatedLesson = await Lesson.findByIdAndUpdate(req.body._id,{$push:{comments:req.body.commentObj}},{new:true})
+        res.json({
+            success:true,
+            updatedLesson
+        })
+        console.log(updatedLesson)
+    }catch(error){
+        console.log(error)
+        res.json({success:false})
+    }
+}
+
+
 exports.getNextLesson = async (req, res) => {
     try {
         const nextLesson = await Lesson.findOne({ course: req.query.courseName, order: req.query.nextLesson })

@@ -20,7 +20,6 @@ const CourseDetail = () => {
   const navigate = useNavigate()
   const [courseDetails, setCourseDetails] = useState([]);
   const [enrollButtonState, setEnrollButtonState] = useState(false)
-
   useEffect(() => {
     const fetchCourseData = async () => {
       const response = await getCourseDetails(params.name);
@@ -108,9 +107,7 @@ const CourseDetail = () => {
         return result;
       })()}
 
-      <div style={{border:"2px solid black"}} >
-
-      </div>
+  
     </ProtectRoutes>
   );
 };

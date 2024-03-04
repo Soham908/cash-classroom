@@ -10,7 +10,15 @@ export const getLesson = async (lessonName) => {
         console.log(err)
     }
   };
-
+  export const addComment = async (data) => {
+    try {
+      const response = await axios.patch(`${ENDPOINT_URL}/lesson/add-comment`, data);
+      return response.data;
+    } catch (error) {
+      console.error("Error:", error.message);
+    }
+  };
+  
   export const getNextLesson = async (data) => {
     try{
       const response = await axios.get(`${ENDPOINT_URL}/lesson/get-next-lesson?courseName=${data.courseName}&nextLesson=${data.nextLesson}`);
