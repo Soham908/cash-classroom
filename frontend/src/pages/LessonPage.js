@@ -1,5 +1,5 @@
 
-import { useParams,useNavigate,useLocation } from "react-router-dom"
+import { useNavigate,useLocation } from "react-router-dom"
 import { useEffect,useState } from "react"
 import { getLesson } from "../actions/lessonAction"
 import { Button } from "@mui/material"
@@ -7,7 +7,6 @@ import { userCompleteLesson } from "../actions/userActions"
 import { useAuthStore } from "../store/store"
 const LessonPage = () => {
 
-    const params = useParams()
     const user = useAuthStore.getState().user
     const navigate = useNavigate()
     const location = useLocation().state
@@ -15,8 +14,13 @@ const LessonPage = () => {
     const [lessonName,setLessonName] = useState(null)
     const [lessonId,setLessonId] = useState(null)
     const setStateUser = useAuthStore(state=>state.setUser)
+    const isLessonCompleted = user?.data?.lessonsCompleted.some((lessonData)=>
+    lessonData.lessonName === location.lesson
+    )
+    console.log(isLessonCompleted)
     
     useEffect(()=>{
+        
         const fetchLesson = async() => {
             const response = await getLesson(location.lesson)
             setLessonData(response.lessonPost.htmlContent)
@@ -35,7 +39,7 @@ const LessonPage = () => {
 
     return (
         <>
-            <Button variant="contained" onClick={lessonComplete}> Lesson Complete </Button>
+            <Button variant="contained" onClick={lessonComplete} disabled={isLessonCompleted}> Lesson Completed </Button>
             <div dangerouslySetInnerHTML={{ __html: lessonData }} />
         </>
     )
