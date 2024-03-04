@@ -45,6 +45,18 @@ const CourseDetail = () => {
     console.log(user);
   }
 
+  const handleLessonClick = (state) => {
+    const isEnrolled = user?.data?.enrolledCourses.some((courseData)=>
+      courseData.course === state.course
+    )
+    if(!isEnrolled){
+      alert("Enroll the course before accessing lesson")
+    }
+    else{
+      navigate("/lesson",{state})
+    }
+  }
+
   return (
     <ProtectRoutes>
 
@@ -73,7 +85,16 @@ const CourseDetail = () => {
                     if (courseDetails[j].section === i + 1) {
                       lessonResult.push(
                         <li>
-                          <Link key={j} to="/lesson" state={{lesson:courseDetails[j].lesson,course:courseDetails[0].course}}>{courseDetails[j].lesson}</Link>
+                          <span 
+                          style={{
+                            textDecoration:"underline",
+                            color:  "blue"
+                          }}
+                          key={j} 
+                          onClick={()=>handleLessonClick({lesson:courseDetails[j].lesson,course:courseDetails[0].course})} 
+                          >
+                            {courseDetails[j].lesson}
+                          </span>
                         </li>
                       );
                     }
