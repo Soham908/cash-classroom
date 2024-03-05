@@ -52,7 +52,7 @@ exports.updateCurrentAmount = async (req, res) => {
 	try {
 		const updatedGoal = await Goals.findByIdAndUpdate(
 			req.body.id,
-			{ currentAmount: req.body.currentAmount },
+			{ $inc: { currentAmount: req.body.updateAmount } }, 
 			{ new: true }
 		);
 		if (!updatedGoal) {
