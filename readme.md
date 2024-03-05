@@ -15,10 +15,10 @@ high 3) Problem of the day on dashboard
 
 medium 4) Savings goal tracker (good habits)
 
-low 5) Blog if possible
+low 5) Blog if possible, would be sort of easy
 
 highly low 6) Daily streak
 
-HIGHLY LOW 7. VIRTUAL GAME CURRENCY
+HIGHLY LOW 7. VIRTUAL GAME CURRENCY, if possible add payment gateway, make the course 1rs, actually pay and see
 
-8. VIRTUAL SIMULATION
+for tomorrow - financial calc, blog, habit tracker(card), find quiz data very imp
