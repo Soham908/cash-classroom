@@ -85,7 +85,14 @@ exports.enrollCourse = async (req, res) => {
     console.log(decrypt);
     const user = await Users.findByIdAndUpdate(
       decrypt.id,
-      { $push: { enrolledCourses: { course: req.body.courseName } } },
+      {
+        $push: {
+          enrolledCourses: {
+            course: req.body.courseName,
+            totalLessons: req.body.totalLessons,
+          },
+        },
+      },
       { new: true }
     );
     const userObject = user.toObject();
@@ -118,100 +125,34 @@ exports.unEnrollCourse = async (req, res) => {
   }
 };
 
-// exports.completedLesson = async (req, res) => {
-//   try {
-//     // {
-//     // $inc: { 'enrolledCourses.$.lessonsCompleted': 1 }, // Increment lessonsCompleted by 1
-//     // $push: { lessons: lessonData },
-//     const decrypt = jwt.verify(req.body.id, process.env.JWT_SECRET);
-//     const user = await Users.findOneAndUpdate(
-//       { _id: decrypt.id, "enrolledCourses.course": req.body.course },
-//       {
-//         $push: {
-//           lessonsCompleted: {
-//             lessonName: req.body.lessonName,
-//             lessonId: req.body.lessonId,
-//           },
-//           $inc: { "enrolledCourses.$.lessonsCompleted": 1 },
-//         },
-//       },
-//       { new: true }
-//     );
-//     const newUser = await Users.findById(decrypt.id);
-//     // console.log(newUser);
-//     console.log(req.body);
-//     res.json({
-//       success: true,
-//       // userObject
-//     });
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
 exports.completedLesson = async (req, res) => {
   try {
     const decrypt = jwt.verify(req.body.id, process.env.JWT_SECRET);
 
-    let courseName = req.body.course;
-    const userId = decrypt.id;
-
-    try {
-      const user = await Users.findById(userId);
-
-      if (!user) {
-        console.log("User not found");
-        return;
-      }
-
-      for (const course of user.enrolledCourses) {
-        console.log(
-          `Course: ${course.course}, Lessons Completed: ${course.lessonsCompleted}`
-        );
-        if (course.course === courseName) {
-          const result = await Users.updateOne(
-            {
-              _id: userId,
-              "enrolledCourses.course": courseName,
-            },
-            {
-              $push: {
-                lessonsCompleted: {
-                  lessonName: req.body.lessonName,
-                  lessonId: req.body.lessonId,
-                },
-              },
-              $inc: { "enrolledCourses.$.lessonsCompleted": 1 },
-            }
-          );
-        }
-      }
-    } catch (error) {
-      console.error(error);
-    }
-
-    // const user = await Users.findOneAndUpdate(
-    //   { _id: decrypt.id, "enrolledCourses.course": req.body.course },
-    //   {
-    //     $push: {
-    //       lessonsCompleted: {
-    //         lessonName: req.body.lessonName,
-    //         lessonId: req.body.lessonId,
-    //       },
-    //     },
-    //     $inc: { "enrolledCourses.$.lessonsCompleted": 1 },
-    //   },
-    //   { new: true }
-    // );
-
-    const newUser = await Users.findById(decrypt.id);
-
-    console.log(req.body);
+    const user = await Users.findOneAndUpdate(
+      {
+        _id: decrypt.id,
+        "enrolledCourses.course": req.body.course,
+      },
+      {
+        $push: {
+          lessonsCompleted: {
+            lessonName: req.body.lessonName,
+            lessonId: req.body.lessonId,
+          },
+        },
+        $inc: { "enrolledCourses.$.lessonsCompleted": 1 },
+      },
+      { new: true }
+    );
+    const userObject = user.toObject();
+    delete userObject.password;
+    console.log(user);
     res.json({
       success: true,
-      // userObject
+      userObject,
     });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ success: false, error: "Internal Server Error" });
+    console.log(error);
   }
 };

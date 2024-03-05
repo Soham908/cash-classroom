@@ -55,6 +55,7 @@ const CourseDetail = () => {
     const response = await enrollUserToCourse({
       id: user.token,
       courseName: params.name,
+      totalLessons: courseDetails.length,
     });
     localStorage.setItem(
       "userData",
@@ -65,6 +66,7 @@ const CourseDetail = () => {
   };
 
   const handleLessonClick = (state) => {
+    // console.log(user.data);
     const isEnrolled = user?.data?.enrolledCourses.some(
       (courseData) => courseData.course === state.course
     );

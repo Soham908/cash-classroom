@@ -85,15 +85,16 @@ user : {
         "enrolledCourses": [
             {
                 "course": "Introduction to Stock Markets",
-                "_id": "65e1fea8d6abf817f0cc7196"
+                "_id": "65e1fea8d6abf817f0cc7196",
+                "lessonsCompleted":Number
             }
         ],
-        "lessonsCompleted": [
+       "lessonsCompleted": [
             {
                 "lessonName": "11. Corporate actions and impact on stock prices",
                 "lessonId": "65e1fdb08e4c606494d13c80",
                 "_id": "65e1fe5afb9f38225092dcc2"
-            }
+            } 
         ],
         "__v": 0
     }
