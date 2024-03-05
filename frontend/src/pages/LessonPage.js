@@ -12,6 +12,7 @@ const LessonPage = () => {
   const [lessonData, setLessonData] = useState(null);
   const [comment, setComment] = useState("");
   const setStateUser = useAuthStore((state) => state.setUser);
+  const [refresh, setRefresh] = useState(false);
   const numChapters = location.numChapters;
   const [disableNextLessonButton, setDisableNextLessonButton] = useState(false);
   const [disablePreviousLessonButton, setDisablePreviousLessonButton] =
@@ -37,7 +38,7 @@ const LessonPage = () => {
   useEffect(() => {
     if (lessonData?.order === 1) setDisablePreviousLessonButton(true);
     if (lessonData?.order === numChapters) setDisableNextLessonButton(true);
-  }, [lessonData]);
+  }, [lessonData, refresh]);
 
   const lessonComplete = async () => {
     const response = await userCompleteLesson({
@@ -51,6 +52,7 @@ const LessonPage = () => {
     );
     setStateUser({ ...user, data: response.userObject });
     // navigate(`/courses/${location.course}`);
+    setRefresh((p) => !p);
   };
 
   const submitComment = async () => {
