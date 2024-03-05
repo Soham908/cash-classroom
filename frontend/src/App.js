@@ -10,7 +10,8 @@ import LessonPage from './pages/LessonPage';
 import NoMatch from "./components/NoMatch"
 import Dashboard from "./pages/Dashboard"
 import Profile from "./pages/Profile"
-
+import FDCalculator from './pages/calculators/FDCalculator';
+import EMICalculator from './pages/calculators/EMICalculator';
 function App() {
   return (
     <>
@@ -23,6 +24,8 @@ function App() {
           <Route path='/profile' element={<Profile/>}/>
           <Route path='/courses/:name' element={<CourseDetail/>}/>
           <Route path='/lesson' element={<LessonPage/>}/>
+          <Route path="/calculators/fd-calculator" element= {<FDCalculator/>}/>
+          <Route path="/calculators/emi-calculator" element= {<EMICalculator/>}/>
           <Route path="*" element={<NoMatch/>} />
         </Routes>
     </>

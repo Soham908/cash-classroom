@@ -22,3 +22,8 @@ highly low 6) Daily streak
 HIGHLY LOW 7. VIRTUAL GAME CURRENCY, if possible add payment gateway, make the course 1rs, actually pay and see
 
 for tomorrow - financial calc, blog, habit tracker(card), find quiz data very imp
+
+bugs :
+1) less than 0 and more than target values in goals and more bugs in goals
+
+
