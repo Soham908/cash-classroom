@@ -1,24 +1,22 @@
-import React, { useState } from 'react';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import InputAdornment from '@mui/material/InputAdornment';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
-import { login} from '../actions/userActions';
-import { useAuthStore } from '../store/store';
-import {PreventAuthFlow} from "./../manageRoutes/protectRoutes"
-import { Link,useNavigate } from 'react-router-dom';
-
+import React, { useState } from "react";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import InputAdornment from "@mui/material/InputAdornment";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import { login } from "../actions/userActions";
+import { useAuthStore } from "../store/store";
+import { PreventAuthFlow } from "./../manageRoutes/protectRoutes";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const setStateUser = useAuthStore((state) => state.setUser);
 
-  const setStateUser = useAuthStore(state=>state.setUser)
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
+    email: "love@g.com",
+    password: "123456",
   });
 
   const [showPassword, setShowPassword] = useState(false);
@@ -42,76 +40,79 @@ const Login = () => {
       email: formData.email,
       password: formData.password,
     });
-    if(response.success){
+    if (response.success) {
       console.log(response.userObject);
-      localStorage.setItem("userData", JSON.stringify( {token: response.token, data: response.userObject } ));
-      setStateUser({token: response.token, data: response.userObject })
-      navigate("/dashboard")
-    }
-    else {
-      console.log(response)
+      localStorage.setItem(
+        "userData",
+        JSON.stringify({ token: response.token, data: response.userObject })
+      );
+      setStateUser({ token: response.token, data: response.userObject });
+      navigate("/dashboard");
+    } else {
+      console.log(response);
     }
   };
 
   return (
     <PreventAuthFlow>
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        minHeight: "100vh", 
-      }}
-    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          minHeight: "100vh",
+        }}
+      >
         <p>Login Page </p>
-      <form onSubmit={handleSubmit} style={{ width: "300px" }}>
+        <form onSubmit={handleSubmit} style={{ width: "300px" }}>
+          <TextField
+            label="Email"
+            name="email"
+            type="email"
+            value={formData.email}
+            onChange={handleChange}
+            fullWidth
+            margin="normal"
+            required
+          />
 
-        <TextField
-          label="Email"
-          name="email"
-          type="email"
-          value={formData.email}
-          onChange={handleChange}
-          fullWidth
-          margin="normal"
-          required
-        />
+          <TextField
+            label="Password"
+            name="password"
+            type={showPassword ? "text" : "password"}
+            value={formData.password}
+            onChange={handleChange}
+            fullWidth
+            margin="normal"
+            required
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton
+                    onClick={handleTogglePasswordVisibility}
+                    edge="end"
+                  >
+                    {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }}
+          />
 
-        <TextField
-          label="Password"
-          name="password"
-          type={showPassword ? "text" : "password"}
-          value={formData.password}
-          onChange={handleChange}
-          fullWidth
-          margin="normal"
-          required
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconButton onClick={handleTogglePasswordVisibility} edge="end">
-                  {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
-                </IconButton>
-              </InputAdornment>
-            ),
-          }}
-        />
-
-        <Button
-          type="submit"
-          variant="contained"
-          color="primary"
-          style={{ marginTop: "16px" }}
-        >
-          Login
-        </Button>
-      </form>
-      <p>
-        Don't have an account?{' '}
-        <Link to="/register">Register</Link>
-      </p>
-    </div>
+          <Button
+            type="submit"
+            variant="contained"
+            color="primary"
+            style={{ marginTop: "16px" }}
+          >
+            Login
+          </Button>
+        </form>
+        <p>
+          Don't have an account? <Link to="/register">Register</Link>
+        </p>
+      </div>
     </PreventAuthFlow>
   );
 };
