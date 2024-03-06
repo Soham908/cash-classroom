@@ -128,7 +128,7 @@ exports.unEnrollCourse = async (req, res) => {
 exports.completedLesson = async (req, res) => {
   try {
     const decrypt = jwt.verify(req.body.id, process.env.JWT_SECRET);
-
+    console.log(req.body)
     const user = await Users.findOneAndUpdate(
       {
         _id: decrypt.id,
@@ -147,7 +147,7 @@ exports.completedLesson = async (req, res) => {
     );
     const userObject = user.toObject();
     delete userObject.password;
-    console.log(user);
+
     res.json({
       success: true,
       userObject,
@@ -156,3 +156,41 @@ exports.completedLesson = async (req, res) => {
     console.log(error);
   }
 };
+
+exports.updateUserCourseMilestones = async(req,res) => {
+  try {
+    const decrypt = jwt.verify(req.body.id, process.env.JWT_SECRET);
+
+
+    let update = {
+      "enrolledCourses.$.is100MilestoneShown": true 
+    }
+    if(req.body.milestone*1 === 50){
+      update = {
+        "enrolledCourses.$.is50MilestoneShown": true 
+      }
+    }
+    const user = await Users.findOneAndUpdate(
+      {
+        _id: decrypt.id,
+        "enrolledCourses.course": req.body.course,
+      },
+      update
+      ,
+      { new: true }
+    );
+    const userObject = user.toObject();
+    delete userObject.password;
+
+    res.json({
+      success: true,
+      userObject,
+    });
+  }catch(error){
+    console.log(error);
+    res.json({
+      success : false,
+      error
+    })
+  }
+}

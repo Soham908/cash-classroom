@@ -2,7 +2,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getLesson, getNextLesson, addComment } from "../actions/lessonAction";
 import { Button } from "@mui/material";
-import { userCompleteLesson } from "../actions/userActions";
+import { userCompleteLesson,updateMilestone } from "../actions/userActions";
 import { useAuthStore } from "../store/store";
 import Milestone from "../components/MIlestone";
 
@@ -22,18 +22,36 @@ const LessonPage = () => {
 
 
   let isCourseDone = false;
+  let percentage = 0
+
+  const handleUpdateMilestone = async(milestone) => {
+    const response = await updateMilestone({
+      id: user.token,
+      course: location.course,
+    })
+    console.log(response)
+  }
+
   for (let i = 0; i < user?.data?.enrolledCourses.length; i++) {
     const courseData = user?.data?.enrolledCourses[i];
-    if (
-      courseData.course === location.course &&
-      courseData.lessonsCompleted === courseData.totalLessons
-    ) {
-      isCourseDone = true;
+    
+    if(courseData.course === location.course){
+      percentage = (courseData.lessonsCompleted *100 / courseData.totalLessons).toFixed(2)
+      console.log(percentage)
+      if(percentage >=50 && !courseData.is50MilestoneShown){
+        handleUpdateMilestone(50)
+        console.log("50% completed")
+      }
+      if(percentage >=100 && !courseData.is100MilestoneShown){
+        handleUpdateMilestone(100)
+      }
+      if(courseData.lessonsCompleted === courseData.totalLessons){
+        isCourseDone = true;
+      }
     }
   }
-  if (isCourseDone) {
-    console.log("jsdhfb");
-  }
+
+  console.log(percentage)
   const isLessonCompleted = user?.data?.lessonsCompleted?.some(
     (completedLessonData) => {
       if (completedLessonData.lessonName === location.lesson) {

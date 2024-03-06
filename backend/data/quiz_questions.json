@@ -1,5 +1,9 @@
 [
-    {
+  {
+    "course" : "Introduction to Stock Markets",
+    "lesson" : "1. The Need to Invest",
+    "quiz" : 
+    [{
       "question": "Why is it important to consider investing ?",
       "options": ["To buy luxury items", "To secure financial future and combat rising living costs", "To take early retirement", "To keep money idle"],
       "answer": "To secure financial future and combat rising living costs"
@@ -23,6 +27,7 @@
       "question": "What caution is provided about real estate investment?",
       "options": ["It's the most lucrative investment", "Requires minimal cash outlay", "High liquidity", "Involves a significant cash outlay and lacks liquidity"],
       "answer": "Involves a significant cash outlay and lacks liquidity"
-    }
+    }]
+  }
   ]
   
