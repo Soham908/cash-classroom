@@ -46,3 +46,12 @@ export const userCompleteLesson = async (data) => {
     console.log(error);
   }
 }
+
+export const updateMilestone = async(data) => {
+  try {
+    const response = await axios.patch(`${ENDPOINT_URL}/auth/update-milestone`, data)
+    return response.data
+  } catch (error) {
+    console.log(error);
+  }
+}

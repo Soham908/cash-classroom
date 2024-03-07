@@ -10,6 +10,14 @@ const enrollCourseSchema = new mongoose.Schema({
   },
   totalLessons : {
     type : Number,
+  },
+  is50MilestoneShown : {
+    type : Boolean,
+    default : false
+  },
+  is100MilestoneShown : {
+    type : Boolean,
+    default : false
   }
 });
 

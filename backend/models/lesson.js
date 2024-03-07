@@ -15,6 +15,7 @@ const commentsSchema = new Schema({
     required : true,
   }
 })
+
 const lessonSchema = new Schema({
   course: {
     type: String,
