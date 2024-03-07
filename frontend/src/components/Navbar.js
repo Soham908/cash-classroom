@@ -25,6 +25,7 @@ const Navbar = () => {
             <NavLink style={({isActive})=>isActive ? activeStyle : null} to="/dashboard">Dashboard</NavLink>
             <NavLink style={({isActive})=>isActive ? activeStyle : null} to="/courses">Courses</NavLink>
             <NavLink style={({isActive})=>isActive ? activeStyle : null} to="/profile">Profile</NavLink>
+            <NavLink style={({isActive})=>isActive ? activeStyle : null} to="/blogs">Blogs</NavLink>
             <button onClick={logout}>Logout</button>
         </Typography>
       </Toolbar>

@@ -12,7 +12,7 @@ import Profile from "./pages/Profile";
 import FDCalculator from "./pages/calculators/FDCalculator";
 import EMICalculator from "./pages/calculators/EMICalculator";
 import SIPCalculator from "./pages/calculators/SIPCalculator";
-import Blogs from "./pages/Blogs";
+import Blogs from "./pages/Blogs/Blogs";
 function App() {
 	return (
 		<>

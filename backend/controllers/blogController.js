@@ -61,7 +61,7 @@ exports.deleteBlog = async(req,res) => {
 
 exports.getAllBlogs = async(req,res) => {
     try {
-        const blogs = await Blog.find()
+        const blogs = await Blog.find({},{desc : 0})
         res.json({
            success : true,
            blogs 
