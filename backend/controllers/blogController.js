@@ -6,7 +6,9 @@ exports.createBlog = async(req,res)=>{
             title : req.body.title,
             summary : req.body.summary,
             desc : req.body.summary,
-            img : req.body.img
+            img : req.body.img,
+            userName : req.body.userName,
+            minRead : req.body.minRead
         })
 
         res.json({
@@ -42,7 +44,7 @@ exports.updateBlog = async(req,res)=>{
 exports.deleteBlog = async(req,res) => {
     try {
 
-        const response = await Blog.findByAndDelete(req.body.blogId)
+        const response = await Blog.findByIdAndDelete(req.params.blogId)
         res.json({
             success : true,
             message : "Blog deleted Successfully"

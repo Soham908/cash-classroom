@@ -5,21 +5,31 @@ const blog = new mongoose.Schema({
         type : mongoose.Schema.Types.ObjectId,
         required : true,
     },
+    userName : {
+        type : String,
+        required : true
+    },
     title : {
         type : String,
         required : true,
+        trim : true
     },
     summary : {
         type : String,
-        required : true
+        required : true,
+        trim : true
     },
     desc : {
         type : String,
-        required : true
+        required : true,
+        trim : true,
     },
     img : {
         type : String,
         default : null
+    },
+    minRead : {
+        type : Number,
     }
 },{timestamps : true})
 

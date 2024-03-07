@@ -12,6 +12,7 @@ import Profile from "./pages/Profile";
 import FDCalculator from "./pages/calculators/FDCalculator";
 import EMICalculator from "./pages/calculators/EMICalculator";
 import SIPCalculator from "./pages/calculators/SIPCalculator";
+import Blogs from "./pages/Blogs";
 function App() {
 	return (
 		<>
@@ -27,6 +28,7 @@ function App() {
 				<Route path="/calculators/fd-calculator" element={<FDCalculator />} />
 				<Route path="/calculators/emi-calculator" element={<EMICalculator />} />
 				<Route path="/calculators/sip-calculator" element={<SIPCalculator />} />
+				<Route path="/blogs" element={<Blogs/>} />
 				<Route path="*" element={<NoMatch />} />
 			</Routes>
 		</>

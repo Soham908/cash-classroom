@@ -5,7 +5,7 @@ const router = express.Router()
 
 router.post("/create-blog",createBlog)
 router.patch("/update-blog",updateBlog)
-router.delete("/delete-blog",deleteBlog)
+router.delete("/delete-blog/:blogId",deleteBlog)
 router.get("/get-all-blogs",getAllBlogs)
 router.get("/get-blog-by-id/:blogId",getBlogById)
 
