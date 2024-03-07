@@ -160,8 +160,8 @@ exports.completedLesson = async (req, res) => {
 exports.updateUserCourseMilestones = async(req,res) => {
   try {
     const decrypt = jwt.verify(req.body.id, process.env.JWT_SECRET);
-
-
+    console.log(req.body)
+    console.log(req.body.milestone*1 === 50)
     let update = {
       "enrolledCourses.$.is100MilestoneShown": true 
     }
