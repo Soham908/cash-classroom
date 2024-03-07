@@ -95,50 +95,61 @@ const CourseDetail = () => {
           i < courseDetails[courseDetails.length - 1]?.section;
           i++
         ) {
-          result.push(
-            <Accordion key={i}>
-              <AccordionSummary
-                aria-controls="lesson-content"
-                id="lesson-header"
-                expandIcon={<ExpandMore />}
-              >
-                <Typography variant="h6">{courseDetails[0].course}</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                {(() => {
-                  const lessonResult = [];
-                  for (let j = 0; j < courseDetails.length; j++) {
-                    if (courseDetails[j].section === i + 1) {
-                      lessonResult.push(
-                        <li>
-                          <span
-                            style={{
-                              textDecoration: "underline",
-                              color: "blue",
-                            }}
-                            key={j}
-                            onClick={() =>
-                              handleLessonClick({
-                                lesson: courseDetails[j].lesson,
-                                course: courseDetails[0].course,
-                                numChapters: courseDetails.length,
-                              })
-                            }
-                          >
-                            {courseDetails[j].lesson}
-                          </span>
-                        </li>
-                      );
-                    }
-                  }
-                  return lessonResult;
-                })()}
-              </AccordionDetails>
-            </Accordion>
+          const sectionDetails = courseDetails.find(
+            (detail) => detail.section === i + 1
           );
+
+          if (sectionDetails) {
+            result.push(
+              <Accordion key={i}>
+                <AccordionSummary
+                  aria-controls="lesson-content"
+                  id="lesson-header"
+                  expandIcon={<ExpandMore />}
+                >
+                  <div>
+              <Typography variant="h5">{sectionDetails.sectionName}</Typography>
+              <Typography variant="p">
+                {sectionDetails.sectionDescription}
+              </Typography>
+            </div>
+                </AccordionSummary>
+                <AccordionDetails>
+                  {(() => {
+                    const lessonResult = [];
+                    for (let j = 0; j < courseDetails.length; j++) {
+                      if (courseDetails[j].section === i + 1) {
+                        lessonResult.push(
+                          <li key={j}>
+                            <span
+                              style={{
+                                textDecoration: "underline",
+                                color: "blue",
+                              }}
+                              onClick={() =>
+                                handleLessonClick({
+                                  lesson: courseDetails[j].lesson,
+                                  course: sectionDetails.course,
+                                  numChapters: courseDetails.length,
+                                })
+                              }
+                            >
+                              {courseDetails[j].lesson}
+                            </span>
+                          </li>
+                        );
+                      }
+                    }
+                    return lessonResult;
+                  })()}
+                </AccordionDetails>
+              </Accordion>
+            );
+          }
         }
         return result;
       })()}
+
       <LinearProgress
         determinate
         variant="outlined"
