@@ -8,6 +8,7 @@ const dataRouter = require("./routes/fetchdataRoute");
 const courseRouter = require("./routes/courseRoutes");
 const lessonRouter = require("./routes/lessonRoute");
 const goalsRouter = require("./routes/goalRoutes");
+const blogsRouter = require("./routes/blogRoutes")
 require("dotenv").config(); // Load environment variables from a .env file
 
 const app = express();
@@ -20,6 +21,7 @@ app.use("/data", dataRouter);
 app.use("/course", courseRouter);
 app.use("/lesson", lessonRouter);
 app.use("/goals", goalsRouter);
+app.use("/blogs",blogsRouter)
 
 const imagesPath = path.join(__dirname, "images");
 app.use("/images", express.static(imagesPath));
