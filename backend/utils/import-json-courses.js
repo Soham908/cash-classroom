@@ -34,7 +34,7 @@ const insertCourses = async () => {
 };
 
 let jsonLessonData = JSON.parse(
-  fs.readFileSync("./../data/all_post_data_updated.json")
+  fs.readFileSync("./../data/all_post_data.json")
 );
 const insertLessons = async () => {
   const coursesInsertionStatus = insertCourses();
