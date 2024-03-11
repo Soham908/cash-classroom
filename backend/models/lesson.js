@@ -33,6 +33,12 @@ const lessonSchema = new Schema({
   section: {
     type: Number,
   },
+  sectionName: {
+    type: String
+  },
+  sectionDescription: {
+    type: String
+  },
   comments : {
     type : [commentsSchema],
     default : []
