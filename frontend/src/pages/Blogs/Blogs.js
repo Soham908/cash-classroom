@@ -17,10 +17,10 @@ const Blogs = () => {
 
     return (
         <div className={styles.container}>
-            <h1>Blogs</h1>
+            {/* <h1>Blogs</h1>
             <div className={styles.heroBlog}>
                 <BlogCard blog={blogs[0]} />
-            </div>
+            </div> */}
             <div className={styles.remainingBlogsContainer}>
                 {blogs.map((blog) => (
                     <BlogCard blog={blog} />

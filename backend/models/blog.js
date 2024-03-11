@@ -22,7 +22,7 @@ const blog = new mongoose.Schema({
     desc : {
         type : String,
         required : true,
-        trim : true,
+        // trim : true,
     },
     img : {
         type : String,

@@ -10,6 +10,7 @@ const signToken = (id) => {
 
 exports.register = async (req, res) => {
   try {
+    console.log(req.body)
     const { name, email, password } = req.body;
     const hashedPassword = await bcrypt.hash(password, 12);
 
