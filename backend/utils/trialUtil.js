@@ -70,10 +70,9 @@ const updateSectionNames = () => {
             matchingCourse.sections.map((section) => {
                 if (lessonOrder >= section.startLesson && lessonOrder <= section.endLesson){
                     lesson.section = section.section
-                    if (section.sectionName === "Advanced Concepts and Tools"){
-                        lesson.sectionName = section.sectionName
-                        lesson.sectionDescription = section.sectionDescription
-                    }
+                    count ++  
+                    lesson.sectionName = section.sectionName
+                    lesson.sectionDescription = section.sectionDescription
                 }
             })
         }

@@ -19,7 +19,7 @@ const BlogCard = ({ blog }) => {
 						alt="calendar logo"
 					/>
 					<span className={styles.spanValue}>
-						{blog?.createdAt.slice(0, 10)}
+						{blog?.createdAt?.slice(0, 10)}
 					</span>
 				</div>
 
