@@ -1,7 +1,12 @@
 import styles from "./blogCard.module.css";
+import { useNavigate } from "react-router-dom";
 
 const BlogCard = ({ blog }) => {
-	console.log(blog);
+	
+	const navigate = useNavigate()
+	const handleReadMore = () => {
+		navigate(`/blogs/${blog._id}`)
+	}
 	return (
 		<div className={styles.container}>
 			<img className={styles.coverImg} src="/blog.avif" alt="blog title" />
@@ -24,7 +29,7 @@ const BlogCard = ({ blog }) => {
 				</div>
 			</div>
 			<div className={styles.navigateContainer}>
-				<span>Read More</span>
+				<span onClick={handleReadMore}>Read More</span>
 				<img src="/up-right-arrow.png" alt="navigate logo" />
 			</div>
 		</div>

@@ -4,7 +4,7 @@ import { ENDPOINT_URL } from "./../constants/constants";
 export const register = async (data) => {
   try {
     const response = await axios.post(`${ENDPOINT_URL}/auth/register`, data);
-    //   console.log('Response:', response.data);
+      console.log('Response:', response.data);
     return response.data;
   } catch (error) {
     console.error("Error:", error);
