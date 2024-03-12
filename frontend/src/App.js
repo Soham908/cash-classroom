@@ -15,6 +15,8 @@ import EMICalculator from "./pages/calculators/EMICalculator";
 import SIPCalculator from "./pages/calculators/SIPCalculator";
 import Blogs from "./pages/Blogs/Blogs";
 import BlogDetails from "./pages/Blogs/BlogDetails/BlogDetails";
+import NewDashboard from "./pages/new-dashboard/NewDashboard"
+
 function App() {
 	return (
 		<>
@@ -22,6 +24,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Login />} />
 				<Route path="/dashboard" element={<Dashboard />} />
+				<Route path="/new-dashboard" element={<NewDashboard />} />
 				<Route path="/register" element={<Register />} />
 				<Route path="/courses" element={<Course />} />
 				<Route path="/profile" element={<Profile />} />

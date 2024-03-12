@@ -1,0 +1,79 @@
+.homeComponent{
+    margin-left: 90px;
+  }
+  
+  .dashboardTitle {
+      margin-top: 60px;
+      margin-bottom: 0;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bolder;
+  }
+  
+  .firstSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 20px 40px;
+  }
+  
+  .firstSectionImage {
+      max-width: 45%;
+  }
+  
+  .firstSectionImage img{
+      max-width: 100%;
+      height: auto;    
+      /* border-radius: 8px; */
+  }
+    
+  
+  .firstSectionText {
+      max-width: 45%;
+      padding: 1em ;
+  }
+  
+  .firstSectionText p{
+      /* font-size: 2.1em; */
+      color: #333333; /* Darker for readability */
+      margin-bottom: 2em;
+      margin-top: 1em;
+      line-height: 1.5; /* Improved line spacing */
+      /* font-style: italic; */
+  }
+  
+  .firstSectionText button {
+      background-color: black; /* Theme color */
+      color: white;
+      border: none;
+      /* padding: 0.75em 1.5em; */
+      padding: 10px 20px;
+      border-radius: 5px;
+      /* font-size: 1.7em; */
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;   
+  }
+  
+  .firstSectionText button:hover {
+      background-color: grey; /* Darker shade on hover */
+      transform: translateY(-2px);
+    }
+  
+    .grey {
+      background-color: grey;
+    }
+  
+  
+  /* referecne */
+  
+    /* Responsive Design for smaller screens */
+    @media (max-width: 768px) {
+      .journaling-section {
+        flex-direction: column-reverse; /* Image above text */
+        text-align: center;
+      }
+    
+      .journaling-text, .journaling-image {
+        max-width: 100%;
+      }
+    }
