@@ -1,35 +1,38 @@
-import React from "react";
+import React, { useRef} from "react";
 import styles from "./dashboard.module.css"
 import { useNavigate } from 'react-router-dom';
-// images
-// import girlTakingNotes from "../../assets/images/girl-taking-notes.jpg"
-// import organizedWorkSpace from "../../assets/images/orgaanized-workspace.jpg"
-// import todoList from "../../assets/images/todo-list.jpg"
+// import { useAuthStore} from "./../../store/store"
 
 const Dashboard = () => {
     const navigate = useNavigate()
-  
+    const emailRef = useRef(null);
+    // const user = useAuthStore.getState().user
 
+    const handleRegisterClick = () => {
+        console.log(emailRef.current.value)
+        navigate("/register",{state : {email : emailRef.current.value}})
+    }
     const FirstSection = () =>{
         return (
             <div className={styles.firstSection}>
                 <div className={styles.firstSectionText}>
-                    <h3>Getting started with the Todo feature</h3>
-                    <p>As a new user, you can easily start using the Todo feature without any technical knowledge. 
-                        Once you've installed the app on your device, you can create and manage your tasks effortlessly.
-                        Stay organized and never miss a deadline!</p>
-                    <button>Learn More</button>
+                    <h3>Start your finance journey today</h3>
+                    <p>Learn to invest from scratch with job focussed courses designed by experts.</p>
+                    <div>
+                        <input ref={emailRef} className={styles.email} type="email" placeholder="enter email..." />
+                        <button onClick={handleRegisterClick}>Start Learning Today</button>
+                    </div>
                 </div>
                 <div className={styles.firstSectionImage}>
-                    <img src="/girl-taking-notes.jpg" alt="" />
+                    <img src="/coder.avif" alt="" />
                 </div>
             </div>
         )
     }
     const SecondSection = () =>{
         return (
-            <div className={`${styles.firstSectionText} ${styles.grey}`}>
-                <div className={styles.firstSectionImage}>
+            <div className={styles.firstSection} style={{backgroundColor:"gray"}}>
+                <div className={styles.firstSectionImage}> 
                     <img src="orgaanized-workspace.jpg" alt="" />
                 </div>
                 <div className={styles.firstSectionText}>
@@ -53,6 +56,7 @@ const Dashboard = () => {
                         With our app, you can easily prioritize your tasks, 
                         set reminders, and keep all your important information in one centralized location.</p>
                     <button>Learn More</button>
+
                 </div>
                 <div className={styles.firstSectionImage}>
                     <img src="/todo-list.jpg" alt="" />
@@ -60,9 +64,18 @@ const Dashboard = () => {
             </div>
         )
     }
+
+    const CoursesSection = () =>{
+        return (
+            <div>
+
+            </div>
+        )
+    }
         return (
         <div className={styles.homeComponent}>
             <h1 className={styles.dashboardTitle}>How does the App work?</h1>
+           {/* { user && <FirstSection /> }  */}
             <FirstSection />
             <SecondSection />
             <ThirdSection />

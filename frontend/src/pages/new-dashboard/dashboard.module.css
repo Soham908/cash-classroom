@@ -1,5 +1,5 @@
 .homeComponent{
-    margin-left: 90px;
+    padding: 100px;
   }
   
   .dashboardTitle {
@@ -48,10 +48,18 @@
       border: none;
       /* padding: 0.75em 1.5em; */
       padding: 10px 20px;
-      border-radius: 5px;
+      border : 1px solid black;
       /* font-size: 1.7em; */
       cursor: pointer;
       transition: background-color 0.3s, transform 0.3s;   
+  }
+  
+  .email {
+      border: none;
+      /* padding: 0.75em 1.5em; */
+      padding: 10px 20px;
+      border : 1px solid black;
+      /* font-size: 1.7em; */ 
   }
   
   .firstSectionText button:hover {
@@ -61,19 +69,9 @@
   
     .grey {
       background-color: grey;
+      display: flex;
+      width: 100%;
     }
   
   
-  /* referecne */
-  
-    /* Responsive Design for smaller screens */
-    @media (max-width: 768px) {
-      .journaling-section {
-        flex-direction: column-reverse; /* Image above text */
-        text-align: center;
-      }
-    
-      .journaling-text, .journaling-image {
-        max-width: 100%;
-      }
-    }
+ 

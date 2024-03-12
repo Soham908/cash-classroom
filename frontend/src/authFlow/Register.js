@@ -6,14 +6,16 @@ import InputAdornment from '@mui/material/InputAdornment';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { register } from '../actions/userActions';
-import { Link,useNavigate } from 'react-router-dom';
+import { Link,useNavigate,useLocation } from 'react-router-dom';
 
 const Register = () => {
-
+  const state = useLocation()?.state
+  console.log(state)
   const navigate = useNavigate()
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
+    email: ( state &&state.email) ? state.email : "",
+    email:  "",
     password: '',
     confirmPassword: '',
   });
