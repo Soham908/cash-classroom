@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Login from "./authFlow/Login";
 import Register from "./authFlow/Register";
-import Course from "./pages/Course";
+import Course from "./pages/courses/Course";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
 import CourseDetail from "./pages/CourseDetail";
@@ -15,7 +15,7 @@ import EMICalculator from "./pages/calculators/EMICalculator";
 import SIPCalculator from "./pages/calculators/SIPCalculator";
 import Blogs from "./pages/Blogs/Blogs";
 import BlogDetails from "./pages/Blogs/BlogDetails/BlogDetails";
-import NewDashboard from "./pages/new-dashboard/NewDashboard"
+import NewDashboard from "./pages/new-dashboard/NewDashboard";
 
 function App() {
 	return (
@@ -33,8 +33,8 @@ function App() {
 				<Route path="/calculators/fd-calculator" element={<FDCalculator />} />
 				<Route path="/calculators/emi-calculator" element={<EMICalculator />} />
 				<Route path="/calculators/sip-calculator" element={<SIPCalculator />} />
-				<Route path="/blogs" element={<Blogs/>} />
-				<Route path="/blogs/:blogId" element={<BlogDetails/>} />
+				<Route path="/blogs" element={<Blogs />} />
+				<Route path="/blogs/:blogId" element={<BlogDetails />} />
 				<Route path="*" element={<NoMatch />} />
 			</Routes>
 			<Footer />
