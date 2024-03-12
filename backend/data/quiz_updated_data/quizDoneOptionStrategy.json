@@ -1,0 +1,2418 @@
+[
+  {
+    "course": "Option Strategies",
+    "lesson": "1. Orientation",
+    "order": "1",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "According to the article, what drives humans to exhibit addictive behavior when it comes to winning?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Anticipation of winning"
+          },
+          {
+            "id": "B",
+            "text": "Experience of winning"
+          },
+          {
+            "id": "C",
+            "text": "Reflexive brain activity"
+          },
+          {
+            "id": "D",
+            "text": "Objective calculations"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Anticipation of winning"
+      },
+      {
+        "question": "What is the main reason why inexperienced options traders often lose money?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Misunderstanding of options theory"
+          },
+          {
+            "id": "B",
+            "text": "Lack of market analysis"
+          },
+          {
+            "id": "C",
+            "text": "Treating options trading as gambling"
+          },
+          {
+            "id": "D",
+            "text": "Not following the right approach"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Treating options trading as gambling"
+      },
+      {
+        "question": "What is the \"silent P&amp;L killer\" mentioned in the article?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Unlimited risk, limited profit potential"
+          },
+          {
+            "id": "B",
+            "text": "Limited risk, unlimited profit potential"
+          },
+          {
+            "id": "C",
+            "text": "Delta hedging strategies"
+          },
+          {
+            "id": "D",
+            "text": "Max pain theory"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Limited risk, unlimited profit potential"
+      },
+      {
+        "question": "According to the article, how many options strategies are known to exist in the public domain?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Around 100"
+          },
+          {
+            "id": "B",
+            "text": "Around 475"
+          },
+          {
+            "id": "C",
+            "text": "Around 1000"
+          },
+          {
+            "id": "D",
+            "text": "More than 2000"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Around 475"
+      },
+      {
+        "question": "What is the primary goal of this module on Option Strategy?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "To present all known options strategies"
+          },
+          {
+            "id": "B",
+            "text": "To discuss a handful of popular options strategies"
+          },
+          {
+            "id": "C",
+            "text": "To teach students how to create their own options strategies"
+          },
+          {
+            "id": "D",
+            "text": "To demonstrate the dangers of options trading"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To discuss a handful of popular options strategies"
+      },
+      {
+        "question": "Which of the following is NOT a type of options strategy discussed in the article?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bullish strategies"
+          },
+          {
+            "id": "B",
+            "text": "Bearish strategies"
+          },
+          {
+            "id": "C",
+            "text": "Neural strategies"
+          },
+          {
+            "id": "D",
+            "text": "Neutral strategies"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Neural strategies"
+      },
+      {
+        "question": "What is the purpose of discussing \"Max Pain for option writing\" in this module?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "To explain how to write options effectively"
+          },
+          {
+            "id": "B",
+            "text": "To provide insight into practical aspects of options writing"
+          },
+          {
+            "id": "C",
+            "text": "To demonstrate the profitability of options writing"
+          },
+          {
+            "id": "D",
+            "text": "To emphasize the importance of max pain in determining options strategy success"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To provide insight into practical aspects of options writing"
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "2. Bull Call Spread",
+    "order": "2",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is a key takeaway from the chapter on bull call spreads?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "A bull call spread should only be used when the outlook is highly bullish."
+          },
+          {
+            "id": "B",
+            "text": "The risk reward for a bull call spread can be adjusted by selecting different strikes."
+          },
+          {
+            "id": "C",
+            "text": "A bull call spread can only be created with ATM and OTM options."
+          },
+          {
+            "id": "D",
+            "text": "Theta has no impact on strike selection for a bull call spread."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The risk reward for a bull call spread can be adjusted by selecting different strikes."
+      },
+      {
+        "question": "What is the purpose of the bull call spread strategy?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "To protect against losses on the downside while capping potential profits on the upside."
+          },
+          {
+            "id": "B",
+            "text": "To bet on a large increase in the underlying security's price."
+          },
+          {
+            "id": "C",
+            "text": "To hedge against a long position in the underlying security."
+          },
+          {
+            "id": "D",
+            "text": "To reduce the cost of buying an OTM call option."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To protect against losses on the downside while capping potential profits on the upside."
+      },
+      {
+        "question": "What is the maximum profit that can be made on a bull call spread?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "The difference between the higher strike price and the lower strike price."
+          },
+          {
+            "id": "B",
+            "text": "The net premium paid for the spread."
+          },
+          {
+            "id": "C",
+            "text": "The difference between the spread and the net debit."
+          },
+          {
+            "id": "D",
+            "text": "There is no limit to the profit that can be made on a bull call spread."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The difference between the spread and the net debit."
+      },
+      {
+        "question": "What is the breakeven point for a bull call spread?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The strike price of the lower strike option."
+          },
+          {
+            "id": "B",
+            "text": "The strike price of the higher strike option."
+          },
+          {
+            "id": "C",
+            "text": "The net premium paid for the spread."
+          },
+          {
+            "id": "D",
+            "text": "The lower strike price plus the net debit."
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The lower strike price plus the net debit."
+      },
+      {
+        "question": "Which of the following factors is NOT considered when selecting strikes for a bull call spread?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Volatility of the underlying security."
+          },
+          {
+            "id": "B",
+            "text": "Time to expiration."
+          },
+          {
+            "id": "C",
+            "text": "The trader's risk tolerance."
+          },
+          {
+            "id": "D",
+            "text": "The underlying security's price level."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The trader's risk tolerance."
+      },
+      {
+        "question": "What is the advantage of using a bull call spread over buying an OTM call option?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Lower cost."
+          },
+          {
+            "id": "B",
+            "text": "Higher potential profit."
+          },
+          {
+            "id": "C",
+            "text": "Greater flexibility."
+          },
+          {
+            "id": "D",
+            "text": "No advantage."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Lower cost."
+      },
+      {
+        "question": "When should a trader consider using a bull call spread?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "When they have a bullish view of the market, but do not want to take on too much risk."
+          },
+          {
+            "id": "B",
+            "text": "When they expect a large increase in the underlying security's price."
+          },
+          {
+            "id": "C",
+            "text": "When they want to hedge against a short position in the underlying security."
+          },
+          {
+            "id": "D",
+            "text": "Bull call spreads should never be used."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "When they have a bullish view of the market, but do not want to take on too much risk."
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "3. Bull Put Spread",
+    "order": "3",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "What is the key difference between a Bull Call Spread and a Bull Put Spread?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "The Bull Put Spread is executed for a net debit, while the Bull Call Spread is executed for a net credit."
+          },
+          {
+            "id": "B",
+            "text": "The Bull Put Spread involves buying ITM options, while the Bull Call Spread involves buying OTM options."
+          },
+          {
+            "id": "C",
+            "text": "The Bull Put Spread is best suited for a moderately bullish outlook, while the Bull Call Spread is best suited for a highly bullish outlook."
+          },
+          {
+            "id": "D",
+            "text": "There is no key difference between the two strategies."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The Bull Put Spread is best suited for a moderately bullish outlook, while the Bull Call Spread is best suited for a highly bullish outlook."
+      },
+      {
+        "question": "Which of the following is a benefit of executing a Bull Put Spread?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "It offers a limited profit potential."
+          },
+          {
+            "id": "B",
+            "text": "It is typically executed for a net debit."
+          },
+          {
+            "id": "C",
+            "text": "It provides protection against large market declines."
+          },
+          {
+            "id": "D",
+            "text": "It is a highly speculative strategy."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It offers a limited profit potential."
+      },
+      {
+        "question": "What is the maximum loss that can occur in a Bull Put Spread?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "The spread minus the net credit."
+          },
+          {
+            "id": "B",
+            "text": "The premium paid for the OTM option."
+          },
+          {
+            "id": "C",
+            "text": "The premium received for the ITM option."
+          },
+          {
+            "id": "D",
+            "text": "The difference between the strike prices."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The spread minus the net credit."
+      },
+      {
+        "question": "When is the breakeven point of a Bull Put Spread reached?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the market price is equal to the higher strike price."
+          },
+          {
+            "id": "B",
+            "text": "When the market price is equal to the lower strike price."
+          },
+          {
+            "id": "C",
+            "text": "When the market price is equal to the difference between the strike prices."
+          },
+          {
+            "id": "D",
+            "text": "When the market price is equal to the higher strike price minus the net credit."
+          }
+        ],
+        "answerId": "D",
+        "answerText": "When the market price is equal to the higher strike price minus the net credit."
+      },
+      {
+        "question": "Which of the following is a key factor to consider when choosing the strike prices for a Bull Put Spread?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "The volatility of the underlying asset."
+          },
+          {
+            "id": "B",
+            "text": "The time to expiration of the options."
+          },
+          {
+            "id": "C",
+            "text": "The current market price."
+          },
+          {
+            "id": "D",
+            "text": "All of the above."
+          }
+        ],
+        "answerId": "D",
+        "answerText": "All of the above."
+      },
+      {
+        "question": "What is the purpose of using OTM options in a Bull Put Spread?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "To reduce the premium cost of the spread."
+          },
+          {
+            "id": "B",
+            "text": "To increase the potential profit."
+          },
+          {
+            "id": "C",
+            "text": "To protect against large market declines."
+          },
+          {
+            "id": "D",
+            "text": "To reduce the overall risk of the spread."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To reduce the premium cost of the spread."
+      },
+      {
+        "question": "When is the ideal time to execute a Bull Put Spread?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the market is highly volatile and the outlook is uncertain."
+          },
+          {
+            "id": "B",
+            "text": "When the market is stable and the outlook is bullish."
+          },
+          {
+            "id": "C",
+            "text": "When the market has declined significantly and the outlook is moderately bullish."
+          },
+          {
+            "id": "D",
+            "text": "When the market is at its all-time high."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "When the market has declined significantly and the outlook is moderately bullish."
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "4. Call Ratio Back Spread",
+    "order": "4",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "What is the strategy deployed when one is out rightly bullish on a stock?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bull call spread"
+          },
+          {
+            "id": "B",
+            "text": "Bull put spread"
+          },
+          {
+            "id": "C",
+            "text": "Call ratio spread"
+          },
+          {
+            "id": "D",
+            "text": "Bear spread"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Call ratio spread"
+      },
+      {
+        "question": "What is the maximum loss and at what strike price does it occur?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Maximum loss: Spread - Net Credit, occurs at Lower Strike"
+          },
+          {
+            "id": "B",
+            "text": "Maximum loss: Spread + Net Credit, occurs at Higher Strike"
+          },
+          {
+            "id": "C",
+            "text": "Maximum loss: Net Credit - Spread, occurs at Lower Strike"
+          },
+          {
+            "id": "D",
+            "text": "Maximum loss: Net Credit + Spread, occurs at Higher Strike"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Maximum loss: Spread + Net Credit, occurs at Higher Strike"
+      },
+      {
+        "question": "What is the general formula for payoff when market goes down?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Net Credit"
+          },
+          {
+            "id": "B",
+            "text": "Spread"
+          },
+          {
+            "id": "C",
+            "text": "Net Debit"
+          },
+          {
+            "id": "D",
+            "text": "Loss"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Net Credit"
+      },
+      {
+        "question": "What is the lower breakeven point?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Lower Strike + Net Credit"
+          },
+          {
+            "id": "B",
+            "text": "Higher Strike + Net Credit"
+          },
+          {
+            "id": "C",
+            "text": "Lower Strike - Net Credit"
+          },
+          {
+            "id": "D",
+            "text": "Higher Strike - Net Credit"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Lower Strike + Net Credit"
+      },
+      {
+        "question": "What is the strategy payoff when the market expires at the higher strike price?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Net Credit"
+          },
+          {
+            "id": "B",
+            "text": "Maximum loss"
+          },
+          {
+            "id": "C",
+            "text": "Break even"
+          },
+          {
+            "id": "D",
+            "text": "Maximum profit"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Maximum loss"
+      },
+      {
+        "question": "What is a key takeaway from this chapter?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "A Call Ratio Backspread is best executed when your outlook on the stock/index is bearish"
+          },
+          {
+            "id": "B",
+            "text": "The strategy makes unlimited money if the stock price goes down, and limited profit if the stock price goes up"
+          },
+          {
+            "id": "C",
+            "text": "Irrespective of the time to expiry, opt for deeply ITM + Deeply OTM combination of strikes"
+          },
+          {
+            "id": "D",
+            "text": "Increase in volatility is good for this strategy when there is less time to expiry"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Irrespective of the time to expiry, opt for slightly ITM + Slightly OTM combination of strikes"
+      },
+      {
+        "question": "How is the strategy usually executed?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "For a net debit"
+          },
+          {
+            "id": "B",
+            "text": "For a net credit"
+          },
+          {
+            "id": "C",
+            "text": "For free"
+          },
+          {
+            "id": "D",
+            "text": "For a net loss"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "For a net credit"
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "5. Bear Call Ladder",
+    "order": "5",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "What is the ratio of the Bear Call Ladder strategy?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "1:1:1"
+          },
+          {
+            "id": "B",
+            "text": "1:2:1"
+          },
+          {
+            "id": "C",
+            "text": "2:1:2"
+          },
+          {
+            "id": "D",
+            "text": "1:1:2"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "1:1:1"
+      },
+      {
+        "question": "Which of the following is NOT a leg of the Bear Call Ladder strategy?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Selling 1 ITM call option"
+          },
+          {
+            "id": "B",
+            "text": "Buying 1 ATM call option"
+          },
+          {
+            "id": "C",
+            "text": "Selling 1 OTM put option"
+          },
+          {
+            "id": "D",
+            "text": "Buying 1 OTM call option"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Selling 1 OTM put option"
+      },
+      {
+        "question": "What is the maximum loss of the Bear Call Ladder strategy?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "The difference between the ITM and ATM strike prices"
+          },
+          {
+            "id": "B",
+            "text": "The difference between the ITM and ATM strike prices minus the net credit"
+          },
+          {
+            "id": "C",
+            "text": "The net credit"
+          },
+          {
+            "id": "D",
+            "text": "The premium received for the ITM call option"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The difference between the ITM and ATM strike prices minus the net credit"
+      },
+      {
+        "question": "When does the maximum loss of the Bear Call Ladder strategy occur?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "At the ATM and OTM strike prices"
+          },
+          {
+            "id": "B",
+            "text": "At the ITM strike price"
+          },
+          {
+            "id": "C",
+            "text": "At the expiration date"
+          },
+          {
+            "id": "D",
+            "text": "Never"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "At the ATM and OTM strike prices"
+      },
+      {
+        "question": "What is the net credit of the Bear Call Ladder strategy?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "The premium received for the ITM call option minus the premium paid for the ATM and OTM call options"
+          },
+          {
+            "id": "B",
+            "text": "The premium received for the ATM call option minus the premium paid for the ITM and OTM call options"
+          },
+          {
+            "id": "C",
+            "text": "The premium received for the OTM call option minus the premium paid for the ATM and ITM call options"
+          },
+          {
+            "id": "D",
+            "text": "The premium paid for the ATM and OTM call options minus the premium received for the ITM call option"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The premium received for the ITM call option minus the premium paid for the ATM and OTM call options"
+      },
+      {
+        "question": "What is a key takeaway from the chapter on the Bear Call Ladder strategy?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "The strategy is best executed when the market is expected to move significantly higher."
+          },
+          {
+            "id": "B",
+            "text": "The strategy is not suitable for beginners."
+          },
+          {
+            "id": "C",
+            "text": "The strategy is always profitable."
+          },
+          {
+            "id": "D",
+            "text": "The strategy is a type of bear spread."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The strategy is best executed when the market is expected to move significantly higher."
+      },
+      {
+        "question": "What is the primary advantage of the Bear Call Ladder strategy over the Call Ratio Spread strategy?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Lower cost of execution"
+          },
+          {
+            "id": "B",
+            "text": "Higher potential profits"
+          },
+          {
+            "id": "C",
+            "text": "Lower risk"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Lower cost of execution"
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "6. Synthetic Long & Arbitrage",
+    "order": "6",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Explain how to establish a synthetic long futures position using options.",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Buy the OTM Call and sell the ATM Put"
+          },
+          {
+            "id": "B",
+            "text": "Buy the ATM Call and sell the OTM Put"
+          },
+          {
+            "id": "C",
+            "text": "Buy the ATM Call and sell the ATM Put"
+          },
+          {
+            "id": "D",
+            "text": "Buy the ITM Call and sell the ATM Put"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Buy the ATM Call and sell the ATM Put"
+      },
+      {
+        "question": "What is the breakeven point for a synthetic long futures position?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "ATM strike - net premium paid"
+          },
+          {
+            "id": "B",
+            "text": "ATM strike + net premium paid"
+          },
+          {
+            "id": "C",
+            "text": "Breakeven point is not relevant for synthetic long positions"
+          },
+          {
+            "id": "D",
+            "text": "ITM strike + net premium paid"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "ATM strike + net premium paid"
+      },
+      {
+        "question": "What is the payoff structure of a synthetic long futures position similar to?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Long futures"
+          },
+          {
+            "id": "B",
+            "text": "Short futures"
+          },
+          {
+            "id": "C",
+            "text": "Long call option"
+          },
+          {
+            "id": "D",
+            "text": "Short call option"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Long futures"
+      },
+      {
+        "question": "Which of the following is a risk associated with an arbitrage opportunity?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "No Fish"
+          },
+          {
+            "id": "B",
+            "text": "No Buyers"
+          },
+          {
+            "id": "C",
+            "text": "Bad bargaining"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "All of the above"
+      },
+      {
+        "question": "What is the Put Call Parity equation?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Long Synthetic long + Short Futures = 0"
+          },
+          {
+            "id": "B",
+            "text": "Long ATM Call + Short ATM Put = 0"
+          },
+          {
+            "id": "C",
+            "text": "Long ATM Call + Short ATM Put + Short Futures = 0"
+          },
+          {
+            "id": "D",
+            "text": "Long Synthetic long = Short Futures"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Long ATM Call + Short ATM Put + Short Futures = 0"
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "7. Bear Put Spread",
+    "order": "7",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "The Bear Put Spread is the equivalent of which bullish strategy discussed earlier in the module?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bull Call Spread"
+          },
+          {
+            "id": "B",
+            "text": "Call Ratio Backspread"
+          },
+          {
+            "id": "C",
+            "text": "Butterfly Spread"
+          },
+          {
+            "id": "D",
+            "text": "Iron Condor"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Bull Call Spread"
+      },
+      {
+        "question": "Which of the following is NOT a characteristic of a Bear Put Spread?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Limited profit potential"
+          },
+          {
+            "id": "B",
+            "text": "Limited loss potential"
+          },
+          {
+            "id": "C",
+            "text": "High delta"
+          },
+          {
+            "id": "D",
+            "text": "Negative delta"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "High delta"
+      },
+      {
+        "question": "What is the breakeven point for a Bear Put Spread?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Higher strike price + Net debit"
+          },
+          {
+            "id": "B",
+            "text": "Higher strike price - Net debit"
+          },
+          {
+            "id": "C",
+            "text": "Lower strike price + Net debit"
+          },
+          {
+            "id": "D",
+            "text": "Lower strike price - Net debit"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Higher strike price - Net debit"
+      },
+      {
+        "question": "What is the net debit for a Bear Put Spread if the premium paid for the ITM put is Rs.165 and the premium received for the OTM put is Rs.73?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Rs.92"
+          },
+          {
+            "id": "B",
+            "text": "Rs.238"
+          },
+          {
+            "id": "C",
+            "text": "Rs.-92"
+          },
+          {
+            "id": "D",
+            "text": "Rs.-238"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Rs.92"
+      },
+      {
+        "question": "What is the maximum profit that can be made from a Bear Put Spread?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Spread - Net debit"
+          },
+          {
+            "id": "B",
+            "text": "Spread + Net debit"
+          },
+          {
+            "id": "C",
+            "text": "Net debit - Spread"
+          },
+          {
+            "id": "D",
+            "text": "Net debit + Spread"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Spread - Net debit"
+      },
+      {
+        "question": "Which of the following statements about Bear Put Spread is incorrect?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is a bearish strategy."
+          },
+          {
+            "id": "B",
+            "text": "It involves selling an ITM put."
+          },
+          {
+            "id": "C",
+            "text": "It can be used to hedge against a short position in the underlying asset."
+          },
+          {
+            "id": "D",
+            "text": "It is also known as a Put Debit Spread."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "It involves selling an ITM put."
+      },
+      {
+        "question": "What is the relationship between the delta of a Bear Put Spread and the expected direction of the market?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Positive delta, indicating an expectation of a market rise."
+          },
+          {
+            "id": "B",
+            "text": "Negative delta, indicating an expectation of a market decline."
+          },
+          {
+            "id": "C",
+            "text": "Neutral delta, indicating no expectation of a market movement."
+          },
+          {
+            "id": "D",
+            "text": "Zero delta, indicating an equal probability of a market rise or decline."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Negative delta, indicating an expectation of a market decline."
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "8. Bear Call Spread",
+    "order": "8",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is a characteristic of a Bear Call Spread?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "It involves simultaneously purchasing OTM call options and selling ITM call options."
+          },
+          {
+            "id": "B",
+            "text": "It has unlimited profit potential."
+          },
+          {
+            "id": "C",
+            "text": "It is best invoked when the market is expected to rally significantly."
+          },
+          {
+            "id": "D",
+            "text": "It usually results in a net debit."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It involves simultaneously purchasing OTM call options and selling ITM call options."
+      },
+      {
+        "question": "What is the breakeven point of a Bear Call Spread?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Lower strike + Net Credit"
+          },
+          {
+            "id": "B",
+            "text": "Higher strike + Net Credit"
+          },
+          {
+            "id": "C",
+            "text": "Lower strike - Net Credit"
+          },
+          {
+            "id": "D",
+            "text": "Higher strike - Net Credit"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Lower strike + Net Credit"
+      },
+      {
+        "question": "Which of the following factors would make a Bear Call Spread more attractive?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "High volatility"
+          },
+          {
+            "id": "B",
+            "text": "Low volatility"
+          },
+          {
+            "id": "C",
+            "text": "Ample time to expiry"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Ample time to expiry"
+      },
+      {
+        "question": "What is the maximum profit of a Bear Call Spread?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Net Credit"
+          },
+          {
+            "id": "B",
+            "text": "Spread"
+          },
+          {
+            "id": "C",
+            "text": "Spread - Net Credit"
+          },
+          {
+            "id": "D",
+            "text": "Net Credit + Spread"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Net Credit"
+      },
+      {
+        "question": "What is the maximum loss of a Bear Call Spread?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Net Credit"
+          },
+          {
+            "id": "B",
+            "text": "Spread"
+          },
+          {
+            "id": "C",
+            "text": "Spread - Net Credit"
+          },
+          {
+            "id": "D",
+            "text": "Net Credit + Spread"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Spread - Net Credit"
+      },
+      {
+        "question": "When should a Bear Call Spread be executed?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the markets have rallied considerably and CALL premiums have swelled."
+          },
+          {
+            "id": "B",
+            "text": "When the markets are expected to fall sharply."
+          },
+          {
+            "id": "C",
+            "text": "When the volatility is high."
+          },
+          {
+            "id": "D",
+            "text": "When there is little time to expiry."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "When the markets have rallied considerably and CALL premiums have swelled."
+      },
+      {
+        "question": "What is the general strike selection strategy for a Bear Call Spread in the first half of the series?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "OTM higher strike and ATM+1 strike."
+          },
+          {
+            "id": "B",
+            "text": "OTM higher strike and ATM+2 strikes."
+          },
+          {
+            "id": "C",
+            "text": "ITM higher strike and OTM lower strike."
+          },
+          {
+            "id": "D",
+            "text": "ATM higher strike and ITM lower strike."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "OTM higher strike and ATM+2 strikes."
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "9. Put Ratio Back spread",
+    "order": "9",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "What is the ratio of options bought to options sold in a Put Ratio Back Spread?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "1:1"
+          },
+          {
+            "id": "B",
+            "text": "2:1"
+          },
+          {
+            "id": "C",
+            "text": "3:1"
+          },
+          {
+            "id": "D",
+            "text": "1:2"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "2:1"
+      },
+      {
+        "question": "What is the condition for executing the Put Ratio Back Spread?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bullish on the market"
+          },
+          {
+            "id": "B",
+            "text": "Bearish on the market"
+          },
+          {
+            "id": "C",
+            "text": "Neutral on the market"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Bearish on the market"
+      },
+      {
+        "question": "Which of the following is a potential benefit of the Put Ratio Back Spread?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Limited profits if the market goes up"
+          },
+          {
+            "id": "B",
+            "text": "Unlimited profits if the market goes down"
+          },
+          {
+            "id": "C",
+            "text": "A predefined loss if the market stays within a range"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "All of the above"
+      },
+      {
+        "question": "What is the strategy payoff when the market expires at a point above the ITM strike price?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Equal to the net credit"
+          },
+          {
+            "id": "B",
+            "text": "Equal to the maximum loss"
+          },
+          {
+            "id": "C",
+            "text": "Equal to zero"
+          },
+          {
+            "id": "D",
+            "text": "Unlimited profit"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Equal to the net credit"
+      },
+      {
+        "question": "What is the net credit in a Put Ratio Back Spread?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Premium received for selling the ITM option"
+          },
+          {
+            "id": "B",
+            "text": "Premium paid for buying the OTM options"
+          },
+          {
+            "id": "C",
+            "text": "The difference between the premiums received and paid"
+          },
+          {
+            "id": "D",
+            "text": "The sum of the premiums received and paid"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The difference between the premiums received and paid"
+      },
+      {
+        "question": "What happens to the Put Ratio Back Spread strategy when the market volatility increases?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "It becomes more profitable"
+          },
+          {
+            "id": "B",
+            "text": "It becomes less profitable"
+          },
+          {
+            "id": "C",
+            "text": "It has no effect"
+          },
+          {
+            "id": "D",
+            "text": "The effect depends on the time to expiry"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The effect depends on the time to expiry"
+      },
+      {
+        "question": "What is the maximum loss that can occur in a Put Ratio Back Spread strategy?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The net credit"
+          },
+          {
+            "id": "B",
+            "text": "The spread minus the net credit"
+          },
+          {
+            "id": "C",
+            "text": "The difference between the strike prices"
+          },
+          {
+            "id": "D",
+            "text": "Unlimited loss"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The spread minus the net credit"
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "10. The Long Straddle",
+    "order": "10",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "What type of strategies are insulated against unpredictable market direction?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bullish Strategies"
+          },
+          {
+            "id": "B",
+            "text": "Bearish Strategies"
+          },
+          {
+            "id": "C",
+            "text": "Market Neutral Strategies"
+          },
+          {
+            "id": "D",
+            "text": "Delta Neutral Strategies"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Market Neutral Strategies"
+      },
+      {
+        "question": "Which of the following is the formula for the upper breakeven point for a long straddle?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Strike + net premium"
+          },
+          {
+            "id": "B",
+            "text": "Strike - net premium"
+          },
+          {
+            "id": "C",
+            "text": "Net premium - strike"
+          },
+          {
+            "id": "D",
+            "text": "Strike / net premium"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Strike + net premium"
+      },
+      {
+        "question": "What is the maximum loss of a long straddle?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "100% of the premium paid"
+          },
+          {
+            "id": "B",
+            "text": "50% of the premium paid"
+          },
+          {
+            "id": "C",
+            "text": "Net premium paid"
+          },
+          {
+            "id": "D",
+            "text": "Double the net premium paid"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Net premium paid"
+      },
+      {
+        "question": "What factor significantly impacts the profitability of a long straddle?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Direction of the market"
+          },
+          {
+            "id": "B",
+            "text": "Volatility"
+          },
+          {
+            "id": "C",
+            "text": "Time decay"
+          },
+          {
+            "id": "D",
+            "text": "Interest rates"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Volatility"
+      },
+      {
+        "question": "What is a key takeaway from the chapter on long straddles?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Long straddles should be executed when volatility is high."
+          },
+          {
+            "id": "B",
+            "text": "The direction of the market does not matter for long straddles."
+          },
+          {
+            "id": "C",
+            "text": "Short straddles are always more profitable than long straddles."
+          },
+          {
+            "id": "D",
+            "text": "Long straddles should be held until expiration for maximum profit."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The direction of the market does not matter for long straddles."
+      },
+      {
+        "question": "What is the difference between a long straddle and a short straddle?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Long straddles are bullish, while short straddles are bearish."
+          },
+          {
+            "id": "B",
+            "text": "Short straddles are more profitable than long straddles."
+          },
+          {
+            "id": "C",
+            "text": "Long straddles have a lower potential return than short straddles."
+          },
+          {
+            "id": "D",
+            "text": "There is no difference between a long straddle and a short straddle."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Long straddles are bullish, while short straddles are bearish."
+      },
+      {
+        "question": "What is the ideal time to execute a long straddle?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "When volatility is low and expected to increase."
+          },
+          {
+            "id": "B",
+            "text": "When volatility is high and expected to decrease."
+          },
+          {
+            "id": "C",
+            "text": "When the market is expected to move sideways."
+          },
+          {
+            "id": "D",
+            "text": "When the market is expected to crash."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "When volatility is low and expected to increase."
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "11. The Short Straddle",
+    "order": "11",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "What is the key difference between a long straddle and a short straddle?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "The volatility requirement"
+          },
+          {
+            "id": "B",
+            "text": "The direction of the market movement"
+          },
+          {
+            "id": "C",
+            "text": "The position of the trader"
+          },
+          {
+            "id": "D",
+            "text": "The strike price of the options"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "In a long straddle, the trader buys both the ATM call and put options, while in a short straddle, the trader sells both the ATM call and put options."
+      },
+      {
+        "question": "What is the maximum profit that can be made from a short straddle?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The net premium paid"
+          },
+          {
+            "id": "B",
+            "text": "The difference between the strike price and the premium"
+          },
+          {
+            "id": "C",
+            "text": "The difference between the upper and lower breakdown points"
+          },
+          {
+            "id": "D",
+            "text": "Unlimited"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The maximum profit from a short straddle is equal to the net premium paid, which is the sum of the premiums received for selling the ATM call and put options."
+      },
+      {
+        "question": "What is the upper breakdown point of a short straddle?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Strike price + net premium"
+          },
+          {
+            "id": "B",
+            "text": "Strike price - net premium"
+          },
+          {
+            "id": "C",
+            "text": "Strike price + volatility"
+          },
+          {
+            "id": "D",
+            "text": "Strike price - volatility"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The upper breakdown point of a short straddle is the strike price at which the loss on the call option equals the combined premiums received."
+      },
+      {
+        "question": "When can a short straddle be profitable?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the market moves sharply in either direction"
+          },
+          {
+            "id": "B",
+            "text": "When the market stays within a narrow range"
+          },
+          {
+            "id": "C",
+            "text": "When the volatility is high and stable"
+          },
+          {
+            "id": "D",
+            "text": "When there is a major market event"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "A short straddle is profitable when the market stays within a narrow range, as the premiums received from selling the call and put options exceed the losses on both options."
+      },
+      {
+        "question": "What is the key factor to consider when pricing a short straddle?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "The strike price of the options"
+          },
+          {
+            "id": "B",
+            "text": "The time to expiration of the options"
+          },
+          {
+            "id": "C",
+            "text": "The volatility of the underlying asset"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "All of the factors mentioned (strike price, time to expiration, and volatility) are important to consider when pricing a short straddle."
+      },
+      {
+        "question": "Under what market conditions will a short straddle be most profitable?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "High volatility and a narrow trading range"
+          },
+          {
+            "id": "B",
+            "text": "Low volatility and a wide trading range"
+          },
+          {
+            "id": "C",
+            "text": "High volatility and a wide trading range"
+          },
+          {
+            "id": "D",
+            "text": "Low volatility and a narrow trading range"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "A short straddle is most profitable when volatility is high and the market is expected to stay within a narrow range, as the premiums received for selling the options will be high relative to the potential losses."
+      },
+      {
+        "question": "What is the maximum loss that can be made from a short straddle?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The net premium paid"
+          },
+          {
+            "id": "B",
+            "text": "The difference between the strike price and the premium"
+          },
+          {
+            "id": "C",
+            "text": "The difference between the upper and lower breakdown points"
+          },
+          {
+            "id": "D",
+            "text": "Unlimited"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The maximum loss from a short straddle is unlimited, as the trader can lose the entire amount invested if the market moves significantly in either direction."
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "12. The Long & Short Strangle",
+    "order": "12",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is an advantage of a long strangle over a short strangle?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Reduced cost"
+          },
+          {
+            "id": "B",
+            "text": "Unlimited profit potential"
+          },
+          {
+            "id": "C",
+            "text": "Lack of sensitivity to market direction"
+          },
+          {
+            "id": "D",
+            "text": "Ability to make a profit from small market movements"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Lack of sensitivity to market direction"
+      },
+      {
+        "question": "What is the maximum loss that can be incurred in a long strangle?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The difference between the call and put strike prices"
+          },
+          {
+            "id": "B",
+            "text": "The net premium paid"
+          },
+          {
+            "id": "C",
+            "text": "The difference between the upper and lower breakeven points"
+          },
+          {
+            "id": "D",
+            "text": "The difference between the ATM strike price and the call strike price"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The net premium paid"
+      },
+      {
+        "question": "Which of the following Greek letters measures the sensitivity of an option's price to volatility?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Delta"
+          },
+          {
+            "id": "B",
+            "text": "Theta"
+          },
+          {
+            "id": "C",
+            "text": "Vega"
+          },
+          {
+            "id": "D",
+            "text": "Gamma"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Vega"
+      },
+      {
+        "question": "What is the purpose of using OTM options in a strangle?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "To reduce the cost of the strategy"
+          },
+          {
+            "id": "B",
+            "text": "To increase the profit potential"
+          },
+          {
+            "id": "C",
+            "text": "To reduce the risk of loss"
+          },
+          {
+            "id": "D",
+            "text": "To make the strategy delta-neutral"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To reduce the cost of the strategy"
+      },
+      {
+        "question": "Which of the following market conditions is most favorable for a long strangle?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "A market that is trending sideways"
+          },
+          {
+            "id": "B",
+            "text": "A market that is highly volatile"
+          },
+          {
+            "id": "C",
+            "text": "A market that is expected to make a large move in a short period of time"
+          },
+          {
+            "id": "D",
+            "text": "A market that is experiencing a high level of uncertainty"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "A market that is expected to make a large move in a short period of time"
+      },
+      {
+        "question": "In a short strangle, the profit is capped at the:",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Net premium received"
+          },
+          {
+            "id": "B",
+            "text": "Upper breakeven point"
+          },
+          {
+            "id": "C",
+            "text": "Difference between the strike prices"
+          },
+          {
+            "id": "D",
+            "text": "Lower breakeven point"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Net premium received"
+      },
+      {
+        "question": "What is the strategy for selling a short strangle when a stock is in a trading range?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Sell strikes that are outside the trading range"
+          },
+          {
+            "id": "B",
+            "text": "Sell strikes that are within the trading range"
+          },
+          {
+            "id": "C",
+            "text": "Sell strikes that are above the current market price"
+          },
+          {
+            "id": "D",
+            "text": "Sell strikes that are below the current market price"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Sell strikes that are outside the trading range"
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "13. Max Pain & PCR Ratio",
+    "order": "13",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "According to the Option Pain theory, which of the following groups is believed to make consistent profits in options trading?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Option buyers"
+          },
+          {
+            "id": "B",
+            "text": "Option sellers"
+          },
+          {
+            "id": "C",
+            "text": "Traders who use both options and futures"
+          },
+          {
+            "id": "D",
+            "text": "Traders who scalp options"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Option sellers"
+      },
+      {
+        "question": "Which of the following is NOT a step involved in calculating Max Pain value?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Listing down the various strikes and noting down the open interest of both calls and puts for these strikes."
+          },
+          {
+            "id": "B",
+            "text": "Assuming that the market expires at a particular strike price and calculating the loss incurred by option writers."
+          },
+          {
+            "id": "C",
+            "text": "Identifying the strike with the highest open interest."
+          },
+          {
+            "id": "D",
+            "text": "Calculating the total loss incurred by both call and put option writers."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Identifying the strike with the highest open interest."
+      },
+      {
+        "question": "What is the purpose of adding a \"safety buffer\" to the expiry level?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "To account for potential volatility and price fluctuations."
+          },
+          {
+            "id": "B",
+            "text": "To increase the chances of the market expiring at the predicted level."
+          },
+          {
+            "id": "C",
+            "text": "To reduce the risk of incurring losses."
+          },
+          {
+            "id": "D",
+            "text": "To comply with exchange regulations."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To account for potential volatility and price fluctuations."
+      },
+      {
+        "question": "What is the significance of the Put Call Ratio (PCR) in option trading?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "It indicates the relative demand for call and put options."
+          },
+          {
+            "id": "B",
+            "text": "It can serve as a contrarian indicator for market reversals."
+          },
+          {
+            "id": "C",
+            "text": "It helps in identifying the expiry level for options."
+          },
+          {
+            "id": "D",
+            "text": "It has no significant impact on option trading strategies."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "It can serve as a contrarian indicator for market reversals."
+      },
+      {
+        "question": "Which of the following is a potential limitation of the Option Pain theory?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "It relies on historical data, which may not be indicative of future market behavior."
+          },
+          {
+            "id": "B",
+            "text": "It requires a high level of computational power and technical expertise."
+          },
+          {
+            "id": "C",
+            "text": "It is only applicable to certain types of options."
+          },
+          {
+            "id": "D",
+            "text": "It is universally accepted and has no limitations."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It relies on historical data, which may not be indicative of future market behavior."
+      },
+      {
+        "question": "Which of the following factors can influence the effectiveness of the Option Pain theory?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Market volatility"
+          },
+          {
+            "id": "B",
+            "text": "Institutional trading activity"
+          },
+          {
+            "id": "C",
+            "text": "Economic news and events"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Economic news and events"
+      },
+      {
+        "question": "What is the significance of a high Put Call Ratio (PCR)?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "It indicates that there is a high demand for call options."
+          },
+          {
+            "id": "B",
+            "text": "It suggests that the market is expected to rise."
+          },
+          {
+            "id": "C",
+            "text": "It can be an indication of investor pessimism and potential market reversal."
+          },
+          {
+            "id": "D",
+            "text": "It has no significant implications."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "It can be an indication of investor pessimism and potential market reversal."
+      }
+    ]
+  },
+  {
+    "course": "Option Strategies",
+    "lesson": "14. Iron Condor",
+    "order": "14",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which statement is **incorrect** regarding the benefits of hedging positions in the options market?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Reduced margin requirement"
+          },
+          {
+            "id": "B",
+            "text": "Lower risk for the broker and the exchange"
+          },
+          {
+            "id": "C",
+            "text": "Increased potential for profit"
+          },
+          {
+            "id": "D",
+            "text": "Enhanced capital preservation"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Increased potential for profit"
+      },
+      {
+        "question": "According to the New Margin Framework introduced by NSE, what is the percentage reduction in margins for spread positions?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "50%"
+          },
+          {
+            "id": "B",
+            "text": "60%"
+          },
+          {
+            "id": "C",
+            "text": "70%"
+          },
+          {
+            "id": "D",
+            "text": "80%"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "80%"
+      },
+      {
+        "question": "Which option setup is known as an Iron Condor?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Buying a Call and Put option with the same strike price"
+          },
+          {
+            "id": "B",
+            "text": "Selling a Call and Put option with the same strike price"
+          },
+          {
+            "id": "C",
+            "text": "Buying a Call and selling a Put option with different strike prices"
+          },
+          {
+            "id": "D",
+            "text": "Selling a Call and buying a Put option with different strike prices"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Selling a Call and buying a Put option with different strike prices"
+      },
+      {
+        "question": "What is the purpose of buying additional Call and Put options in an Iron Condor strategy?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "To limit potential losses"
+          },
+          {
+            "id": "B",
+            "text": "To enhance potential profits"
+          },
+          {
+            "id": "C",
+            "text": "To increase the duration of the strategy"
+          },
+          {
+            "id": "D",
+            "text": "To reduce the margin requirement"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To limit potential losses"
+      },
+      {
+        "question": "Which of the following is NOT a key takeaway from the chapter on Margin Framework and Iron Condor?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Hedging reduces margin requirements"
+          },
+          {
+            "id": "B",
+            "text": "Iron Condor is an improvement over short strangle"
+          },
+          {
+            "id": "C",
+            "text": "Margin requirement for short strangle is higher than iron condor"
+          },
+          {
+            "id": "D",
+            "text": "The sequence of trade execution is irrelevant for an iron condor"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The sequence of trade execution is irrelevant for an iron condor"
+      },
+      {
+        "question": "Which of the following is a disadvantage of the short strangle strategy?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Low profit potential"
+          },
+          {
+            "id": "B",
+            "text": "Exposure to unlimited losses"
+          },
+          {
+            "id": "C",
+            "text": "High margin requirement"
+          },
+          {
+            "id": "D",
+            "text": "Difficult to implement"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Exposure to unlimited losses"
+      },
+      {
+        "question": "What is the maximum loss in an Iron Condor strategy?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The difference between the sold strike and the protective strike"
+          },
+          {
+            "id": "B",
+            "text": "The net premium received"
+          },
+          {
+            "id": "C",
+            "text": "The difference between the sold strike and the protective strike minus the net premium received"
+          },
+          {
+            "id": "D",
+            "text": "The sum of the sold strike and the protective strike"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The difference between the sold strike and the protective strike minus the net premium received"
+      }
+    ]
+  }
+]

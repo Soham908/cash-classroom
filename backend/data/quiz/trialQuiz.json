@@ -1,0 +1,2474 @@
+[
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "1. The Need to Invest",
+      "order": "1",
+      "section": 1,
+      "lessonQuiz": [
+        {
+          "question": "What is the main reason why one should invest?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "To increase their income"
+            },
+            {
+              "id": "B",
+              "text": "To fight inflation and create wealth"
+            },
+            {
+              "id": "C",
+              "text": "To avoid paying taxes"
+            },
+            {
+              "id": "D",
+              "text": "To impress their friends"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To fight inflation and create wealth"
+        },
+        {
+          "question": "Which asset class is considered the safest for investment?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "Fixed income instruments"
+            },
+            {
+              "id": "B",
+              "text": "Equities"
+            },
+            {
+              "id": "C",
+              "text": "Real estate"
+            },
+            {
+              "id": "D",
+              "text": "Commodities"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Fixed income instruments"
+        },
+        {
+          "question": "Which of the following is NOT an example of a fixed income instrument?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "Bank fixed deposit"
+            },
+            {
+              "id": "B",
+              "text": "Government bond"
+            },
+            {
+              "id": "C",
+              "text": "Corporate bond"
+            },
+            {
+              "id": "D",
+              "text": "Equity share"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "Equity share"
+        },
+        {
+          "question": "Which asset class has historically generated the highest returns over the long term?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "Fixed income instruments"
+            },
+            {
+              "id": "B",
+              "text": "Equities"
+            },
+            {
+              "id": "C",
+              "text": "Real estate"
+            },
+            {
+              "id": "D",
+              "text": "Commodities"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Equities"
+        },
+        {
+          "question": "What is the term used to describe the technique of allocating money across different asset classes?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "Portfolio management"
+            },
+            {
+              "id": "B",
+              "text": "Asset allocation"
+            },
+            {
+              "id": "C",
+              "text": "Diversification"
+            },
+            {
+              "id": "D",
+              "text": "Risk management"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Asset allocation"
+        },
+        {
+          "question": "Which of the following is a key principle of investing?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "Higher risk, higher return"
+            },
+            {
+              "id": "B",
+              "text": "Don't put all your eggs in one basket"
+            },
+            {
+              "id": "C",
+              "text": "Invest for the short term"
+            },
+            {
+              "id": "D",
+              "text": "Follow the crowd"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Higher risk, higher return"
+        },
+        {
+          "question": "What is the purpose of a sovereign gold bond?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "To provide investors with exposure to gold"
+            },
+            {
+              "id": "B",
+              "text": "To protect investors from inflation"
+            },
+            {
+              "id": "C",
+              "text": "To raise funds for government projects"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "All of the above"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "2. Regulators, the guardians of capital markets",
+      "order": "2",
+      "section": 1,
+      "lessonQuiz": [
+        {
+          "question": "What is the primary purpose of the stock market?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "To provide a platform for companies to raise capital"
+            },
+            {
+              "id": "B",
+              "text": "To facilitate the buying and selling of shares"
+            },
+            {
+              "id": "C",
+              "text": "To regulate the trading activities of market participants"
+            },
+            {
+              "id": "D",
+              "text": "To protect the interests of investors"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To facilitate the buying and selling of shares"
+        },
+        {
+          "question": "Which of the following is NOT a function of SEBI?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "Promoting the development of stock exchanges"
+            },
+            {
+              "id": "B",
+              "text": "Encouraging foreign investments"
+            },
+            {
+              "id": "C",
+              "text": "Protecting the interests of retail investors"
+            },
+            {
+              "id": "D",
+              "text": "Setting and enforcing regulations for market participants"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Encouraging foreign investments"
+        },
+        {
+          "question": "What is the role of Depository Participants?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "To hold and manage securities for investors"
+            },
+            {
+              "id": "B",
+              "text": "To provide access to trading platforms"
+            },
+            {
+              "id": "C",
+              "text": "To regulate the activities of stockbrokers"
+            },
+            {
+              "id": "D",
+              "text": "To issue new shares to the public"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "To hold and manage securities for investors"
+        },
+        {
+          "question": "Which of the following is a type of market participant?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "Domestic Institutional Investors"
+            },
+            {
+              "id": "B",
+              "text": "Foreign Institutional Investors"
+            },
+            {
+              "id": "C",
+              "text": "Portfolio Managers"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "All of the above"
+        },
+        {
+          "question": "What is the purpose of a Debenture Trustee?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "To issue debentures on behalf of companies"
+            },
+            {
+              "id": "B",
+              "text": "To act as a custodian of debenture holders' interests"
+            },
+            {
+              "id": "C",
+              "text": "To provide credit ratings for debentures"
+            },
+            {
+              "id": "D",
+              "text": "To regulate the trading of debentures"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To act as a custodian of debenture holders' interests"
+        },
+        {
+          "question": "What is the main concern of the stock market regulator?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "Preventing unfair practices"
+            },
+            {
+              "id": "B",
+              "text": "Maximizing profits for investors"
+            },
+            {
+              "id": "C",
+              "text": "Ensuring the stability of the market"
+            },
+            {
+              "id": "D",
+              "text": "Promoting innovation in the market"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Preventing unfair practices"
+        },
+        {
+          "question": "Which of the following is a key takeaway from the chapter?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "The stock market is only accessible by large corporations"
+            },
+            {
+              "id": "B",
+              "text": "SEBI has no authority over the stock market"
+            },
+            {
+              "id": "C",
+              "text": "Market participants are free to engage in any activity they wish"
+            },
+            {
+              "id": "D",
+              "text": "All entities operating in the market must comply with SEBI regulations"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "All entities operating in the market must comply with SEBI regulations"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "3. Market Intermediaries",
+      "order": "3",
+      "section": 1,
+      "lessonQuiz": [
+        {
+          "question": "Which of the following is NOT a service provided by a stockbroker?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "Access to the markets"
+            },
+            {
+              "id": "B",
+              "text": "Margins for trading"
+            },
+            {
+              "id": "C",
+              "text": "Tax preparation"
+            },
+            {
+              "id": "D",
+              "text": "Contract notes for transactions"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Tax preparation"
+        },
+        {
+          "question": "What is the term for the digital format of a share certificate?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "Dematerialization"
+            },
+            {
+              "id": "B",
+              "text": "Digitization"
+            },
+            {
+              "id": "C",
+              "text": "Securitization"
+            },
+            {
+              "id": "D",
+              "text": "Tokenization"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Dematerialization"
+        },
+        {
+          "question": "Who is the intermediary between a depository and an account holder?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "Stockbroker"
+            },
+            {
+              "id": "B",
+              "text": "Depository Participant"
+            },
+            {
+              "id": "C",
+              "text": "Clearing Corporation"
+            },
+            {
+              "id": "D",
+              "text": "NSE Clearing Limited"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Depository Participant"
+        },
+        {
+          "question": "What is the primary purpose of a clearing corporation?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "To provide margin for trading"
+            },
+            {
+              "id": "B",
+              "text": "To ensure settlement of trades"
+            },
+            {
+              "id": "C",
+              "text": "To act as a market maker"
+            },
+            {
+              "id": "D",
+              "text": "To regulate financial intermediaries"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To ensure settlement of trades"
+        },
+        {
+          "question": "Which of the following is NOT a factor to consider when selecting a stockbroker?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "Simplicity of the platform"
+            },
+            {
+              "id": "B",
+              "text": "Efficiency of the support system"
+            },
+            {
+              "id": "C",
+              "text": "Quality of research and analysis"
+            },
+            {
+              "id": "D",
+              "text": "Broker's net worth"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Quality of research and analysis"
+        },
+        {
+          "question": "What is the name of Zerodha's trading platform?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "Trade"
+            },
+            {
+              "id": "B",
+              "text": "Kite"
+            },
+            {
+              "id": "C",
+              "text": "Pi"
+            },
+            {
+              "id": "D",
+              "text": "MetaTrader"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Kite"
+        },
+        {
+          "question": "What is the term for the digital storage place for share certificates?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "DEMAT Account"
+            },
+            {
+              "id": "B",
+              "text": "Vault Account"
+            },
+            {
+              "id": "C",
+              "text": "Safe Deposit Box"
+            },
+            {
+              "id": "D",
+              "text": "Secure Online Vault"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "DEMAT Account"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "4. The IPO Markets (Part 1)",
+      "order": "4",
+      "section": 1,
+      "lessonQuiz": [
+        {
+          "question": "Who is referred to as an angel investor?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "A person who provides seed funding to a company"
+            },
+            {
+              "id": "B",
+              "text": "A venture capitalist who invests in early-stage companies"
+            },
+            {
+              "id": "C",
+              "text": "A private equity investor who invests in mature companies"
+            },
+            {
+              "id": "D",
+              "text": "A bank that provides loans to companies"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "A person who provides seed funding to a company"
+        },
+        {
+          "question": "What is the term used to describe a company's initial funding from friends and family?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "Seed funding"
+            },
+            {
+              "id": "B",
+              "text": "Series A financing"
+            },
+            {
+              "id": "C",
+              "text": "Venture capital"
+            },
+            {
+              "id": "D",
+              "text": "Private equity"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Seed funding"
+        },
+        {
+          "question": "Which type of investor typically invests in companies that have a proven track record and are looking to expand?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "Angel investor"
+            },
+            {
+              "id": "B",
+              "text": "Venture capitalist"
+            },
+            {
+              "id": "C",
+              "text": "Private equity investor"
+            },
+            {
+              "id": "D",
+              "text": "Bank"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Private equity investor"
+        },
+        {
+          "question": "What is the purpose of an initial public offering (IPO)?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "To raise funds from the general public"
+            },
+            {
+              "id": "B",
+              "text": "To acquire another company"
+            },
+            {
+              "id": "C",
+              "text": "To restructure the company's debt"
+            },
+            {
+              "id": "D",
+              "text": "To distribute profits to shareholders"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "To raise funds from the general public"
+        },
+        {
+          "question": "Which of the following is a characteristic of an IPO?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "It is the first time a company's shares are offered to the public"
+            },
+            {
+              "id": "B",
+              "text": "It is typically used to raise small amounts of capital"
+            },
+            {
+              "id": "C",
+              "text": "It is a risky investment"
+            },
+            {
+              "id": "D",
+              "text": "It is not regulated by the government"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "It is the first time a company's shares are offered to the public"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "5. The IPO Markets (Part 2)",
+      "order": "5",
+      "section": 1,
+      "lessonQuiz": [
+        {
+          "question": "What is the main reason most companies go public?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "To reduce their high-cost debt"
+            },
+            {
+              "id": "B",
+              "text": "To raise funds to fuel their CAPEX requirement"
+            },
+            {
+              "id": "C",
+              "text": "To provide an exit for early-stage investors"
+            },
+            {
+              "id": "D",
+              "text": "To take advantage of tax benefits"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To raise funds to fuel their CAPEX requirement"
+        },
+        {
+          "question": "Which of the following is NOT a responsibility of a merchant banker in the IPO process?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "Conducting due diligence on the company"
+            },
+            {
+              "id": "B",
+              "text": "Underwriting shares"
+            },
+            {
+              "id": "C",
+              "text": "Issuing the DRHP"
+            },
+            {
+              "id": "D",
+              "text": "Helping the company prepare its listing documents"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Issuing the DRHP"
+        },
+        {
+          "question": "What is the purpose of the DRHP?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "To provide potential investors with detailed information about the company"
+            },
+            {
+              "id": "B",
+              "text": "To outline the company's business plan and financial projections"
+            },
+            {
+              "id": "C",
+              "text": "To secure regulatory approval for the IPO"
+            },
+            {
+              "id": "D",
+              "text": "To promote the IPO to the public"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "To provide potential investors with detailed information about the company"
+        },
+        {
+          "question": "What is the process called where the company collects price points and respective quantities from potential investors?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "Book building"
+            },
+            {
+              "id": "B",
+              "text": "Roadshow"
+            },
+            {
+              "id": "C",
+              "text": "Underwriting"
+            },
+            {
+              "id": "D",
+              "text": "Due diligence"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Book building"
+        },
+        {
+          "question": "What is the term for the day when a company's stock starts trading publicly on the stock exchange?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "Subscription date"
+            },
+            {
+              "id": "B",
+              "text": "Listing day"
+            },
+            {
+              "id": "C",
+              "text": "Closure date"
+            },
+            {
+              "id": "D",
+              "text": "Book building date"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Listing day"
+        },
+        {
+          "question": "What is the term for when an IPO fails to attract enough subscriptions from investors?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "Oversubscribed"
+            },
+            {
+              "id": "B",
+              "text": "Underwritten"
+            },
+            {
+              "id": "C",
+              "text": "Undersubscribed"
+            },
+            {
+              "id": "D",
+              "text": "Fixed-price"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Undersubscribed"
+        },
+        {
+          "question": "What is the role of a Green Shoe Option in an IPO?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "To stabilize the stock price after the IPO"
+            },
+            {
+              "id": "B",
+              "text": "To give the underwriters the option to purchase additional shares"
+            },
+            {
+              "id": "C",
+              "text": "To protect investors from losses"
+            },
+            {
+              "id": "D",
+              "text": "To raise additional funds for the company"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To give the underwriters the option to purchase additional shares"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "6. The Stock Markets",
+      "order": "6",
+      "section": 2,
+      "lessonQuiz": [
+        {
+          "question": "What is the primary job of a stock market?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "To regulate the sale and purchase of stocks"
+            },
+            {
+              "id": "B",
+              "text": "To provide companies with a platform to raise funds"
+            },
+            {
+              "id": "C",
+              "text": "To facilitate transactions between buyers and sellers of stocks"
+            },
+            {
+              "id": "D",
+              "text": "To protect investors from fraudulent activities"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "To facilitate transactions between buyers and sellers of stocks"
+        },
+        {
+          "question": "Which of the following is NOT a reason why stock prices move?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "News and events"
+            },
+            {
+              "id": "B",
+              "text": "Demand-supply mismatch"
+            },
+            {
+              "id": "C",
+              "text": "Government regulations"
+            },
+            {
+              "id": "D",
+              "text": "Expectations of future earnings"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Government regulations"
+        },
+        {
+          "question": "What is the difference between a trader and an investor?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "Traders hold stocks for long periods, while investors trade stocks frequently"
+            },
+            {
+              "id": "B",
+              "text": "Traders seek to profit from short-term price movements, while investors focus on long-term growth"
+            },
+            {
+              "id": "C",
+              "text": "Traders are more risk-averse than investors"
+            },
+            {
+              "id": "D",
+              "text": "There is no difference between traders and investors"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Traders seek to profit from short-term price movements, while investors focus on long-term growth"
+        },
+        {
+          "question": "Which type of trader typically holds stocks for the shortest period of time?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "Day trader"
+            },
+            {
+              "id": "B",
+              "text": "Swing trader"
+            },
+            {
+              "id": "C",
+              "text": "Scalper"
+            },
+            {
+              "id": "D",
+              "text": "Option trader"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Scalper"
+        },
+        {
+          "question": "Which type of investor focuses on identifying companies with high growth potential?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "Value investor"
+            },
+            {
+              "id": "B",
+              "text": "Growth investor"
+            },
+            {
+              "id": "C",
+              "text": "Income investor"
+            },
+            {
+              "id": "D",
+              "text": "Contrarian investor"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Growth investor"
+        },
+        {
+          "question": "What is the formula for calculating absolute return?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "(Ending Period Value / Starting Period Value - 1) * 100"
+            },
+            {
+              "id": "B",
+              "text": "(Starting Period Value / Ending Period Value - 1) * 100"
+            },
+            {
+              "id": "C",
+              "text": "(Ending Period Value - Starting Period Value) * 100"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "(Ending Period Value / Starting Period Value - 1) * 100"
+        },
+        {
+          "question": "What is a key difference between absolute return and CAGR?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "Absolute return considers the time period, while CAGR does not"
+            },
+            {
+              "id": "B",
+              "text": "CAGR considers the time period, while absolute return does not"
+            },
+            {
+              "id": "C",
+              "text": "Absolute return is expressed as a percentage, while CAGR is not"
+            },
+            {
+              "id": "D",
+              "text": "There is no difference between absolute return and CAGR"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "CAGR considers the time period, while absolute return does not"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "7. The Stock Markets Index",
+      "order": "7",
+      "section": 2,
+      "lessonQuiz": [
+        {
+          "question": "What is the primary function of a stock market index?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "To represent the overall trend of the market"
+            },
+            {
+              "id": "B",
+              "text": "To track the performance of individual companies"
+            },
+            {
+              "id": "C",
+              "text": "To predict future market movements"
+            },
+            {
+              "id": "D",
+              "text": "To provide information on stock prices"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "To represent the overall trend of the market"
+        },
+        {
+          "question": "Which of the following is NOT a popular index in India?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "S&P BSE Sensex"
+            },
+            {
+              "id": "B",
+              "text": "Nifty 50"
+            },
+            {
+              "id": "C",
+              "text": "Bank Nifty"
+            },
+            {
+              "id": "D",
+              "text": "Dow Jones Industrial Average"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "Dow Jones Industrial Average"
+        },
+        {
+          "question": "What method is used to assign weights to stocks in the Nifty 50 index?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "Equal weighting"
+            },
+            {
+              "id": "B",
+              "text": "Market capitalization weighting"
+            },
+            {
+              "id": "C",
+              "text": "Free-float market capitalization weighting"
+            },
+            {
+              "id": "D",
+              "text": "Dividend yield weighting"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Free-float market capitalization weighting"
+        },
+        {
+          "question": "Which of the following is a practical use of the index?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "Measuring investment performance"
+            },
+            {
+              "id": "B",
+              "text": "Forecasting economic growth"
+            },
+            {
+              "id": "C",
+              "text": "Identifying undervalued stocks"
+            },
+            {
+              "id": "D",
+              "text": "Risk assessment"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Measuring investment performance"
+        },
+        {
+          "question": "What is the purpose of portfolio hedging using the index?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "To reduce risk during market downturns"
+            },
+            {
+              "id": "B",
+              "text": "To increase investment returns"
+            },
+            {
+              "id": "C",
+              "text": "To diversify investment portfolio"
+            },
+            {
+              "id": "D",
+              "text": "To predict market movements"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "To reduce risk during market downturns"
+        },
+        {
+          "question": "What is the full form of S&P in the context of stock market indices?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "Standard and Poor's"
+            },
+            {
+              "id": "B",
+              "text": "Security and Profitability"
+            },
+            {
+              "id": "C",
+              "text": "Stability and Performance"
+            },
+            {
+              "id": "D",
+              "text": "Stock and Pension"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Standard and Poor's"
+        },
+        {
+          "question": "Which of the following sectors is NOT represented by a heavyweight stock in the Nifty 50 index?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "Oil & Gas"
+            },
+            {
+              "id": "B",
+              "text": "IT"
+            },
+            {
+              "id": "C",
+              "text": "Manufacturing"
+            },
+            {
+              "id": "D",
+              "text": "Banking"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Manufacturing"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "8. Commonly Used Jargons",
+      "order": "8",
+      "section": 2,
+      "lessonQuiz": [
+        {
+          "question": "Which of the following refers to the lowest price a stock has traded at within the last 52 weeks?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "52-week high"
+            },
+            {
+              "id": "B",
+              "text": "52-week low"
+            },
+            {
+              "id": "C",
+              "text": "All-time high"
+            },
+            {
+              "id": "D",
+              "text": "All-time low"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "52-week low"
+        },
+        {
+          "question": "What is the term for a trading position you initiate with an expectation to close the position within the same day?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "Long position"
+            },
+            {
+              "id": "B",
+              "text": "Short position"
+            },
+            {
+              "id": "C",
+              "text": "Intraday position"
+            },
+            {
+              "id": "D",
+              "text": "Square off position"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Intraday position"
+        },
+        {
+          "question": "Which market segment deals with fixed-income securities?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "Capital Market"
+            },
+            {
+              "id": "B",
+              "text": "Futures and Options"
+            },
+            {
+              "id": "C",
+              "text": "Currency Derivatives"
+            },
+            {
+              "id": "D",
+              "text": "Wholesale Debt Market"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "Wholesale Debt Market"
+        },
+        {
+          "question": "What does it mean to \"square off\" a trading position?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "To close the position by selling the stock"
+            },
+            {
+              "id": "B",
+              "text": "To close the position by buying the stock"
+            },
+            {
+              "id": "C",
+              "text": "To open a new position in the same stock"
+            },
+            {
+              "id": "D",
+              "text": "To reverse the direction of the original position"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To close the position by buying the stock"
+        },
+        {
+          "question": "What is the name of the price band within which a stock can be traded on a given trading day?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "Circuit breaker"
+            },
+            {
+              "id": "B",
+              "text": "Upper and lower circuit"
+            },
+            {
+              "id": "C",
+              "text": "Volatility band"
+            },
+            {
+              "id": "D",
+              "text": "Price limit"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Upper and lower circuit"
+        },
+        {
+          "question": "If you are bearish on a stock, what do you expect to happen to its price?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "Increase"
+            },
+            {
+              "id": "B",
+              "text": "Decrease"
+            },
+            {
+              "id": "C",
+              "text": "Remain the same"
+            },
+            {
+              "id": "D",
+              "text": "Fluctuate unpredictably"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Decrease"
+        },
+        {
+          "question": "What is the term for a trading strategy in which you sell a stock first and then buy it back later at a lower price?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "Shorting"
+            },
+            {
+              "id": "B",
+              "text": "Longing"
+            },
+            {
+              "id": "C",
+              "text": "Scalping"
+            },
+            {
+              "id": "D",
+              "text": "Day trading"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Shorting"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "9. The Trading Terminal",
+      "order": "9",
+      "section": 3,
+      "lessonQuiz": [
+        {
+          "question": "What are the three methods of placing a transaction in the stock market?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "Call your brokerage, use a web application, or use a mobile application"
+            },
+            {
+              "id": "B",
+              "text": "Use a web application or a mobile application"
+            },
+            {
+              "id": "C",
+              "text": "Call your brokerage or use a web application"
+            },
+            {
+              "id": "D",
+              "text": "Use a mobile application or call your brokerage"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Call your stocks broker (usually on the central support number), and request to buy or sell a stock; this is called \u201cCall &amp; Trade.\u201d\n\nUse a web application\n\nUse a mobile application"
+        },
+        {
+          "question": "What is the name of Zerodha's trading terminal?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "Kite"
+            },
+            {
+              "id": "B",
+              "text": "Pi"
+            },
+            {
+              "id": "C",
+              "text": "Nest"
+            },
+            {
+              "id": "D",
+              "text": "TradeTiger"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Kite"
+        },
+        {
+          "question": "What is the purpose of the market watch?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "To display the last traded price, percentage change, and other relevant information about a stock"
+            },
+            {
+              "id": "B",
+              "text": "To allow you to place buy and sell orders"
+            },
+            {
+              "id": "C",
+              "text": "To track the status of your orders"
+            },
+            {
+              "id": "D",
+              "text": "To view charts and technical indicators"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "To display the last traded price, percentage change, and other relevant information about a stock"
+        },
+        {
+          "question": "What is the difference between a limit order and a market order?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "A limit order is executed at a specific price, while a market order is executed at the best available price"
+            },
+            {
+              "id": "B",
+              "text": "A market order is executed at a specific price, while a limit order is executed at the best available price"
+            },
+            {
+              "id": "C",
+              "text": "Limit orders and market orders are both executed at the same price"
+            },
+            {
+              "id": "D",
+              "text": "Market orders are executed immediately, while limit orders are executed over time"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "A limit order is executed at a specific price, while a market order is executed at the best available price"
+        },
+        {
+          "question": "What is the purpose of a stop-loss order?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "To protect against losses by automatically selling a stock if it falls below a certain price"
+            },
+            {
+              "id": "B",
+              "text": "To automatically buy a stock if it rises above a certain price"
+            },
+            {
+              "id": "C",
+              "text": "To place a limit order at a specific price"
+            },
+            {
+              "id": "D",
+              "text": "To track the status of an order"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "To protect against losses by automatically selling a stock if it falls below a certain price"
+        },
+        {
+          "question": "What information is contained in the order book?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "Current status of all open orders"
+            },
+            {
+              "id": "B",
+              "text": "History of all completed orders"
+            },
+            {
+              "id": "C",
+              "text": "Bid and offer prices"
+            },
+            {
+              "id": "D",
+              "text": "Stock charts and technical indicators"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Current status of all open orders"
+        },
+        {
+          "question": "What is the purpose of the trade book?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "To track the history of all completed orders"
+            },
+            {
+              "id": "B",
+              "text": "To display the current status of open orders"
+            },
+            {
+              "id": "C",
+              "text": "To place buy and sell orders"
+            },
+            {
+              "id": "D",
+              "text": "To view bid and offer prices"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "To track the history of all completed orders"
+        },
+        {
+          "question": "What are the bid and offer prices?",
+          "questionNumber": 8,
+          "options": [
+            {
+              "id": "A",
+              "text": "The prices at which buyers and sellers are willing to trade"
+            },
+            {
+              "id": "B",
+              "text": "The highest and lowest prices at which a stock has traded in the past day"
+            },
+            {
+              "id": "C",
+              "text": "The prices at which a stock is currently being bought and sold"
+            },
+            {
+              "id": "D",
+              "text": "The prices at which a stock is expected to open and close at the end of the day"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "The prices at which buyers and sellers are willing to trade"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "10. Clearing and Settlement Process",
+      "order": "10",
+      "section": 3,
+      "lessonQuiz": [
+        {
+          "question": "What is the day you make a transaction called?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "S Day"
+            },
+            {
+              "id": "B",
+              "text": "T Day"
+            },
+            {
+              "id": "C",
+              "text": "X Day"
+            },
+            {
+              "id": "D",
+              "text": "P Day"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "T Day"
+        },
+        {
+          "question": "What is the name of the document that details all daily transactions?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "Trade note"
+            },
+            {
+              "id": "B",
+              "text": "Contract note"
+            },
+            {
+              "id": "C",
+              "text": "Settlement note"
+            },
+            {
+              "id": "D",
+              "text": "Transaction note"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Contract note"
+        },
+        {
+          "question": "When are shares reflected in the purchaser's DEMAT account?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "T Day"
+            },
+            {
+              "id": "B",
+              "text": "T+1 Day"
+            },
+            {
+              "id": "C",
+              "text": "T+2 Day"
+            },
+            {
+              "id": "D",
+              "text": "T+3 Day"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "T+1 Day"
+        },
+        {
+          "question": "On what day are all equity/stock settlements in India made?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "T Day"
+            },
+            {
+              "id": "B",
+              "text": "T+1 Day"
+            },
+            {
+              "id": "C",
+              "text": "T+2 Day"
+            },
+            {
+              "id": "D",
+              "text": "T+3 Day"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "T+1 Day"
+        },
+        {
+          "question": "What is the purpose of earmarking in the context of selling shares?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "To ensure the securities don't move out of the client's demat account"
+            },
+            {
+              "id": "B",
+              "text": "To allow brokers to hold client shares in their pool account"
+            },
+            {
+              "id": "C",
+              "text": "To speed up the settlement process"
+            },
+            {
+              "id": "D",
+              "text": "To facilitate intraday trading"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "To ensure the securities don't move out of the client's demat account"
+        },
+        {
+          "question": "What percentage of funds do sellers receive on T day?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "20%"
+            },
+            {
+              "id": "B",
+              "text": "50%"
+            },
+            {
+              "id": "C",
+              "text": "80%"
+            },
+            {
+              "id": "D",
+              "text": "100%"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "80%"
+        },
+        {
+          "question": "When are the remaining 20% of funds received by sellers after T day?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "T+1"
+            },
+            {
+              "id": "B",
+              "text": "T+2"
+            },
+            {
+              "id": "C",
+              "text": "T+3"
+            },
+            {
+              "id": "D",
+              "text": "T+4"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "T+1"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "11. Corporate actions and impact on stock prices",
+      "order": "11",
+      "section": 3,
+      "lessonQuiz": [
+        {
+          "question": "Which of the following is a type of corporate action that involves paying a portion of profits to shareholders on a per-share basis?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "Dividend"
+            },
+            {
+              "id": "B",
+              "text": "Bonus issue"
+            },
+            {
+              "id": "C",
+              "text": "Stock split"
+            },
+            {
+              "id": "D",
+              "text": "Rights issue"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "Dividend"
+        },
+        {
+          "question": "What is the purpose of a bonus issue?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "To raise capital from existing shareholders"
+            },
+            {
+              "id": "B",
+              "text": "To increase the number of shares outstanding without changing the total value"
+            },
+            {
+              "id": "C",
+              "text": "To decrease the market price of a stock"
+            },
+            {
+              "id": "D",
+              "text": "To reduce the face value of the stock"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To increase the number of shares outstanding without changing the total value"
+        },
+        {
+          "question": "Which of the following statements about stock splits is true?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "The face value of the stock remains unchanged"
+            },
+            {
+              "id": "B",
+              "text": "The number of shares outstanding increases"
+            },
+            {
+              "id": "C",
+              "text": "The per-share price decreases"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "All of the above"
+        },
+        {
+          "question": "What is a rights issue?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "An opportunity for existing shareholders to purchase new shares at a discount"
+            },
+            {
+              "id": "B",
+              "text": "A way for the company to pay off debt"
+            },
+            {
+              "id": "C",
+              "text": "A tax-saving mechanism"
+            },
+            {
+              "id": "D",
+              "text": "A form of stock split"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "An opportunity for existing shareholders to purchase new shares at a discount"
+        },
+        {
+          "question": "What is the purpose of a share buyback?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "To raise capital"
+            },
+            {
+              "id": "B",
+              "text": "To reward shareholders"
+            },
+            {
+              "id": "C",
+              "text": "To increase the per-share earnings"
+            },
+            {
+              "id": "D",
+              "text": "To reduce the number of shares outstanding"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "To reduce the number of shares outstanding"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "12. Key Events and Their Impact on Markets",
+      "order": "12",
+      "section": 3,
+      "lessonQuiz": [
+        {
+          "question": "What is the central bank of India?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "Federal Reserve"
+            },
+            {
+              "id": "B",
+              "text": "Reserve Bank of India"
+            },
+            {
+              "id": "C",
+              "text": "European Central Bank"
+            },
+            {
+              "id": "D",
+              "text": "Bank of England"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Reserve Bank of India"
+        },
+        {
+          "question": "What is the purpose of monetary policy?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "To control the money supply"
+            },
+            {
+              "id": "B",
+              "text": "To set interest rates"
+            },
+            {
+              "id": "C",
+              "text": "To regulate the banking industry"
+            },
+            {
+              "id": "D",
+              "text": "To manage inflation"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "To control the money supply"
+        },
+        {
+          "question": "What is the relationship between interest rates and inflation?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "High interest rates lead to low inflation"
+            },
+            {
+              "id": "B",
+              "text": "Low interest rates lead to low inflation"
+            },
+            {
+              "id": "C",
+              "text": "High interest rates lead to high inflation"
+            },
+            {
+              "id": "D",
+              "text": "Low interest rates lead to high inflation"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "High interest rates lead to low inflation"
+        },
+        {
+          "question": "What is the Index of Industrial Production (IIP)?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "A measure of industrial production in India"
+            },
+            {
+              "id": "B",
+              "text": "A measure of inflation in India"
+            },
+            {
+              "id": "C",
+              "text": "A measure of consumer spending in India"
+            },
+            {
+              "id": "D",
+              "text": "A measure of GDP growth in India"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "A measure of industrial production in India"
+        },
+        {
+          "question": "What is the Purchasing Managers Index (PMI)?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "A survey-based indicator of business activity"
+            },
+            {
+              "id": "B",
+              "text": "A measure of consumer confidence"
+            },
+            {
+              "id": "C",
+              "text": "A measure of GDP growth"
+            },
+            {
+              "id": "D",
+              "text": "A measure of inflation"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "A survey-based indicator of business activity"
+        },
+        {
+          "question": "What is the importance of corporate earnings announcements?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "They provide information about the financial health of a company"
+            },
+            {
+              "id": "B",
+              "text": "They can lead to changes in stock prices"
+            },
+            {
+              "id": "C",
+              "text": "They can help investors make informed investment decisions"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "All of the above"
+        },
+        {
+          "question": "What is a non-financial event that can impact the markets?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "A war"
+            },
+            {
+              "id": "B",
+              "text": "A natural disaster"
+            },
+            {
+              "id": "C",
+              "text": "A change in government"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "All of the above"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "13. Getting started",
+      "order": "13",
+      "section": 3,
+      "lessonQuiz": [
+        {
+          "question": "1) Which of the following is considered the most important factor for success in the markets?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "Risk management"
+            },
+            {
+              "id": "B",
+              "text": "Discipline"
+            },
+            {
+              "id": "C",
+              "text": "Developing a point of view"
+            },
+            {
+              "id": "D",
+              "text": "Market timing"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Developing a point of view"
+        },
+        {
+          "question": "2) Which of the following is NOT a method used to develop a point of view in the markets?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "Fundamental Analysis (FA)"
+            },
+            {
+              "id": "B",
+              "text": "Technical Analysis (TA)"
+            },
+            {
+              "id": "C",
+              "text": "Quantitative Analysis (QA)"
+            },
+            {
+              "id": "D",
+              "text": "Horoscope Analysis"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "Horoscope Analysis"
+        },
+        {
+          "question": "3) Which of the following is the most reliable source of trading advice?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "A financial advisor"
+            },
+            {
+              "id": "B",
+              "text": "A stockbroker"
+            },
+            {
+              "id": "C",
+              "text": "A financial television channel"
+            },
+            {
+              "id": "D",
+              "text": "Your own research and analysis"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "Your own research and analysis"
+        },
+        {
+          "question": "4) Which of the following is NOT a trading instrument that can be used to complement a bullish point of view?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "Stock in the spot market"
+            },
+            {
+              "id": "B",
+              "text": "Stock futures"
+            },
+            {
+              "id": "C",
+              "text": "Stock options"
+            },
+            {
+              "id": "D",
+              "text": "Lottery tickets"
+            }
+          ],
+          "answerId": "D",
+          "answerText": "Lottery tickets"
+        },
+        {
+          "question": "5) Which of the following is the purpose of risk management in trading?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "To guarantee profits"
+            },
+            {
+              "id": "B",
+              "text": "To minimize losses"
+            },
+            {
+              "id": "C",
+              "text": "To eliminate stress"
+            },
+            {
+              "id": "D",
+              "text": "To impress other traders"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To minimize losses"
+        },
+        {
+          "question": "6) What is the first step in developing a trading plan?",
+          "questionNumber": 6,
+          "options": [
+            {
+              "id": "A",
+              "text": "Choosing a broker"
+            },
+            {
+              "id": "B",
+              "text": "Setting trading goals"
+            },
+            {
+              "id": "C",
+              "text": "Developing a risk management strategy"
+            },
+            {
+              "id": "D",
+              "text": "Selecting a trading platform"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "Setting trading goals"
+        },
+        {
+          "question": "7) What is a stop-loss order?",
+          "questionNumber": 7,
+          "options": [
+            {
+              "id": "A",
+              "text": "An order to buy a stock at a specific price"
+            },
+            {
+              "id": "B",
+              "text": "An order to sell a stock at a specific price"
+            },
+            {
+              "id": "C",
+              "text": "An order to automatically sell a stock if it falls below a certain price"
+            },
+            {
+              "id": "D",
+              "text": "An order to automatically buy a stock if it rises above a certain price"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "An order to automatically sell a stock if it falls below a certain price"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "14. Supplementary note \u2013 Rights, OFS, FPO",
+      "order": "14",
+      "section": 3,
+      "lessonQuiz": [
+        {
+          "question": "What is the main reason for a company to go public through an IPO?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "To distribute profits to shareholders"
+            },
+            {
+              "id": "B",
+              "text": "To raise capital for expansion or cash out investors"
+            },
+            {
+              "id": "C",
+              "text": "To improve the company's image"
+            },
+            {
+              "id": "D",
+              "text": "To reduce the company's debt"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To raise capital for expansion or cash out investors"
+        },
+        {
+          "question": "Which of the following is NOT a characteristic of an OFS?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "Shares are offered to the entire market"
+            },
+            {
+              "id": "B",
+              "text": "Promoters can sell their holdings"
+            },
+            {
+              "id": "C",
+              "text": "New shares are created"
+            },
+            {
+              "id": "D",
+              "text": "A floor price is set"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "New shares are created"
+        },
+        {
+          "question": "What is the primary difference between an FPO and an IPO?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "FPOs involve the sale of new shares while IPOs involve the sale of existing shares"
+            },
+            {
+              "id": "B",
+              "text": "IPOs are used to raise capital for new projects while FPOs are used to raise capital for existing projects"
+            },
+            {
+              "id": "C",
+              "text": "FPOs require SEBI approval while IPOs do not"
+            },
+            {
+              "id": "D",
+              "text": "IPOs are only available to large companies while FPOs are available to all listed companies"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "FPOs involve the sale of new shares while IPOs involve the sale of existing shares"
+        },
+        {
+          "question": "Which of the following is a benefit of an OFS compared to an FPO?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "OFS has a faster approval process"
+            },
+            {
+              "id": "B",
+              "text": "OFS allows for greater flexibility in pricing"
+            },
+            {
+              "id": "C",
+              "text": "OFS is less dilutive to existing shareholders"
+            },
+            {
+              "id": "D",
+              "text": "OFS is more transparent than FPO"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "OFS has a faster approval process"
+        },
+        {
+          "question": "What is the main purpose of a rights issue?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "To award existing shareholders with free shares"
+            },
+            {
+              "id": "B",
+              "text": "To raise additional capital from existing shareholders"
+            },
+            {
+              "id": "C",
+              "text": "To dilute the shareholdings of specific investors"
+            },
+            {
+              "id": "D",
+              "text": "To increase the liquidity of the company's shares"
+            }
+          ],
+          "answerId": "B",
+          "answerText": "To raise additional capital from existing shareholders"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to Stock Markets",
+      "lesson": "15. Supplementary note \u2013 The 20 market depth or level 3 data",
+      "order": "15",
+      "section": 3,
+      "lessonQuiz": [
+        {
+          "question": "Which of the following is NOT a feature of the 20 Market Depth (level 3 data) Window?",
+          "questionNumber": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "Contract availability"
+            },
+            {
+              "id": "B",
+              "text": "Execution control"
+            },
+            {
+              "id": "C",
+              "text": "Order cancellation"
+            },
+            {
+              "id": "D",
+              "text": "Position sizing"
+            }
+          ],
+          "answerId": "C",
+          "answerText": "Order cancellation"
+        },
+        {
+          "question": "How can the 20 Market Depth Window assist in determining a stop-loss price?",
+          "questionNumber": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "By identifying concentrations of bids or offers at specific price levels"
+            },
+            {
+              "id": "B",
+              "text": "By providing real-time updates on market volatility"
+            },
+            {
+              "id": "C",
+              "text": "By displaying historical price data"
+            },
+            {
+              "id": "D",
+              "text": "By connecting the user to a real-time chat with other traders"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "By identifying concentrations of bids or offers at specific price levels"
+        },
+        {
+          "question": "Which of the following is an advantage of the 20 Market Depth feature for option traders?",
+          "questionNumber": 3,
+          "options": [
+            {
+              "id": "A",
+              "text": "It provides greater visibility into contract availability"
+            },
+            {
+              "id": "B",
+              "text": "It reduces trading costs"
+            },
+            {
+              "id": "C",
+              "text": "It guarantees execution at the best possible price"
+            },
+            {
+              "id": "D",
+              "text": "It eliminates the risk of slippage"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "It provides greater visibility into contract availability"
+        },
+        {
+          "question": "How can the 20 Market Depth Window help traders validate the support and resistance levels?",
+          "questionNumber": 4,
+          "options": [
+            {
+              "id": "A",
+              "text": "By comparing the order book data with the price chart"
+            },
+            {
+              "id": "B",
+              "text": "By using the order book data to create statistical models"
+            },
+            {
+              "id": "C",
+              "text": "By displaying real-time alerts when support or resistance levels are breached"
+            },
+            {
+              "id": "D",
+              "text": "By connecting the user to a team of analysts who provide support and resistance levels"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "By comparing the order book data with the price chart"
+        },
+        {
+          "question": "Which of the following is a drawback of the 20 Market Depth Window?",
+          "questionNumber": 5,
+          "options": [
+            {
+              "id": "A",
+              "text": "It can be overwhelming for new traders"
+            },
+            {
+              "id": "B",
+              "text": "It only displays data from a single exchange"
+            },
+            {
+              "id": "C",
+              "text": "It is not available on all trading platforms"
+            },
+            {
+              "id": "D",
+              "text": "It is subject to frequent data lags"
+            }
+          ],
+          "answerId": "A",
+          "answerText": "It can be overwhelming for new traders"
+        }
+      ]
+    }
+  ]

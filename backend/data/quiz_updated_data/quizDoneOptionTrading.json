@@ -1,0 +1,3796 @@
+[
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "7. Summarizing Call & Put Options",
+    "order": "7",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following options is NOT a type of option strategy?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bullish"
+          },
+          {
+            "id": "B",
+            "text": "Bearish"
+          },
+          {
+            "id": "C",
+            "text": "Flat"
+          },
+          {
+            "id": "D",
+            "text": "Straddle"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Flat"
+      },
+      {
+        "question": "What is the maximum potential profit for the buyer of a call option?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The difference between the strike price and the spot price"
+          },
+          {
+            "id": "B",
+            "text": "The premium paid"
+          },
+          {
+            "id": "C",
+            "text": "Unlimited"
+          },
+          {
+            "id": "D",
+            "text": "The spot price"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Unlimited"
+      },
+      {
+        "question": "What is the maximum potential loss for the seller of a put option?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "The difference between the strike price and the spot price"
+          },
+          {
+            "id": "B",
+            "text": "The premium received"
+          },
+          {
+            "id": "C",
+            "text": "Unlimited"
+          },
+          {
+            "id": "D",
+            "text": "The spot price"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Unlimited"
+      },
+      {
+        "question": "Which of the following statements about option premiums is true?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Option premiums are only affected by the spot price"
+          },
+          {
+            "id": "B",
+            "text": "Option premiums are only affected by the time to expiration"
+          },
+          {
+            "id": "C",
+            "text": "Option premiums are only affected by the strike price"
+          },
+          {
+            "id": "D",
+            "text": "Option premiums are affected by all of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Option premiums are affected by all of the above"
+      },
+      {
+        "question": "What is the formula for calculating the profit or loss (P&L) for a long call option upon expiration?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "P&L = Max [0, (Spot Price - Strike Price)] - Premium Paid"
+          },
+          {
+            "id": "B",
+            "text": "P&L = Max [0, (Strike Price - Spot Price)] - Premium Paid"
+          },
+          {
+            "id": "C",
+            "text": "P&L = Premium Paid - Max [0, (Spot Price - Strike Price)]"
+          },
+          {
+            "id": "D",
+            "text": "P&L = Premium Paid - Max [0, (Strike Price - Spot Price)]"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "P&L = Max [0, (Spot Price - Strike Price)] - Premium Paid"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "9. The Option Greeks (Delta) Part 1",
+    "order": "9",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT an Option Greek?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Delta"
+          },
+          {
+            "id": "B",
+            "text": "Gamma"
+          },
+          {
+            "id": "C",
+            "text": "Rho"
+          },
+          {
+            "id": "D",
+            "text": "Price"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Price"
+      },
+      {
+        "question": "What does the Delta of an option measure?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The rate of change of premium based on volatility"
+          },
+          {
+            "id": "B",
+            "text": "The impact on premium based on time left for expiry"
+          },
+          {
+            "id": "C",
+            "text": "The rate of change of options premium based on the directional movement of the underlying"
+          },
+          {
+            "id": "D",
+            "text": "The rate of change of delta itself"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The rate of change of options premium based on the directional movement of the underlying"
+      },
+      {
+        "question": "What is the maximum value a Delta of a Call option can have?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "0"
+          },
+          {
+            "id": "B",
+            "text": "1"
+          },
+          {
+            "id": "C",
+            "text": "-1"
+          },
+          {
+            "id": "D",
+            "text": "2"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "1"
+      },
+      {
+        "question": "Which of the following is a characteristic of a Put option's Delta?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is always negative"
+          },
+          {
+            "id": "B",
+            "text": "It can never be greater than 1"
+          },
+          {
+            "id": "C",
+            "text": "It measures the rate of change of premium for every unit change in the underlying"
+          },
+          {
+            "id": "D",
+            "text": "Both A and C"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Both A and C"
+      },
+      {
+        "question": "What is the Delta of an ATM option?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "0"
+          },
+          {
+            "id": "B",
+            "text": "0.5"
+          },
+          {
+            "id": "C",
+            "text": "1"
+          },
+          {
+            "id": "D",
+            "text": "-1"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "0.5"
+      },
+      {
+        "question": "Which of the following option positions has a Delta close to 0?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Short Call"
+          },
+          {
+            "id": "B",
+            "text": "Long Put"
+          },
+          {
+            "id": "C",
+            "text": "Short Put"
+          },
+          {
+            "id": "D",
+            "Text": "Long Call"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Short Put"
+      },
+      {
+        "question": "What happens to the Delta of a call option as the underlying value increases?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Increases"
+          },
+          {
+            "id": "B",
+            "text": "Decreases"
+          },
+          {
+            "id": "C",
+            "text": "Stays the same"
+          },
+          {
+            "id": "D",
+            "text": "Becomes negative"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Increases"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "1. Call Option Basics",
+    "order": "1",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "What was the primary purpose of the special agreement between Ajay and Venu?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "To allow Ajay to buy Venu's land at a fixed price in the future"
+          },
+          {
+            "id": "B",
+            "text": "To give Venu the right to sell his land to Ajay at a fixed price in the future"
+          },
+          {
+            "id": "C",
+            "text": "To grant Ajay the right to buy Venu's land at a fixed price in the future, with Venu having the obligation to sell"
+          },
+          {
+            "id": "D",
+            "text": "To give Venu the right to sell his land to Ajay at a fixed price in the future, with Ajay having the obligation to buy"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "To grant Ajay the right to buy Venu's land at a fixed price in the future, with Venu having the obligation to sell"
+      },
+      {
+        "question": "Which of the following is NOT a possible outcome of the special agreement between Ajay and Venu?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The land price increases above the strike price"
+          },
+          {
+            "id": "B",
+            "text": "The land price decreases below the strike price"
+          },
+          {
+            "id": "C",
+            "text": "The land price stays the same as the strike price"
+          },
+          {
+            "id": "D",
+            "text": "Venu changes his mind and refuses to sell the land"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Venu changes his mind and refuses to sell the land"
+      },
+      {
+        "question": "Why would Ajay enter into the special agreement with Venu even though he could lose his 1 lakh investment?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "He knows his maximum loss is limited to 1 lakh"
+          },
+          {
+            "id": "B",
+            "text": "He believes the land price will increase significantly"
+          },
+          {
+            "id": "C",
+            "text": "He wants to protect himself from the risk of the land price decreasing"
+          },
+          {
+            "id": "D",
+            "text": "He is confident that Venu will not honor the agreement"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "He knows his maximum loss is limited to 1 lakh"
+      },
+      {
+        "question": "Which of the following is a key characteristic of a call option?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The buyer has the right to buy an asset at a specified price"
+          },
+          {
+            "id": "B",
+            "text": "The seller has the right to sell an asset at a specified price"
+          },
+          {
+            "id": "C",
+            "text": "The buyer has the obligation to buy an asset at a specified price"
+          },
+          {
+            "id": "D",
+            "text": "The seller has the obligation to sell an asset at a specified price"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The buyer has the right to buy an asset at a specified price"
+      },
+      {
+        "question": "What is the purpose of paying a premium in an option contract?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "To guarantee the buyer will exercise their right to buy or sell"
+          },
+          {
+            "id": "B",
+            "text": "To give the buyer the right to buy or sell but not the obligation"
+          },
+          {
+            "id": "C",
+            "text": "To give the seller the right to buy or sell but not the obligation"
+          },
+          {
+            "id": "D",
+            "text": "To ensure the buyer will not lose money on the contract"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To give the buyer the right to buy or sell but not the obligation"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "5. The Put Option Buying",
+    "order": "5",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is a characteristic of a put option buyer?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "They expect the price of the underlying to increase"
+          },
+          {
+            "id": "B",
+            "text": "They have an obligation to buy the underlying"
+          },
+          {
+            "id": "C",
+            "text": "They have the right to sell the underlying"
+          },
+          {
+            "id": "D",
+            "text": "They will receive a premium from the put option seller"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "They have the right to sell the underlying"
+      },
+      {
+        "question": "What is the maximum loss that a put option buyer can experience?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The amount of the premium paid"
+          },
+          {
+            "id": "B",
+            "text": "The difference between the strike price and the spot price"
+          },
+          {
+            "id": "C",
+            "text": "The entire value of the underlying"
+          },
+          {
+            "id": "D",
+            "text": "There is no maximum loss"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The amount of the premium paid"
+      },
+      {
+        "question": "What is the intrinsic value of a put option with a strike price of 100 and an underlying price of 90?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "10"
+          },
+          {
+            "id": "B",
+            "text": "20"
+          },
+          {
+            "id": "C",
+            "text": "30"
+          },
+          {
+            "id": "D",
+            "text": "40"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "10"
+      },
+      {
+        "question": "What is the breakeven point for a put option buyer?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The strike price"
+          },
+          {
+            "id": "B",
+            "text": "The strike price plus the premium paid"
+          },
+          {
+            "id": "C",
+            "text": "The strike price minus the premium paid"
+          },
+          {
+            "id": "D",
+            "text": "The spot price"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The strike price minus the premium paid"
+      },
+      {
+        "question": "What is the primary advantage of buying a put option?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "It allows the buyer to speculate on a decline in the underlying"
+          },
+          {
+            "id": "B",
+            "text": "It provides a guaranteed return on investment"
+          },
+          {
+            "id": "C",
+            "text": "It reduces the risk of holding the underlying"
+          },
+          {
+            "id": "D",
+            "text": "It provides a tax advantage"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It allows the buyer to speculate on a decline in the underlying"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "8. Moneyness of an Option Contract",
+    "order": "8",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "The moneyness of an option contract classifies the option as:",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Long or Short"
+          },
+          {
+            "id": "B",
+            "text": "In the Money (ITM), At the Money (ATM), or Out of the Money (OTM)"
+          },
+          {
+            "id": "C",
+            "text": "Call or Put"
+          },
+          {
+            "id": "D",
+            "text": "European or American"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "In the Money (ITM), At the Money (ATM), or Out of the Money (OTM)"
+      },
+      {
+        "question": "The intrinsic value of a call option is calculated as:",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Strike Price - Spot Price"
+          },
+          {
+            "id": "B",
+            "text": "Spot Price - Strike Price"
+          },
+          {
+            "id": "C",
+            "text": "(Spot Price + Strike Price) / 2"
+          },
+          {
+            "id": "D",
+            "text": "Premium paid for the option"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Spot Price - Strike Price"
+      },
+      {
+        "question": "Which of the following is a generalization for call options?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "All strikes lower than ATM are OTM options."
+          },
+          {
+            "id": "B",
+            "text": "All strikes higher than ATM are ITM options."
+          },
+          {
+            "id": "C",
+            "text": "Both A and B"
+          },
+          {
+            "id": "D",
+            "text": "Neither A nor B"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Both A and B"
+      },
+      {
+        "question": "Which of the following is NOT a benefit of using an option chain?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Identifies all available strikes for an underlying"
+          },
+          {
+            "id": "B",
+            "text": "Classifies strikes based on their moneyness"
+          },
+          {
+            "id": "C",
+            "text": "Provides information on volatility and implied volatility"
+          },
+          {
+            "id": "D",
+            "text": "Shows option premiums and bid-ask prices"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Provides information on volatility and implied volatility"
+      },
+      {
+        "question": "The Option Greeks are market forces that:",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Affect the time value of options"
+          },
+          {
+            "id": "B",
+            "text": "Affect the intrinsic value of options"
+          },
+          {
+            "id": "C",
+            "text": "Affect the premium associated with option strikes"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Affect the premium associated with option strikes"
+      },
+      {
+        "question": "Additional MCQ:",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "The intrinsic value of a put option can be negative."
+          },
+          {
+            "id": "B",
+            "text": "ITM options always have a higher premium than OTM options."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "ITM options always have a higher premium than OTM options."
+      },
+      {
+        "question": "Additional MCQ:",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The Black & Scholes Option Pricing Formula is used to calculate the implied volatility of options."
+          },
+          {
+            "id": "B",
+            "text": "The Option Chain is a standard convention used by all exchanges."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The Black & Scholes Option Pricing Formula is used to calculate the implied volatility of options."
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "2. Basic Option Jargons",
+    "order": "2",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "What is the Strike Price in options trading?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "The price at which the underlying asset can be bought at maturity"
+          },
+          {
+            "id": "B",
+            "text": "The price at which the underlying asset can be sold at maturity"
+          },
+          {
+            "id": "C",
+            "text": "The price at which the option contract is bought or sold"
+          },
+          {
+            "id": "D",
+            "text": "The difference between the underlying asset's price and the strike price"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The strike price is the price at which the underlying asset can be bought at maturity."
+      },
+      {
+        "question": "What is the purpose of the Option Premium?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "To protect the option buyer from losses"
+          },
+          {
+            "id": "B",
+            "text": "To provide income to the option seller"
+          },
+          {
+            "id": "C",
+            "text": "To cover the transaction costs of the option trade"
+          },
+          {
+            "id": "D",
+            "text": "To all of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The option premium serves all of the purposes mentioned, including protecting the buyer from losses, providing income to the seller, and covering transaction costs."
+      },
+      {
+        "question": "When does the Option Expiry occur?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "On the day the option contract is purchased"
+          },
+          {
+            "id": "B",
+            "text": "On the last Thursday of every month"
+          },
+          {
+            "id": "C",
+            "text": "When the underlying asset reaches the strike price"
+          },
+          {
+            "id": "D",
+            "text": "When the option buyer exercises their right to buy or sell the asset"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Option contracts expire on the last Thursday of every month."
+      },
+      {
+        "question": "What does Exercising an Option Contract mean?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Buying or selling the underlying asset at the strike price"
+          },
+          {
+            "id": "B",
+            "text": "Selling the option contract back to the market"
+          },
+          {
+            "id": "C",
+            "text": "Extending the expiration date of the option contract"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Exercising an option contract means buying or selling the underlying asset at the strike price."
+      },
+      {
+        "question": "Which of the following is NOT a factor that affects Option Premiums?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "The time to expiration"
+          },
+          {
+            "id": "B",
+            "text": "The volatility of the underlying asset"
+          },
+          {
+            "id": "C",
+            "text": "The supply and demand for the option contract"
+          },
+          {
+            "id": "D",
+            "text": "The strike price of the option contract"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The strike price of the option contract is not a factor that affects option premiums."
+      },
+      {
+        "question": "What is the process called by which an option contract is settled in India?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Physical Settlement"
+          },
+          {
+            "id": "B",
+            "text": "Cash Settlement"
+          },
+          {
+            "id": "C",
+            "text": "Net Settlement"
+          },
+          {
+            "id": "D",
+            "text": "Margin Settlement"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Options are cash settled in India."
+      },
+      {
+        "question": "What is the advantage of a Call Option contract?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The buyer has the right, but not the obligation, to buy the underlying asset at the strike price"
+          },
+          {
+            "id": "B",
+            "text": "The seller has the right, but not the obligation, to sell the underlying asset at the strike price"
+          },
+          {
+            "id": "C",
+            "text": "The buyer has the obligation to buy the underlying asset at the strike price"
+          },
+          {
+            "id": "D",
+            "text": "The seller has the obligation to sell the underlying asset at the strike price"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The buyer of a call option has the right, but not the obligation, to buy the underlying asset at the strike price."
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "6. The Put Option selling",
+    "order": "6",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following statements about put option sellers is true?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "They have a bearish view on the market."
+          },
+          {
+            "id": "B",
+            "text": "They are bullish about the underlying or believe it will not continue to fall."
+          },
+          {
+            "id": "C",
+            "text": "They collect premiums from put option buyers."
+          },
+          {
+            "id": "D",
+            "text": "They can experience unlimited profits."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "They are bullish about the underlying or believe it will not continue to fall."
+      },
+      {
+        "question": "What is the general formula for calculating the P&amp;L of a put option seller?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "P&amp;L = Premium Received + (Strike Price - Spot Price)"
+          },
+          {
+            "id": "B",
+            "text": "P&amp;L = Premium Received - [Max (0, Strike Price - Spot Price)]"
+          },
+          {
+            "id": "C",
+            "text": "P&amp;L = Spot Price - (Premium Received + Strike Price)"
+          },
+          {
+            "id": "D",
+            "text": "P&amp;L = Strike Price - [Max (0, Spot Price - Premium Received)]"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "P&amp;L = Premium Received - [Max (0, Strike Price - Spot Price)]"
+      },
+      {
+        "question": "What is the breakdown point for a put option seller?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Strike Price + Premium Received"
+          },
+          {
+            "id": "B",
+            "text": "Strike Price - Premium Received"
+          },
+          {
+            "id": "C",
+            "text": "Premium Received - Strike Price"
+          },
+          {
+            "id": "D",
+            "text": "Spot Price - (Premium Received + Strike Price)"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Strike Price - Premium Received"
+      },
+      {
+        "question": "Which of the following statements about the P&amp;L of a put option seller is true?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is always positive."
+          },
+          {
+            "id": "B",
+            "text": "It is always negative."
+          },
+          {
+            "id": "C",
+            "text": "It can be either positive or negative, depending on the spot price."
+          },
+          {
+            "id": "D",
+            "text": "It is only positive if the spot price is above the strike price."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "It can be either positive or negative, depending on the spot price."
+      },
+      {
+        "question": "Which of the following is a key takeaway from the chapter on put option selling?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Put option sellers can experience unlimited losses."
+          },
+          {
+            "id": "B",
+            "text": "The breakdown point is the point at which the put option seller starts to make a profit."
+          },
+          {
+            "id": "C",
+            "text": "Put option sellers should always buy call options to hedge their risk."
+          },
+          {
+            "id": "D",
+            "text": "Put option sellers should only sell put options when the spot price is below the strike price."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Put option sellers can experience unlimited losses."
+      },
+      {
+        "question": "As a put option seller, your profit is limited to:",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "The premium received"
+          },
+          {
+            "id": "B",
+            "text": "The strike price"
+          },
+          {
+            "id": "C",
+            "text": "The difference between the strike price and the spot price"
+          },
+          {
+            "id": "D",
+            "text": "The difference between the spot price and the strike price"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The premium received"
+      },
+      {
+        "question": "What is the risk associated with selling put options?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Unlimited losses"
+          },
+          {
+            "id": "B",
+            "text": "Limited profits"
+          },
+          {
+            "id": "C",
+            "text": "Both unlimited losses and limited profits"
+          },
+          {
+            "id": "D",
+            "text": "Neither unlimited losses nor limited profits"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Unlimited losses"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "10. Delta (Part 2)",
+    "order": "10",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "What is the significance of calculating the expected change in option premium?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "It helps to estimate how much the option premium will change for a given movement in the underlying."
+          },
+          {
+            "id": "B",
+            "text": "It is required to calculate the option's fair value."
+          },
+          {
+            "id": "C",
+            "text": "It helps to determine the option's delta value."
+          },
+          {
+            "id": "D",
+            "text": "It is used to calculate the option's theta decay rate."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It helps to estimate how much the option premium will change for a given movement in the underlying."
+      },
+      {
+        "question": "Which of the following statements about OTM options is true?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "OTM options have a delta between 0.5 and 1."
+          },
+          {
+            "id": "B",
+            "text": "OTM options are likely to have higher premiums than ATM options."
+          },
+          {
+            "id": "C",
+            "text": "OTM options are more sensitive to changes in the underlying than ATM options."
+          },
+          {
+            "id": "D",
+            "text": "OTM options are less likely to expire worthless than ITM options."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "OTM options are more sensitive to changes in the underlying than ATM options."
+      },
+      {
+        "question": "What is the formula for a call option's delta?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Delta = (Current Spot Price - Strike Price) / (Expiration Date - Current Date)"
+          },
+          {
+            "id": "B",
+            "text": "Delta = (Current Spot Price - Strike Price) / (Expiration Date - Current Date) * 100"
+          },
+          {
+            "id": "C",
+            "text": "Delta = (Expiration Date - Current Date) / (Current Spot Price - Strike Price)"
+          },
+          {
+            "id": "D",
+            "text": "Delta = (Expiration Date - Current Date) / (Current Spot Price - Strike Price) * 100"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Delta = (Current Spot Price - Strike Price) / (Expiration Date - Current Date) * 100"
+      },
+      {
+        "question": "What is the delta value of an ATM put option?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "-0.5"
+          },
+          {
+            "id": "B",
+            "text": "-1"
+          },
+          {
+            "id": "C",
+            "text": "0"
+          },
+          {
+            "id": "D",
+            "text": "0.5"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "0"
+      },
+      {
+        "question": "What is the delta value of a deep ITM call option?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "0"
+          },
+          {
+            "id": "B",
+            "text": "0.5"
+          },
+          {
+            "id": "C",
+            "text": "1"
+          },
+          {
+            "id": "D",
+            "text": "-1"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "1"
+      },
+      {
+        "question": "How does the delta of an option change as the underlying asset price changes?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "The delta of an option increases as the underlying asset price increases."
+          },
+          {
+            "id": "B",
+            "text": "The delta of an option decreases as the underlying asset price increases."
+          },
+          {
+            "id": "C",
+            "text": "The delta of an option remains constant as the underlying asset price increases."
+          },
+          {
+            "id": "D",
+            "text": "The delta of an option is not affected by the underlying asset price."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The delta of an option increases as the underlying asset price increases."
+      },
+      {
+        "question": "What is the delta acceleration effect?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The delta of an option increases at a faster rate as the underlying asset price approaches the strike price."
+          },
+          {
+            "id": "B",
+            "text": "The delta of an option decreases at a faster rate as the underlying asset price approaches the strike price."
+          },
+          {
+            "id": "C",
+            "text": "The delta of an option remains constant as the underlying asset price approaches the strike price."
+          },
+          {
+            "id": "D",
+            "text": "The delta of an option is not affected by the underlying asset price approaching the strike price."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The delta of an option increases at a faster rate as the underlying asset price approaches the strike price."
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "4. Selling/Writing a Call Option",
+    "order": "4",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following statements about option writer and option buyer is correct?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Option writer has limited profit potential and unlimited risk"
+          },
+          {
+            "id": "B",
+            "text": "Option buyer has limited risk and unlimited profit potential"
+          },
+          {
+            "id": "C",
+            "text": "Both A and B"
+          },
+          {
+            "id": "D",
+            "text": "Neither A nor B"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Both A and B"
+      },
+      {
+        "question": "Who of the following benefits if the market price increases and stays above the strike price?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Option buyer"
+          },
+          {
+            "id": "B",
+            "text": "Option writer"
+          },
+          {
+            "id": "C",
+            "text": "Both A and B"
+          },
+          {
+            "id": "D",
+            "text": "Neither A nor B"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Option buyer"
+      },
+      {
+        "question": "Which of the following is the formula to calculate the P&L of a Call option seller?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "P&L = Premium \u2013 Intrinsic Value"
+          },
+          {
+            "id": "B",
+            "text": "P&L = Premium + Intrinsic Value"
+          },
+          {
+            "id": "C",
+            "text": "P&L = Premium \u2013 Max [0, (Spot Price \u2013 Strike Price)]"
+          },
+          {
+            "id": "D",
+            "text": "P&L = Premium + Max [0, (Spot Price \u2013 Strike Price)]"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "P&L = Premium \u2013 Max [0, (Spot Price \u2013 Strike Price)]"
+      },
+      {
+        "question": "What is the name of the point at which the call option seller gives up all the premium he has made?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Breakeven point"
+          },
+          {
+            "id": "B",
+            "text": "Breakdown point"
+          },
+          {
+            "id": "C",
+            "text": "Intrinsic point"
+          },
+          {
+            "id": "D",
+            "text": "Spot point"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Breakdown point"
+      },
+      {
+        "question": "Which of the following is NOT a disadvantage of selling a call option?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Unlimited risk potential"
+          },
+          {
+            "id": "B",
+            "text": "Requirement of margin deposit"
+          },
+          {
+            "id": "C",
+            "text": "Limited profit potential"
+          },
+          {
+            "id": "D",
+            "text": "Difficulty in understanding"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Difficulty in understanding"
+      },
+      {
+        "question": "Which of the following statements about American and European options in India is true?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "All options in India are American in nature"
+          },
+          {
+            "id": "B",
+            "text": "All options in India are European in nature"
+          },
+          {
+            "id": "C",
+            "text": "Index options are American in nature and stock options are European in nature"
+          },
+          {
+            "id": "D",
+            "text": "Index options are European in nature and stock options are American in nature"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "All options in India are European in nature"
+      },
+      {
+        "question": "Who of the following will make money when the stock price moves above the strike price?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Call option buyer"
+          },
+          {
+            "id": "B",
+            "text": "Call option seller"
+          },
+          {
+            "id": "C",
+            "text": "Put option buyer"
+          },
+          {
+            "id": "D",
+            "text": "Put option seller"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Call option buyer"
+      },
+      {
+        "question": "Which of the following is a risk associated with selling a call option?",
+        "questionNumber": 8,
+        "options": [
+          {
+            "id": "A",
+            "text": "Market risk"
+          },
+          {
+            "id": "B",
+            "text": "Interest rate risk"
+          },
+          {
+            "id": "C",
+            "text": "Volatility risk"
+          },
+          {
+            "id": "D",
+            "text": "Inflation risk"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Market risk"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "11. Delta (Part 3)",
+    "order": "11",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is the additive characteristic of Delta?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Deltas can be multiplied"
+          },
+          {
+            "id": "B",
+            "text": "Deltas can be combined"
+          },
+          {
+            "id": "C",
+            "text": "Deltas can be subtracted"
+          },
+          {
+            "id": "D",
+            "text": "Deltas cannot be combined"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Deltas can be combined"
+      },
+      {
+        "question": "What is the Delta of a Futures contract?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "-1"
+          },
+          {
+            "id": "B",
+            "text": "0"
+          },
+          {
+            "id": "C",
+            "text": "1"
+          },
+          {
+            "id": "D",
+            "text": "2"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "1"
+      },
+      {
+        "question": "How many ATM option contracts are equivalent to owning 1 futures contract?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "One"
+          },
+          {
+            "id": "B",
+            "text": "Two"
+          },
+          {
+            "id": "C",
+            "text": "Three"
+          },
+          {
+            "id": "D",
+            "text": "Four"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Two"
+      },
+      {
+        "question": "Why are option contracts not considered a perfect substitute for futures contracts?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Options contracts are affected by factors other than market direction"
+          },
+          {
+            "id": "B",
+            "text": "Futures contracts are always more liquid than option contracts"
+          },
+          {
+            "id": "C",
+            "text": "Options contracts have a limited life"
+          },
+          {
+            "id": "D",
+            "text": "Futures contracts are always traded on an exchange"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Options contracts are affected by factors other than market direction"
+      },
+      {
+        "question": "What does a Delta value close to 1 indicate about an option's probability of expiring ITM?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Low probability"
+          },
+          {
+            "id": "B",
+            "text": "High probability"
+          },
+          {
+            "id": "C",
+            "text": "Equal probability"
+          },
+          {
+            "id": "D",
+            "text": "No correlation"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "High probability"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "12. Gamma (Part 1)",
+    "order": "12",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is the formula for velocity?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "V = dx / dt"
+          },
+          {
+            "id": "B",
+            "text": "V = dt / dx"
+          },
+          {
+            "id": "C",
+            "text": "V = dx / dy"
+          },
+          {
+            "id": "D",
+            "text": "V = dy / dx"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "V = dx / dt"
+      },
+      {
+        "question": "What is the SI unit of velocity?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Meters per second"
+          },
+          {
+            "id": "B",
+            "text": "Kilometers per hour"
+          },
+          {
+            "id": "C",
+            "text": "Miles per hour"
+          },
+          {
+            "id": "D",
+            "text": "Feet per second"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Meters per second"
+      },
+      {
+        "question": "Which of the following is NOT a factor that affects acceleration?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Mass"
+          },
+          {
+            "id": "B",
+            "text": "Velocity"
+          },
+          {
+            "id": "C",
+            "text": "Force"
+          },
+          {
+            "id": "D",
+            "text": "Temperature"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Temperature"
+      },
+      {
+        "question": "What is the formula for acceleration?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "A = dv / dt"
+          },
+          {
+            "id": "B",
+            "text": "A = dt / dv"
+          },
+          {
+            "id": "C",
+            "text": "A = dv / dx"
+          },
+          {
+            "id": "D",
+            "text": "A = dx / dv"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "A = dv / dt"
+      },
+      {
+        "question": "What is the relationship between velocity and acceleration?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Acceleration is the rate of change of velocity"
+          },
+          {
+            "id": "B",
+            "text": "Velocity is the rate of change of acceleration"
+          },
+          {
+            "id": "C",
+            "text": "Acceleration is inversely proportional to velocity"
+          },
+          {
+            "id": "D",
+            "text": "Velocity is inversely proportional to acceleration"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Acceleration is the rate of change of velocity"
+      },
+      {
+        "question": "What is the SI unit of acceleration?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Meters per second"
+          },
+          {
+            "id": "B",
+            "text": "Kilometers per hour"
+          },
+          {
+            "id": "C",
+            "text": "Miles per hour"
+          },
+          {
+            "id": "D",
+            "text": "Feet per second per second"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Feet per second per second"
+      },
+      {
+        "question": "Which of the following is NOT a type of acceleration?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Uniform acceleration"
+          },
+          {
+            "id": "B",
+            "text": "Non-uniform acceleration"
+          },
+          {
+            "id": "C",
+            "text": "Centripetal acceleration"
+          },
+          {
+            "id": "D",
+            "text": "Constant acceleration"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Constant acceleration"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "13. Gamma (Part 2)",
+    "order": "13",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is a variable that changes relative to the change in the underlying?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Delta"
+          },
+          {
+            "id": "B",
+            "text": "Gamma"
+          },
+          {
+            "id": "C",
+            "text": "Theta"
+          },
+          {
+            "id": "D",
+            "text": "Vega"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Delta"
+      },
+      {
+        "question": "What is the rate at which the option's delta changes as the underlying changes?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Delta"
+          },
+          {
+            "id": "B",
+            "text": "Gamma"
+          },
+          {
+            "id": "C",
+            "text": "Theta"
+          },
+          {
+            "id": "D",
+            "text": "Vega"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Gamma"
+      },
+      {
+        "question": "What is the change in premium when the Delta changes by 1 point?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Delta"
+          },
+          {
+            "id": "B",
+            "text": "Gamma"
+          },
+          {
+            "id": "C",
+            "text": "Theta"
+          },
+          {
+            "id": "D",
+            "text": "Vega"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Delta"
+      },
+      {
+        "question": "Which of the following is considered 'Long Gamma'?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Short call and short put"
+          },
+          {
+            "id": "B",
+            "text": "Long call and long put"
+          },
+          {
+            "id": "C",
+            "text": "Short call and long put"
+          },
+          {
+            "id": "D",
+            "text": "Long call and short put"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Long call and long put"
+      },
+      {
+        "question": "What is the risk associated with shorting options with a large Gamma?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Delta risk"
+          },
+          {
+            "id": "B",
+            "text": "Gamma risk"
+          },
+          {
+            "id": "C",
+            "text": "Theta risk"
+          },
+          {
+            "id": "D",
+            "text": "Vega risk"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Gamma risk"
+      },
+      {
+        "question": "What is the Gamma of a Futures contract?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "0"
+          },
+          {
+            "id": "B",
+            "text": "1"
+          },
+          {
+            "id": "C",
+            "text": "2"
+          },
+          {
+            "id": "D",
+            "text": "3"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "1"
+      },
+      {
+        "question": "Which of the following strikes has the highest Gamma?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "ITM"
+          },
+          {
+            "id": "B",
+            "text": "ATM"
+          },
+          {
+            "id": "C",
+            "text": "OTM"
+          },
+          {
+            "id": "D",
+            "text": "All strikes have the same Gamma"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "ATM"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "14. Theta",
+    "order": "14",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is known as the rate at which an option loses value as time passes?",
+        "questionNumber": 1,
+        "options": [
+          { "id": "A", "text": "Alpha" },
+          { "id": "B", "text": "Theta" },
+          { "id": "C", "text": "Gamma" },
+          { "id": "D", "text": "Vega" }
+        ],
+        "answerId": "B",
+        "answerText": "Theta"
+      },
+      {
+        "question": "What does the time decay graph illustrate?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The relationship between time to expiry and option price"
+          },
+          { "id": "B", "text": "The effect of volatility on option price" },
+          { "id": "C", "text": "The impact of interest rates on option price" },
+          { "id": "D", "text": "The relationship between delta and gamma" }
+        ],
+        "answerId": "A",
+        "answerText": "The relationship between time to expiry and option price"
+      },
+      {
+        "question": "Which of the following is NOT a key takeaway from the chapter on time decay?",
+        "questionNumber": 3,
+        "options": [
+          { "id": "A", "text": "Time is a risk factor for option sellers" },
+          { "id": "B", "text": "Theta is a positive number" },
+          {
+            "id": "C",
+            "text": "Selling options close to expiry can be more advantageous than selling them at the start of a series"
+          },
+          { "id": "D", "text": "Options always gain value over time" }
+        ],
+        "answerId": "D",
+        "answerText": "Options always gain value over time"
+      },
+      {
+        "question": "What is the formula for calculating premium?",
+        "questionNumber": 4,
+        "options": [
+          { "id": "A", "text": "Premium = Time Value + Intrinsic Value" },
+          { "id": "B", "text": "Premium = Intrinsic Value + Volatility" },
+          { "id": "C", "text": "Premium = Time Value - Theta" },
+          { "id": "D", "text": "Premium = Volatility - Interest Rate" }
+        ],
+        "answerId": "A",
+        "answerText": "Premium = Time Value + Intrinsic Value"
+      },
+      {
+        "question": "Who typically benefits from the erosion of option value due to time decay?",
+        "questionNumber": 5,
+        "options": [
+          { "id": "A", "text": "Option buyers" },
+          { "id": "B", "text": "Option sellers" },
+          { "id": "C", "text": "Neither option buyers nor sellers" },
+          { "id": "D", "text": "Both option buyers and sellers" }
+        ],
+        "answerId": "B",
+        "answerText": "Option sellers"
+      },
+      {
+        "question": "What is the term for the compensation received by option sellers for assuming time risk?",
+        "questionNumber": 6,
+        "options": [
+          { "id": "A", "text": "Premium" },
+          { "id": "B", "text": "Intrinsic value" },
+          { "id": "C", "text": "Time value" },
+          { "id": "D", "text": "Theta" }
+        ],
+        "answerId": "A",
+        "answerText": "Premium"
+      },
+      {
+        "question": "Which of the following factors does NOT affect the rate of option value erosion due to time?",
+        "questionNumber": 7,
+        "options": [
+          { "id": "A", "text": "Time to expiry" },
+          { "id": "B", "text": "Volatility" },
+          { "id": "C", "text": "Underlying asset price" },
+          { "id": "D", "text": "Theta" }
+        ],
+        "answerId": "B",
+        "answerText": "Volatility"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "16. Volatility Calculation (Historical)",
+    "order": "16",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "In the formula for daily return, what does the symbol LN represent?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Log Natural"
+          },
+          {
+            "id": "B",
+            "text": "Log Base 10"
+          },
+          {
+            "id": "C",
+            "text": "Exponential"
+          },
+          {
+            "id": "D",
+            "text": "Power"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Log Natural"
+      },
+      {
+        "question": "Which excel function is used to calculate the standard deviation?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "STDEV"
+          },
+          {
+            "id": "B",
+            "text": "VAR"
+          },
+          {
+            "id": "C",
+            "text": "AVG"
+          },
+          {
+            "id": "D",
+            "text": "LOG"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "STDEV"
+      },
+      {
+        "question": "To convert daily volatility to annual volatility, what value do you multiply it by?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Time"
+          },
+          {
+            "id": "B",
+            "text": "Square root of time"
+          },
+          {
+            "id": "C",
+            "text": "Square of time"
+          },
+          {
+            "id": "D",
+            "text": "Logarithm of time"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Square root of time"
+      },
+      {
+        "question": "What is the main purpose of calculating volatility?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "To determine the risk of an investment"
+          },
+          {
+            "id": "B",
+            "text": "To predict future returns"
+          },
+          {
+            "id": "C",
+            "text": "To optimize a portfolio allocation"
+          },
+          {
+            "id": "D",
+            "text": "To value options contracts"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To determine the risk of an investment"
+      },
+      {
+        "question": "Which of the following is NOT a key takeaway from this chapter?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Daily return can be calculated as log returns"
+          },
+          {
+            "id": "B",
+            "text": "Volatility represents the risk of an investment"
+          },
+          {
+            "id": "C",
+            "text": "Excel function to calculate volatility is STDEVP"
+          },
+          {
+            "id": "D",
+            "text": "Standard Deviation of daily return is equivalent of daily volatility"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Excel function to calculate volatility is STDEVP"
+      },
+      {
+        "question": "What is the annual volatility of a stock with a daily volatility of 1.5%?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "23.33%"
+          },
+          {
+            "id": "B",
+            "text": "10.95%"
+          },
+          {
+            "id": "C",
+            "text": "32.40%"
+          },
+          {
+            "id": "D",
+            "text": "5.48%"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "23.33%"
+      },
+      {
+        "question": "What is the daily volatility of a stock with an annual volatility of 20%?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "1.26%"
+          },
+          {
+            "id": "B",
+            "text": "2.52%"
+          },
+          {
+            "id": "C",
+            "text": "0.63%"
+          },
+          {
+            "id": "D",
+            "text": "4.04%"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "1.26%"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "15. Volatility Basics",
+    "order": "15",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "In option pricing, what does Vega measure?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Rate of change of premium with respect to the underlying price"
+          },
+          {
+            "id": "B",
+            "text": "Rate of change of premium with respect to time to expiration"
+          },
+          {
+            "id": "C",
+            "text": "Rate of change of premium with respect to volatility"
+          },
+          {
+            "id": "D",
+            "text": "Rate of change of premium with respect to interest rates"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Rate of change of premium with respect to volatility"
+      },
+      {
+        "question": "Which of the following is NOT a characteristic of volatility?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "It measures the riskiness of an asset"
+          },
+          {
+            "id": "B",
+            "text": "It is expressed as a percentage"
+          },
+          {
+            "id": "C",
+            "text": "It is calculated using standard deviation"
+          },
+          {
+            "id": "D",
+            "text": "It remains constant over time"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "It remains constant over time"
+      },
+      {
+        "question": "In the context of the Moneyball method, what does standard deviation represent?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "The average score of a baseball player"
+          },
+          {
+            "id": "B",
+            "text": "The player's ability to score consistently"
+          },
+          {
+            "id": "C",
+            "text": "The number of runs a player is expected to score"
+          },
+          {
+            "id": "D",
+            "text": "The variance of the player's scores"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The player's ability to score consistently"
+      },
+      {
+        "question": "According to Investopedia's definition, which of the following is NOT a characteristic of volatility?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is measured by standard deviation"
+          },
+          {
+            "id": "B",
+            "text": "It represents the dispersion of returns"
+          },
+          {
+            "id": "C",
+            "text": "Lower volatility indicates lower risk"
+          },
+          {
+            "id": "D",
+            "text": "It can be calculated for individual securities or indices"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Lower volatility indicates lower risk"
+      },
+      {
+        "question": "What assumption is made when using volatility to predict the range of a stock's price?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "The volatility will remain constant over the time period"
+          },
+          {
+            "id": "B",
+            "text": "The stock's price will always move in one direction"
+          },
+          {
+            "id": "C",
+            "text": "The stock's price will always return to its previous average"
+          },
+          {
+            "id": "D",
+            "text": "The volatility can be accurately forecasted"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The volatility will remain constant over the time period"
+      },
+      {
+        "question": "How is Vega calculated?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "The difference in premium between two options with different volatilities"
+          },
+          {
+            "id": "B",
+            "text": "The slope of the option premium curve with respect to volatility"
+          },
+          {
+            "id": "C",
+            "text": "The standard deviation of the option's price over time"
+          },
+          {
+            "id": "D",
+            "text": "The variance of the option's delta over time"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The slope of the option premium curve with respect to volatility"
+      },
+      {
+        "question": "What does a higher Vega value indicate?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The option's premium is more sensitive to changes in volatility"
+          },
+          {
+            "id": "B",
+            "text": "The option is more likely to expire worthless"
+          },
+          {
+            "id": "C",
+            "text": "The option is more likely to be exercised"
+          },
+          {
+            "id": "D",
+            "text": "The option's price is more stable"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The option's premium is more sensitive to changes in volatility"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "17. Volatility & Normal Distribution",
+    "order": "17",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is a characteristic of a normal distribution?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "The mean is the central value where maximum values are concentrated."
+          },
+          {
+            "id": "B",
+            "text": "The data is spread out on either sides of the average value."
+          },
+          {
+            "id": "C",
+            "text": "Both A and B."
+          },
+          {
+            "id": "D",
+            "text": "Neither A nor B."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Both A and B."
+      },
+      {
+        "question": "Within what percentage of a normal distribution can we observe 99.7% of the data?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "1 SD"
+          },
+          {
+            "id": "B",
+            "text": "2 SD"
+          },
+          {
+            "id": "C",
+            "text": "3 SD"
+          },
+          {
+            "id": "D",
+            "text": "4 SD"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "3 SD"
+      },
+      {
+        "question": "What is the significance of a 'Black Swan' event in the context of normal distribution?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is an event that occurs within the 3rd standard deviation."
+          },
+          {
+            "id": "B",
+            "text": "It is an event that occurs outside the 3rd standard deviation."
+          },
+          {
+            "id": "C",
+            "text": "It is an event that is impossible to predict."
+          },
+          {
+            "id": "D",
+            "text": "It is an event that has a probability of 100%."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "It is an event that occurs outside the 3rd standard deviation."
+      },
+      {
+        "question": "What is the formula to calculate the range of values within which a stock is likely to trade with 95% confidence?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Average + 1 SD and Average - 1 SD"
+          },
+          {
+            "id": "B",
+            "text": "Average + 2 SD and Average - 2 SD"
+          },
+          {
+            "id": "C",
+            "text": "Average + 3 SD and Average - 3 SD"
+          },
+          {
+            "id": "D",
+            "text": "Average + 4 SD and Average - 4 SD"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Average + 2 SD and Average - 2 SD"
+      },
+      {
+        "question": "What is the key takeaway from the discussion on the Galton Board experiment?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Random events can lead to predictable outcomes."
+          },
+          {
+            "id": "B",
+            "text": "The distribution of outcomes is always uniform."
+          },
+          {
+            "id": "C",
+            "text": "The mean is always equal to the median."
+          },
+          {
+            "id": "D",
+            "text": "The standard deviation is a measure of the dispersion of the data."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Random events can lead to predictable outcomes."
+      },
+      {
+        "question": "What is meant by the 'Random Walk' concept in the context of stock returns?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Stock returns are unpredictable and follow a random pattern."
+          },
+          {
+            "id": "B",
+            "text": "Stock returns are always positive."
+          },
+          {
+            "id": "C",
+            "text": "Stock returns are always negative."
+          },
+          {
+            "id": "D",
+            "text": "Stock returns are correlated with economic indicators."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Stock returns are unpredictable and follow a random pattern."
+      },
+      {
+        "question": "How is the standard deviation related to the distribution of stock returns?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Higher standard deviation indicates a wider distribution of returns."
+          },
+          {
+            "id": "B",
+            "text": "Lower standard deviation indicates a wider distribution of returns."
+          },
+          {
+            "id": "C",
+            "text": "Standard deviation has no relation to the distribution of returns."
+          },
+          {
+            "id": "D",
+            "text": "Standard deviation is the same for all stocks."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Higher standard deviation indicates a wider distribution of returns."
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "18. Volatility Applications",
+    "order": "18",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT a key concept in selecting the right strike to short/write options?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Normal Distribution"
+          },
+          {
+            "id": "B",
+            "text": "Volatility"
+          },
+          {
+            "id": "C",
+            "text": "Trend Analysis"
+          },
+          {
+            "id": "D",
+            "text": "Standard Deviation"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Trend Analysis"
+      },
+      {
+        "question": "According to the 68-95-99.7 rule, what percentage of data is clustered within the 1st Standard Deviation (SD)?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "68%"
+          },
+          {
+            "id": "B",
+            "text": "95%"
+          },
+          {
+            "id": "C",
+            "text": "99.7%"
+          },
+          {
+            "id": "D",
+            "text": "50%"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "68%"
+      },
+      {
+        "question": "If Nifty's daily average return is 0.04% and its daily standard deviation is 0.89%, what is the upper range within which Nifty is likely to trade over the next 16 days?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "8214"
+          },
+          {
+            "id": "B",
+            "text": "8818"
+          },
+          {
+            "id": "C",
+            "text": "8516"
+          },
+          {
+            "id": "D",
+            "text": "8462"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "8818"
+      },
+      {
+        "question": "Which of the following options would you consider writing (short) if Nifty is currently at 8462 and you believe it is likely to trade within the range of 8214 to 8818 over the next 16 days?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "8850 Call option"
+          },
+          {
+            "id": "B",
+            "text": "8200 Put option"
+          },
+          {
+            "id": "C",
+            "text": "8500 Call option"
+          },
+          {
+            "id": "D",
+            "text": "8300 Put option"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "8850 Call option"
+      },
+      {
+        "question": "When is the best time to write options for premium generation?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "As early as possible"
+          },
+          {
+            "id": "B",
+            "text": "As close to expiry as possible"
+          },
+          {
+            "id": "C",
+            "text": "Midway through their lifespan"
+          },
+          {
+            "id": "D",
+            "text": "Whenever there is a high implied volatility"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "As close to expiry as possible"
+      },
+      {
+        "question": "Why is it important to avoid writing PUT options?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "They have lower premiums than CALL options"
+          },
+          {
+            "id": "B",
+            "text": "They are more likely to expire worthless"
+          },
+          {
+            "id": "C",
+            "text": "Panic can cause a faster decline in prices"
+          },
+          {
+            "id": "D",
+            "text": "They require a higher margin"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Panic can cause a faster decline in prices"
+      },
+      {
+        "question": "Which of the following is NOT a key consideration when calculating a stop-loss price based on volatility?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Daily volatility"
+          },
+          {
+            "id": "B",
+            "text": "Expected holding period"
+          },
+          {
+            "id": "C",
+            "text": "Stop-loss percentage"
+          },
+          {
+            "id": "D",
+            "text": "Support and resistance levels"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Stop-loss percentage"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "19. Vega",
+    "order": "19",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following methods is used to calculate historical volatility?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Using the closing prices of the stock/index"
+          },
+          {
+            "id": "B",
+            "text": "Using volatility forecasting models"
+          },
+          {
+            "id": "C",
+            "text": "Using market participants' expectations"
+          },
+          {
+            "id": "D",
+            "text": "Using India VIX"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Historical Volatility is measured by the closing prices of the stock/index"
+      },
+      {
+        "question": "What does Implied Volatility represent?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Forecasted volatility"
+          },
+          {
+            "id": "B",
+            "text": "Historical volatility"
+          },
+          {
+            "id": "C",
+            "text": "Market participants' expectation of volatility"
+          },
+          {
+            "id": "D",
+            "text": "India VIX"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Implied Volatility represents the market participants expectation of volatility"
+      },
+      {
+        "question": "What does Vega measure?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "The rate of change of premium with respect to change in volatility"
+          },
+          {
+            "id": "B",
+            "text": "The rate of change of premium with respect to change in underlying price"
+          },
+          {
+            "id": "C",
+            "text": "The rate of change of premium with respect to change in time decay"
+          },
+          {
+            "id": "D",
+            "text": "The rate of change of premium with respect to change in interest rates"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Vega measures the rate of change of premium with respect to change in volatility"
+      },
+      {
+        "question": "Which of the following is NOT a characteristic of Historical Volatility?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is easy to calculate"
+          },
+          {
+            "id": "B",
+            "text": "It can be used to forecast future volatility"
+          },
+          {
+            "id": "C",
+            "text": "It helps in options pricing"
+          },
+          {
+            "id": "D",
+            "text": "It is based on past closing prices"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Historical Volatility cannot be used to forecast future volatility"
+      },
+      {
+        "question": "Which of the following is NOT a type of volatility?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Historical Volatility"
+          },
+          {
+            "id": "B",
+            "text": "Implied Volatility"
+          },
+          {
+            "id": "C",
+            "text": "Realized Volatility"
+          },
+          {
+            "id": "D",
+            "text": "Delta Volatility"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Delta Volatility is not a type of volatility"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "22. Re-introducing Call & Put Options",
+    "order": "22",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is the correct order of strike prices, moving from OTM to ITM?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "OTM, ATM, ITM"
+          },
+          {
+            "id": "B",
+            "text": "ATM, OTM, ITM"
+          },
+          {
+            "id": "C",
+            "text": "ITM, OTM, ATM"
+          },
+          {
+            "id": "D",
+            "text": "ITM, ATM, OTM"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "OTM, ATM, ITM"
+      },
+      {
+        "question": "When buying a call option, it is generally best to choose a strike price that is:",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "ITM and near expiration"
+          },
+          {
+            "id": "B",
+            "text": "OTM and near expiration"
+          },
+          {
+            "id": "C",
+            "text": "OTM and far from expiration"
+          },
+          {
+            "id": "D",
+            "text": "ITM and far from expiration"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "OTM and far from expiration"
+      },
+      {
+        "question": "The primary risk associated with selling a naked call option is:",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Uncapped loss potential"
+          },
+          {
+            "id": "B",
+            "text": "Limited profit potential"
+          },
+          {
+            "id": "C",
+            "text": "Margin call"
+          },
+          {
+            "id": "D",
+            "text": "No risk"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Uncapped loss potential"
+      },
+      {
+        "question": "Which of the following strategies is designed to benefit from a decrease in volatility?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Short call"
+          },
+          {
+            "id": "B",
+            "text": "Long call"
+          },
+          {
+            "id": "C",
+            "text": "Short put"
+          },
+          {
+            "id": "D",
+            "text": "Long put"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Short call"
+      },
+      {
+        "question": "What is the maximum possible profit for a call option buyer?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "The premium paid"
+          },
+          {
+            "id": "B",
+            "text": "The difference between the strike price and the market price at expiration"
+          },
+          {
+            "id": "C",
+            "text": "The difference between the market price at expiration and the strike price"
+          },
+          {
+            "id": "D",
+            "text": "Unlimited"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The difference between the market price at expiration and the strike price"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "21. Greek Calculator",
+    "order": "21",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "What is the first step in using the Black & Scholes (BS) Options pricing calculator?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Input the relevant data into the calculator"
+          },
+          {
+            "id": "B",
+            "text": "Choose the appropriate model"
+          },
+          {
+            "id": "C",
+            "text": "Calculate the implied volatility"
+          },
+          {
+            "id": "D",
+            "text": "Set the risk-free rate"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Input the relevant data into the calculator"
+      },
+      {
+        "question": "Which of the following is NOT an input required for the BS Options pricing calculator?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Spot price"
+          },
+          {
+            "id": "B",
+            "text": "Implied volatility"
+          },
+          {
+            "id": "C",
+            "text": "Beta"
+          },
+          {
+            "id": "D",
+            "text": "Strike price"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Beta"
+      },
+      {
+        "question": "What is the name of the mathematical concept that Robert C Merton developed for the BS Options pricing model?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Stochastic processes"
+          },
+          {
+            "id": "B",
+            "text": "Normal distribution"
+          },
+          {
+            "id": "C",
+            "text": "Partial differential equations"
+          },
+          {
+            "id": "D",
+            "text": "Implied volatility"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Partial differential equations"
+      },
+      {
+        "question": "What is the relationship between the put value, spot price, present value of strike, and call value according to Put Call Parity?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Put Value + Spot Price < Present value of strike + Call Value"
+          },
+          {
+            "id": "B",
+            "text": "Put Value + Spot Price > Present value of strike + Call Value"
+          },
+          {
+            "id": "C",
+            "text": "Put Value + Spot Price = Present value of strike + Call Value"
+          },
+          {
+            "id": "D",
+            "text": "Put Value - Spot Price = Present value of strike - Call Value"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Put Value + Spot Price = Present value of strike + Call Value"
+      },
+      {
+        "question": "What are the assumptions of Put Call Parity?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "The Put and Call are ITM options"
+          },
+          {
+            "id": "B",
+            "text": "The Put and Call are OTM options"
+          },
+          {
+            "id": "C",
+            "text": "Both the Put and Call are ATM options, European, expire at the same time, and are held till expiry"
+          },
+          {
+            "id": "D",
+            "text": "The Put and Call have the same strike price"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Both the Put and Call are ATM options, European, expire at the same time, and are held till expiry"
+      },
+      {
+        "question": "What is the purpose of using an options calculator?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "To calculate the Option Greeks and the theoretical option price"
+          },
+          {
+            "id": "B",
+            "text": "To determine the implied volatility of an option"
+          },
+          {
+            "id": "C",
+            "text": "To create a trading strategy"
+          },
+          {
+            "id": "D",
+            "text": "To evaluate the risk of an option"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To calculate the Option Greeks and the theoretical option price"
+      },
+      {
+        "question": "Where can you find the implied volatility of an option?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The option chain from the NSE website"
+          },
+          {
+            "id": "B",
+            "text": "The Black & Scholes Options pricing calculator"
+          },
+          {
+            "id": "C",
+            "text": "The option contract itself"
+          },
+          {
+            "id": "D",
+            "text": "The risk-free rate website"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The option chain from the NSE website"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "20. Greek Interactions",
+    "order": "20",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is a key takeaway from the chapter on Volatility Smile?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Volatility smile helps visualize high IVs in OTM options"
+          },
+          {
+            "id": "B",
+            "text": "Volatility smile is a graphical representation of realized volatility"
+          },
+          {
+            "id": "C",
+            "text": "Volatility smile shows that ATM options have the highest IV"
+          },
+          {
+            "id": "D",
+            "text": "Volatility smile is a tool for option traders"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Volatility smile helps visualize high IVs in OTM options"
+      },
+      {
+        "question": "What is the purpose of a Volatility Cone?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "To compare current implied volatility with past realized volatility"
+          },
+          {
+            "id": "B",
+            "text": "To predict future volatility"
+          },
+          {
+            "id": "C",
+            "text": "To identify options that are over or underpriced"
+          },
+          {
+            "id": "D",
+            "text": "To calculate Greeks"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To compare current implied volatility with past realized volatility"
+      },
+      {
+        "question": "Which of the following is true about Gamma?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Gamma is always positive for both calls and puts"
+          },
+          {
+            "id": "B",
+            "text": "Gamma is highest for OTM options"
+          },
+          {
+            "id": "C",
+            "text": "Gamma remains constant throughout the life of an option"
+          },
+          {
+            "id": "D",
+            "text": "Gamma is not affected by time decay"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Gamma is always positive for both calls and puts"
+      },
+      {
+        "question": "What is the behavior of Delta with respect to implied volatility?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Delta is unaffected by implied volatility"
+          },
+          {
+            "id": "B",
+            "text": "Delta is lower when implied volatility is high"
+          },
+          {
+            "id": "C",
+            "text": "Delta has a greater influence on lower range of options around ATM when implied volatility is high"
+          },
+          {
+            "id": "D",
+            "text": "Delta is zero for OTM options when implied volatility is low"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Delta has a greater influence on lower range of options around ATM when implied volatility is high"
+      },
+      {
+        "question": "Which of the following is a key takeaway from the chapter on Delta versus Implied Volatility?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "When volatility is high, far OTM options tend to have non-zero delta values"
+          },
+          {
+            "id": "B",
+            "text": "Delta is unaffected by time decay"
+          },
+          {
+            "id": "C",
+            "text": "Delta is always positive for calls and negative for puts"
+          },
+          {
+            "id": "D",
+            "text": "Delta is a measure of the rate of change of Gamma"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "When volatility is high, far OTM options tend to have non-zero delta values"
+      },
+      {
+        "question": "Which of the following is NOT a characteristic of ATM options with high Gamma?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Can result in large directional risk"
+          },
+          {
+            "id": "B",
+            "text": "Are typically priced cheaply"
+          },
+          {
+            "id": "C",
+            "text": "Should be shorted when possible"
+          },
+          {
+            "id": "D",
+            "text": "Gamma tends to be highest towards the end of expiry"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Are typically priced cheaply"
+      },
+      {
+        "question": "What is the behavior of Gamma for ITM and OTM options as expiry approaches?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Gamma increases for ITM options and decreases for OTM options"
+          },
+          {
+            "id": "B",
+            "text": "Gamma decreases for both ITM and OTM options"
+          },
+          {
+            "id": "C",
+            "text": "Gamma increases for both ITM and OTM options"
+          },
+          {
+            "id": "D",
+            "text": "Gamma remains constant for both ITM and OTM options"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Gamma decreases for both ITM and OTM options"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "24. Quick note on Physical Settlement",
+    "order": "24",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "When was physical delivery of stocks for stock F&O contracts made mandatory in India?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "April 11, 2018"
+          },
+          {
+            "id": "B",
+            "text": "October 2019"
+          },
+          {
+            "id": "C",
+            "text": "April 11, 2019"
+          },
+          {
+            "id": "D",
+            "text": "October 2018"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "April 11, 2018"
+      },
+      {
+        "question": "Which of the following is NOT a reason why physical settlement was enforced?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "To curb excessive speculation"
+          },
+          {
+            "id": "B",
+            "text": "To prevent price manipulation"
+          },
+          {
+            "id": "C",
+            "text": "To increase liquidity in the market"
+          },
+          {
+            "id": "D",
+            "text": "To bring in balance to the price"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "To increase liquidity in the market"
+      },
+      {
+        "question": "Which of the following options will NOT be physically settled?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "ITM call"
+          },
+          {
+            "id": "B",
+            "text": "OTM put"
+          },
+          {
+            "id": "C",
+            "text": "ITM put"
+          },
+          {
+            "id": "D",
+            "text": "OTM call"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "OTM call"
+      },
+      {
+        "question": "Which of the following positions will lead to a take delivery obligation?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Long futures"
+          },
+          {
+            "id": "B",
+            "text": "Short ITM call"
+          },
+          {
+            "id": "C",
+            "text": "Short futures"
+          },
+          {
+            "id": "D",
+            "text": "Long ITM put"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Long futures"
+      },
+      {
+        "question": "Which of the following is NOT a netted off position?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Long futures and short ITM call"
+          },
+          {
+            "id": "B",
+            "text": "Short futures and short ITM put"
+          },
+          {
+            "id": "C",
+            "text": "Long ITM call and long ITM put"
+          },
+          {
+            "id": "D",
+            "text": "Long futures and long ITM call"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Long futures and long ITM call"
+      },
+      {
+        "question": "What is the purpose of introducing additional margins when physical settlement positions get closer to expiry?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "To reduce risk to the broker"
+          },
+          {
+            "id": "B",
+            "text": "To increase liquidity in the market"
+          },
+          {
+            "id": "C",
+            "text": "To discourage excessive speculation"
+          },
+          {
+            "id": "D",
+            "text": "To prevent price manipulation"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To reduce risk to the broker"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "23. Case studies \u2013 wrapping it all up!",
+    "order": "23",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT a way to calculate the expected value of an option strategy?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Using the Black-Scholes model"
+          },
+          {
+            "id": "B",
+            "text": "Using the Monte Carlo simulation"
+          },
+          {
+            "id": "C",
+            "text": "Using historical data"
+          },
+          {
+            "id": "D",
+            "text": "Using the binomial tree model"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Using historical data"
+      },
+      {
+        "question": "What is the difference between a call option and a put option?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "A call option gives the buyer the right to buy an underlying asset at a specified price, while a put option gives the buyer the right to sell an underlying asset at a specified price."
+          },
+          {
+            "id": "B",
+            "text": "A put option gives the buyer the right to buy an underlying asset at a specified price, while a call option gives the buyer the right to sell an underlying asset at a specified price."
+          },
+          {
+            "id": "C",
+            "text": "A call option gives the seller the right to buy an underlying asset at a specified price, while a put option gives the seller the right to sell an underlying asset at a specified price."
+          },
+          {
+            "id": "D",
+            "text": "A put option gives the seller the right to buy an underlying asset at a specified price, while a call option gives the seller the right to sell an underlying asset at a specified price."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "A call option gives the buyer the right to buy an underlying asset at a specified price, while a put option gives the buyer the right to sell an underlying asset at a specified price."
+      },
+      {
+        "question": "What is the gamma of an option?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "The rate of change of the delta with respect to the underlying price"
+          },
+          {
+            "id": "B",
+            "text": "The rate of change of the theta with respect to the time to expiration"
+          },
+          {
+            "id": "C",
+            "text": "The rate of change of the vega with respect to the volatility"
+          },
+          {
+            "id": "D",
+            "text": "The rate of change of the rho with respect to the risk-free rate"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The rate of change of the delta with respect to the underlying price"
+      },
+      {
+        "question": "What is the theta of an option?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The rate of change of the option price with respect to the time to expiration"
+          },
+          {
+            "id": "B",
+            "text": "The rate of change of the delta with respect to the underlying price"
+          },
+          {
+            "id": "C",
+            "text": "The rate of change of the vega with respect to the volatility"
+          },
+          {
+            "id": "D",
+            "text": "The rate of change of the rho with respect to the risk-free rate"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The rate of change of the option price with respect to the time to expiration"
+      },
+      {
+        "question": "What is the vega of an option?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "The rate of change of the option price with respect to the volatility"
+          },
+          {
+            "id": "B",
+            "text": "The rate of change of the delta with respect to the underlying price"
+          },
+          {
+            "id": "C",
+            "text": "The rate of change of the theta with respect to the time to expiration"
+          },
+          {
+            "id": "D",
+            "text": "The rate of change of the rho with respect to the risk-free rate"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The rate of change of the option price with respect to the volatility"
+      }
+    ]
+  },
+  {
+    "course": "Options Theory for Professional Trading",
+    "lesson": "25. Options M2M and P&L calculation",
+    "order": "25",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "What is the purpose of margins in futures trading?",
+        "questionNumber": "1",
+        "options": [
+          {
+            "id": "A",
+            "text": "To prevent default risk"
+          },
+          {
+            "id": "B",
+            "text": "To reduce price volatility"
+          },
+          {
+            "id": "C",
+            "text": "To increase liquidity"
+          },
+          {
+            "id": "D",
+            "text": "To eliminate counterparty risk"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To prevent default risk"
+      },
+      {
+        "question": "Why is there no mark to market in options?",
+        "questionNumber": "2",
+        "options": [
+          {
+            "id": "A",
+            "text": "Because the risk of default is zero for an option buyer"
+          },
+          {
+            "id": "B",
+            "text": "Because the option seller has already put up margin"
+          },
+          {
+            "id": "C",
+            "text": "Because options are not a cash and carry instrument"
+          },
+          {
+            "id": "D",
+            "text": "Because the exchange does not want to interfere with the market"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Because the risk of default is zero for an option buyer"
+      },
+      {
+        "question": "How is profit and loss settled in options?",
+        "questionNumber": "3",
+        "options": [
+          {
+            "id": "A",
+            "text": "Through daily mark to market"
+          },
+          {
+            "id": "B",
+            "text": "Through physical settlement"
+          },
+          {
+            "id": "C",
+            "text": "Through cash settlement"
+          },
+          {
+            "id": "D",
+            "text": "It is not settled until the option expires"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Through cash settlement"
+      },
+      {
+        "question": "What happens if the premium price of an option increases after you have written it?",
+        "questionNumber": "4",
+        "options": [
+          {
+            "id": "A",
+            "text": "Your profit increases"
+          },
+          {
+            "id": "B",
+            "text": "Your loss increases"
+          },
+          {
+            "id": "C",
+            "text": "Your margin increases"
+          },
+          {
+            "id": "D",
+            "text": "Nothing happens"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Your margin increases"
+      },
+      {
+        "question": "What is the difference between an option buyer and an option seller?",
+        "questionNumber": "5",
+        "options": [
+          {
+            "id": "A",
+            "text": "Option buyers have unlimited risk, while option sellers have limited risk"
+          },
+          {
+            "id": "B",
+            "text": "Option buyers have limited risk, while option sellers have unlimited risk"
+          },
+          {
+            "id": "C",
+            "text": "Option buyers have no risk, while option sellers have all the risk"
+          },
+          {
+            "id": "D",
+            "text": "Option buyers and option sellers have the same risk"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Option buyers have limited risk, while option sellers have unlimited risk"
+      },
+      {
+        "question": "What is the effective price at which a buyer of an ITM call option gets the underlying shares?",
+        "questionNumber": "6",
+        "options": [
+          {
+            "id": "A",
+            "text": "Strike price plus premium paid"
+          },
+          {
+            "id": "B",
+            "text": "Strike price minus premium paid"
+          },
+          {
+            "id": "C",
+            "text": "Premium paid plus strike price"
+          },
+          {
+            "id": "D",
+            "text": "Premium paid minus strike price"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Strike price plus premium paid"
+      },
+      {
+        "question": "What is the effective price at which a seller of an ITM put option gives delivery of shares?",
+        "questionNumber": "7",
+        "options": [
+          {
+            "id": "A",
+            "text": "Strike price plus premium paid"
+          },
+          {
+            "id": "B",
+            "text": "Strike price minus premium paid"
+          },
+          {
+            "id": "C",
+            "text": "Premium paid plus strike price"
+          },
+          {
+            "id": "D",
+            "text": "Premium paid minus strike price"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Strike price minus premium paid"
+      }
+    ]
+  }
+]
