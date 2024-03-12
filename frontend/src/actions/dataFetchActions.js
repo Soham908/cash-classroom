@@ -9,4 +9,15 @@ export const fetchCardData = async () => {
     catch(err){
   
     }
-  };
+};
+
+export const fetchLessonQuizData = async (lessonName) => {
+  try {
+    const response = await axios.get(`${ENDPOINT_URL}/data/get-lesson-quiz/${lessonName}`)
+    console.log(lessonName);
+    return response.data
+  } catch (error) {
+    console.log(error);
+  }
+  
+}

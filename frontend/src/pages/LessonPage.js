@@ -64,6 +64,13 @@ const LessonPage = () => {
       }
     }
   );
+  const isQuizCompleted = user?.data?.quizCompleted?.some(
+    (completedQuizData) => {
+      if (completedQuizData.lessonName === location.lesson) {
+        return true;
+      }
+    }
+  );
 
   useEffect(() => {
     const fetchLesson = async () => {
@@ -93,6 +100,10 @@ const LessonPage = () => {
     setStateUser({ ...user, data: response.userObject });
     setRefresh((p) => !p);
   };
+
+  const takeQuiz = () => {
+    navigate(`/lesson-quiz/${lessonData.lesson}`)
+  }
 
   const submitComment = async () => {
     const response = await addComment({
@@ -139,7 +150,6 @@ const LessonPage = () => {
 
   return (
     <>
-
       <Button
         variant="contained"
         onClick={lessonComplete}
@@ -147,6 +157,14 @@ const LessonPage = () => {
       >
         {" "}
         Lesson Completed{" "}
+      </Button>
+      <Button
+        variant="contained"
+        onClick={takeQuiz}
+        disabled={isQuizCompleted}
+      >
+        {" "}
+        Take Quiz{" "}
       </Button>
       <Button
         variant="outlined"

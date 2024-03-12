@@ -18,8 +18,6 @@ mongoose
   });
 
 let jsonQuizData = JSON.parse(fs.readFileSync(path));
-// console.log(jsonQuizData)
-console.log(jsonQuizData.length);
 const insertBlogs = async () => {
     const quiz = await LessonQuiz.create(jsonQuizData);
     if (quiz) {

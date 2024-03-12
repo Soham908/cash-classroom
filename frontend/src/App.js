@@ -15,6 +15,7 @@ import EMICalculator from "./pages/calculators/EMICalculator";
 import SIPCalculator from "./pages/calculators/SIPCalculator";
 import Blogs from "./pages/Blogs/Blogs";
 import BlogDetails from "./pages/Blogs/BlogDetails/BlogDetails";
+import Quiz from "./components/Quiz";
 function App() {
 	return (
 		<>
@@ -32,9 +33,10 @@ function App() {
 				<Route path="/calculators/sip-calculator" element={<SIPCalculator />} />
 				<Route path="/blogs" element={<Blogs/>} />
 				<Route path="/blogs/:blogId" element={<BlogDetails/>} />
+				<Route path="/lesson-quiz/:currentquizLessonName" element={<Quiz/>} />
 				<Route path="*" element={<NoMatch />} />
 			</Routes>
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }

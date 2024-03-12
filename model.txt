@@ -74,7 +74,7 @@ user : {
     } }],
     certificates : [String]   
 }
-
+user auth struct
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTFmZTNlZmI5ZjM4MjI1MDkyZGNiOSIsImlhdCI6MTcwOTM3NjU4OCwiZXhwIjoxNzE3MTUyNTg4fQ.fjTxduIQKdn0Md_WlHOnoJOEe4o4seaqq6dWwjki2Qo",
     "data": {
@@ -99,6 +99,16 @@ user : {
         "__v": 0
     }
 }
+
+lesson quiz struct
+{
+    question: 'What is the term ', 
+    questionNumber: 5, 
+    options: Array(4), 
+    answerId: 'B', 
+    answerText: 'Asset allocation', …
+}
+options 0 : {id: 'A', text: 'Fixed income instruments'}
 
 todo : 
 1)Make quiz for every lesson
