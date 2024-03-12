@@ -1,0 +1,2311 @@
+[
+  {
+    "course": "Futures Trading",
+    "lesson": "9. The Nifty Futures",
+    "order": "9",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "What is the underlying asset for Nifty Futures?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Sensex Index"
+          },
+          {
+            "id": "B",
+            "text": "Nifty Index"
+          },
+          {
+            "id": "C",
+            "text": "Bank Nifty Index"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Nifty Index"
+      },
+      {
+        "question": "Which of the following is NOT a variant of Nifty Futures?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Current month"
+          },
+          {
+            "id": "B",
+            "text": "Mid-month"
+          },
+          {
+            "id": "C",
+            "text": "End-month"
+          },
+          {
+            "id": "D",
+            "text": "Far month"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "End-month"
+      },
+      {
+        "question": "What is the formula for calculating the contract value of Nifty Futures?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Futures Price x Lot Size"
+          },
+          {
+            "id": "B",
+            "text": "Futures Price + Lot Size"
+          },
+          {
+            "id": "C",
+            "text": "Futures Price - Lot Size"
+          },
+          {
+            "id": "D",
+            "text": "Futures Price / Lot Size"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Futures Price x Lot Size"
+      },
+      {
+        "question": "Which measure indicates the cost of executing a trade in a given security?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Market depth"
+          },
+          {
+            "id": "B",
+            "text": "Bid-ask spread"
+          },
+          {
+            "id": "C",
+            "text": "Impact cost"
+          },
+          {
+            "id": "D",
+            "text": "Margin requirement"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Impact cost"
+      },
+      {
+        "question": "What is a key advantage of trading Nifty Futures over individual stock futures?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Higher volatility"
+          },
+          {
+            "id": "B",
+            "text": "Diversification"
+          },
+          {
+            "id": "C",
+            "text": "Greater liquidity"
+          },
+          {
+            "id": "D",
+            "text": "Higher margin requirements"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Diversification"
+      },
+      {
+        "question": "What is the typical impact cost of round-trip trading Nifty Futures?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Around 0.0082%"
+          },
+          {
+            "id": "B",
+            "text": "Around 0.082%"
+          },
+          {
+            "id": "C",
+            "text": "Around 0.82%"
+          },
+          {
+            "id": "D",
+            "text": "Around 8.2%"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Around 0.0082%"
+      },
+      {
+        "question": "Which of the following is NOT a reason why liquidity is important in futures trading?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Reduced impact cost"
+          },
+          {
+            "id": "B",
+            "text": "Easier to enter and exit positions"
+          },
+          {
+            "id": "C",
+            "text": "Lower volatility"
+          },
+          {
+            "id": "D",
+            "text": "Higher trading fees"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Higher trading fees"
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "1. Background \u2013 Forwards Market",
+    "order": "1",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is the earliest reference to the application of derivatives in India?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Arthashastra"
+          },
+          {
+            "id": "B",
+            "text": "Rigveda"
+          },
+          {
+            "id": "C",
+            "text": "Mahabharata"
+          },
+          {
+            "id": "D",
+            "text": "Manusmriti"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Arthashastra"
+      },
+      {
+        "question": "What is the main difference between a futures contract and a forward contract?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The exchange on which they are traded"
+          },
+          {
+            "id": "B",
+            "text": "The underlying asset"
+          },
+          {
+            "id": "C",
+            "text": "The settlement method"
+          },
+          {
+            "id": "D",
+            "text": "The contract size"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The exchange on which they are traded"
+      },
+      {
+        "question": "When is a futures contract said to be in a cash settlement?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the buyer and seller exchange the underlying asset for cash"
+          },
+          {
+            "id": "B",
+            "text": "When the buyer and seller exchange the difference between the contract price and the market price"
+          },
+          {
+            "id": "C",
+            "text": "When the buyer and seller agree to cancel the contract"
+          },
+          {
+            "id": "D",
+            "text": "When the buyer and seller agree to extend the contract"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "When the buyer and seller exchange the difference between the contract price and the market price"
+      },
+      {
+        "question": "What is the main advantage of a futures contract over a forward contract?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is more liquid"
+          },
+          {
+            "id": "B",
+            "text": "It is less risky"
+          },
+          {
+            "id": "C",
+            "text": "It is more flexible"
+          },
+          {
+            "id": "D",
+            "text": "It is more profitable"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It is more liquid"
+      },
+      {
+        "question": "Which of the following is not a risk associated with a futures contract?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Price risk"
+          },
+          {
+            "id": "B",
+            "text": "Liquidity risk"
+          },
+          {
+            "id": "C",
+            "text": "Regulatory risk"
+          },
+          {
+            "id": "D",
+            "text": "Credit risk"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Regulatory risk"
+      },
+      {
+        "question": "Which of the following is a key feature of a futures contract?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is standardized"
+          },
+          {
+            "id": "B",
+            "text": "It is traded on an exchange"
+          },
+          {
+            "id": "C",
+            "text": "It is settled daily"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "All of the above"
+      },
+      {
+        "question": "Which of the following is not a type of futures contract?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Stock futures"
+          },
+          {
+            "id": "B",
+            "text": "Commodity futures"
+          },
+          {
+            "id": "C",
+            "text": "Currency futures"
+          },
+          {
+            "id": "D",
+            "text": "Bond futures"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Bond futures"
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "8. All about Shorting",
+    "order": "8",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "What is the first step in shorting a stock?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Buy the stock first"
+          },
+          {
+            "id": "B",
+            "text": "Sell the stock first"
+          },
+          {
+            "id": "C",
+            "text": "Borrow the stock first"
+          },
+          {
+            "id": "D",
+            "text": "Sell the stock last"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Sell the stock first"
+      },
+      {
+        "question": "When is it profitable to short a stock?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the stock price is expected to increase"
+          },
+          {
+            "id": "B",
+            "text": "When the stock price is expected to decrease"
+          },
+          {
+            "id": "C",
+            "text": "When the stock price is expected to remain the same"
+          },
+          {
+            "id": "D",
+            "text": "When the stock price is expected to fluctuate wildly"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "When the stock price is expected to decrease"
+      },
+      {
+        "question": "What is the stoploss price in a short trade?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "The price at which you shorted the stock"
+          },
+          {
+            "id": "B",
+            "text": "The price at which you bought back the stock"
+          },
+          {
+            "id": "C",
+            "text": "A price higher than the price at which you shorted the stock"
+          },
+          {
+            "id": "D",
+            "text": "A price lower than the price at which you shorted the stock"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "A price higher than the price at which you shorted the stock"
+      },
+      {
+        "question": "Can short positions be carried overnight in the spot market?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Yes, for up to 3 days"
+          },
+          {
+            "id": "B",
+            "text": "Yes, for up to 5 days"
+          },
+          {
+            "id": "C",
+            "text": "No, they must be closed before the market closes"
+          },
+          {
+            "id": "D",
+            "text": "Yes, for an indefinite period of time"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "No, they must be closed before the market closes"
+      },
+      {
+        "question": "What is the margin requirement for shorting futures?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is lower than the margin requirement for long futures positions"
+          },
+          {
+            "id": "B",
+            "text": "It is higher than the margin requirement for long futures positions"
+          },
+          {
+            "id": "C",
+            "text": "It is the same as the margin requirement for long futures positions"
+          },
+          {
+            "id": "D",
+            "text": "It depends on the volatility of the underlying asset"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "It is the same as the margin requirement for long futures positions"
+      },
+      {
+        "question": "Which of the following statements about shorting is true?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is a risky strategy that should only be used by experienced traders"
+          },
+          {
+            "id": "B",
+            "text": "It is a low-risk strategy that can be used by any trader"
+          },
+          {
+            "id": "C",
+            "text": "It is a strategy that is not allowed by all brokers"
+          },
+          {
+            "id": "D",
+            "text": "It is a strategy that is only available for stocks"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It is a risky strategy that should only be used by experienced traders"
+      },
+      {
+        "question": "What is a key difference between shorting in the spot market and shorting in the futures market?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "In the spot market, you can only short stocks that you own, while in the futures market you can short any stock"
+          },
+          {
+            "id": "B",
+            "text": "In the spot market, you can only short for a limited period of time, while in the futures market you can short for an indefinite period of time"
+          },
+          {
+            "id": "C",
+            "text": "In the spot market, the margin requirement is higher than in the futures market"
+          },
+          {
+            "id": "D",
+            "text": "In the spot market, you can only short stocks that are listed on the NSE, while in the futures market you can short stocks that are listed on either the NSE or the BSE"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "In the spot market, you can only short for a limited period of time, while in the futures market you can short for an indefinite period of time"
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "3. The Futures Trade",
+    "order": "3",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "What is the minimum number of shares that need to be transacted in a futures contract called?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Market lot"
+          },
+          {
+            "id": "B",
+            "text": "Contract value"
+          },
+          {
+            "id": "C",
+            "text": "One lot"
+          },
+          {
+            "id": "D",
+            "text": "Spot"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The minimum number of shares that need to be transacted in a futures contract is called one lot."
+      },
+      {
+        "question": "Which of the following is NOT a possible outcome after entering into a futures agreement?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Price of the asset can go up"
+          },
+          {
+            "id": "B",
+            "text": "Price of the asset can go down"
+          },
+          {
+            "id": "C",
+            "text": "Price of the asset can stay the same"
+          },
+          {
+            "id": "D",
+            "text": "The agreed-upon price can change"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The agreed-upon price cannot change once a futures agreement is entered into."
+      },
+      {
+        "question": "What is the process of transferring an existing futures position to someone else called?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Square off"
+          },
+          {
+            "id": "B",
+            "text": "Close out"
+          },
+          {
+            "id": "C",
+            "text": "Liquidate"
+          },
+          {
+            "id": "D",
+            "text": "Cancel"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The process of transferring an existing futures position to someone else is called square off."
+      },
+      {
+        "question": "Which part of the body do we need to move to cut something?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Leg"
+          },
+          {
+            "id": "B",
+            "text": "Arm"
+          },
+          {
+            "id": "C",
+            "text": "Head"
+          },
+          {
+            "id": "D",
+            "text": "Stomach"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The arm is used to cut, throw, or lift something."
+      },
+      {
+        "question": "What instrument is used to measure temperature?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Microscope"
+          },
+          {
+            "id": "B",
+            "text": "Thermometer"
+          },
+          {
+            "id": "C",
+            "text": "Telescope"
+          },
+          {
+            "id": "D",
+            "text": "Barometer"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "A thermometer is specifically designed to measure temperature."
+      },
+      {
+        "question": "What is the term used for a person who rides a bicycle?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Boater"
+          },
+          {
+            "id": "B",
+            "text": "Cyclist"
+          },
+          {
+            "id": "C",
+            "text": "Swimmer"
+          },
+          {
+            "id": "D",
+            "text": "Driver"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "A cyclist is someone who rides a bicycle."
+      },
+      {
+        "question": "What instrument is used to measure the speed of wind?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Anemometer"
+          },
+          {
+            "id": "B",
+            "text": "Tachometer"
+          },
+          {
+            "id": "C",
+            "text": "Barometer"
+          },
+          {
+            "id": "D",
+            "text": "Hydrometer"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "An anemometer is an instrument specifically designed to measure the speed of wind."
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "2. Introducing Futures Contract",
+    "order": "2",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT a key risk associated with forward contracts?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Liquidity risk"
+          },
+          {
+            "id": "B",
+            "text": "Credit risk"
+          },
+          {
+            "id": "C",
+            "text": "Regulatory risk"
+          },
+          {
+            "id": "D",
+            "text": "Settlement risk"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Credit risk is typically associated with loan agreements, not forward contracts."
+      },
+      {
+        "question": "What is a key difference between a futures contract and a forward contract?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Futures contracts are traded on exchanges, while forward contracts are traded over-the-counter"
+          },
+          {
+            "id": "B",
+            "text": "Futures contracts are standardized, while forward contracts are customized"
+          },
+          {
+            "id": "C",
+            "text": "Futures contracts are more liquid than forward contracts"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "All of the options listed are key differences between futures and forward contracts."
+      },
+      {
+        "question": "What is the purpose of a margin in a futures contract?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "To cover potential losses if the price of the underlying asset moves against the trader"
+          },
+          {
+            "id": "B",
+            "text": "To guarantee the performance of the contract"
+          },
+          {
+            "id": "C",
+            "text": "To discourage excessive speculation"
+          },
+          {
+            "id": "D",
+            "text": "To generate income for the broker"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The margin is used as collateral to cover potential losses if the price of the underlying asset moves against the trader."
+      },
+      {
+        "question": "What is the relationship between the spot price and the futures price of an asset?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The futures price is always higher than the spot price"
+          },
+          {
+            "id": "B",
+            "text": "The spot price is always higher than the futures price"
+          },
+          {
+            "id": "C",
+            "text": "The futures price generally follows the spot price"
+          },
+          {
+            "id": "D",
+            "text": "The relationship between the spot price and the futures price is unpredictable"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The futures price generally follows the spot price, as traders use futures contracts to hedge against price risk or to speculate on future price movements."
+      },
+      {
+        "question": "Which of the following is NOT a benefit of using futures contracts?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Reduced risk of default"
+          },
+          {
+            "id": "B",
+            "text": "Increased liquidity"
+          },
+          {
+            "id": "C",
+            "text": "Lower transaction costs"
+          },
+          {
+            "id": "D",
+            "text": "Guaranteed profit"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Futures contracts do not guarantee profit. Profitability depends on the trader's ability to accurately predict future price movements."
+      },
+      {
+        "question": "What is the purpose of a standardized futures contract?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "To ensure that all contracts are traded on the same terms"
+          },
+          {
+            "id": "B",
+            "text": "To make it easier for traders to compare and hedge contracts"
+          },
+          {
+            "id": "C",
+            "text": "To reduce the risk of counterparty default"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Standardization serves all of the purposes listed."
+      },
+      {
+        "question": "What is the role of a clearinghouse in the futures market?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "To act as an intermediary between buyers and sellers"
+          },
+          {
+            "id": "B",
+            "text": "To guarantee the performance of contracts"
+          },
+          {
+            "id": "C",
+            "text": "To collect and distribute margin payments"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The clearinghouse plays a key role in ensuring the smooth functioning of the futures market by performing all of the functions listed."
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "7. Margin Calculator (Part 2)",
+    "order": "7",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "According to the passage, what is the primary reason for charging margins?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "To generate revenue for the trading firm"
+          },
+          {
+            "id": "B",
+            "text": "To offset the risk of counterparty default"
+          },
+          {
+            "id": "C",
+            "text": "To discourage excessive trading"
+          },
+          {
+            "id": "D",
+            "text": "To mitigate the impact of market volatility"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To offset the risk of counterparty default"
+      },
+      {
+        "question": "Which of the following pieces of information is typically NOT provided to the RMS system when placing a trade?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The contract to be traded"
+          },
+          {
+            "id": "B",
+            "text": "The quantity to be traded"
+          },
+          {
+            "id": "C",
+            "text": "The stoploss point"
+          },
+          {
+            "id": "D",
+            "text": "The desired price level for the trade"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The stoploss point"
+      },
+      {
+        "question": "What type of product is used to convey information about the trade duration and stoploss to the RMS system?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "NRML"
+          },
+          {
+            "id": "B",
+            "text": "MIS"
+          },
+          {
+            "id": "C",
+            "text": "CO"
+          },
+          {
+            "id": "D",
+            "text": "BO"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "BO"
+      },
+      {
+        "question": "Which of the following is NOT an advantage of using the BO product type?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Lower margins compared to NRML"
+          },
+          {
+            "id": "B",
+            "text": "The ability to specify target and stoploss prices"
+          },
+          {
+            "id": "C",
+            "text": "Reduces the risk of being stopped out due to market volatility"
+          },
+          {
+            "id": "D",
+            "text": "Simplifies the order entry process"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Reduces the risk of being stopped out due to market volatility"
+      },
+      {
+        "question": "What is the main purpose of using a trailing stoploss technique?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "To reduce the risk of losses"
+          },
+          {
+            "id": "B",
+            "text": "To lock in profits while the market moves in your favor"
+          },
+          {
+            "id": "C",
+            "text": "To eliminate the need for manual stoploss adjustments"
+          },
+          {
+            "id": "D",
+            "text": "To increase the chances of making a profit"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To lock in profits while the market moves in your favor"
+      },
+      {
+        "question": "Which of the following is true about NRML product type?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is the most suitable for intraday trading"
+          },
+          {
+            "id": "B",
+            "text": "It conveys information about the trade duration and stoploss to the RMS system"
+          },
+          {
+            "id": "C",
+            "text": "It requires the lowest amount of margin"
+          },
+          {
+            "id": "D",
+            "text": "It is only available for futures contracts"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "It conveys information about the trade duration and stoploss to the RMS system"
+      },
+      {
+        "question": "What is the full form of RMS?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Risk Management System"
+          },
+          {
+            "id": "B",
+            "text": "Risk Monitoring System"
+          },
+          {
+            "id": "C",
+            "text": "Risk Mitigation System"
+          },
+          {
+            "id": "D",
+            "text": "Risk Assessment System"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Risk Management System"
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "10. The Futures Pricing",
+    "order": "10",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT a factor included in the futures pricing formula?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Spot price"
+          },
+          {
+            "id": "B",
+            "text": "Dividend"
+          },
+          {
+            "id": "C",
+            "text": "Risk-free rate"
+          },
+          {
+            "id": "D",
+            "text": "Number of days to expiry"
+          },
+          {
+            "id": "E",
+            "text": "Margin requirements"
+          }
+        ],
+        "answerId": "E",
+        "answerText": "Margin requirements are not included in the futures pricing formula."
+      },
+      {
+        "question": "What is the term used to describe a situation where the futures price is higher than the spot price?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Premium"
+          },
+          {
+            "id": "B",
+            "text": "Discount"
+          },
+          {
+            "id": "C",
+            "text": "Contango"
+          },
+          {
+            "id": "D",
+            "text": "Backwardation"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Premium is the term used to describe a situation where the futures price is higher than the spot price."
+      },
+      {
+        "question": "Which of the following is an example of a spread trade?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Buying a stock and selling a call option on the same stock"
+          },
+          {
+            "id": "B",
+            "text": "Buying a futures contract and selling a spot contract for the same underlying asset"
+          },
+          {
+            "id": "C",
+            "text": "Buying a bond and selling a treasury bill"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Buying a futures contract and selling a spot contract for the same underlying asset is an example of a spread trade."
+      },
+      {
+        "question": "What is the main assumption made when implementing a calendar spread?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The spread between the two futures contracts will remain constant."
+          },
+          {
+            "id": "B",
+            "text": "The price of the underlying asset will remain stable."
+          },
+          {
+            "id": "C",
+            "text": "The risk-free rate will remain unchanged."
+          },
+          {
+            "id": "D",
+            "text": "The basis will narrow down."
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The main assumption made when implementing a calendar spread is that the basis will narrow down."
+      },
+      {
+        "question": "What is the term for the difference between the futures price and the spot price?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Premium"
+          },
+          {
+            "id": "B",
+            "text": "Discount"
+          },
+          {
+            "id": "C",
+            "text": "Basis"
+          },
+          {
+            "id": "D",
+            "text": "Spread"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Spread is the term for the difference between the futures price and the spot price."
+      },
+      {
+        "question": "Which of the following is NOT a characteristic of a contango market?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Futures prices are higher than spot prices"
+          },
+          {
+            "id": "B",
+            "text": "The spread between futures and spot prices is widening"
+          },
+          {
+            "id": "C",
+            "text": "Traders are expecting the price of the underlying asset to rise"
+          },
+          {
+            "id": "D",
+            "text": "The cost of carry is negative"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The cost of carry is positive in a contango market, not negative."
+      },
+      {
+        "question": "What is the purpose of a cash and carry arbitrage?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "To profit from the difference between the futures price and the spot price"
+          },
+          {
+            "id": "B",
+            "text": "To hedge against price risk"
+          },
+          {
+            "id": "C",
+            "text": "To speculate on the direction of the market"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The purpose of a cash and carry arbitrage is to profit from the difference between the futures price and the spot price."
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "4. Leverage & Payoff",
+    "order": "4",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following statements about leverage in futures trading is true?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Leverage allows traders to enter into large transactions with a small amount of capital"
+          },
+          {
+            "id": "B",
+            "text": "Leverage guarantees profits in futures trading"
+          },
+          {
+            "id": "C",
+            "text": "Leverage is only available in spot market transactions"
+          },
+          {
+            "id": "D",
+            "text": "Leverage has no impact on the potential return of a futures trade"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Leverage allows traders to enter into large transactions with a small amount of capital"
+      },
+      {
+        "question": "What is the main advantage of using leverage in futures trading?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Increased profit potential"
+          },
+          {
+            "id": "B",
+            "text": "Reduced risk"
+          },
+          {
+            "id": "C",
+            "text": "Guaranteed returns"
+          },
+          {
+            "id": "D",
+            "text": "Longer trade duration"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Increased profit potential"
+      },
+      {
+        "question": "What is the formula for calculating leverage in futures trading?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Leverage = Contract Value / Margin"
+          },
+          {
+            "id": "B",
+            "text": "Leverage = Margin / Contract Value"
+          },
+          {
+            "id": "C",
+            "text": "Leverage = Margin x Contract Value"
+          },
+          {
+            "id": "D",
+            "text": "Leverage = Contract Value x Margin"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Leverage = Contract Value / Margin"
+      },
+      {
+        "question": "What is the payoff structure of a futures instrument?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Linear"
+          },
+          {
+            "id": "B",
+            "text": "Non-linear"
+          },
+          {
+            "id": "C",
+            "text": "Exponential"
+          },
+          {
+            "id": "D",
+            "text": "Quadratic"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Linear"
+      },
+      {
+        "question": "What is the relationship between the profit made by a buyer in a futures trade and the loss incurred by the seller?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "They are equal in magnitude but opposite in sign"
+          },
+          {
+            "id": "B",
+            "text": "They are equal in both magnitude and sign"
+          },
+          {
+            "id": "C",
+            "text": "They are unrelated"
+          },
+          {
+            "id": "D",
+            "text": "The buyer's profit is always greater than the seller's loss"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "They are equal in magnitude but opposite in sign"
+      },
+      {
+        "question": "Which of the following factors affects the margin requirement for a futures trade?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Volatility of the underlying asset"
+          },
+          {
+            "id": "B",
+            "text": "Term to maturity of the futures contract"
+          },
+          {
+            "id": "C",
+            "text": "Trading volume"
+          },
+          {
+            "id": "D",
+            "text": "Interest rates"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Volatility of the underlying asset"
+      },
+      {
+        "question": "What is a zero-sum game in futures trading?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "A situation where the total profit made by all participants is zero"
+          },
+          {
+            "id": "B",
+            "text": "A situation where the total loss incurred by all participants is zero"
+          },
+          {
+            "id": "C",
+            "text": "A situation where the total profit made by buyers is equal to the total loss incurred by sellers"
+          },
+          {
+            "id": "D",
+            "text": "A situation where the total loss incurred by buyers is equal to the total profit made by sellers"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "A situation where the total profit made by buyers is equal to the total loss incurred by sellers"
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "6. Margin Calculator (Part 1)",
+    "order": "6",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "What is the purpose of Zerodha's margin calculator?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "To calculate the margin required for a futures contract"
+          },
+          {
+            "id": "B",
+            "text": "To calculate the profit and loss on a futures trade"
+          },
+          {
+            "id": "C",
+            "text": "To compare the margins of different futures contracts"
+          },
+          {
+            "id": "D",
+            "text": "To generate trading signals"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To calculate the margin required for a futures contract"
+      },
+      {
+        "question": "What is the formula for calculating the initial margin?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Initial Margin = SPAN Margin + Exposure Margin"
+          },
+          {
+            "id": "B",
+            "text": "Initial Margin = SPAN Margin - Exposure Margin"
+          },
+          {
+            "id": "C",
+            "text": "Initial Margin = (SPAN Margin + Exposure Margin) / 2"
+          },
+          {
+            "id": "D",
+            "text": "Initial Margin = (SPAN Margin - Exposure Margin) / 2"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Initial Margin = SPAN Margin + Exposure Margin"
+      },
+      {
+        "question": "Which of the following is NOT an option available in the Margin Calculator?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "SPAN"
+          },
+          {
+            "id": "B",
+            "text": "Equity Futures"
+          },
+          {
+            "id": "C",
+            "text": "Currency Derivatives"
+          },
+          {
+            "id": "D",
+            "text": "Options"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Options"
+      },
+      {
+        "question": "What is the difference between the current month contract and the mid-month contract?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The current month contract expires on the last trading day of the current month, while the mid-month contract expires on the last trading day of the following month."
+          },
+          {
+            "id": "B",
+            "text": "The current month contract expires on the first trading day of the following month, while the mid-month contract expires on the last trading day of the following month."
+          },
+          {
+            "id": "C",
+            "text": "The current month contract expires on the last trading day of the current month, while the mid-month contract expires on the last trading day of the same month."
+          },
+          {
+            "id": "D",
+            "text": "The current month contract expires on the first trading day of the following month, while the mid-month contract expires on the first trading day of the same month."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The current month contract expires on the last trading day of the current month, while the mid-month contract expires on the last trading day of the following month."
+      },
+      {
+        "question": "What is a calendar spread?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "A strategy involving buying a certain month contract and selling another month contract simultaneously for the same underlying."
+          },
+          {
+            "id": "B",
+            "text": "A strategy involving buying two different month contracts for the same underlying."
+          },
+          {
+            "id": "C",
+            "text": "A strategy involving selling two different month contracts for the same underlying."
+          },
+          {
+            "id": "D",
+            "text": "A strategy involving buying a futures contract and selling an options contract for the same underlying."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "A strategy involving buying a certain month contract and selling another month contract simultaneously for the same underlying."
+      },
+      {
+        "question": "What is the main advantage of a calendar spread?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Reduced risk"
+          },
+          {
+            "id": "B",
+            "text": "Increased profit potential"
+          },
+          {
+            "id": "C",
+            "text": "Reduced margin requirements"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Reduced margin requirements"
+      },
+      {
+        "question": "When does a futures contract expire?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "On the last trading day of the month in which it is issued."
+          },
+          {
+            "id": "B",
+            "text": "On the last trading day of the following month."
+          },
+          {
+            "id": "C",
+            "text": "On the last trading day of the quarter in which it is issued."
+          },
+          {
+            "id": "D",
+            "text": "On the last trading day of the year in which it is issued."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "On the last trading day of the month in which it is issued."
+      },
+      {
+        "question": "What is the name of the margin required to cover potential losses on a futures contract?",
+        "questionNumber": 8,
+        "options": [
+          {
+            "id": "A",
+            "text": "Initial margin"
+          },
+          {
+            "id": "B",
+            "text": "Maintenance margin"
+          },
+          {
+            "id": "C",
+            "text": "Variation margin"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "All of the above"
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "5. Margin & M2M",
+    "order": "5",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is **NOT** an advantage of using margins in futures trading?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Greater market exposure"
+          },
+          {
+            "id": "B",
+            "text": "Reduced risk of losses"
+          },
+          {
+            "id": "C",
+            "text": "Ability to take on larger positions"
+          },
+          {
+            "id": "D",
+            "text": "Increased potential for profit"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Reduced risk of losses"
+      },
+      {
+        "question": "What is the purpose of marking to market (M2M) in futures trading?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "To adjust the value of futures contracts based on daily price fluctuations"
+          },
+          {
+            "id": "B",
+            "text": "To determine the margin requirement for a futures contract"
+          },
+          {
+            "id": "C",
+            "text": "To calculate the total profit or loss on a futures contract"
+          },
+          {
+            "id": "D",
+            "text": "To establish the settlement price for a futures contract"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To adjust the value of futures contracts based on daily price fluctuations"
+      },
+      {
+        "question": "Which of the following components does **NOT** make up the initial margin for a futures trade?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "SPAN margin"
+          },
+          {
+            "id": "B",
+            "text": "Exposure margin"
+          },
+          {
+            "id": "C",
+            "text": "Maintenance margin"
+          },
+          {
+            "id": "D",
+            "text": "Initial payment"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Maintenance margin"
+      },
+      {
+        "question": "What is the function of SPAN margin in futures trading?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "To cover potential losses from price fluctuations"
+          },
+          {
+            "id": "B",
+            "text": "To ensure that traders can meet their financial obligations"
+          },
+          {
+            "id": "C",
+            "text": "To limit the amount of leverage that can be used"
+          },
+          {
+            "id": "D",
+            "text": "To determine the settlement price of a futures contract"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To ensure that traders can meet their financial obligations"
+      },
+      {
+        "question": "What happens when the cash balance in a trading account falls below the maintenance margin?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "The broker issues a margin call"
+          },
+          {
+            "id": "B",
+            "text": "The trader's positions are automatically closed"
+          },
+          {
+            "id": "C",
+            "text": "The trader is penalized with a fine"
+          },
+          {
+            "id": "D",
+            "text": "Nothing, the trader can continue to hold their positions"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The broker issues a margin call"
+      },
+      {
+        "question": "If a trader purchases 1000 shares of a futures contract at \u20b9100 per share, and the contract multiplier is 100, what is the total contract value?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "\u20b9100,000"
+          },
+          {
+            "id": "B",
+            "text": "\u20b91,000,000"
+          },
+          {
+            "id": "C",
+            "text": "\u20b910,000,000"
+          },
+          {
+            "id": "D",
+            "text": "\u20b9100,000,000"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "\u20b91,000,000"
+      },
+      {
+        "question": "What is the relationship between futures trading and zero-sum games?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Futures trading is a zero-sum game because the total amount of money lost by losing traders is equal to the total amount of money gained by winning traders."
+          },
+          {
+            "id": "B",
+            "text": "Futures trading is not a zero-sum game because the exchange itself makes a profit from transaction fees."
+          },
+          {
+            "id": "C",
+            "text": "Futures trading is a zero-sum game because the buyer of a futures contract always loses money."
+          },
+          {
+            "id": "D",
+            "text": "Futures trading is not a zero-sum game because the seller of a futures contract always loses money."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Futures trading is a zero-sum game because the total amount of money lost by losing traders is equal to the total amount of money gained by winning traders."
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "13. Quick Note on Physical Settlement",
+    "order": "13",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "What was the main reason behind SEBI making physical delivery of stocks for all stock F&O contracts mandatory?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "To increase liquidity in the market"
+          },
+          {
+            "id": "B",
+            "text": "To reduce volatility in individual stocks"
+          },
+          {
+            "id": "C",
+            "text": "To encourage long-term investing"
+          },
+          {
+            "id": "D",
+            "text": "To make trading in F&O contracts more profitable"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To reduce volatility in individual stocks"
+      },
+      {
+        "question": "What is the difference between cash settlement and physical settlement in F&O contracts?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "In cash settlement, buyers and sellers settle their position in cash, while in physical settlement, they have to take delivery of the underlying security."
+          },
+          {
+            "id": "B",
+            "text": "In physical settlement, buyers and sellers settle their position in cash, while in cash settlement, they have to take delivery of the underlying security."
+          },
+          {
+            "id": "C",
+            "text": "There is no difference between cash settlement and physical settlement."
+          },
+          {
+            "id": "D",
+            "text": "Physical settlement is only applicable to futures contracts, while cash settlement is applicable to both futures and options contracts."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "In cash settlement, buyers and sellers settle their position in cash, while in physical settlement, they have to take delivery of the underlying security."
+      },
+      {
+        "question": "When did SEBI make physical delivery of stocks for all stock F&O contracts mandatory?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "January 11, 2019"
+          },
+          {
+            "id": "B",
+            "text": "April 11, 2018"
+          },
+          {
+            "id": "C",
+            "text": "October 11, 2019"
+          },
+          {
+            "id": "D",
+            "text": "July 11, 2020"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "April 11, 2018"
+      },
+      {
+        "question": "What is the purpose of introducing additional margins for F&O positions closer to expiry?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "To reduce the risk of default by traders"
+          },
+          {
+            "id": "B",
+            "text": "To increase the cost of trading in F&O contracts"
+          },
+          {
+            "id": "C",
+            "text": "To prevent excessive speculation in individual stocks"
+          },
+          {
+            "id": "D",
+            "text": "To encourage traders to close their positions before expiry"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To reduce the risk of default by traders"
+      },
+      {
+        "question": "Which of the following is NOT a type of physical settlement obligation?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Take Delivery"
+          },
+          {
+            "id": "B",
+            "text": "Give Delivery"
+          },
+          {
+            "id": "C",
+            "text": "Rollover"
+          },
+          {
+            "id": "D",
+            "text": "Close Position"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Rollover"
+      },
+      {
+        "question": "How are netted-off positions handled during physical settlement?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "They are settled separately."
+          },
+          {
+            "id": "B",
+            "text": "They are combined and settled as a single position."
+          },
+          {
+            "id": "C",
+            "text": "They are ignored and do not affect the settlement process."
+          },
+          {
+            "id": "D",
+            "text": "They are sold off before expiry to avoid physical settlement."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "They are combined and settled as a single position."
+      },
+      {
+        "question": "Which type of stock F&O contracts are subject to physical settlement?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Only futures contracts"
+          },
+          {
+            "id": "B",
+            "text": "Only options contracts"
+          },
+          {
+            "id": "C",
+            "text": "Both futures and options contracts"
+          },
+          {
+            "id": "D",
+            "text": "Only futures contracts with an expiry date within the next 30 days"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Both futures and options contracts"
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "11. Hedging with Futures",
+    "order": "11",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "What is the primary purpose of hedging in the market context?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Protect a position against adverse market movements"
+          },
+          {
+            "id": "B",
+            "text": "Increase the potential return on investment"
+          },
+          {
+            "id": "C",
+            "text": "Reduce the overall risk of a portfolio"
+          },
+          {
+            "id": "D",
+            "text": "Speculate on the future direction of the market"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Reduce the overall risk of a portfolio"
+      },
+      {
+        "question": "Which type of risk can be hedged?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Unsystematic risk"
+          },
+          {
+            "id": "B",
+            "text": "Systematic risk"
+          },
+          {
+            "id": "C",
+            "text": "Both unsystematic and systematic risk"
+          },
+          {
+            "id": "D",
+            "text": "Neither unsystematic nor systematic risk"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Systematic risk"
+      },
+      {
+        "question": "What is the most common method used to hedge a single stock position?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Buying a futures contract for the same stock"
+          },
+          {
+            "id": "B",
+            "text": "Selling a futures contract for the same stock"
+          },
+          {
+            "id": "C",
+            "text": "Buying a put option for the same stock"
+          },
+          {
+            "id": "D",
+            "text": "Selling a call option for the same stock"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Selling a futures contract for the same stock"
+      },
+      {
+        "question": "What is the purpose of beta in calculating the optimal hedge ratio for a portfolio?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "To measure the stock's volatility relative to the market"
+          },
+          {
+            "id": "B",
+            "text": "To determine the correlation between the stock and the market"
+          },
+          {
+            "id": "C",
+            "text": "To estimate the expected return of the stock"
+          },
+          {
+            "id": "D",
+            "text": "To identify potential trading opportunities"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To measure the stock's volatility relative to the market"
+      },
+      {
+        "question": "What is the drawback of using Nifty futures to hedge a portfolio?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "It may not perfectly hedge the portfolio's systematic risk"
+          },
+          {
+            "id": "B",
+            "text": "It is only available for stocks that are included in the Nifty index"
+          },
+          {
+            "id": "C",
+            "text": "It can be expensive to maintain a fully hedged position"
+          },
+          {
+            "id": "D",
+            "text": "It is not suitable for hedging portfolios with low correlation to the Nifty index"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It may not perfectly hedge the portfolio's systematic risk"
+      },
+      {
+        "question": "What is the difference between a perfect hedge and an imperfect hedge?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "A perfect hedge completely eliminates all risk, while an imperfect hedge reduces but does not eliminate risk."
+          },
+          {
+            "id": "B",
+            "text": "An imperfect hedge completely eliminates all risk, while a perfect hedge reduces but does not eliminate risk."
+          },
+          {
+            "id": "C",
+            "text": "A perfect hedge and an imperfect hedge are the same thing."
+          },
+          {
+            "id": "D",
+            "text": "There is no such thing as a perfect hedge."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "A perfect hedge completely eliminates all risk, while an imperfect hedge reduces but does not eliminate risk."
+      },
+      {
+        "question": "What is the role of futures in hedging?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "To create a position that is opposite to the position being hedged"
+          },
+          {
+            "id": "B",
+            "text": "To generate additional income"
+          },
+          {
+            "id": "C",
+            "text": "To reduce the volatility of a portfolio"
+          },
+          {
+            "id": "D",
+            "text": "To speculate on the future direction of the market"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To create a position that is opposite to the position being hedged"
+      }
+    ]
+  },
+  {
+    "course": "Futures Trading",
+    "lesson": "12. Open Interest",
+    "order": "12",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "What does Open Interest (OI) represent?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "The number of buyers in the market"
+          },
+          {
+            "id": "B",
+            "text": "The current number of outstanding contracts"
+          },
+          {
+            "id": "C",
+            "text": "The total traded volume for the day"
+          },
+          {
+            "id": "D",
+            "text": "The difference between buyers and sellers"
+          }
+        ],
+        "answerId": "B"
+      },
+      {
+        "question": "When does OI increase?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "When a contract is bought"
+          },
+          {
+            "id": "B",
+            "text": "When a contract is sold"
+          },
+          {
+            "id": "C",
+            "text": "When new contracts are created"
+          },
+          {
+            "id": "D",
+            "text": "When the market price changes"
+          }
+        ],
+        "answerId": "C"
+      },
+      {
+        "question": "When does OI decrease?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "When a contract is bought back"
+          },
+          {
+            "id": "B",
+            "text": "When a contract is sold short"
+          },
+          {
+            "id": "C",
+            "text": "When a contract expires"
+          },
+          {
+            "id": "D",
+            "text": "When OI is negative"
+          }
+        ],
+        "answerId": "A"
+      },
+      {
+        "question": "What does a large difference between OI and Volume indicate?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The market is very liquid"
+          },
+          {
+            "id": "B",
+            "text": "There is strong buying or selling pressure"
+          },
+          {
+            "id": "C",
+            "text": "The market is about to reverse"
+          },
+          {
+            "id": "D",
+            "text": "The OI is invalid"
+          }
+        ],
+        "answerId": "B"
+      },
+      {
+        "question": "How can OI be used to identify potential trend reversals?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Look for a divergence between OI and price"
+          },
+          {
+            "id": "B",
+            "text": "Compare OI to its historical average"
+          },
+          {
+            "id": "C",
+            "text": "Calculate the ratio of OI to Volume"
+          },
+          {
+            "id": "D",
+            "text": "Use OI to predict future price movements"
+          }
+        ],
+        "answerId": "A"
+      },
+      {
+        "question": "What happens to OI when there is a transfer of contracts from one party to another?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "It increases"
+          },
+          {
+            "id": "B",
+            "text": "It decreases"
+          },
+          {
+            "id": "C",
+            "text": "It stays the same"
+          },
+          {
+            "id": "D",
+            "text": "It becomes negative"
+          }
+        ],
+        "answerId": "C"
+      },
+      {
+        "question": "What does a high OI indicate?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Low liquidity"
+          },
+          {
+            "id": "B",
+            "text": "High leverage"
+          },
+          {
+            "id": "C",
+            "text": "A bullish trend"
+          },
+          {
+            "id": "D",
+            "text": "A bearish trend"
+          }
+        ],
+        "answerId": "B"
+      }
+    ]
+  }
+]

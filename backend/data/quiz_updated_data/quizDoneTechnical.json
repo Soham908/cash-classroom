@@ -1,0 +1,3826 @@
+[
+  {
+    "course": "Technical Analysis",
+    "lesson": "9. Multiple Candlestick Patterns (Part 2)",
+    "order": "9",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "What does the word 'Harami' mean in relation to candlestick patterns?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Pregnant"
+          },
+          {
+            "id": "B",
+            "text": "Small"
+          },
+          {
+            "id": "C",
+            "text": "Contained"
+          },
+          {
+            "id": "D",
+            "text": "Bearish"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Pregnant"
+      },
+      {
+        "question": "Which of the following is NOT a characteristic of a bearish harami pattern?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Appears at the top end of an uptrend"
+          },
+          {
+            "id": "B",
+            "text": "P1 is a long red candle"
+          },
+          {
+            "id": "C",
+            "text": "P2 is a small blue candle"
+          },
+          {
+            "id": "D",
+            "text": "The stop loss is the highest high between P1 and P2"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "P2 is a small blue candle"
+      },
+      {
+        "question": "What is the key takeaway from the chapter on the Harami pattern?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is a single-day pattern that signals a trend reversal"
+          },
+          {
+            "id": "B",
+            "text": "It is a two-day pattern that involves a small candle 'tucked inside' a larger candle"
+          },
+          {
+            "id": "C",
+            "text": "It is a bullish pattern that is used to initiate long trades"
+          },
+          {
+            "id": "D",
+            "text": "It is a bearish pattern that is used to initiate short trades"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "It is a two-day pattern that involves a small candle 'tucked inside' a larger candle"
+      },
+      {
+        "question": "What is the risk-averse approach to entering a trade based on a bullish harami pattern?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Initiate the long trade near the close of P2"
+          },
+          {
+            "id": "B",
+            "text": "Initiate the long trade near the close of the day after P2, ensuring it forms a blue candle day"
+          },
+          {
+            "id": "C",
+            "text": "Initiate the short trade near the close of P2"
+          },
+          {
+            "id": "D",
+            "text": "Initiate the short trade near the close of the day after P2, ensuring it forms a red candle day"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Initiate the long trade near the close of the day after P2, ensuring it forms a blue candle day"
+      },
+      {
+        "question": "What is the purpose of a stop loss in a bearish harami pattern?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "To prevent losses if the price moves against the trade"
+          },
+          {
+            "id": "B",
+            "text": "To ensure the trade is profitable"
+          },
+          {
+            "id": "C",
+            "text": "To set a target for the trade"
+          },
+          {
+            "id": "D",
+            "text": "To prevent the trade from executing"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To prevent losses if the price moves against the trade"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "4. Getting Started with Candlesticks",
+    "order": "4",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is considered a key assumption in technical analysis?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "History tends to repeat itself"
+          },
+          {
+            "id": "B",
+            "text": "Technical indicators are always accurate"
+          },
+          {
+            "id": "C",
+            "text": "Past performance is not indicative of future results"
+          },
+          {
+            "id": "D",
+            "text": "Technical analysis can predict the future with certainty"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "History tends to repeat itself"
+      },
+      {
+        "question": "According to the assumption 'History tends to repeat itself', when a set of factors that have resulted in a particular outcome in the past are observed again in the future, what is expected?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The same outcome will occur as in the past"
+          },
+          {
+            "id": "B",
+            "text": "An opposite outcome will occur"
+          },
+          {
+            "id": "C",
+            "text": "The outcome is uncertain"
+          },
+          {
+            "id": "D",
+            "text": "The outcome will depend on the current market conditions"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The same outcome will occur as in the past"
+      },
+      {
+        "question": "Which of the following is NOT a single candlestick pattern?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Marubozu"
+          },
+          {
+            "id": "B",
+            "text": "Doji"
+          },
+          {
+            "id": "C",
+            "text": "Engulfing"
+          },
+          {
+            "id": "D",
+            "text": "Hammer"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Engulfing"
+      },
+      {
+        "question": "According to the assumption 'Buy strength and sell weakness', when should you buy a stock?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the previous candle is bullish (blue)"
+          },
+          {
+            "id": "B",
+            "text": "When the previous candle is bearish (red)"
+          },
+          {
+            "id": "C",
+            "text": "When the current candle is bullish (blue)"
+          },
+          {
+            "id": "D",
+            "text": "When the current candle is bearish (red)"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "When the current candle is bullish (blue)"
+      },
+      {
+        "question": "Which of the following is a type of multiple candlestick pattern?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Harami"
+          },
+          {
+            "id": "B",
+            "text": "Bullish Engulfing"
+          },
+          {
+            "id": "C",
+            "text": "Doji"
+          },
+          {
+            "id": "D",
+            "text": "Spinning Top"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Bullish Engulfing"
+      },
+      {
+        "question": "According to the assumption 'Be flexible \u2013 quantify and verify', what is important when applying candlestick patterns?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Allowing for minor variations in the pattern"
+          },
+          {
+            "id": "B",
+            "text": "Ignoring any discrepancies from the textbook definition"
+          },
+          {
+            "id": "C",
+            "text": "Quantifying the flexibility within specific limits"
+          },
+          {
+            "id": "D",
+            "text": "Following the patterns rigidly without any adjustments"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Quantifying the flexibility within specific limits"
+      },
+      {
+        "question": "Which of the following is NOT a key takeaway from the chapter?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "History tends to repeat itself, but it's with a factor angle."
+          },
+          {
+            "id": "B",
+            "text": "Candlestick patterns can be useful for identifying trading opportunities."
+          },
+          {
+            "id": "C",
+            "text": "The prior trend should be ignored when looking at candlestick patterns."
+          },
+          {
+            "id": "D",
+            "text": "There are specific assumptions to keep in mind when using candlestick patterns."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The prior trend should be ignored when looking at candlestick patterns."
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "1. Background",
+    "order": "1",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT an element of a well-researched point of view in the stock market?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Directional view"
+          },
+          {
+            "id": "B",
+            "text": "Expected reward"
+          },
+          {
+            "id": "C",
+            "text": "Expected account balance"
+          },
+          {
+            "id": "D",
+            "text": "Expected holding period"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Expected account balance"
+      },
+      {
+        "question": "What is the purpose of Technical Analysis (TA)?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "To analyze trading opportunities based on market sentiment"
+          },
+          {
+            "id": "B",
+            "text": "To determine the intrinsic value of a stock"
+          },
+          {
+            "id": "C",
+            "text": "To predict future stock prices with certainty"
+          },
+          {
+            "id": "D",
+            "text": "To provide investment advice"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To analyze trading opportunities based on market sentiment"
+      },
+      {
+        "question": "Which of the following is an advantage of using Option 2 (crowd preference) in the food street analogy for market analysis?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "High probability of finding the best food"
+          },
+          {
+            "id": "B",
+            "text": "Scalability and efficiency"
+          },
+          {
+            "id": "C",
+            "text": "Personalized recommendations"
+          },
+          {
+            "id": "D",
+            "text": "Guarantee of a satisfying meal"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Scalability and efficiency"
+      },
+      {
+        "question": "Which of the following is an assumption of Technical Analysis?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The market is efficient and rational"
+          },
+          {
+            "id": "B",
+            "text": "Past price movements can predict future price trends"
+          },
+          {
+            "id": "C",
+            "text": "Technical patterns are reliable indicators of market behavior"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "All of the above"
+      },
+      {
+        "question": "Which of the following is NOT a limitation of Technical Analysis?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "It is not suitable for long-term investment decisions"
+          },
+          {
+            "id": "B",
+            "text": "It can be subjective and open to interpretation"
+          },
+          {
+            "id": "C",
+            "text": "It guarantees consistent profits"
+          },
+          {
+            "id": "D",
+            "text": "It requires a significant amount of time and effort to learn"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "It guarantees consistent profits"
+      },
+      {
+        "question": "What is the typical holding period for trades based on Technical Analysis?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "A few minutes to a few days"
+          },
+          {
+            "id": "B",
+            "text": "A few weeks to a few months"
+          },
+          {
+            "id": "C",
+            "text": "Several months to a few years"
+          },
+          {
+            "id": "D",
+            "text": "Indefinitely"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "A few minutes to a few days"
+      },
+      {
+        "question": "What is the recommended approach to risk management in TA-based trades?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Hold onto losing trades in the hope of recovery"
+          },
+          {
+            "id": "B",
+            "text": "Cut losses quickly to preserve capital"
+          },
+          {
+            "id": "C",
+            "text": "Ignore risk altogether"
+          },
+          {
+            "id": "D",
+            "text": "Increase risk to maximize potential profits"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Cut losses quickly to preserve capital"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "6. Single Candlestick patterns (Part 2)",
+    "order": "6",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is a characteristic of a spinning top candle pattern?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Large real body"
+          },
+          {
+            "id": "B",
+            "text": "Small real body"
+          },
+          {
+            "id": "C",
+            "text": "No real body"
+          },
+          {
+            "id": "D",
+            "text": "Long upper shadow"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Small real body"
+      },
+      {
+        "question": "What do spinning tops indicate about market sentiment?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bullish sentiment"
+          },
+          {
+            "id": "B",
+            "text": "Bearish sentiment"
+          },
+          {
+            "id": "C",
+            "text": "Indecision"
+          },
+          {
+            "id": "D",
+            "text": "Extreme volatility"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Indecision"
+      },
+      {
+        "question": "In an uptrend, what could spinning tops signify?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Continuation of the trend"
+          },
+          {
+            "id": "B",
+            "text": "Reversal of the trend"
+          },
+          {
+            "id": "C",
+            "text": "Consolidation before a further rally"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "All of the above"
+      },
+      {
+        "question": "What is the key difference between a spinning top and a doji candle pattern?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Color of the real body"
+          },
+          {
+            "id": "B",
+            "text": "Size of the upper shadow"
+          },
+          {
+            "id": "C",
+            "text": "Size of the real body"
+          },
+          {
+            "id": "D",
+            "text": "Length of the lower shadow"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Size of the real body"
+      },
+      {
+        "question": "What trading strategy could be appropriate when spinning tops appear in a downtrend?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Buy large quantities of the stock"
+          },
+          {
+            "id": "B",
+            "text": "Sell large quantities of the stock"
+          },
+          {
+            "id": "C",
+            "text": "Wait and observe market movements"
+          },
+          {
+            "id": "D",
+            "text": "Exit all trading positions"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Wait and observe market movements"
+      },
+      {
+        "question": "What is the common interpretation of doji candle patterns in a downtrend?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bulls are regaining control"
+          },
+          {
+            "id": "B",
+            "text": "Bears are taking over"
+          },
+          {
+            "id": "C",
+            "text": "Indecision and possible trend reversal"
+          },
+          {
+            "id": "D",
+            "text": "Strong buying pressure"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Indecision and possible trend reversal"
+      },
+      {
+        "question": "In an uptrend, what is the significance of a cluster of doji candle patterns?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Confirmation of a bullish trend"
+          },
+          {
+            "id": "B",
+            "text": "Indication of a potential trend reversal"
+          },
+          {
+            "id": "C",
+            "text": "Sign of market neutrality"
+          },
+          {
+            "id": "D",
+            "text": "Lack of trading activity"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Indication of a potential trend reversal"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "10. Multiple Candlestick Patterns (Part 3)",
+    "order": "10",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is the first step in identifying a morning star pattern?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Confirming a gap up opening on day 2"
+          },
+          {
+            "id": "B",
+            "text": "Identifying a new low on day 1"
+          },
+          {
+            "id": "C",
+            "text": "Observing a doji or spinning top on day 2"
+          },
+          {
+            "id": "D",
+            "text": "Verifying a gap down opening on day 3"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Identifying a new low on day 1"
+      },
+      {
+        "question": "What is the significance of a doji or spinning top in a morning star pattern?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "It indicates a shift in sentiment from bearish to bullish"
+          },
+          {
+            "id": "B",
+            "text": "It suggests that the bears are still in control of the market"
+          },
+          {
+            "id": "C",
+            "text": "It marks the start of a consolidation phase"
+          },
+          {
+            "id": "D",
+            "text": "It has no relevance to the pattern"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It indicates a shift in sentiment from bearish to bullish"
+      },
+      {
+        "question": "Which of the following is a key signal for a bearish evening star pattern?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "A gap up opening on day 3"
+          },
+          {
+            "id": "B",
+            "text": "A long red candle on day 2"
+          },
+          {
+            "id": "C",
+            "text": "A doji or spinning top on day 3"
+          },
+          {
+            "id": "D",
+            "text": "A new high on day 1"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "A doji or spinning top on day 3"
+      },
+      {
+        "question": "What is the recommended stop-loss placement for a long trade based on a morning star pattern?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The high of day 1"
+          },
+          {
+            "id": "B",
+            "text": "The low of day 3"
+          },
+          {
+            "id": "C",
+            "text": "The highest high of days 1, 2, and 3"
+          },
+          {
+            "id": "D",
+            "text": "The lowest low of all candlesticks in the pattern"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "The lowest low of all candlesticks in the pattern"
+      },
+      {
+        "question": "Which of the following is NOT a benefit of using candlestick patterns for trading?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Providing insights into market sentiment"
+          },
+          {
+            "id": "B",
+            "text": "Identifying potential reversal points"
+          },
+          {
+            "id": "C",
+            "text": "Predicting future price movements"
+          },
+          {
+            "id": "D",
+            "text": "Simplifying complex price action"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Predicting future price movements"
+      },
+      {
+        "question": "A star formation consists of how many trading sessions?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "1"
+          },
+          {
+            "id": "B",
+            "text": "2"
+          },
+          {
+            "id": "C",
+            "text": "3"
+          },
+          {
+            "id": "D",
+            "text": "More than 3"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "3"
+      },
+      {
+        "question": "Which candlestick pattern indicates a potential sell opportunity?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Morning star"
+          },
+          {
+            "id": "B",
+            "text": "Evening star"
+          },
+          {
+            "id": "C",
+            "text": "Three black crows"
+          },
+          {
+            "id": "D",
+            "text": "Hanging man"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Evening star"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "5. Single Candlestick patterns (Part 1)",
+    "order": "5",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "A marubozu candle is characterized by:",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Short upper and lower shadows"
+          },
+          {
+            "id": "B",
+            "text": "No upper and lower shadows"
+          },
+          {
+            "id": "C",
+            "text": "Long upper and lower shadows"
+          },
+          {
+            "id": "D",
+            "text": "No body"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "No upper and lower shadows"
+      },
+      {
+        "question": "Which type of marubozu indicates bearishness?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bullish marubozu"
+          },
+          {
+            "id": "B",
+            "text": "Bearish marubozu"
+          },
+          {
+            "id": "C",
+            "text": "Intermediate marubozu"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Bearish marubozu"
+      },
+      {
+        "question": "What is the recommended stop loss for a bullish marubozu trade?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "High of the marubozu"
+          },
+          {
+            "id": "B",
+            "text": "Low of the marubozu"
+          },
+          {
+            "id": "C",
+            "text": "Middle of the marubozu"
+          },
+          {
+            "id": "D",
+            "text": "Stop loss is not used in marubozu trading"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Low of the marubozu"
+      },
+      {
+        "question": "Which rule of candlestick trading is violated by the marubozu pattern?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Rule 1: Buy strength, sell weakness"
+          },
+          {
+            "id": "B",
+            "text": "Rule 2: Be flexible with patterns"
+          },
+          {
+            "id": "C",
+            "text": "Rule 3: Look for the prior trend"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Rule 3: Look for the prior trend"
+      },
+      {
+        "question": "What is the recommended buy price for a bullish marubozu trade?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "High of the marubozu"
+          },
+          {
+            "id": "B",
+            "text": "Low of the marubozu"
+          },
+          {
+            "id": "C",
+            "text": "Closing price of the marubozu"
+          },
+          {
+            "id": "D",
+            "text": "Open price of the marubozu"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Closing price of the marubozu"
+      },
+      {
+        "question": "Which of the following factors is a disadvantage of using marubozu patterns for trading?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "They can be difficult to identify"
+          },
+          {
+            "id": "B",
+            "text": "They do not provide a target price"
+          },
+          {
+            "id": "C",
+            "text": "They are not effective in all market conditions"
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "They do not provide a target price"
+      },
+      {
+        "question": "What is the significance of the length of a marubozu candle?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "It indicates the intensity of buying or selling activity"
+          },
+          {
+            "id": "B",
+            "text": "It is irrelevant to the trading signal"
+          },
+          {
+            "id": "C",
+            "text": "It determines the stop loss level"
+          },
+          {
+            "id": "D",
+            "text": "It has no significance"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It indicates the intensity of buying or selling activity"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "7. Single Candlestick patterns (Part 3)",
+    "order": "7",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is a characteristic of a paper umbrella candlestick pattern?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "A long upper shadow and a small real body"
+          },
+          {
+            "id": "B",
+            "text": "A long lower shadow and a small real body"
+          },
+          {
+            "id": "C",
+            "text": "A short upper shadow and a large real body"
+          },
+          {
+            "id": "D",
+            "text": "A short lower shadow and a large real body"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "A long lower shadow and a small real body"
+      },
+      {
+        "question": "What is the minimum length of the lower shadow in relation to the real body for a paper umbrella candlestick pattern?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Equal to the real body"
+          },
+          {
+            "id": "B",
+            "text": "Twice the length of the real body"
+          },
+          {
+            "id": "C",
+            "text": "Three times the length of the real body"
+          },
+          {
+            "id": "D",
+            "text": "Four times the length of the real body"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Twice the length of the real body"
+      },
+      {
+        "question": "Which of the following is a bullish candlestick pattern that appears at the bottom of a downtrend?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Hanging man"
+          },
+          {
+            "id": "B",
+            "text": "Hammer"
+          },
+          {
+            "id": "C",
+            "text": "Shooting star"
+          },
+          {
+            "id": "D",
+            "text": "Doji"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Hammer"
+      },
+      {
+        "question": "What is the prior trend condition for the formation of a valid hanging man candlestick pattern?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Downtrend"
+          },
+          {
+            "id": "B",
+            "text": "Uptrend"
+          },
+          {
+            "id": "C",
+            "text": "Sideways trend"
+          },
+          {
+            "id": "D",
+            "text": "No specific trend condition"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Uptrend"
+      },
+      {
+        "question": "Which of the following is a characteristic of a shooting star candlestick pattern?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "A black real body with a short lower shadow"
+          },
+          {
+            "id": "B",
+            "text": "A white real body with a long lower shadow"
+          },
+          {
+            "id": "C",
+            "text": "A white real body with a long upper shadow"
+          },
+          {
+            "id": "D",
+            "text": "A black real body with a long upper shadow"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "A white real body with a long upper shadow"
+      },
+      {
+        "question": "What is the minimum length of the upper shadow in relation to the real body for a shooting star candlestick pattern?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Equal to the real body"
+          },
+          {
+            "id": "B",
+            "text": "Twice the length of the real body"
+          },
+          {
+            "id": "C",
+            "text": "Three times the length of the real body"
+          },
+          {
+            "id": "D",
+            "text": "Four times the length of the real body"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Twice the length of the real body"
+      },
+      {
+        "question": "Which of the following is a bearish candlestick pattern that appears at the top of an uptrend?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Hammer"
+          },
+          {
+            "id": "B",
+            "text": "Hanging man"
+          },
+          {
+            "id": "C",
+            "text": "Shooting star"
+          },
+          {
+            "id": "D",
+            "text": "Doji"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Shooting star"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "8. Multiple candlestick patterns (Part 1)",
+    "order": "8",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following statements about the bullish engulfing pattern is true?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "It appears at the bottom of a downtrend."
+          },
+          {
+            "id": "B",
+            "text": "The second candle is completely engulfed by the first candle."
+          },
+          {
+            "id": "C",
+            "text": "It suggests a bearish reversal."
+          },
+          {
+            "id": "D",
+            "text": "It is a two-day candlestick pattern."
+          }
+        ],
+        "answerId": "D",
+        "answerText": "It is a two-day candlestick pattern."
+      },
+      {
+        "question": "What is the stop-loss for a bearish engulfing pattern?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The lowest low between P1 and P2"
+          },
+          {
+            "id": "B",
+            "text": "The highest high of P1 and P2"
+          },
+          {
+            "id": "C",
+            "text": "The close of P1"
+          },
+          {
+            "id": "D",
+            "text": "The open of P2"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The highest high of P1 and P2"
+      },
+      {
+        "question": "Which of the following is not a characteristic of a dark cloud cover pattern?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "It appears at the top of an uptrend."
+          },
+          {
+            "id": "B",
+            "text": "The second candle completely engulfs the first candle."
+          },
+          {
+            "id": "C",
+            "text": "The first candle is a blue candle."
+          },
+          {
+            "id": "D",
+            "text": "It suggests a bearish reversal."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The first candle is a blue candle."
+      },
+      {
+        "question": "What is the difference between a piercing pattern and a bullish engulfing pattern?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The piercing pattern is a one-day candlestick pattern."
+          },
+          {
+            "id": "B",
+            "text": "The piercing pattern engulfs less of the first candle than the bullish engulfing pattern."
+          },
+          {
+            "id": "C",
+            "text": "The piercing pattern appears at the top of an uptrend."
+          },
+          {
+            "id": "D",
+            "text": "There is no difference between the two patterns."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The piercing pattern engulfs less of the first candle than the bullish engulfing pattern."
+      },
+      {
+        "question": "When should you consider trading the bearish engulfing pattern over the dark cloud cover pattern?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the dark cloud cover pattern satisfies more checklist points."
+          },
+          {
+            "id": "B",
+            "text": "When the bearish engulfing pattern appears at the bottom of a downtrend."
+          },
+          {
+            "id": "C",
+            "text": "When the dark cloud cover pattern engulfs more of the first candle."
+          },
+          {
+            "id": "D",
+            "text": "Never, the dark cloud cover pattern is always a better trade."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "When the bearish engulfing pattern appears at the bottom of a downtrend."
+      },
+      {
+        "question": "What is the primary reason for the bearish engulfing pattern's bearish implications?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "The selling pressure on P2 overcomes the buying pressure on P1."
+          },
+          {
+            "id": "B",
+            "text": "The pattern appears at the bottom of an uptrend."
+          },
+          {
+            "id": "C",
+            "text": "The second candle is a red candle."
+          },
+          {
+            "id": "D",
+            "text": "The pattern forms over three trading days."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The selling pressure on P2 overcomes the buying pressure on P1."
+      },
+      {
+        "question": "What is the significance of a doji following a recognizable candlestick pattern?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "It indicates a continuation of the current trend."
+          },
+          {
+            "id": "B",
+            "text": "It suggests a reversal of the current trend."
+          },
+          {
+            "id": "C",
+            "text": "It creates a larger trading opportunity."
+          },
+          {
+            "id": "D",
+            "text": "It has no significant implications."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "It creates a larger trading opportunity."
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "3. The Chart Types",
+    "order": "3",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "According to the passage, what are the four data points necessary for technical analysis?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "High, low, open, and close"
+          },
+          {
+            "id": "B",
+            "text": "Volume, volatility, open, and close"
+          },
+          {
+            "id": "C",
+            "text": "Open, high, low, and volume"
+          },
+          {
+            "id": "D",
+            "text": "Volume, high, low, and close"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "High, low, open, and close"
+      },
+      {
+        "question": "Which of the following is NOT a disadvantage of line charts mentioned in the passage?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "They only consider closing prices."
+          },
+          {
+            "id": "B",
+            "text": "They are difficult to interpret."
+          },
+          {
+            "id": "C",
+            "text": "They display all four data points simultaneously."
+          },
+          {
+            "id": "D",
+            "text": "They lack visual appeal."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "They display all four data points simultaneously."
+      },
+      {
+        "question": "What is the main advantage of using Japanese Candlesticks over bar charts?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Candlesticks display all four data points in a single unit."
+          },
+          {
+            "id": "B",
+            "text": "Candlesticks are more visually appealing."
+          },
+          {
+            "id": "C",
+            "text": "Both A and B"
+          },
+          {
+            "id": "D",
+            "text": "Neither A nor B"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Both A and B"
+      },
+      {
+        "question": "How is a bullish candle different from a bearish candle?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "In a bullish candle, the opening price is higher than the closing price."
+          },
+          {
+            "id": "B",
+            "text": "In a bullish candle, the upper shadow is longer than the lower shadow."
+          },
+          {
+            "id": "C",
+            "text": "In a bullish candle, the real body is blue."
+          },
+          {
+            "id": "D",
+            "text": "In a bullish candle, the real body is filled in."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "In a bullish candle, the opening price is higher than the closing price."
+      },
+      {
+        "question": "Which of the following is NOT mentioned in the passage as a type of time frame used in technical analysis?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Monthly"
+          },
+          {
+            "id": "B",
+            "text": "Quarterly"
+          },
+          {
+            "id": "C",
+            "text": "Hourly"
+          },
+          {
+            "id": "D",
+            "text": "Intraday"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Quarterly"
+      },
+      {
+        "question": "According to the passage, what is the purpose of technical analysis?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "To predict future price movements"
+          },
+          {
+            "id": "B",
+            "text": "To identify patterns in price data"
+          },
+          {
+            "id": "C",
+            "text": "To evaluate the strength of a company's financial position"
+          },
+          {
+            "id": "D",
+            "text": "To determine the optimal time to buy or sell a stock"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To identify patterns in price data"
+      },
+      {
+        "question": "What is the difference between the real body and the upper/lower shadow in a candlestick?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The real body represents the price range between the open and close, while the shadows represent the extreme prices reached during the period."
+          },
+          {
+            "id": "B",
+            "text": "The real body represents the average price during the period, while the shadows represent the highest and lowest prices."
+          },
+          {
+            "id": "C",
+            "text": "The real body represents the change in price from the previous period, while the shadows represent the highest and lowest prices."
+          },
+          {
+            "id": "D",
+            "text": "There is no difference between the real body and the shadows."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The real body represents the price range between the open and close, while the shadows represent the extreme prices reached during the period."
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "2. Introducing Technical Analysis",
+    "order": "2",
+    "section": 1,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT an assumption of technical analysis?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Markets discount everything"
+          },
+          {
+            "id": "B",
+            "text": "The 'how' is more important than the 'why'"
+          },
+          {
+            "id": "C",
+            "text": "Price moves in trends"
+          },
+          {
+            "id": "D",
+            "text": "Technical analysis is only applicable to stocks"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Technical analysis is not only applicable to stocks."
+      },
+      {
+        "question": "What does the closing price represent?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "The highest price at which a trade occurred for the given day"
+          },
+          {
+            "id": "B",
+            "text": "The lowest price at which a trade occurred for the given day"
+          },
+          {
+            "id": "C",
+            "text": "The final price at which the market closes for the day"
+          },
+          {
+            "id": "D",
+            "text": "The first price at which a trade occurred for the given day"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The closing price represents the final price at which the market closes for the day."
+      },
+      {
+        "question": "Which of the following is a key takeaway from the chapter on assumptions in technical analysis?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Technical analysis is only applicable to stocks."
+          },
+          {
+            "id": "B",
+            "text": "The 'why' is more important than the 'how' in technical analysis."
+          },
+          {
+            "id": "C",
+            "text": "History tends to repeat itself in technical analysis."
+          },
+          {
+            "id": "D",
+            "text": "Technical analysis does not require historical trading data."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "History tends to repeat itself in technical analysis."
+      },
+      {
+        "question": "What is the main data point from the technical analysis perspective?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Volume"
+          },
+          {
+            "id": "B",
+            "text": "Open, high, low, and close prices"
+          },
+          {
+            "id": "C",
+            "text": "Bid-ask spread"
+          },
+          {
+            "id": "D",
+            "text": "Moving averages"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The main data point from the technical analysis perspective is Open, high, low, and close prices."
+      },
+      {
+        "question": "What is the primary advantage of technical analysis?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "It allows for the prediction of future price movements with certainty."
+          },
+          {
+            "id": "B",
+            "text": "It is only applicable to certain asset classes."
+          },
+          {
+            "id": "C",
+            "text": "It can be applied across asset classes as long as they have historical time series data."
+          },
+          {
+            "id": "D",
+            "text": "It eliminates the need for fundamental analysis."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The primary advantage of technical analysis is that it can be applied across asset classes as long as they have historical time series data."
+      },
+      {
+        "question": "What is the importance of the closing price in technical analysis?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "It indicates the intraday strength of the market."
+          },
+          {
+            "id": "B",
+            "text": "It is the only price that is considered in technical analysis."
+          },
+          {
+            "id": "C",
+            "text": "It has no significance in technical analysis."
+          },
+          {
+            "id": "D",
+            "text": "It is used to calculate the average price of a stock over a period of time."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The closing price indicates the intraday strength of the market."
+      },
+      {
+        "question": "Which of the following is a limitation of technical analysis?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "It can be used to predict future price movements with certainty."
+          },
+          {
+            "id": "B",
+            "text": "It does not consider company fundamentals."
+          },
+          {
+            "id": "C",
+            "text": "It can only be applied to stocks."
+          },
+          {
+            "id": "D",
+            "text": "It requires a lot of historical data to be effective."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Technical analysis does not consider company fundamentals."
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "14. Indicators (Part 1)",
+    "order": "14",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "What is the primary purpose of a technical indicator?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "To predict future price movements"
+          },
+          {
+            "id": "B",
+            "text": "To analyze historical price data"
+          },
+          {
+            "id": "C",
+            "text": "To help traders make informed trading decisions"
+          },
+          {
+            "id": "D",
+            "text": "To generate trading signals"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "To help traders make informed trading decisions"
+      },
+      {
+        "question": "Which of the following is NOT a type of technical indicator?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Leading indicator"
+          },
+          {
+            "id": "B",
+            "text": "Lagging indicator"
+          },
+          {
+            "id": "C",
+            "text": "Fundamental indicator"
+          },
+          {
+            "id": "D",
+            "text": "Oscillator"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Fundamental indicator"
+      },
+      {
+        "question": "What is the main difference between leading and lagging indicators?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Leading indicators are more accurate than lagging indicators"
+          },
+          {
+            "id": "B",
+            "text": "Leading indicators signal the occurrence of an event before it happens, while lagging indicators signal it after it has occurred"
+          },
+          {
+            "id": "C",
+            "text": "Leading indicators are used for short-term trading, while lagging indicators are used for long-term trading"
+          },
+          {
+            "id": "D",
+            "text": "Leading indicators are more complex to use than lagging indicators"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Leading indicators signal the occurrence of an event before it happens, while lagging indicators signal it after it has occurred"
+      },
+      {
+        "question": "What is the RSI indicator used to measure?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Relative strength between two securities"
+          },
+          {
+            "id": "B",
+            "text": "Momentum of a security's price"
+          },
+          {
+            "id": "C",
+            "text": "Volume of trading in a security"
+          },
+          {
+            "id": "D",
+            "text": "Volatility of a security's price"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Momentum of a security's price"
+      },
+      {
+        "question": "Which of the following is a potential limitation of the RSI indicator?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "It can be used to identify trend reversals"
+          },
+          {
+            "id": "B",
+            "text": "It can be used to confirm trend breakouts"
+          },
+          {
+            "id": "C",
+            "text": "It can be prone to generating false signals"
+          },
+          {
+            "id": "D",
+            "text": "It is not suitable for use in all market conditions"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "It can be prone to generating false signals"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "12. Volumes",
+    "order": "12",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "When volume increases and price decreases, what is the expected market condition?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bullish"
+          },
+          {
+            "id": "B",
+            "text": "Bearish"
+          },
+          {
+            "id": "C",
+            "text": "Caution - weak hands buying"
+          },
+          {
+            "id": "D",
+            "text": "Caution - weak hands selling"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Caution - weak hands buying"
+      },
+      {
+        "question": "When the price remains unchanged from the previous day, which of the following is NOT a possible value for the day's volume?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "High Volume"
+          },
+          {
+            "id": "B",
+            "text": "Low Volume"
+          },
+          {
+            "id": "C",
+            "text": "Average Volume"
+          },
+          {
+            "id": "D",
+            "text": "Insufficient data to determine"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "High Volume"
+      },
+      {
+        "question": "In the volume trend table, what is the expected outcome when volume increases and price decreases?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bullish"
+          },
+          {
+            "id": "B",
+            "text": "Bearish"
+          },
+          {
+            "id": "C",
+            "text": "Caution - weak hands buying"
+          },
+          {
+            "id": "D",
+            "text": "Caution - weak hands selling"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Bearish"
+      },
+      {
+        "question": "Which of the following is considered a way to measure volume?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Number of shares traded"
+          },
+          {
+            "id": "B",
+            "text": "Total value of shares traded"
+          },
+          {
+            "id": "C",
+            "text": "Average price of shares traded"
+          },
+          {
+            "id": "D",
+            "text": "Market capitalization of the company"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Number of shares traded"
+      },
+      {
+        "question": "What does it indicate when institutional investors enter or exit the market?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Decrease in volume"
+          },
+          {
+            "id": "B",
+            "text": "Increase in volume"
+          },
+          {
+            "id": "C",
+            "text": "Unchanged volume"
+          },
+          {
+            "id": "D",
+            "text": "Volume is irrelevant in this case"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Increase in volume"
+      },
+      {
+        "question": "What is the difference between cumulative volume and incremental volume?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Cumulative volume is the total volume over a given period, while incremental volume is the change in volume over a given period"
+          },
+          {
+            "id": "B",
+            "text": "Incremental volume is the total volume over a given period, while cumulative volume is the change in volume over a given period"
+          },
+          {
+            "id": "C",
+            "text": "There is no difference between cumulative volume and incremental volume"
+          },
+          {
+            "id": "D",
+            "text": "Cumulative volume is only used for stocks, while incremental volume is only used for options"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Cumulative volume is the total volume over a given period, while incremental volume is the change in volume over a given period"
+      },
+      {
+        "question": "How can you determine if the volume for a given day is high, average, or low?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Compare it to the average volume over the last 10 days"
+          },
+          {
+            "id": "B",
+            "text": "Compare it to the volume on the same day last year"
+          },
+          {
+            "id": "C",
+            "text": "Compare it to the volume of the most recent earnings announcement"
+          },
+          {
+            "id": "D",
+            "text": "Volume cannot be accurately compared over different periods"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Compare it to the average volume over the last 10 days"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "11. The Support and Resistance",
+    "order": "11",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "What is the definition of resistance in technical analysis?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "A price point below the current market price that indicates buying interest."
+          },
+          {
+            "id": "B",
+            "text": "A price point above the current market price that indicates selling interest."
+          },
+          {
+            "id": "C",
+            "text": "A price range that acts as a barrier to the price movement."
+          },
+          {
+            "id": "D",
+            "text": "A price point that indicates a reversal of trend."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Resistance is a price point above the current market price that indicates selling interest."
+      },
+      {
+        "question": "What is the name of the price point that indicates buying interest?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Support"
+          },
+          {
+            "id": "B",
+            "text": "Resistance"
+          },
+          {
+            "id": "C",
+            "text": "Pivot point"
+          },
+          {
+            "id": "D",
+            "text": "Trendline"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Support is the name of the price point that indicates buying interest."
+      },
+      {
+        "question": "How many price action zones are required to identify a valid support or resistance level?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "1"
+          },
+          {
+            "id": "B",
+            "text": "2"
+          },
+          {
+            "id": "C",
+            "text": "3"
+          },
+          {
+            "id": "D",
+            "text": "4"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "At least 3 price action zones are required to identify a valid support or resistance level."
+      },
+      {
+        "question": "What is a price action zone?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "An area on the chart where the price has paused or reversed."
+          },
+          {
+            "id": "B",
+            "text": "A price level that has been tested multiple times."
+          },
+          {
+            "id": "C",
+            "text": "A price range that acts as a barrier to the price movement."
+          },
+          {
+            "id": "D",
+            "text": "A trendline that connects two or more price points."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "A price action zone is an area on the chart where the price has paused or reversed."
+      },
+      {
+        "question": "What is the purpose of identifying support and resistance levels?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "To predict future price movements."
+          },
+          {
+            "id": "B",
+            "text": "To identify potential trading opportunities."
+          },
+          {
+            "id": "C",
+            "text": "To confirm trend reversals."
+          },
+          {
+            "id": "D",
+            "text": "To identify overbought and oversold conditions."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The purpose of identifying support and resistance levels is to identify potential trading opportunities."
+      },
+      {
+        "question": "How can resistance levels be used to identify trading targets?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "By setting the target at the resistance level."
+          },
+          {
+            "id": "B",
+            "text": "By setting the target above the resistance level."
+          },
+          {
+            "id": "C",
+            "text": "By setting the target below the resistance level."
+          },
+          {
+            "id": "D",
+            "text": "Resistance levels cannot be used to identify trading targets."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Resistance levels can be used to identify trading targets by setting the target at the resistance level."
+      },
+      {
+        "question": "What is the best way to identify price action zones?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "By using a moving average."
+          },
+          {
+            "id": "B",
+            "text": "By using a Bollinger Band."
+          },
+          {
+            "id": "C",
+            "text": "By visually inspecting the chart."
+          },
+          {
+            "id": "D",
+            "text": "By using a technical indicator."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "The best way to identify price action zones is by visually inspecting the chart."
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "17. The Dow Theory (Part 1)",
+    "order": "17",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT a tenet of the Dow Theory?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Indices discounts everything"
+          },
+          {
+            "id": "B",
+            "text": "All corrections to the primary trend must be in the same direction"
+          },
+          {
+            "id": "C",
+            "text": "The closing price is the most sacred"
+          },
+          {
+            "id": "D",
+            "text": "Sideway markets can substitute secondary markets"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "All corrections to the primary trend must be in the same direction"
+      },
+      {
+        "question": "Which phase of the market cycle is characterized by steep sell-offs and low market sentiment?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Accumulation phase"
+          },
+          {
+            "id": "B",
+            "text": "Markup phase"
+          },
+          {
+            "id": "C",
+            "text": "Distribution phase"
+          },
+          {
+            "id": "D",
+            "text": "Markdown phase"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Markdown phase"
+      },
+      {
+        "question": "What is the most important type of price level according to the Dow Theory?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Opening price"
+          },
+          {
+            "id": "B",
+            "text": "High price"
+          },
+          {
+            "id": "C",
+            "text": "Low price"
+          },
+          {
+            "id": "D",
+            "text": "Closing price"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Closing price"
+      },
+      {
+        "question": "Which of the following patterns is considered a reversal pattern in the Dow Theory?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Double top"
+          },
+          {
+            "id": "B",
+            "text": "Range formation"
+          },
+          {
+            "id": "C",
+            "text": "Flag formation"
+          },
+          {
+            "id": "D",
+            "text": "Support and resistance"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Double top"
+      },
+      {
+        "question": "What type of market cycle lasts from a year to several years?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Primary trend"
+          },
+          {
+            "id": "B",
+            "text": "Secondary trend"
+          },
+          {
+            "id": "C",
+            "text": "Minor trend"
+          },
+          {
+            "id": "D",
+            "text": "Daily fluctuation"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Primary trend"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "16. The Fibonacci Retracements",
+    "order": "16",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "The Fibonacci sequence is a sequence of numbers starting from zero arranged in such a way that the value of any number in the series is the sum of which two numbers?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Previous number and the current number"
+          },
+          {
+            "id": "B",
+            "text": "Previous two numbers"
+          },
+          {
+            "id": "C",
+            "text": "Next two numbers"
+          },
+          {
+            "id": "D",
+            "text": "Previous number and the next number"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Previous two numbers"
+      },
+      {
+        "question": "What is the numerical value of the Golden Ratio?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "1.618"
+          },
+          {
+            "id": "B",
+            "text": "0.618"
+          },
+          {
+            "id": "C",
+            "text": "2.36"
+          },
+          {
+            "id": "D",
+            "text": "3.82"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "1.618"
+      },
+      {
+        "question": "Which of the following is NOT a Fibonacci retracement level?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "23.6%"
+          },
+          {
+            "id": "B",
+            "text": "38.2%"
+          },
+          {
+            "id": "C",
+            "text": "61.8%"
+          },
+          {
+            "id": "D",
+            "text": "50%"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "50%"
+      },
+      {
+        "question": "What is the purpose of using Fibonacci retracement levels in technical analysis?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "To identify potential support and resistance levels"
+          },
+          {
+            "id": "B",
+            "text": "To predict future price movements"
+          },
+          {
+            "id": "C",
+            "text": "To determine the trend of the market"
+          },
+          {
+            "id": "D",
+            "text": "To calculate the value of a stock"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To identify potential support and resistance levels"
+      },
+      {
+        "question": "Which of the following is a limitation of Fibonacci retracement levels?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "They are not always accurate"
+          },
+          {
+            "id": "B",
+            "text": "They are only applicable to trending markets"
+          },
+          {
+            "id": "C",
+            "text": "They are difficult to calculate"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "They are not always accurate"
+      },
+      {
+        "question": "Which of the Fibonacci retracement levels indicates the deepest potential correction?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "23.6%"
+          },
+          {
+            "id": "B",
+            "text": "38.2%"
+          },
+          {
+            "id": "C",
+            "text": "50%"
+          },
+          {
+            "id": "D",
+            "text": "61.8%"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "61.8%"
+      },
+      {
+        "question": "What is the starting point for constructing Fibonacci retracement levels on a stock chart?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The highest and lowest prices of the previous trading session"
+          },
+          {
+            "id": "B",
+            "text": "The most recent peak and trough in the stock's price"
+          },
+          {
+            "id": "C",
+            "text": "The average price of the stock over the past 200 days"
+          },
+          {
+            "id": "D",
+            "text": "The moving average of the stock's price over the past 50 days"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The most recent peak and trough in the stock's price"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "13. Moving Averages",
+    "order": "13",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is a characteristic of a moving average?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "It gives equal weightage to all data points."
+          },
+          {
+            "id": "B",
+            "text": "It reacts quickly to the latest price movements."
+          },
+          {
+            "id": "C",
+            "text": "It is a trend following system."
+          },
+          {
+            "id": "D",
+            "text": "It is not affected by the time frame used."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "It is a trend following system."
+      },
+      {
+        "question": "What is the main difference between a simple moving average (SMA) and an exponential moving average (EMA)?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "SMA gives more weightage to recent data points, while EMA gives equal weightage to all data points."
+          },
+          {
+            "id": "B",
+            "text": "EMA gives more weightage to recent data points, while SMA gives equal weightage to all data points."
+          },
+          {
+            "id": "C",
+            "text": "SMA is calculated using a simple average, while EMA is calculated using a weighted average."
+          },
+          {
+            "id": "D",
+            "text": "SMA is used for short-term trading, while EMA is used for long-term trading."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "EMA gives more weightage to recent data points, while SMA gives equal weightage to all data points."
+      },
+      {
+        "question": "What is the purpose of a moving average crossover system?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "To smooth out the entry and exit points of a trading system."
+          },
+          {
+            "id": "B",
+            "text": "To increase the number of trading signals generated."
+          },
+          {
+            "id": "C",
+            "text": "To reduce the risk of false signals."
+          },
+          {
+            "id": "D",
+            "text": "To make the trading system more reactive to price movements."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To smooth out the entry and exit points of a trading system."
+      },
+      {
+        "question": "Which of the following is a popular crossover combination for a swing trader using EMAs?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "9 x 21"
+          },
+          {
+            "id": "B",
+            "text": "25 x 50"
+          },
+          {
+            "id": "C",
+            "text": "50 x 100"
+          },
+          {
+            "id": "D",
+            "text": "100 x 200"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "25 x 50"
+      },
+      {
+        "question": "What is the main advantage of using an EMA crossover system over a single EMA?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "It reduces the number of false signals."
+          },
+          {
+            "id": "B",
+            "text": "It increases the profit potential."
+          },
+          {
+            "id": "C",
+            "text": "It makes the trading system more adaptable to different market conditions."
+          },
+          {
+            "id": "D",
+            "text": "It eliminates the need to use multiple EMAs."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It reduces the number of false signals."
+      },
+      {
+        "question": "In a sideways market, which type of moving average system is likely to generate more false signals?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Plain vanilla moving average system"
+          },
+          {
+            "id": "B",
+            "text": "Moving average crossover system"
+          },
+          {
+            "id": "C",
+            "text": "Weighted moving average system"
+          },
+          {
+            "id": "D",
+            "text": "Exponential moving average system"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Plain vanilla moving average system"
+      },
+      {
+        "question": "What is the key assumption of technical analysis that EMA takes into account?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The current price reflects all known and unknown information."
+          },
+          {
+            "id": "B",
+            "text": "The trend is your friend."
+          },
+          {
+            "id": "C",
+            "text": "History repeats itself."
+          },
+          {
+            "id": "D",
+            "text": "Support and resistance levels hold."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The current price reflects all known and unknown information."
+      },
+      {
+        "question": "Which of the following is a limitation of moving averages?",
+        "questionNumber": 8,
+        "options": [
+          {
+            "id": "A",
+            "text": "They can be slow to react to market turns."
+          },
+          {
+            "id": "B",
+            "text": "They cannot be used to identify overbought or oversold conditions."
+          },
+          {
+            "id": "C",
+            "text": "They are only suitable for short-term trading."
+          },
+          {
+            "id": "D",
+            "text": "They are not affected by the time frame used."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "They can be slow to react to market turns."
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "18. The Dow Theory (Part 2)",
+    "order": "18",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is a characteristic of a trading range?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "The price oscillates without forming a particular trend."
+          },
+          {
+            "id": "B",
+            "text": "The stock hits the same upper and lower price levels multiple times."
+          },
+          {
+            "id": "C",
+            "text": "Both of the above"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Both of the above"
+      },
+      {
+        "question": "What is a false breakout?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the stock price breaks the resistance level but does not continue to rise."
+          },
+          {
+            "id": "B",
+            "text": "When the stock price breaks the support level but does not continue to fall."
+          },
+          {
+            "id": "C",
+            "text": "Both of the above"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Both of the above"
+      },
+      {
+        "question": "What is the minimum RRR (Reward to Risk Ratio) threshold that most traders would prefer?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "1.0"
+          },
+          {
+            "id": "B",
+            "text": "1.5"
+          },
+          {
+            "id": "C",
+            "text": "2.0"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "1.5"
+      },
+      {
+        "question": "What is the primary trend?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "The long-term direction of the market."
+          },
+          {
+            "id": "B",
+            "text": "The short-term direction of the market."
+          },
+          {
+            "id": "C",
+            "text": "The direction of the market over the next week."
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The long-term direction of the market."
+      },
+      {
+        "question": "What is the flag formation?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "A pattern that occurs when the stock price posts a sustained rally with almost a vertical or a steep increase in stock prices."
+          },
+          {
+            "id": "B",
+            "text": "A pattern that occurs when the stock price declines below a support level and then rebounds."
+          },
+          {
+            "id": "C",
+            "text": "A pattern that occurs when the stock price moves sideways within a channel."
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "A pattern that occurs when the stock price posts a sustained rally with almost a vertical or a steep increase in stock prices."
+      },
+      {
+        "question": "What is an engulfing pattern?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "A pattern in which a candle completely engulfs the previous candle."
+          },
+          {
+            "id": "B",
+            "text": "A pattern in which a candle has a small body and long wicks."
+          },
+          {
+            "id": "C",
+            "text": "A pattern in which a candle has a large body and short wicks."
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "A pattern in which a candle completely engulfs the previous candle."
+      },
+      {
+        "question": "What is a harami pattern?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "A pattern in which a candle has a small body and is contained within the previous candle's body."
+          },
+          {
+            "id": "B",
+            "text": "A pattern in which a candle has a large body and is outside the previous candle's body."
+          },
+          {
+            "id": "C",
+            "text": "A pattern in which a candle has a small body and is outside the previous candle's body."
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "A pattern in which a candle has a small body and is contained within the previous candle's body."
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "15. Indicators (Part 2)",
+    "order": "15",
+    "section": 2,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT a component of the Bollinger Bands?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "20-day simple moving average"
+          },
+          {
+            "id": "B",
+            "text": "9-day exponential moving average"
+          },
+          {
+            "id": "C",
+            "text": "+2 standard deviation"
+          },
+          {
+            "id": "D",
+            "text": "-2 standard deviation"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "9-day exponential moving average"
+      },
+      {
+        "question": "What does a positive MACD value indicate?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Upward trend"
+          },
+          {
+            "id": "B",
+            "text": "Downward trend"
+          },
+          {
+            "id": "C",
+            "text": "Neutral trend"
+          },
+          {
+            "id": "D",
+            "text": "Reversal trend"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Upward trend"
+      },
+      {
+        "question": "Which of the following is the basic interpretation of the MACD indicator?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the MACD Line crosses the centerline from negative to positive territory, it indicates increasing bullish momentum."
+          },
+          {
+            "id": "B",
+            "text": "When the MACD Line crosses the centerline from positive to negative territory, it indicates increasing bearish momentum."
+          },
+          {
+            "id": "C",
+            "text": "Both A and B"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Both A and B"
+      },
+      {
+        "question": "What is the purpose of the 9-day signal line in the MACD indicator?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "To provide a smoother version of the MACD Line"
+          },
+          {
+            "id": "B",
+            "text": "To identify potential trading opportunities"
+          },
+          {
+            "id": "C",
+            "text": "To calculate the magnitude of the MACD value"
+          },
+          {
+            "id": "D",
+            "text": "None of the above"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To identify potential trading opportunities"
+      },
+      {
+        "question": "Which of the following is a limitation of the Bollinger Bands indicator?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "It works best in trending markets."
+          },
+          {
+            "id": "B",
+            "text": "It can generate false signals in sideways markets."
+          },
+          {
+            "id": "C",
+            "text": "It is sensitive to changes in volatility."
+          },
+          {
+            "id": "D",
+            "text": "It requires a large amount of historical data to be effective."
+          }
+        ],
+        "answerId": "B",
+        "answerText": "It can generate false signals in sideways markets."
+      },
+      {
+        "question": "According to the Bollinger Bands strategy, when should you sell a stock?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the price touches the upper band"
+          },
+          {
+            "id": "B",
+            "text": "When the price touches the lower band"
+          },
+          {
+            "id": "C",
+            "text": "When the price crosses the 20-day SMA"
+          },
+          {
+            "id": "D",
+            "text": "When the price crosses the 9-day SMA"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "When the price touches the upper band"
+      },
+      {
+        "question": "What is the main difference between the MACD and Bollinger Bands indicators?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "The MACD is a trend-following indicator, while the Bollinger Bands is a range-bound indicator."
+          },
+          {
+            "id": "B",
+            "text": "The MACD uses moving averages, while the Bollinger Bands uses standard deviation."
+          },
+          {
+            "id": "C",
+            "text": "The MACD is more sensitive to price changes than the Bollinger Bands."
+          },
+          {
+            "id": "D",
+            "text": "All of the above"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "All of the above"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "19. The Finale \u2013 Helping you get started",
+    "order": "19",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT a suggested step in selecting stocks for your opportunity universe?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Ensure the stock has adequate liquidity"
+          },
+          {
+            "id": "B",
+            "text": "Make sure the stock is in the 'EQ' segment"
+          },
+          {
+            "id": "C",
+            "text": "Consider only stocks with a high dividend yield"
+          },
+          {
+            "id": "D",
+            "text": "Avoid operator driven stocks"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Consider only stocks with a high dividend yield"
+      },
+      {
+        "question": "What is the recommended lookback period for swing trading?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "1 month"
+          },
+          {
+            "id": "B",
+            "text": "6 months to 1 year"
+          },
+          {
+            "id": "C",
+            "text": "2 years"
+          },
+          {
+            "id": "D",
+            "text": "5 years"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "6 months to 1 year"
+      },
+      {
+        "question": "Which candlestick pattern is characterized by a long, filled-in body with no upper or lower shadow?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bullish Marubozo"
+          },
+          {
+            "id": "B",
+            "text": "Bearish Engulfing"
+          },
+          {
+            "id": "C",
+            "text": "Hammer"
+          },
+          {
+            "id": "D",
+            "text": "Doji"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Bullish Marubozo"
+      },
+      {
+        "question": "What is the primary goal of a scalper?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "To identify long-term investment opportunities"
+          },
+          {
+            "id": "B",
+            "text": "To profit from small price movements in highly liquid stocks"
+          },
+          {
+            "id": "C",
+            "text": "To minimize risk and maximize returns through hedging strategies"
+          },
+          {
+            "id": "D",
+            "text": "To predict market trends and time the entry and exit points of trades"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To profit from small price movements in highly liquid stocks"
+      },
+      {
+        "question": "Which of the following indicators is NOT typically used by scalpers?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Candlestick patterns"
+          },
+          {
+            "id": "B",
+            "text": "Volume indicators"
+          },
+          {
+            "id": "C",
+            "text": "Moving averages"
+          },
+          {
+            "id": "D",
+            "text": "Bid-ask spread"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "Moving averages"
+      },
+      {
+        "question": "What is the key differentiator between a swing trader and a scalper?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "The timeframe of their trades"
+          },
+          {
+            "id": "B",
+            "text": "The size of their positions"
+          },
+          {
+            "id": "C",
+            "text": "The level of risk they are willing to take"
+          },
+          {
+            "id": "D",
+            "text": "The type of stocks they trade"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The timeframe of their trades"
+      },
+      {
+        "question": "Which of the following is NOT a potential benefit of using Zerodha's Pi charting software?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Bundled charting and data feed package"
+          },
+          {
+            "id": "B",
+            "text": "Advanced visualization and technical indicators"
+          },
+          {
+            "id": "C",
+            "text": "Real-time trade execution capabilities"
+          },
+          {
+            "id": "D",
+            "text": "Historical data dump of over 10,000 candles"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Historical data dump of over 10,000 candles"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "20. Other indicators",
+    "order": "20",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is not a component of the ADX system?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "ADX"
+          },
+          {
+            "id": "B",
+            "text": "+DI"
+          },
+          {
+            "id": "C",
+            "text": "-DI"
+          },
+          {
+            "id": "D",
+            "text": "RSI"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "RSI"
+      },
+      {
+        "question": "What is the default lookback period for ADX?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "7 days"
+          },
+          {
+            "id": "B",
+            "text": "14 days"
+          },
+          {
+            "id": "C",
+            "text": "21 days"
+          },
+          {
+            "id": "D",
+            "text": "28 days"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "14 days"
+      },
+      {
+        "question": "Which of the following conditions indicates a buy signal for the ADX system?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "ADX is above 25 and +DI crosses over -DI"
+          },
+          {
+            "id": "B",
+            "text": "ADX is below 20 and -DI crosses over +DI"
+          },
+          {
+            "id": "C",
+            "text": "ADX is between 20 and 25 and +DI crosses over -DI"
+          },
+          {
+            "id": "D",
+            "text": "ADX is between 20 and 25 and -DI crosses over +DI"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "ADX is above 25 and +DI crosses over -DI"
+      },
+      {
+        "question": "What is the main purpose of the Alligator indicator?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "To identify trend absence, formation, and direction"
+          },
+          {
+            "id": "B",
+            "text": "To measure the strength of a trend"
+          },
+          {
+            "id": "C",
+            "text": "To predict future price movements"
+          },
+          {
+            "id": "D",
+            "text": "To identify overbought and oversold conditions"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To identify trend absence, formation, and direction"
+      },
+      {
+        "question": "Which of the following is not a component of the Alligator indicator?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "Jaw"
+          },
+          {
+            "id": "B",
+            "text": "Teeth"
+          },
+          {
+            "id": "C",
+            "text": "Lips"
+          },
+          {
+            "id": "D",
+            "text": "Tail"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Tail"
+      },
+      {
+        "question": "What is the default value for the Aroon indicator?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "14 days"
+          },
+          {
+            "id": "B",
+            "text": "21 days"
+          },
+          {
+            "id": "C",
+            "text": "25 days"
+          },
+          {
+            "id": "D",
+            "text": "30 days"
+          }
+        ],
+        "answerId": "C",
+        "answerText": "25 days"
+      },
+      {
+        "question": "Which of the following conditions indicates a buy signal for the Aroon indicator?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "Aroon up is above 50 and Aroon down is below 30"
+          },
+          {
+            "id": "B",
+            "text": "Aroon up is below 50 and Aroon down is above 30"
+          },
+          {
+            "id": "C",
+            "text": "Aroon up is between 50 and 60 and Aroon down is below 30"
+          },
+          {
+            "id": "D",
+            "text": "Aroon up is between 50 and 60 and Aroon down is above 30"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "Aroon up is above 50 and Aroon down is below 30"
+      },
+      {
+        "question": "What does the Average True Range (ATR) measure?",
+        "questionNumber": 8,
+        "options": [
+          {
+            "id": "A",
+            "text": "Trend strength"
+          },
+          {
+            "id": "B",
+            "text": "Volatility"
+          },
+          {
+            "id": "C",
+            "text": "Price momentum"
+          },
+          {
+            "id": "D",
+            "text": "Overbought and oversold conditions"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Volatility"
+      },
+      {
+        "question": "Which of the following is not a component of the ATR band?",
+        "questionNumber": 9,
+        "options": [
+          {
+            "id": "A",
+            "text": "Upper envelope"
+          },
+          {
+            "id": "B",
+            "text": "Lower envelope"
+          },
+          {
+            "id": "C",
+            "text": "Moving average"
+          },
+          {
+            "id": "D",
+            "text": "Bollinger Band"
+          }
+        ],
+        "answerId": "D",
+        "answerText": "Bollinger Band"
+      },
+      {
+        "question": "What is the main difference between the ATR band and the Bollinger Band?",
+        "questionNumber": 10,
+        "options": [
+          {
+            "id": "A",
+            "text": "The Bollinger Band uses standard deviation while the ATR band uses ATR"
+          },
+          {
+            "id": "B",
+            "text": "The ATR band uses standard deviation while the Bollinger Band uses ATR"
+          },
+          {
+            "id": "C",
+            "text": "The Bollinger Band is a leading indicator while the ATR band is a lagging indicator"
+          },
+          {
+            "id": "D",
+            "text": "The ATR band is a leading indicator while the Bollinger Band is a lagging indicator"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The Bollinger Band uses standard deviation while the ATR band uses ATR"
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "22. The Central Pivot Range",
+    "order": "22",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which of the following is NOT a feature of the trade from chart feature in Zerodha's charting platform?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Floating order window"
+          },
+          {
+            "id": "B",
+            "text": "Drag and drop order placement"
+          },
+          {
+            "id": "C",
+            "text": "Trade button on the top right of the chart"
+          },
+          {
+            "id": "D",
+            "text": "Ability to switch between delivery and intraday orders"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The trade from chart feature in Zerodha's charting platform does not have the ability to drag and drop orders onto the chart. The other options are all features of the trade from chart feature."
+      },
+      {
+        "question": "Which of the following is a benefit of using the CPR (Central Pivot Range) indicator?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "Identifying key price points for trade setups"
+          },
+          {
+            "id": "B",
+            "text": "Validating candlestick patterns"
+          },
+          {
+            "id": "C",
+            "text": "Analyzing trend reversals"
+          },
+          {
+            "id": "D",
+            "text": "Calculating risk-reward ratios"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The CPR indicator is primarily used to identify key price points for trade setups. The other options are not direct benefits of using the CPR indicator."
+      },
+      {
+        "question": "What is the formula for calculating the Bottom Central Pivot (BC) in the CPR indicator?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "(High + Low)/ 2"
+          },
+          {
+            "id": "B",
+            "text": "(High + Low + Close)/ 3"
+          },
+          {
+            "id": "C",
+            "text": "(Pivot \u2013 BC) + Pivot"
+          },
+          {
+            "id": "D",
+            "text": "(High - Low)/ 2"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "The formula for calculating the Bottom Central Pivot (BC) in the CPR indicator is (High + Low)/ 2."
+      },
+      {
+        "question": "What is a characteristic of a wide-ranged CPR?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "It indicates a sideways market"
+          },
+          {
+            "id": "B",
+            "text": "It indicates a trending market"
+          },
+          {
+            "id": "C",
+            "text": "It indicates a reversal market"
+          },
+          {
+            "id": "D",
+            "text": "It indicates a volatile market"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "A wide-ranged CPR indicates a trending market. The wider the CPR, the stronger the trend."
+      },
+      {
+        "question": "When should you consider looking for buying opportunities when using the CPR indicator?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "When the current market price is higher than the TC line"
+          },
+          {
+            "id": "B",
+            "text": "When the current market price is lower than the BC line"
+          },
+          {
+            "id": "C",
+            "text": "When the CPR is narrow-ranged"
+          },
+          {
+            "id": "D",
+            "text": "When the CPR is wide-ranged"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "When using the CPR indicator, you should consider looking for buying opportunities when the current market price is higher than the TC line."
+      },
+      {
+        "question": "How should you use the candlestick pattern feature in Zerodha's charting platform to confirm candlestick patterns?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "Load the candlestick pattern study and validate the pattern"
+          },
+          {
+            "id": "B",
+            "text": "Identify the candlestick pattern visually and confirm it with the candlestick pattern study"
+          },
+          {
+            "id": "C",
+            "text": "Use the candlestick pattern study to identify the pattern and ignore the visual confirmation"
+          },
+          {
+            "id": "D",
+            "text": "The candlestick pattern feature cannot be used to confirm candlestick patterns"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "To use the candlestick pattern feature in Zerodha's charting platform to confirm candlestick patterns, you should identify the candlestick pattern visually and then confirm it with the candlestick pattern study."
+      },
+      {
+        "question": "What is the limitation of the candlestick pattern feature in Zerodha's charting platform?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "It does not identify all candlestick patterns"
+          },
+          {
+            "id": "B",
+            "text": "It does not consider the prior trend when identifying candlestick patterns"
+          },
+          {
+            "id": "C",
+            "text": "It is not accurate in identifying candlestick patterns"
+          },
+          {
+            "id": "D",
+            "text": "It is only available for intraday charts"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "The limitation of the candlestick pattern feature in Zerodha's charting platform is that it does not consider the prior trend when identifying candlestick patterns."
+      }
+    ]
+  },
+  {
+    "course": "Technical Analysis",
+    "lesson": "21. Interesting features on TradingView",
+    "order": "21",
+    "section": 3,
+    "lessonQuiz": [
+      {
+        "question": "Which feature allows you to view the same scrip across different time frames on a single chart?",
+        "questionNumber": 1,
+        "options": [
+          {
+            "id": "A",
+            "text": "Custom layout"
+          },
+          {
+            "id": "B",
+            "text": "Multi timeframe settings"
+          },
+          {
+            "id": "C",
+            "text": "Extended time chart"
+          },
+          {
+            "id": "D",
+            "text": "Synchronized frequency"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Multi timeframe settings"
+      },
+      {
+        "question": "What is the function of the 'Undo' feature?",
+        "questionNumber": 2,
+        "options": [
+          {
+            "id": "A",
+            "text": "It reverses the most recent action on the chart."
+          },
+          {
+            "id": "B",
+            "text": "It deletes all studies from the chart."
+          },
+          {
+            "id": "C",
+            "text": "It resets the chart to its default settings."
+          },
+          {
+            "id": "D",
+            "text": "It saves the current chart as an image."
+          }
+        ],
+        "answerId": "A",
+        "answerText": "It reverses the most recent action on the chart."
+      },
+      {
+        "question": "Which feature allows you to specify that a study should be visible only during a certain time frame?",
+        "questionNumber": 3,
+        "options": [
+          {
+            "id": "A",
+            "text": "Time interval selection"
+          },
+          {
+            "id": "B",
+            "text": "Visibility settings"
+          },
+          {
+            "id": "C",
+            "text": "Custom time frame"
+          },
+          {
+            "id": "D",
+            "text": "Study filter"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Visibility settings"
+      },
+      {
+        "question": "How can you navigate to a specific date and time on the chart?",
+        "questionNumber": 4,
+        "options": [
+          {
+            "id": "A",
+            "text": "Using the scroll bar"
+          },
+          {
+            "id": "B",
+            "text": "Using the 'Go-to' feature"
+          },
+          {
+            "id": "C",
+            "text": "Using the 'Time frame' selector"
+          },
+          {
+            "id": "D",
+            "text": "Using the 'Zoom in' feature"
+          }
+        ],
+        "answerId": "B",
+        "answerText": "Using the 'Go-to' feature"
+      },
+      {
+        "question": "What is the purpose of the 'HD images' feature?",
+        "questionNumber": 5,
+        "options": [
+          {
+            "id": "A",
+            "text": "To save the chart as a high-resolution image"
+          },
+          {
+            "id": "B",
+            "text": "To zoom in on a specific area of the chart"
+          },
+          {
+            "id": "C",
+            "text": "To change the colour scheme of the chart"
+          },
+          {
+            "id": "D",
+            "text": "To add a watermark to the chart"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "To save the chart as a high-resolution image"
+      },
+      {
+        "question": "Which of the following is NOT a benefit of using multiple time frame settings?",
+        "questionNumber": 6,
+        "options": [
+          {
+            "id": "A",
+            "text": "It allows you to see the price action in different perspectives."
+          },
+          {
+            "id": "B",
+            "text": "It helps you identify long-term trends."
+          },
+          {
+            "id": "C",
+            "text": "It can lead to confusion and false signals."
+          },
+          {
+            "id": "D",
+            "text": "It enables you to make more informed trading decisions."
+          }
+        ],
+        "answerId": "C",
+        "answerText": "It can lead to confusion and false signals."
+      },
+      {
+        "question": "How can you use the 'Visibility' feature to improve chart analysis?",
+        "questionNumber": 7,
+        "options": [
+          {
+            "id": "A",
+            "text": "By hiding irrelevant studies on specific time frames"
+          },
+          {
+            "id": "B",
+            "text": "By highlighting important price levels"
+          },
+          {
+            "id": "C",
+            "text": "By creating custom time intervals"
+          },
+          {
+            "id": "D",
+            "text": "By adding annotations to the chart"
+          }
+        ],
+        "answerId": "A",
+        "answerText": "By hiding irrelevant studies on specific time frames"
+      }
+    ]
+  }
+]
