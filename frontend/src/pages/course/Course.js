@@ -25,6 +25,7 @@ const Course = () => {
   const [searchString, setSearchString] = useState("");
   const [showFilteredCards, setShowFilteredCards] = useState(false);
   const handleChange = async (event) => {
+    setSearchString("");
     setDifficulty(event.target.value);
     if (event.target.value === "All") {
       setShowFilteredCards(false);
@@ -45,8 +46,8 @@ const Course = () => {
     fetchData();
   }, []);
 
-  const goToCourseDetail = (title) => {
-    navigate(`/courses/${title}`);
+  const goToCourseDetail = (card) => {
+    navigate(`/courses/${card.title}`, { state: card });
   };
 
   const handleSearch = (value) => {
@@ -110,7 +111,7 @@ const Course = () => {
                 sm={6}
                 md={4}
                 key={index}
-                onClick={() => goToCourseDetail(card.title)}
+                onClick={() => goToCourseDetail(card)}
               >
                 <Card sx={{ maxWidth: 345 }} className={styles.card}>
                   <CardMedia
