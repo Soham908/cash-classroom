@@ -27,16 +27,17 @@ const imagesPath = path.join(__dirname, "images");
 app.use("/images", express.static(imagesPath));
 
 const dbUri = process.env.MONGODB_URI;
-mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true });
-const db = mongoose.connection;
+mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
+	.then(()=>console.log("connected")).catch((err)=> console.log(err))
+// const db = mongoose.connection;
 
-db.on("error", (error) => {
-	console.error("MongoDB connection error:", error);
-});
+// db.on("error", (error) => {
+// 	console.error("MongoDB connection error:", error);
+// });
 
-db.once("open", () => {
-	console.log("Connected to MongoDB");
-});
+// db.once("open", () => {
+// 	console.log("Connected to MongoDB");
+// });
 
 // Start the server
 const port = process.env.PORT || 8000;
