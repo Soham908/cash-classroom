@@ -23,17 +23,16 @@ const CourseDetail = () => {
   const [enrollButtonState, setEnrollButtonState] = useState(false);
 
   useEffect(() => {
+    const isCoursePresent = user?.data?.enrolledCourses.some((courseData) =>
+      courseData.course.includes(params.name)
+    );
+    if (isCoursePresent) {
+      setEnrollButtonState(true);
+    }
     const fetchCourseData = async () => {
       const response = await getCourseDetails(params.name);
       if (response.success) {
         setCourseDetails(response.courseDetail);
-      }
-      // console.log(response.courseDetail)
-      const isCoursePresent = user?.data?.enrolledCourses.some((courseData) =>
-        courseData.course.includes(response.courseDetail[0]?.course)
-      );
-      if (isCoursePresent) {
-        setEnrollButtonState(true);
       }
     };
     fetchCourseData();
