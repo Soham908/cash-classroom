@@ -2,7 +2,7 @@ import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getCourseDetails } from "../../actions/courseActions";
 import { useAuthStore } from "../../store/store";
-import styles from "./courseDetails.module.css";
+import styles from "./courseDetail.module.css";
 import {
 	Accordion,
 	AccordionDetails,
