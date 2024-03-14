@@ -28,6 +28,12 @@ const lesson = new mongoose.Schema({
   lessonId: {
     type: String,
   },
+  quizMarks: {
+    type: Number
+  },
+  totalQuestions: {
+    type: Number
+  }
 });
 
 const userSchema = new mongoose.Schema({

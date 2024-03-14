@@ -7,7 +7,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
 import LessonPage from "./pages/LessonPage";
 import NoMatch from "./components/NoMatch";
-import Dashboard from "./pages/Dashboard";
+import FinanceGoals from "./pages/FinanceGoals";
 import Profile from "./pages/Profile";
 import FDCalculator from "./pages/calculators/FDCalculator";
 import EMICalculator from "./pages/calculators/EMICalculator";
@@ -17,6 +17,7 @@ import BlogDetails from "./pages/Blogs/BlogDetails/BlogDetails";
 import Quiz from "./components/Quiz";
 import NewDashboard from "./pages/new-dashboard/NewDashboard";
 import CourseDetail from "./pages/courseDetails/CourseDetail";
+import NeedToInvest from "./pages/trialComponent";
 
 function App() {
   return (
@@ -24,8 +25,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/new-dashboard" element={<NewDashboard/>} />
+        <Route path="/finance-goals" element={<FinanceGoals />} />
+        <Route path="/dashboard" element={<NeedToInvest/>} />
         <Route path="/register" element={<Register />} />
         <Route path="/courses" element={<Course />} />
         <Route path="/profile" element={<Profile />} />

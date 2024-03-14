@@ -81,12 +81,14 @@ const Quiz = () => {
     var count = 0;
     for (var number = 0; number < totalQuestions; number++) {
       if (quizData.lessonQuiz[number].answerId === selectedOptions[number]) {
-        console.log("sahi jawab, jeet gaye 1 crore rupay");
+        console.log("answer:", quizData.lessonQuiz[number].answerId, "slected:" , selectedOptions[number]);
         count++;
+        console.log(count);
       }
     }
     setQuizMarks(count);
     setShowMarks(true);
+    console.log(quizMarks, count);
   };
 
   const lessonComplete = async () => {
@@ -98,6 +100,7 @@ const Quiz = () => {
         quizMarks: quizMarks,
         totalQuestions: totalQuestions,
       });
+      console.log(quizMarks, totalQuestions);
       localStorage.setItem(
         "userData",
         JSON.stringify({ ...userDataAuthState, data: response.userObject })
@@ -128,19 +131,11 @@ const Quiz = () => {
         </Button>
       )}
 
-      {/* <Button
-        variant="contained"
-        onClick={lessonComplete}
-        disabled={isLessonCompleted}
-      >
-        {" "}
-        Lesson Completed{" "}
-      </Button> */}
-
       {showMarks && (
         <h3>
           {" "}
           Your Marks are : {quizMarks}/{totalQuestions}{" "}
+          {console.log(quizMarks)}
         </h3>
       )}
 
