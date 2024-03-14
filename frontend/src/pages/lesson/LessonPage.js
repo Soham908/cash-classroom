@@ -1,11 +1,12 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getLesson, getNextLesson, addComment } from "../actions/lessonAction";
+import { getLesson, getNextLesson, addComment } from "../../actions/lessonAction";
 import { Button } from "@mui/material";
-import { userCompleteLesson, updateMilestone } from "../actions/userActions";
-import { useAuthStore } from "../store/store";
-import Milestone from "../components/MIlestone";
+import { userCompleteLesson, updateMilestone } from "../../actions/userActions";
+import { useAuthStore } from "../../store/store";
+import Milestone from "../../components/MIlestone";
 import Snackbar from "@mui/joy/Snackbar";
+import styles from "./lesson.module.css"
 
 const LessonPage = () => {
   const user = useAuthStore.getState().user;
@@ -126,7 +127,7 @@ const LessonPage = () => {
   };
 
   return (
-    <>
+    <div className={styles.container}>
       <Button
         variant="contained"
         onClick={takeQuiz}
@@ -171,7 +172,7 @@ const LessonPage = () => {
         <button onClick={submitComment}>Submit</button>
       </div>
       {}
-    </>
+    </div>
   );
 };
 

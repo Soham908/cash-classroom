@@ -113,7 +113,7 @@ const CourseDetail = () => {
 						level="body-xs"
 						fontWeight="xl"
 						textcolor="common.white"
-						sx={{ mixBlendMode: "difference" }}
+						sx={{ mixBlendMode: "difference",color: progressPercentage>=50 ? "white" : "black",fontWeight:"bold" }}
 					>
 						{progressPercentage >= 100
 							? "Done"
@@ -136,7 +136,7 @@ const CourseDetail = () => {
 
 							if (sectionDetails) {
 								result.push(
-									<Accordion key={i} sx={{width:"70%"}} defaultExpanded={true} >
+									<Accordion key={i} sx={{width:"70%"}} defaultExpanded={i == 0 ? true : false } >
 										<AccordionSummary
 											aria-controls="lesson-content"
 											id="lesson-header"
@@ -149,7 +149,7 @@ const CourseDetail = () => {
 													<div className={styles.sectionNumberParentCircle}>
 														<div className={styles.sectionNumberCircle}>
 															<div className={styles.sectionNumber}>
-																{i}
+																{i+1}
 															</div>
 														</div>
 													</div>

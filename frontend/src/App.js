@@ -5,7 +5,7 @@ import Register from "./authFlow/Register";
 import Course from "./pages/courses/Course";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
-import LessonPage from "./pages/LessonPage";
+import LessonPage from "./pages/lesson/LessonPage";
 import NoMatch from "./components/NoMatch";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
