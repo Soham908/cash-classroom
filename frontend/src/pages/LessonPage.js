@@ -10,7 +10,6 @@ import Snackbar from "@mui/joy/Snackbar";
 const LessonPage = () => {
   const user = useAuthStore.getState().user;
   const navigate = useNavigate();
-  //   const location = useLocation().state;
   const location = JSON.parse(localStorage.getItem("currentLesson"));
   const [lessonData, setLessonData] = useState(null);
   const [comment, setComment] = useState("");
@@ -57,9 +56,9 @@ const LessonPage = () => {
     }
   }
 
-  const isLessonCompleted = user?.data?.lessonsCompleted?.some(
-    (completedLessonData) => {
-      if (completedLessonData.lessonName === location.lesson) {
+  const isQuizCompleted = user?.data?.quizCompleted?.some(
+    (completedQuizData) => {
+      if (completedQuizData.lessonName === location.lesson) {
         return true;
       }
     }
@@ -78,21 +77,10 @@ const LessonPage = () => {
     if (lessonData?.order === numChapters) setDisableNextLessonButton(true);
   }, [lessonData, refresh]);
 
-  const lessonComplete = async () => {
-    const response = await userCompleteLesson({
-      lessonName: lessonData.lesson,
-      id: user.token,
-      lessonId: lessonData._id,
-      course: location.course,
-    });
 
-    localStorage.setItem(
-      "userData",
-      JSON.stringify({ ...user, data: response.userObject })
-    );
-    setStateUser({ ...user, data: response.userObject });
-    setRefresh((p) => !p);
-  };
+  const takeQuiz = () => {
+    navigate(`/lesson-quiz/${lessonData.lesson}`)
+  }
 
   const submitComment = async () => {
     const response = await addComment({
@@ -139,14 +127,13 @@ const LessonPage = () => {
 
   return (
     <>
-
       <Button
         variant="contained"
-        onClick={lessonComplete}
-        disabled={isLessonCompleted}
+        onClick={takeQuiz}
+        disabled={isQuizCompleted}
       >
         {" "}
-        Lesson Completed{" "}
+        Take Quiz{" "}
       </Button>
       <Button
         variant="outlined"
