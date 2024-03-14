@@ -5,7 +5,6 @@ import Register from "./authFlow/Register";
 import Course from "./pages/courses/Course";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
-import CourseDetail from "./pages/CourseDetail";
 import LessonPage from "./pages/LessonPage";
 import NoMatch from "./components/NoMatch";
 import Dashboard from "./pages/Dashboard";
@@ -17,6 +16,7 @@ import Blogs from "./pages/Blogs/Blogs";
 import BlogDetails from "./pages/Blogs/BlogDetails/BlogDetails";
 import Quiz from "./components/Quiz";
 import NewDashboard from "./pages/new-dashboard/NewDashboard";
+import CourseDetail from "./pages/courseDetails/CourseDetail";
 
 function App() {
   return (
