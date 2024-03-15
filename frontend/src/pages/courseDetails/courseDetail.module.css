@@ -18,3 +18,58 @@
 	font-size: 20px;
 	font-weight: 300;
 }
+
+.accordionSummary{
+	display: flex;
+	gap : 30px;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.sectionNumberCircle {
+	background-color: #d2d9e6;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+}
+
+.sectionNumberParentCircle{
+	border: 6px solid rgb(238, 238, 238) ;
+	background-color:white;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sectionNumber{
+	font-size: 18px;
+	font-weight: bold;
+	color: #455a64;
+}
+
+.sectionDetails {
+	color: #455a64;
+}
+
+.accordionDetails {
+	font-size: 17px;
+	letter-spacing: 0.2px;
+	display: flex;
+	flex-direction: column;
+	gap : 10px;
+}
+
+.lessonName:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.lessonsContainer {
+	margin-top: 15px;
+}
