@@ -140,6 +140,8 @@ exports.completedLesson = async (req, res) => {
           lessonsCompleted: {
             lessonName: req.body.lessonName,
             lessonId: req.body.lessonId,
+            quizMarks: req.body.quizMarks,
+            totalQuestions: req.body.totalQuestions
           },
         },
         $inc: { "enrolledCourses.$.lessonsCompleted": 1 },

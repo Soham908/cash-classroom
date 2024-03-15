@@ -1,30 +1,27 @@
 import { useEffect, useState } from "react";
 import { ProtectRoutes } from "../manageRoutes/protectRoutes";
-import {
-  createGoal,
-  fetchGoalsById,
-  updateGoal,
-} from "./../actions/goalActions";
+import { createGoal, fetchGoalsById, updateGoal } from "../actions/goalActions";
 import { useAuthStore } from "../store/store";
 import AspectRatio from "@mui/joy/AspectRatio";
 import Button from "@mui/joy/Button";
 import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
-import { CardActions, Input, LinearProgress, Snackbar } from "@mui/joy";
+import { CardActions, Grid, Input, LinearProgress, Snackbar } from "@mui/joy";
 import Typography from "@mui/joy/Typography";
-import { Box } from "@mui/material";
+import { Box, TextField } from "@mui/material";
 
-const Dashboard = () => {
+const FinanceGoals = () => {
   const user = useAuthStore.getState().user;
   const [goalFormData, setGoalFormData] = useState({
     name: "",
-    target: 0,
-    currentAmount: 0,
+    target: null,
+    currentAmount: null,
   });
   const [refresh, setRefresh] = useState(false);
   const [goals, setGoals] = useState([]);
-  const [amountUpdate, setAmountUpdate] = useState(0);
-  const [snackBarOpen, setSnackBarOpen] = useState(false)
+  const [amountUpdate, setAmountUpdate] = useState(null);
+  const [snackBarOpen, setSnackBarOpen] = useState(false);
+  const [goalCompleted, setGoalCompleted] = useState(false)
 
   useEffect(() => {
     const fetchGoals = async () => {
@@ -47,59 +44,81 @@ const Dashboard = () => {
   };
 
   const handleSavedValue = async (data) => {
-    const response = await updateGoal({
-      id: data.id,
-      updateAmount: data.updateAmount,
-    });
-    console.log(response);
-    setRefresh((prev) => !prev);
-    checkGoalCompleted({
+    const check = checkGoalCompleted({
       goalTarget: data.goalTarget,
       goalCurrentAmt: data.goalCurrentAmt,
     });
+    if (!check) {
+      var sendData = { id: data.id, updatedAmount: 0 };
+      if (
+        parseInt(data.goalCurrentAmt) + parseInt(data.updateAmount) >=
+        data.goalTarget
+      ) {
+        sendData.updatedAmount = data.goalTarget;
+      } else {
+        sendData.updatedAmount =
+          parseInt(data.goalCurrentAmt) + parseInt(data.updateAmount);
+        console.log(sendData.updatedAmount);
+      }
+      const response = await updateGoal({
+        id: sendData.id,
+        updatedAmount: sendData.updatedAmount,
+      });
+      console.log(response);
+      setRefresh((prev) => !prev);
+    }
   };
 
   const checkGoalCompleted = ({ goalTarget, goalCurrentAmt }) => {
     if (goalTarget === goalCurrentAmt) {
       console.log("goal complete");
-      setSnackBarOpen(true)
+      setSnackBarOpen(true);
+      setGoalCompleted(true)
+      return true;
     }
   };
 
   return (
     <ProtectRoutes>
-      <div className="cards">
-        <br />
-        <input
-          type="text"
-          name="name"
-          value={goalFormData.name}
-          onChange={(e) => handleGoalsFormChange(e)}
-        />
-        <br />
-        target{" "}
-        <input
-          type="number"
-          name="target"
-          value={goalFormData.target}
-          onChange={(e) => handleGoalsFormChange(e)}
-        />
-        <br />
-        curr amt{" "}
-        <input
-          type="number"
-          name="currentAmount"
-          value={goalFormData.currentAmount}
-          onChange={(e) => handleGoalsFormChange(e)}
-        />
-        <br />
-        <button onClick={handleCreateGoal}>Create Goal</button>
-        <br />
-        {/* {JSON.stringify(goals)} */}
-      </div>
+      <Grid container spacing={2} alignItems="center">
+        <Grid item xs={12}>
+          <TextField
+            fullWidth
+            label="Name"
+            name="name"
+            value={goalFormData.name}
+            onChange={(e) => handleGoalsFormChange(e)}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            fullWidth
+            label="Target"
+            name="target"
+            type="number"
+            value={goalFormData.target}
+            onChange={(e) => handleGoalsFormChange(e)}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            fullWidth
+            label="Current Amount"
+            name="currentAmount"
+            type="number"
+            value={goalFormData.currentAmount}
+            onChange={(e) => handleGoalsFormChange(e)}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <Button variant="solid" color="primary" onClick={handleCreateGoal}>
+            Create Goal
+          </Button>
+        </Grid>
+      </Grid>
 
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
-        {goals.map((goalData, index) => {
+        {/* {goals.map((goalData, index) => {
           return (
             <Card sx={{ margin: 2 }}>
               <AspectRatio ratio={2}>
@@ -143,7 +162,6 @@ const Dashboard = () => {
                     sx={{ mixBlendMode: "difference", textAlign: "start" }}
                   >
                     {`${goalData.currentAmount} / ${goalData.target}`}
-                    {/* {console.log(goalData.currentAmount / goalData.target)} */}
                   </Typography>
                 </LinearProgress>
               </CardContent>
@@ -165,6 +183,7 @@ const Dashboard = () => {
                           goalCurrentAmt: goalData.currentAmount,
                         })
                       }
+                      disabled={goalCompleted}
                     >
                       Add to Saved value
                     </Button>
@@ -173,18 +192,25 @@ const Dashboard = () => {
               </CardActions>
             </Card>
           );
-        })}
+        })} */}
+        {goals.map((goalData, index) => (
+        <GoalComponent
+          key={index}
+          goalData={goalData}
+          handleSavedValue={handleSavedValue}
+        />
+      ))}
       </Box>
       <Snackbar
-          anchorOrigin={{ vertical: 'top', horizontal:'center' }}
-          open={snackBarOpen}
-          autoHideDuration={3000}
-          
-        >
-          I love snacks
-        </Snackbar>
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        open={snackBarOpen}
+        autoHideDuration={1500}
+        onClose={() => setSnackBarOpen(false)}
+      >
+        Goals is completed
+      </Snackbar>
     </ProtectRoutes>
   );
 };
 
-export default Dashboard;
+export default FinanceGoals;
