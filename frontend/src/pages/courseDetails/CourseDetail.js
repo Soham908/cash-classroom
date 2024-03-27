@@ -87,40 +87,48 @@ const CourseDetail = () => {
 				<div className={styles.courseDetails}>
 					<h1>{state?.title}</h1>
 					<p>{state?.desc}</p>
-					{ enrollButtonState ? "" :<Button
-						className={styles.enrollBtn}
-						variant="contained"
-						onClick={enrollCourse}
-						disabled={enrollButtonState}
-					>
-						{enrollButtonState ? "Enrolled" : "Enroll"}
-					</Button>}
+					{enrollButtonState ? (
+						""
+					) : (
+						<Button
+							className={styles.enrollBtn}
+							variant="contained"
+							onClick={enrollCourse}
+							disabled={enrollButtonState}
+						>
+							{enrollButtonState ? "Enrolled" : "Enroll"}
+						</Button>
+					)}
 				</div>
-				<div style={{display:"flex",gap : "5px",width:"38%"}}>
-				<LinearProgress
-					determinate
-					variant="outlined"
-					color="neutral"
-					size="sm"
-					thickness={24}
-					value={progressPercentage}
-					sx={{
-						"--LinearProgress-radius": "20px",
-						"--LinearProgress-thickness": "24px",
-					}}
-				>
-					<Typography
-						level="body-xs"
-						fontWeight="xl"
-						textcolor="common.white"
-						sx={{ mixBlendMode: "difference",color: progressPercentage>=50 ? "white" : "black",fontWeight:"bold" }}
+				<div style={{ display: "flex", gap: "5px", width: "38%" }}>
+					<LinearProgress
+						determinate
+						variant="outlined"
+						color="neutral"
+						size="sm"
+						thickness={24}
+						value={progressPercentage}
+						sx={{
+							"--LinearProgress-radius": "20px",
+							"--LinearProgress-thickness": "24px",
+						}}
 					>
-						{progressPercentage >= 100
-							? "Done"
-							: `${Math.floor(progressPercentage)}%`}
-					</Typography>
-				</LinearProgress>
-				<img src="/flag.jpg" alt="flag logo" style={{height:"25px"}} />
+						<Typography
+							level="body-xs"
+							fontWeight="xl"
+							textcolor="common.white"
+							sx={{
+								mixBlendMode: "difference",
+								color: progressPercentage >= 50 ? "white" : "black",
+								fontWeight: "bold",
+							}}
+						>
+							{progressPercentage >= 100
+								? "Done"
+								: `${Math.floor(progressPercentage)}%`}
+						</Typography>
+					</LinearProgress>
+					<img src="/flag.jpg" alt="flag logo" style={{ height: "25px" }} />
 				</div>
 				<div className={styles.lessonsContainer}>
 					{(() => {
@@ -136,20 +144,23 @@ const CourseDetail = () => {
 
 							if (sectionDetails) {
 								result.push(
-									<Accordion key={i} sx={{width:"70%"}} defaultExpanded={i == 0 ? true : false } >
+									<Accordion
+										key={i}
+										sx={{ width: "70%" }}
+										defaultExpanded={i == 0 ? true : false}
+									>
 										<AccordionSummary
 											aria-controls="lesson-content"
 											id="lesson-header"
 											expandIcon={<ExpandMore />}
-											sx={{backgroundColor:"#FAFAFA"}}
+											sx={{ backgroundColor: "#FAFAFA" }}
 										>
-
 											<div className={styles.accordionSummary}>
 												<div className={styles.sectionNumberContainer}>
 													<div className={styles.sectionNumberParentCircle}>
 														<div className={styles.sectionNumberCircle}>
 															<div className={styles.sectionNumber}>
-																{i+1}
+																{i + 1}
 															</div>
 														</div>
 													</div>
@@ -164,13 +175,26 @@ const CourseDetail = () => {
 												</div>
 											</div>
 										</AccordionSummary>
-										<AccordionDetails className={styles.accordionDetails} sx={{padding:"20px 50px",marginBottom:"10px"}}>
+										<AccordionDetails
+											className={styles.accordionDetails}
+											sx={{ padding: "20px 50px", marginBottom: "10px" }}
+										>
 											{(() => {
-												const lessonResult = [<p style={{fontSize:"20px",fontWeight:"bold", marginBottom:"0"}}>Lessons :</p>];
+												const lessonResult = [
+													<p
+														style={{
+															fontSize: "20px",
+															fontWeight: "bold",
+															marginBottom: "0",
+														}}
+													>
+														Lessons :
+													</p>,
+												];
 												for (let j = 0; j < courseDetails.length; j++) {
 													if (courseDetails[j].section === i + 1) {
 														lessonResult.push(
-															<li key={j} style={{color:"#3564b5"}}>
+															<li key={j} style={{ color: "#3564b5" }}>
 																<span
 																	className={styles.lessonName}
 																	onClick={() =>

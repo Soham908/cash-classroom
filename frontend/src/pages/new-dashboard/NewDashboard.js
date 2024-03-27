@@ -12,6 +12,15 @@ const Dashboard = () => {
 		console.log(emailRef.current.value);
 		navigate("/register", { state: { email: emailRef.current.value } });
 	};
+
+	const GoalsSection = () => {
+		return (
+			<>
+				<h1>Goals</h1>
+			</>
+		);
+	};
+
 	const FirstSection = () => {
 		return (
 			<div className={styles.firstSection}>
@@ -83,6 +92,7 @@ const Dashboard = () => {
 		<div className={styles.homeComponent}>
 			<h1 className={styles.dashboardTitle}>How does the App work?</h1>
 			{!user && <FirstSection />}
+			<GoalsSection />
 			<SecondSection />
 			<ThirdSection />
 		</div>

@@ -28,6 +28,11 @@
 	color: grey;
 }
 
+.leftContainer p:hover {
+	color: #404040;
+	font-weight: 500;
+}
+
 .coursesContainer {
 	display: flex;
 	flex-wrap: wrap;
