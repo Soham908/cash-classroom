@@ -9,6 +9,12 @@
 	width: 10%;
 }
 
+.enrollBtn:hover,
+.enrollBtn:focus {
+	color: #fff;
+	transition: 0.25s;
+}
+
 .courseDetails h1 {
 	font-size: 30px;
 }
@@ -19,9 +25,9 @@
 	font-weight: 300;
 }
 
-.accordionSummary{
+.accordionSummary {
 	display: flex;
-	gap : 30px;
+	gap: 30px;
 	align-items: center;
 	padding: 0 20px;
 }
@@ -36,9 +42,9 @@
 	border-radius: 100%;
 }
 
-.sectionNumberParentCircle{
-	border: 6px solid rgb(238, 238, 238) ;
-	background-color:white;
+.sectionNumberParentCircle {
+	border: 6px solid rgb(238, 238, 238);
+	background-color: white;
 	height: 50px;
 	width: 50px;
 	border-radius: 100%;
@@ -47,7 +53,7 @@
 	align-items: center;
 }
 
-.sectionNumber{
+.sectionNumber {
 	font-size: 18px;
 	font-weight: bold;
 	color: #455a64;
@@ -62,10 +68,10 @@
 	letter-spacing: 0.2px;
 	display: flex;
 	flex-direction: column;
-	gap : 10px;
+	gap: 10px;
 }
 
-.lessonName:hover{
+.lessonName:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }

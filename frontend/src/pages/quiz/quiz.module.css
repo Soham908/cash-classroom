@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 100px;
+}
+
+.question {
+	background-color: #bebebe;
+	padding: 20px 30px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.optionsContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+
+.option {
+	border-radius: 5px;
+	transition: 0.2s all linear;
+	background-color: white;
+}
+
+.option:hover {
+	background-color: #edeade;
+}
