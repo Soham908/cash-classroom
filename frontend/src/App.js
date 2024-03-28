@@ -1,5 +1,6 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Login from "./authFlow/Login";
 import Register from "./authFlow/Register";
 import Course from "./pages/courses/Course";
@@ -18,8 +19,23 @@ import Quiz from "./pages/quiz/Quiz";
 import NewDashboard from "./pages/new-dashboard/NewDashboard";
 import CourseDetail from "./pages/courseDetails/CourseDetail";
 import NeedToInvest from "./pages/trialComponent";
+import Chatbot from "./components/chatbot/Chatbot";
 
 function App() {
+	const location = useLocation();
+	const [showChatbot, setShowChatbot] = useState(true);
+	useEffect(() => {
+		if (
+			location.pathname.includes("/register") ||
+			location.pathname === "/" ||
+			location.pathname.includes("/lesson-quiz")
+		) {
+			setShowChatbot(false);
+		} else {
+			setShowChatbot(true);
+		}
+		console.log(location.pathname);
+	}, [location]);
 	return (
 		<>
 			<Navbar />
@@ -41,6 +57,7 @@ function App() {
 				<Route path="/lesson-quiz/:currentquizLessonName" element={<Quiz />} />
 				<Route path="*" element={<NoMatch />} />
 			</Routes>
+			{showChatbot && <Chatbot />}
 			<Footer />
 		</>
 	);
