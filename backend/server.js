@@ -8,7 +8,9 @@ const dataRouter = require("./routes/fetchdataRoute");
 const courseRouter = require("./routes/courseRoutes");
 const lessonRouter = require("./routes/lessonRoute");
 const goalsRouter = require("./routes/goalRoutes");
-const blogsRouter = require("./routes/blogRoutes")
+const blogsRouter = require("./routes/blogRoutes");
+const chatRouter = require("./routes/chatRoutes");
+
 require("dotenv").config(); // Load environment variables from a .env file
 
 const app = express();
@@ -21,14 +23,17 @@ app.use("/data", dataRouter);
 app.use("/course", courseRouter);
 app.use("/lesson", lessonRouter);
 app.use("/goals", goalsRouter);
-app.use("/blogs",blogsRouter)
+app.use("/blogs", blogsRouter);
+app.use("/chat", chatRouter);
 
 const imagesPath = path.join(__dirname, "images");
 app.use("/images", express.static(imagesPath));
 
 const dbUri = process.env.MONGODB_URI;
-mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
-	.then(()=>console.log("connected")).catch((err)=> console.log(err))
+mongoose
+	.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
+	.then(() => console.log("connected"))
+	.catch((err) => console.log(err));
 // const db = mongoose.connection;
 
 // db.on("error", (error) => {

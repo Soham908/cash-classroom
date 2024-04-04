@@ -1,0 +1,87 @@
+/* Add this CSS to your App.css or any other CSS file */
+
+.chatbotContainer {
+	background-color: beige;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999; /* Ensure it's above other content */
+}
+
+.container {
+	width: 350px;
+	height: 80vh;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.close {
+	align-self: flex-end;
+}
+
+.chat {
+	background-color: lightblue;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+	width: 95%;
+	height: 80%;
+	margin-bottom: 0;
+}
+
+.user {
+	border-radius: 10px;
+	background-color: pink;
+	align-items: flex-end;
+	text-align: right;
+}
+
+.model {
+	text-align: left;
+	background-color: orange;
+	align-items: flex-start;
+}
+
+.circle {
+	width: 60px;
+	height: 60px;
+	/* background-color: blue;  */
+	border-radius: 50%;
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	cursor: pointer; /* Change cursor style if needed */
+	z-index: 9999; /* Ensure it's above other content */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white; /* Change text color if needed */
+	font-weight: bold;
+}
+
+.inputContainer {
+	display: flex;
+	width: 329px;
+	height: 6vh;
+	border: 2px solid lightblue;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.promptInput {
+	width: 83%;
+	border: none;
+	border-right: 2px solid lightblue;
+}
+
+.send {
+	padding: 2px;
+	width: 13%;
+}
