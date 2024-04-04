@@ -25,7 +25,7 @@ const BlogDetails = () => {
                    Vestibulum fringilla mattis mauris, ac dictum lacus viverra vel. Sed dapibus consectetur arcu, in congue eros auctor sed.
             </h4> */}
             <h4>{blog?.summary}</h4>
-            <img src="/blog.avif" alt="Blog Image"/>
+            <img src={"http://localhost:7000/images/" + blog?.img} alt="Blog Image"/>
             <p>{blog?.desc}</p>
             <hr />
         </div>

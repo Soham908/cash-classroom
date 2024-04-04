@@ -4,53 +4,67 @@ import { AppBar, Toolbar, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 // import { useAuthStore } from "../store/store";
 import { useAuthStore } from "./../../store/store";
+import { Button } from "@mui/joy";
 const Navbar = () => {
-	const navigate = useNavigate();
-	const setStateUser = useAuthStore((state) => state.setUser);
-	const activeStyle = {
-		textDecoration: "underline",
-		fontWeight: "bold",
-		color: "red",
-	};
+  const navigate = useNavigate();
+  const setStateUser = useAuthStore((state) => state.setUser);
+  const activeStyle = {
+    textDecoration: "underline",
+    fontWeight: "bold",
+    color: "red",
+  };
 
-	const logout = () => {
-		setStateUser(null);
-		localStorage.setItem("userData", null);
-		navigate("/");
-	};
-	return (
-		<AppBar position="static">
-			<Toolbar>
-				<Typography variant="h6">
-					<NavLink
-						style={({ isActive }) => (isActive ? activeStyle : null)}
-						to="/dashboard"
-					>
-						Dashboard
-					</NavLink>
-					<NavLink
-						style={({ isActive }) => (isActive ? activeStyle : null)}
-						to="/courses"
-					>
-						Courses
-					</NavLink>
-					<NavLink
-						style={({ isActive }) => (isActive ? activeStyle : null)}
-						to="/profile"
-					>
-						Profile
-					</NavLink>
-					<NavLink
-						style={({ isActive }) => (isActive ? activeStyle : null)}
-						to="/blogs"
-					>
-						Blogs
-					</NavLink>
-					<button onClick={logout}>Logout</button>
-				</Typography>
-			</Toolbar>
-		</AppBar>
-	);
+  const logout = () => {
+    setStateUser(null);
+    localStorage.setItem("userData", null);
+    navigate("/");
+  };
+  return (
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6">
+          <NavLink
+            style={({ isActive }) => (isActive ? activeStyle : null)}
+            to="/dashboard"
+          >
+            Dashboard
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => (isActive ? activeStyle : null)}
+            to="/courses"
+          >
+            Courses
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => (isActive ? activeStyle : null)}
+            to="/blogs"
+          >
+            Blogs
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => (isActive ? activeStyle : null)}
+            to="/calculators/fd-calculator"
+          >
+            Calculator
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => (isActive ? activeStyle : null)}
+            to="/profile"
+          >
+            Profile
+          </NavLink>
+          <Button
+            sx={{ marginLeft: 2 }}
+            variant="plain"
+            color="neutral"
+            onClick={logout}
+          >
+            Logout
+          </Button>
+        </Typography>
+      </Toolbar>
+    </AppBar>
+  );
 };
 
 export default Navbar;
