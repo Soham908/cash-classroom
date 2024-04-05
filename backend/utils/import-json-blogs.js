@@ -17,7 +17,7 @@ mongoose
   });
 
 let jsonBlogsData = JSON.parse(fs.readFileSync(path));
-// console.log(jsonBlogsData)
+console.log(jsonBlogsData)
 
 const insertBlogs = async () => {
     const blogs = await Blog.create(jsonBlogsData);

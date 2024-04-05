@@ -62,7 +62,8 @@
 
 	text-align: left;
 	background-color: orange;
-	align-self: flex-start;
+	align-items: flex-start;
+	padding: 10px;
 }
 
 .circle {

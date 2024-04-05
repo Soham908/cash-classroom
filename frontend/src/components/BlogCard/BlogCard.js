@@ -1,5 +1,7 @@
 import styles from "./blogCard.module.css";
 import { useNavigate } from "react-router-dom";
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
+import { NavigateNext } from '@mui/icons-material';
 
 const BlogCard = ({ blog }) => {
 	
@@ -8,32 +10,42 @@ const BlogCard = ({ blog }) => {
 		navigate(`/blogs/${blog._id}`)
 	}
 	return (
-		<div className={styles.container}>
-			<img className={styles.coverImg} src="/blog.avif" alt="blog title" />
-			<h2 className={styles.title}>{blog?.title}</h2>
-			<div className={styles.details}>
-				<div className={styles.dateContainer}>
-					<img
-						className={styles.calendar}
-						src="/calendar.png"
-						alt="calendar logo"
-					/>
-					<span className={styles.spanValue}>
-						{blog?.createdAt?.slice(0, 10)}
-					</span>
+		<Card>
+		  <CardActionArea onClick={handleReadMore}>
+			<CardMedia
+			  component="img"
+			  height="200"
+			  image={`http://localhost:7000/images/${blog?.img}`}
+			  alt="blog title"
+			/>
+			<CardContent>
+			  <Typography gutterBottom variant="h5" component="h2">
+				{blog?.title}
+			  </Typography>
+			  <div style={{ display: 'flex', alignItems: 'center' }}>
+				<div style={{ display: 'flex', alignItems: 'center', marginRight: '20px' }}>
+				  <img src="/calendar.png" alt="calendar logo" style={{ marginRight: '5px' }} />
+				  <Typography variant="body2" color="textSecondary" component="span">
+					{blog?.createdAt?.slice(0, 10)}
+				  </Typography>
 				</div>
-
-				<div className={styles.minReadContainer}>
-					<img className={styles.clock} src="clock.png" alt="clock logo" />
-					<span className={styles.spanValue}>{blog?.minRead} mins read</span>
+				<div style={{ display: 'flex', alignItems: 'center' }}>
+				  <img src="/clock.png" alt="clock logo" style={{ marginRight: '5px' }} />
+				  <Typography variant="body2" color="textSecondary" component="span">
+					{blog?.minRead} mins read
+				  </Typography>
 				</div>
-			</div>
-			<div className={styles.navigateContainer}>
-				<span onClick={handleReadMore}>Read More</span>
-				<img src="/up-right-arrow.png" alt="navigate logo" />
-			</div>
-		</div>
-	);
+			  </div>
+			</CardContent>
+		  </CardActionArea>
+		  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 20px', borderTop: '1px solid #ccc' }}>
+			<Typography variant="body2" color="primary" style={{ cursor: 'pointer' }} onClick={handleReadMore}>
+			  Read More
+			</Typography>
+			<NavigateNext color="primary" />
+		  </div>
+		</Card>
+	  );
 };
 
 export default BlogCard;
