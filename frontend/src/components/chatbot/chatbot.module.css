@@ -38,7 +38,6 @@
 
 .user {
 	border-radius: 10px;
-	background-color: pink;
 	align-items: flex-end;
 	text-align: right;
 }
@@ -47,6 +46,7 @@
 	text-align: left;
 	background-color: orange;
 	align-items: flex-start;
+	padding: 10px;
 }
 
 .circle {
