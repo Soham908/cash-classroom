@@ -34,7 +34,7 @@ function App() {
 		} else {
 			setShowChatbot(true);
 		}
-		console.log(location.pathname);
+		// console.log(location.pathname);
 	}, [location]);
   return (
     <>
@@ -57,7 +57,7 @@ function App() {
         <Route path="*" element={<NoMatch />} />
       </Routes>
 			{showChatbot && <Chatbot />}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
