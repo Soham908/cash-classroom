@@ -4,13 +4,16 @@ import styles from "./chatbot.module.css";
 import Markdown from "react-markdown";
 import { useRef } from "react";
 import { Button } from "@mui/joy";
-import { Send } from "@mui/icons-material";
+import SendIcon from "@mui/icons-material/Send";
+import Skeleton from "@mui/material/Skeleton";
+import CloseIcon from "@mui/icons-material/Close";
 import { useEffect } from "react";
 
 export default function Chatbot() {
 	const [history, setHistory] = React.useState([]);
 	const [input, setInput] = React.useState("");
 	const [showChatbot, setShowChatbot] = React.useState(false);
+	const [showChatSkeleton, setShowChatSkeleton] = React.useState(false);
 	const chatDiv = useRef(null);
 
 	useEffect(() => {
@@ -20,6 +23,7 @@ export default function Chatbot() {
 	}, [history]);
 	const handleClick = async () => {
 		setInput("");
+		setShowChatSkeleton((p) => true);
 		const response = await getResponse({ history, prompt: input });
 
 		if (!response?.success) {
@@ -42,7 +46,7 @@ export default function Chatbot() {
 				{ role: "model", parts: [{ text: response.text }] },
 			]);
 		}
-
+		setShowChatSkeleton((p) => false);
 		// setHistory((prev) => [
 		// 	...prev,
 		// 	{ role: "user", parts: [{ text: input }] },
@@ -53,9 +57,11 @@ export default function Chatbot() {
 		<div className={styles.chatbotContainer}>
 			{showChatbot ? (
 				<div className={styles.container}>
-					<div className={styles.close} onClick={() => setShowChatbot(false)}>
-						X
-					</div>
+					<CloseIcon
+						fontSize="large"
+						onClick={() => setShowChatbot(false)}
+						className={styles.close}
+					/>
 					<div className={styles.chat} ref={chatDiv}>
 						{history.map((el, i) => {
 							return (
@@ -67,12 +73,21 @@ export default function Chatbot() {
 								</span>
 							);
 						})}
+						{showChatSkeleton && (
+							<Skeleton
+								variant="rectangular"
+								animation="wave"
+								width={230}
+								height={60}
+							/>
+						)}
 					</div>
 					<div className={styles.inputContainer}>
 						<input
 							type="text"
 							value={input}
 							className={styles.promptInput}
+							disabled={showChatSkeleton}
 							onChange={(e) => setInput(e.target.value)}
 							onKeyDown={(e) => {
 								if (e.key === "Enter") {
@@ -87,9 +102,10 @@ export default function Chatbot() {
 							}}
 						/>
 
-						<Button
+						<SendIcon
 							variant="contained"
 							color="primary"
+							sx={{ height: "35px", padding: "0px 10px" }}
 							onClick={(e) => {
 								if (input) {
 									setHistory((prev) => [
@@ -99,10 +115,7 @@ export default function Chatbot() {
 									handleClick();
 								}
 							}}
-							startIcon={<Send />}
-						>
-							Send
-						</Button>
+						/>
 					</div>
 				</div>
 			) : (
