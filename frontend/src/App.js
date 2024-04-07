@@ -20,7 +20,7 @@ import Dashboard from "./pages/new-dashboard/Dashboard";
 import CourseDetail from "./pages/courseDetails/CourseDetail";
 import NeedToInvest from "./pages/trialComponent";
 import Chatbot from "./components/chatbot/Chatbot";
-import Testing from "./Testing";
+// import Testing from "./Testing";
 
 function App() {
 	const location = useLocation();
@@ -55,11 +55,11 @@ function App() {
 				<Route path="/blogs" element={<Blogs />} />
 				<Route path="/blogs/:blogId" element={<BlogDetails />} />
 				<Route path="/lesson-quiz/:currentquizLessonName" element={<Quiz />} />
-				<Route path="testing" element={<Testing />} />
+				{/* <Route path="testing" element={<Testing />} /> */}
 				<Route path="*" element={<NoMatch />} />
 			</Routes>
 			{showChatbot && <Chatbot />}
-      
+
 			<Footer />
 		</>
 	);
