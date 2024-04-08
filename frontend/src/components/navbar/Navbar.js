@@ -43,7 +43,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             style={({ isActive }) => (isActive ? activeStyle : null)}
-            to="/calculators/fd-calculator"
+            to="/calculators"
           >
             Calculator
           </NavLink>
