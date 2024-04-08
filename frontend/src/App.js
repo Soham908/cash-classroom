@@ -40,7 +40,7 @@ function App() {
 	}, [location]);
 	return (
 		<>
-			<Navbar />
+			<Navbar path={location.pathname} />
 			<Routes>
 				<Route path="/" element={<Login />} />
 				<Route path="/finance-goals" element={<FinanceGoals />} />
@@ -50,9 +50,6 @@ function App() {
 				<Route path="/profile" element={<Profile />} />
 				<Route path="/courses/:name" element={<CourseDetail />} />
 				<Route path="/lesson" element={<LessonPage />} />
-				<Route path="/calculators/fd-calculator" element={<FDCalculator />} />
-				<Route path="/calculators/emi-calculator" element={<EMICalculator />} />
-				<Route path="/calculators/sip-calculator" element={<SIPCalculator />} />
 				<Route path="/blogs" element={<Blogs />} />
 				<Route path="/blogs/:blogId" element={<BlogDetails />} />
 				<Route path="/lesson-quiz/:currentquizLessonName" element={<Quiz />} />
