@@ -1,0 +1,12 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 50px 100px;
+	gap: 10px;
+}
+
+.inputContainer label {
+	margin-right: 20px;
+	font-weight: bold;
+	font-size: x-large;
+}

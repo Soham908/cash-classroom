@@ -20,7 +20,8 @@ import Dashboard from "./pages/new-dashboard/Dashboard";
 import CourseDetail from "./pages/courseDetails/CourseDetail";
 import NeedToInvest from "./pages/trialComponent";
 import Chatbot from "./components/chatbot/Chatbot";
-// import Testing from "./Testing";
+import Testing from "./Testing";
+import Calculator from "./pages/calculators/Calculator";
 
 function App() {
 	const location = useLocation();
@@ -39,7 +40,7 @@ function App() {
 	}, [location]);
 	return (
 		<>
-			<Navbar />
+			<Navbar path={location.pathname} />
 			<Routes>
 				<Route path="/" element={<Login />} />
 				<Route path="/finance-goals" element={<FinanceGoals />} />
@@ -49,13 +50,11 @@ function App() {
 				<Route path="/profile" element={<Profile />} />
 				<Route path="/courses/:name" element={<CourseDetail />} />
 				<Route path="/lesson" element={<LessonPage />} />
-				<Route path="/calculators/fd-calculator" element={<FDCalculator />} />
-				<Route path="/calculators/emi-calculator" element={<EMICalculator />} />
-				<Route path="/calculators/sip-calculator" element={<SIPCalculator />} />
 				<Route path="/blogs" element={<Blogs />} />
 				<Route path="/blogs/:blogId" element={<BlogDetails />} />
 				<Route path="/lesson-quiz/:currentquizLessonName" element={<Quiz />} />
-				{/* <Route path="testing" element={<Testing />} /> */}
+				<Route path="testing" element={<Testing />} />
+				<Route path="calculators" element={<Calculator />} />
 				<Route path="*" element={<NoMatch />} />
 			</Routes>
 			{showChatbot && <Chatbot />}

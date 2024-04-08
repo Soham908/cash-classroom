@@ -1,22 +1,16 @@
 import Exa from "exa-js";
 import { useState } from "react";
+import { Editor } from "react-draft-wysiwyg";
+import { EditorState, convertToRaw } from "draft-js";
+import "../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+// import draftToHtml from "draftjs-to-html";
+// import htmlToDraft from "html-to-draftjs";
+
 const Testing = () => {
-	const [input, setInput] = useState("");
-	const [output, setOutput] = useState("");
-
-	const handleClick = async () => {
-		const exa = new Exa("cf125a6c-cdc8-44d7-9f6d-c94f6b39e17a");
-		const res = await exa.search(input);
-		console.log(res);
-		setOutput(res);
-	};
-
 	return (
-		<>
-			<input value={input} onChange={(e) => setInput(e.target.value)} />
-			<button onClick={handleClick}>Submit</button>
-			{output}
-		</>
+		<div style={{ display: "flex", padding: "100px" }}>
+			<Editor />;
+		</div>
 	);
 };
 
