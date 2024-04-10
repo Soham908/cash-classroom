@@ -40,7 +40,9 @@ const FinanceGoals = () => {
 	const handleCreateGoal = async () => {
 		const currentAmount = goalFormData.currentAmount * 1;
 		const target = goalFormData.target * 1;
-		if (currentAmount < 0 || target < 0) {
+		if (goalFormData.name === "") {
+			setSnackbarMessage("Goal must have a name");
+		} else if (currentAmount < 0 || target < 0) {
 			setSnackbarMessage("Amount can not be negative");
 		} else if (target === 0) {
 			setSnackbarMessage("Target cant be zero (0)");
@@ -122,7 +124,11 @@ const FinanceGoals = () => {
 					value={goalFormData.currentAmount}
 					onChange={(e) => handleGoalsFormChange(e)}
 				/>
-				<Button variant="solid" color="primary" onClick={handleCreateGoal}>
+				<Button
+					variant="solid"
+					className={styles.createGoalBtn}
+					onClick={handleCreateGoal}
+				>
 					Create Goal
 				</Button>
 			</div>

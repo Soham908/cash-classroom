@@ -17,3 +17,8 @@
 	overflow: scroll;
 	overflow-y: visible;
 }
+
+.createGoalBtn:hover {
+	transform: translateY(-2px);
+	background-color: lightblue;
+}

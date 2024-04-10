@@ -78,9 +78,6 @@ const Dashboard = () => {
 		);
 	};
 
-	const CoursesSection = () => {
-		return <div></div>;
-	};
 	return (
 		<div className={styles.homeComponent}>
 			<GoalComponent />
