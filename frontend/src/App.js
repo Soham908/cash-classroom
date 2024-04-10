@@ -8,17 +8,12 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
 import LessonPage from "./pages/lesson/LessonPage";
 import NoMatch from "./components/NoMatch";
-import FinanceGoals from "./pages/FinanceGoals";
 import Profile from "./pages/Profile";
-import FDCalculator from "./pages/calculators/FDCalculator";
-import EMICalculator from "./pages/calculators/EMICalculator";
-import SIPCalculator from "./pages/calculators/SIPCalculator";
 import Blogs from "./pages/Blogs/Blogs";
 import BlogDetails from "./pages/Blogs/BlogDetails/BlogDetails";
 import Quiz from "./pages/quiz/Quiz";
 import Dashboard from "./pages/new-dashboard/Dashboard";
 import CourseDetail from "./pages/courseDetails/CourseDetail";
-import NeedToInvest from "./pages/trialComponent";
 import Chatbot from "./components/chatbot/Chatbot";
 import Testing from "./Testing";
 import Calculator from "./pages/calculators/Calculator";
@@ -43,7 +38,6 @@ function App() {
 			<Navbar path={location.pathname} />
 			<Routes>
 				<Route path="/" element={<Login />} />
-				<Route path="/finance-goals" element={<FinanceGoals />} />
 				<Route path="/dashboard" element={<Dashboard />} />
 				<Route path="/register" element={<Register />} />
 				<Route path="/courses" element={<Course />} />

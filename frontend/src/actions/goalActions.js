@@ -35,3 +35,14 @@ export const updateGoal = async (data) => {
 		console.error("Error:", error.message);
 	}
 };
+
+export const deleteGoal = async (goalId) => {
+	try {
+		const response = await axios.delete(
+			`${ENDPOINT_URL}/goals/delete-goal/${goalId}`
+		);
+		return response.data;
+	} catch (err) {
+		console.error("Error", err.message);
+	}
+};
