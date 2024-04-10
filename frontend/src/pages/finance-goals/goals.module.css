@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.inputContainer {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.goalsContainer {
+	height: 100%;
+	display: flex;
+	overflow: scroll;
+	overflow-y: visible;
+}

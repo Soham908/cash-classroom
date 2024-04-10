@@ -9,11 +9,11 @@ import {
 	LinearProgress,
 } from "@mui/joy";
 import { AspectRatio } from "@mui/joy";
+import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import { deleteGoal } from "../actions/goalActions";
 
-
-const GoalComponent = ({ goalData, handleSavedValue }) => {
+const GoalComponent = ({ goalData, handleSavedValue, refresh }) => {
 	const [amountUpdate, setAmountUpdate] = useState("");
-	const [goalCompleted, setGoalCompleted] = useState(false);
 
 	return (
 		<Card sx={{ margin: 2 }}>
@@ -26,18 +26,6 @@ const GoalComponent = ({ goalData, handleSavedValue }) => {
 				/>
 			</AspectRatio>
 			<CardContent>
-				<div>
-					<Typography level="body-xs"> Target Savings </Typography>
-					<Typography fontSize="lg" fontWeight="lg">
-						{goalData?.target}
-					</Typography>
-				</div>
-				<div>
-					<Typography level="body-xs"> Current Amount </Typography>
-					<Typography fontSize="lg" fontWeight="lg">
-						{goalData?.currentAmount}
-					</Typography>
-				</div>
 				<LinearProgress
 					determinate
 					variant="outlined"
@@ -52,10 +40,15 @@ const GoalComponent = ({ goalData, handleSavedValue }) => {
 					<Typography
 						level="body-xs"
 						fontWeight="xl"
-						textColor="common.white"
-						sx={{ mixBlendMode: "difference", textAlign: "start" }}
+						textColor="common.green"
+						sx={{
+							mixBlendMode: "difference",
+							textAlign: "start",
+						}}
 					>
-						{`${goalData.currentAmount} / ${goalData.target}`}
+						{goalData.currentAmount === goalData.target
+							? "Goal Completed"
+							: `${goalData.currentAmount} / ${goalData.target}`}
 					</Typography>
 				</LinearProgress>
 			</CardContent>
@@ -65,6 +58,7 @@ const GoalComponent = ({ goalData, handleSavedValue }) => {
 					type="Number"
 					onChange={(e) => setAmountUpdate(e.target.value)}
 					value={amountUpdate}
+					disabled={goalData.target === goalData.currentAmount}
 					endDecorator={
 						<Button
 							variant="soft"
@@ -77,11 +71,17 @@ const GoalComponent = ({ goalData, handleSavedValue }) => {
 									goalCurrentAmt: goalData.currentAmount,
 								})
 							}
-							disabled={goalCompleted}
 						>
 							Add to Saved value
 						</Button>
 					}
+				/>
+				<DeleteForeverIcon
+					onClick={async () => {
+						const response = await deleteGoal(goalData._id);
+						console.log(response);
+						refresh((p) => !p);
+					}}
 				/>
 			</CardActions>
 		</Card>

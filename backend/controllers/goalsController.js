@@ -52,7 +52,7 @@ exports.updateCurrentAmount = async (req, res) => {
 	try {
 		const updatedGoal = await Goals.findByIdAndUpdate(
 			req.body.id,
-			{ currentAmount: req.body.updatedAmount } , 
+			{ currentAmount: req.body.updatedAmount },
 			{ new: true }
 		);
 		if (!updatedGoal) {
@@ -66,6 +66,21 @@ exports.updateCurrentAmount = async (req, res) => {
 			success: true,
 			updatedGoal,
 			message: "Goal Updated Successfully",
+		});
+	} catch (err) {
+		console.log(err);
+		res.json({
+			success: false,
+			err,
+		});
+	}
+};
+
+exports.deleteGoalsById = async (req, res) => {
+	try {
+		await Goals.findByIdAndDelete(req.params.goalId);
+		res.json({
+			success: true,
 		});
 	} catch (err) {
 		console.log(err);
