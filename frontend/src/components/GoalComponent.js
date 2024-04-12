@@ -84,6 +84,7 @@ const GoalComponent = ({ goalData, handleSavedValue, refresh }) => {
 					}}
 				/>
 			</CardActions>
+			<p style={{ textAlign: "center" }}>{goalData.name}</p>
 		</Card>
 	);
 };

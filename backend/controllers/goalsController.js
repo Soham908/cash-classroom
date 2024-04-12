@@ -2,7 +2,6 @@ const Goals = require("./../models/goals");
 
 exports.createGoal = async (req, res) => {
 	try {
-		console.log(req.body);
 		const goal = await Goals.create({
 			name: req.body.name,
 			target: req.body.target,

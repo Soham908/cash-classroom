@@ -7,15 +7,17 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { register } from "../actions/userActions";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Snackbar } from "@mui/joy";
 
 const Register = () => {
+	const [snackBarOpen, setSnackBarOpen] = useState(false);
+	const [snackBarMessage, setSnackbarMessage] = useState("");
 	const state = useLocation()?.state;
-	console.log(state);
+
 	const navigate = useNavigate();
 	const [formData, setFormData] = useState({
 		name: "",
-		email: (state && state.email) ? state.email : "",
-		// email: "",
+		email: state && state.email ? state.email : "",
 		password: "",
 		confirmPassword: "",
 	});
@@ -36,16 +38,27 @@ const Register = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		const response = await register({
-			name: formData.name,
-			email: formData.email,
-			password: formData.password,
-		});
-		if (response.success) {
-			navigate("/");
-			console.log(response.data);
+		if (formData.password.length < 8) {
+			setSnackbarMessage("Passward must be of atleast 8 characters");
+			setSnackBarOpen(true);
+		} else if (formData.password !== formData.confirmPassword) {
+			setSnackbarMessage("Passwords doesn't match!");
+			setSnackBarOpen(true);
 		} else {
-			console.log(response.err);
+			const response = await register({
+				name: formData.name,
+				email: formData.email,
+				password: formData.password,
+			});
+			if (response.success) {
+				navigate("/");
+				console.log(response.data);
+			} else {
+				setSnackbarMessage(response.message);
+				setSnackBarOpen(true);
+				console.log(response);
+				setFormData((p) => ({ ...p, email: "" }));
+			}
 		}
 	};
 
@@ -131,6 +144,14 @@ const Register = () => {
 					Register
 				</Button>
 			</form>
+			<Snackbar
+				anchorOrigin={{ vertical: "top", horizontal: "center" }}
+				open={snackBarOpen}
+				autoHideDuration={1500}
+				onClose={() => setSnackBarOpen(false)}
+			>
+				{snackBarMessage}
+			</Snackbar>
 			<p>
 				Already have an account? <Link to="/">Login</Link>
 			</p>

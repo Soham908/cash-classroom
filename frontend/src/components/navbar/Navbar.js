@@ -8,6 +8,7 @@ import styles from "./navbar.module.css";
 const Navbar = ({ path }) => {
 	const navigate = useNavigate();
 	const setStateUser = useAuthStore((state) => state.setUser);
+	const user = useAuthStore.getState().user;
 
 	const logout = () => {
 		setStateUser(null);
@@ -56,14 +57,16 @@ const Navbar = ({ path }) => {
 					Profile
 				</NavLink>
 			</div>
-			<Button
-				sx={{ marginLeft: 2 }}
-				variant="plain"
-				color="neutral"
-				onClick={logout}
-			>
-				Logout
-			</Button>
+			{user && (
+				<Button
+					sx={{ marginLeft: 2 }}
+					variant="plain"
+					color="neutral"
+					onClick={logout}
+				>
+					Logout
+				</Button>
+			)}
 		</nav>
 	);
 };

@@ -80,5 +80,6 @@
 
 .card:hover {
 	/* border: 1px solid  ; */
+	transform: translateY(-2px);
 	box-shadow: 5px 10px 10px rgb(219, 212, 229);
 }

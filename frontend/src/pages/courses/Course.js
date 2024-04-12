@@ -20,6 +20,7 @@ import styles from "./course.module.css";
 
 const Course = () => {
 	const [courseCardData, setCourseCardData] = useState([]);
+
 	const [filteredCourseData, setFilteredCourseData] = useState([]);
 	const [difficulty, setDifficulty] = useState("All");
 	const [searchString, setSearchString] = useState("");
