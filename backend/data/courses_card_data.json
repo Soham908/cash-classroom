@@ -1,50 +1,56 @@
 [
-  {
-    "title": "Introduction to Stock Markets",
-    "numChapters": "15 chapters",
-    "desc": "The stock market can play a pivotal role in ensuring your financial security. In this module, you will learn how to get started in the stock market, its fundamentals, how it functions, and the various intermediaries that appertain it. ",
-    "order": 1,
-    "img": "introduction-to-stock-markets.jpg",
-    "level": "Beginner"
-  },
-  {
-    "title": "Technical Analysis",
-    "numChapters": "22 chapters",
-    "desc": "Technical Analysis (TA) helps in developing a point of view. In this module, we will discover the complex attributes, various patterns, indicators, and theories of TA that will help you as a trader to find upright trading opportunities in the market. ",
-    "order": 2,
-    "img": "technical-analysis.jpg",
-    "level": "Beginner"
-  },
-  {
-    "title": "Fundamental Analysis",
-    "numChapters": "16 chapters",
-    "desc": "The Fundamental Analysis (FA) module explores Equity research by reading financial statements and annual reports, calculating and analyzing Financial Ratios, and evaluating the intrinsic value of a stock to find long-term investing opportunities. ",
-    "order": 3,
-    "img": "fundamental-analysis.jpg",
-    "level": "Intermediate"
-  },
-  {
-    "title": "Futures Trading",
-    "numChapters": "13 chapters",
-    "desc": "Futures Trading is a segment of the derivatives market. This module covers the various intricacies involved in undergoing a futures trade, including margins, leverages, pricing, etc. It also discusses the use of derivatives for hedging purposes. ",
-    "order": 4,
-    "img": "futures-trading.jpg",
-    "level": "Intermediate"
-  },
-  {
-    "title": "Options Theory for Professional Trading",
-    "numChapters": "25 chapters",
-    "desc": "Options Trading is a segment of the derivatives segment. Options contracts grant the buyer the right to buy/sell the underlying without a compulsory obligation. This module discusses options contracts, pricing, and their profit and loss payoffs. ",
-    "order": 5,
-    "img": "option-theory.jpg",
-    "level": "Advanced"
-  },
-  {
-    "title": "Option Strategies",
-    "numChapters": "14 chapters",
-    "desc": "A trader can use options strategies to monetize their views on volatility, sentiment, and timing. This module explores various options strategies that can be built with a multi-dimensional approach involving Option Greeks, Risk-Return, etc. ",
-    "order": 6,
-    "img": "option-strategy.jpg",
-    "level": "Advanced"
-  }
+	{
+		"title": "Introduction to Stock Markets",
+		"numChapters": "15 chapters",
+		"desc": "The stock market can play a pivotal role in ensuring your financial security. In this module, you will learn how to get started in the stock market, its fundamentals, how it functions, and the various intermediaries that appertain it. ",
+		"order": 1,
+		"numQuizes": 98,
+		"img": "introduction-to-stock-markets.jpg",
+		"level": "Beginner"
+	},
+	{
+		"title": "Technical Analysis",
+		"numQuizes": 152,
+		"numChapters": "22 chapters",
+		"desc": "Technical Analysis (TA) helps in developing a point of view. In this module, we will discover the complex attributes, various patterns, indicators, and theories of TA that will help you as a trader to find upright trading opportunities in the market. ",
+		"order": 2,
+		"img": "technical-analysis.jpg",
+		"level": "Beginner"
+	},
+	{
+		"title": "Fundamental Analysis",
+		"numQuizes": 102,
+		"numChapters": "16 chapters",
+		"desc": "The Fundamental Analysis (FA) module explores Equity research by reading financial statements and annual reports, calculating and analyzing Financial Ratios, and evaluating the intrinsic value of a stock to find long-term investing opportunities. ",
+		"order": 3,
+		"img": "fundamental-analysis.jpg",
+		"level": "Intermediate"
+	},
+	{
+		"title": "Futures Trading",
+		"numQuizes": 92,
+		"numChapters": "13 chapters",
+		"desc": "Futures Trading is a segment of the derivatives market. This module covers the various intricacies involved in undergoing a futures trade, including margins, leverages, pricing, etc. It also discusses the use of derivatives for hedging purposes. ",
+		"order": 4,
+		"img": "futures-trading.jpg",
+		"level": "Intermediate"
+	},
+	{
+		"title": "Options Theory for Professional Trading",
+		"numQuizes": 154,
+		"numChapters": "25 chapters",
+		"desc": "Options Trading is a segment of the derivatives segment. Options contracts grant the buyer the right to buy/sell the underlying without a compulsory obligation. This module discusses options contracts, pricing, and their profit and loss payoffs. ",
+		"order": 5,
+		"img": "option-theory.jpg",
+		"level": "Advanced"
+	},
+	{
+		"title": "Option Strategies",
+		"numChapters": "14 chapters",
+		"numQuizes": 96,
+		"desc": "A trader can use options strategies to monetize their views on volatility, sentiment, and timing. This module explores various options strategies that can be built with a multi-dimensional approach involving Option Greeks, Risk-Return, etc. ",
+		"order": 6,
+		"img": "option-strategy.jpg",
+		"level": "Advanced"
+	}
 ]
