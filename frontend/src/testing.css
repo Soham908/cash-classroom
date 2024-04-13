@@ -1,0 +1,43 @@
+/* .mardownEditor {
+	padding: 20px;
+}
+
+.toolbar {
+	display: flex;
+}
+
+.undoredo {
+	display: flex;
+	color: pink;
+} */
+
+.containerTesting {
+	position: relative;
+}
+
+.row {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.editor,
+.preview {
+	position: relative;
+	height: 100%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.preview {
+	border-left: 1px solid black;
+}
+
+.editor-input {
+	height: 100%;
+	width: 100%;
+}

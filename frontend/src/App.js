@@ -17,6 +17,7 @@ import CourseDetail from "./pages/courseDetails/CourseDetail";
 import Chatbot from "./components/chatbot/Chatbot";
 import Testing from "./Testing";
 import Calculator from "./pages/calculators/Calculator";
+import CreateBlog from "./pages/Blogs/createBlog/CreateBlog";
 
 function App() {
 	const location = useLocation();
@@ -48,7 +49,8 @@ function App() {
 				<Route path="/blogs/:blogId" element={<BlogDetails />} />
 				<Route path="/lesson-quiz/:currentquizLessonName" element={<Quiz />} />
 				<Route path="testing" element={<Testing />} />
-				<Route path="calculators" element={<Calculator />} />
+				<Route path="/calculators" element={<Calculator />} />
+				<Route path="/create-blog" element={<CreateBlog />} />
 				<Route path="*" element={<NoMatch />} />
 			</Routes>
 			{showChatbot && <Chatbot />}
@@ -59,3 +61,5 @@ function App() {
 }
 
 export default App;
+
+// @tailwindcss/typography

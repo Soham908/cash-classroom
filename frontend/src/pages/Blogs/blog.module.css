@@ -1,17 +1,30 @@
-
 .container {
-    /* padding: 30px; */
-    display: flex;
-    justify-content: center;    
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 40px;
 }
 
-.heroBlog{
-    display: flex;
-    justify-content: center;
+.blogsContainer {
+	justify-content: center;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
-.remainingBlogsContainer {
-    display:  flex;
-    gap : 30px;
-    flex-wrap: wrap;
+.createBlog {
+	align-self: center;
+}
+
+.createBlog button {
+	padding: 10px 20px;
+	background-color: #06d6a0;
+	/* color: white; */
+	font-weight: bold;
+	/* border: 1px solid white; */
+	border-radius: 10px;
+}
+
+.createBlog button:hover {
+	transform: translateY(-1px);
 }

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { getCourseDetails } from "../../actions/courseActions";
 import { useAuthStore } from "../../store/store";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import styles from "./courseDetail.module.css";
 import {
 	Accordion,
@@ -142,6 +143,20 @@ const CourseDetail = () => {
 					</LinearProgress>
 					<img src="/flag.jpg" alt="flag logo" style={{ height: "25px" }} />
 				</div>
+				{progressPercentage >= 100 ? (
+					<div
+						style={{
+							display: "flex",
+							alignItems: "center",
+							gap: "10px",
+							textDecoration: "underline",
+						}}
+					>
+						Download your certificate from <CloudDownloadIcon />
+					</div>
+				) : (
+					""
+				)}
 				<div className={styles.lessonsContainer}>
 					{(() => {
 						const result = [];
