@@ -45,6 +45,13 @@ const Quiz = () => {
 		const fetchLesson = async () => {
 			const response = await getLesson(location.lesson);
 			setLessonData(response.lessonPost);
+			const state = {
+				course: location.course,
+				numChapters: location.numChapters,
+				lesson: response.lessonPost.lesson,
+				order: response.lessonPost.order
+			}
+			localStorage.setItem("currentLesson", JSON.stringify(state))
 		};
 		fetchLesson();
 	}, []);
