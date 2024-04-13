@@ -15,7 +15,7 @@ const BlogCard = ({ blog }) => {
 		navigate(`/blogs/${blog._id}`);
 	};
 	return (
-		<Card sx={{ padding: "30px", margin: "20px 20px" }}>
+		<Card sx={{ padding: "10px" }}>
 			<CardActionArea onClick={handleReadMore}>
 				<CardMedia
 					component="img"
@@ -24,7 +24,7 @@ const BlogCard = ({ blog }) => {
 					alt="blog title"
 				/>
 				<CardContent>
-					<Typography gutterBottom variant="h5" component="h2">
+					<Typography gutterBottom variant="h5" component="h3">
 						{blog?.title}
 					</Typography>
 					<div style={{ display: "flex", alignItems: "center" }}>
@@ -38,7 +38,7 @@ const BlogCard = ({ blog }) => {
 							<img
 								src="/calendar.png"
 								alt="calendar logo"
-								style={{ marginRight: "5px" }}
+								style={{ marginRight: "5px", height: "25px" }}
 							/>
 							<Typography
 								variant="body2"
@@ -70,7 +70,7 @@ const BlogCard = ({ blog }) => {
 					display: "flex",
 					justifyContent: "space-between",
 					alignItems: "center",
-					padding: "10px 20px",
+					padding: "5px 10px",
 					borderTop: "1px solid #ccc",
 				}}
 			>
