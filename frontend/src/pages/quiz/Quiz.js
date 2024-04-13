@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import {
 	Typography,
 	Radio,
@@ -10,7 +10,7 @@ import {
 import { fetchLessonQuizData } from "../../actions/dataFetchActions";
 import { useAuthStore } from "../../store/store";
 import { userCompleteLesson } from "../../actions/userActions";
-import { getLesson } from "../../actions/lessonAction";
+import { getLesson, getNextLesson } from "../../actions/lessonAction";
 import styles from "./quiz.module.css";
 
 const Quiz = () => {
@@ -27,6 +27,7 @@ const Quiz = () => {
 	const [showMarks, setShowMarks] = useState(false);
 	const [quizMarks, setQuizMarks] = useState(0);
 	var count = 0;
+	const navigate = useNavigate()
 
 	useEffect(() => {
 		const fetchQuizData = async () => {
@@ -83,19 +84,11 @@ const Quiz = () => {
 		var count = 0;
 		for (var number = 0; number < totalQuestions; number++) {
 			if (quizData.lessonQuiz[number].answerId === selectedOptions[number]) {
-				console.log(
-					"answer:",
-					quizData.lessonQuiz[number].answerId,
-					"slected:",
-					selectedOptions[number]
-				);
 				count++;
-				console.log(count);
 			}
 		}
 		setQuizMarks(count);
 		setShowMarks(true);
-		console.log(quizMarks, count);
 		return count;
 	};
 
@@ -108,7 +101,6 @@ const Quiz = () => {
 			quizMarks: marks,
 			totalQuestions: totalQuestions,
 		});
-		console.log(quizMarks, totalQuestions);
 		localStorage.setItem(
 			"userData",
 			JSON.stringify({ ...userDataAuthState, data: response.userObject })
@@ -117,13 +109,39 @@ const Quiz = () => {
 		setRefresh((p) => !p);
 	};
 
+	const toNextLesson = async () => {
+		const location = JSON.parse(localStorage.getItem("currentLesson"))
+		const response = await getNextLesson({
+			courseName: location.course,
+			nextLesson: location.order + 1,
+		});
+		const state = {
+			course: location.course,
+			numChapters: location.numChapters,
+			lesson: response.nextLesson.lesson,
+			order: response.nextLesson.order
+		}
+		localStorage.setItem("currentLesson", JSON.stringify(state))
+		navigate("/lesson");
+	}
+
 	return (
 		<div className={styles.container}>
 			{showMarks && (
+				<div>
+				<h2> Congrats you completed this lesson, go on to the next lesson </h2>
 				<h3>
 					{" "}
-					Your Marks are : {quizMarks}/{totalQuestions} {console.log(quizMarks)}
+					Your Marks are : {quizMarks}/{totalQuestions} 
 				</h3>
+				<Button
+						variant="outlined"
+						onClick={toNextLesson}
+					>
+						{" "}
+						Next{" "}
+					</Button>
+				</div>
 			)}
 			{quizData?.lessonQuiz?.map((quiz, index) => (
 				<div className={styles.question} key={index}>
