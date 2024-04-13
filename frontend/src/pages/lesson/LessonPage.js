@@ -109,9 +109,9 @@ const LessonPage = () => {
 			lesson: response.nextLesson.lesson,
 			course: response.nextLesson.course,
 			numChapters: location.numChapters,
+			order: response.nextLesson.order
 		};
 		localStorage.setItem("currentLesson", JSON.stringify(state));
-		// console.log(response);
 	};
 	const toPreviousLesson = async () => {
 		if (lessonData.order <= numChapters) setDisableNextLessonButton(false);
