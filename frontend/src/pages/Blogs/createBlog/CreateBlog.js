@@ -8,6 +8,7 @@ import { useAuthStore } from "../../../store/store";
 import TextField from "@mui/material/TextField";
 import { Snackbar } from "@mui/joy";
 import { useLocation } from "react-router-dom";
+import Collapse from "@mui/material/Collapse";
 
 const modules = {
 	toolbar: [
@@ -32,6 +33,7 @@ const CreateBlog = () => {
 	const user = useAuthStore.getState().user;
 	const [snackBarOpen, setSnackBarOpen] = useState(false);
 	const [snackBarMessage, setSnackBarMessage] = useState("");
+	const [isEditorMode, setIsEditorMode] = useState(true);
 	const [value, setValue] = useState(
 		mode === "create" ? "" : location?.blog?.blogHtml
 	);
@@ -91,30 +93,38 @@ const CreateBlog = () => {
 	return (
 		<ProtectRoutes>
 			<div className={styles.container}>
+				<button onClick={() => setIsEditorMode((p) => !p)}>
+					{isEditorMode ? "View Mode" : "Editor Mode"}
+				</button>
 				<div className={styles.row}>
-					<div className={styles.editor}>
-						<label htmlFor="title-id" style={{ width: "10%" }}>
-							Title :{" "}
-						</label>
-						<input
-							id="title-id"
-							style={{ padding: "5px", width: "90%" }}
-							placeholder="Enter the blog title..."
-							value={title}
-							onChange={(e) => setTitle(e.target.value)}
-						/>
-						<ReactQuill
-							theme="snow"
-							value={value}
-							onChange={setValue}
-							className="editor-input"
-							modules={modules}
-						/>
-					</div>
-					<div
-						className={`${styles.preview} ql-editor`}
-						dangerouslySetInnerHTML={{ __html: value }}
-					></div>
+					<Collapse in={isEditorMode} orientation="horizontal">
+						<div className={styles.editor}>
+							<label htmlFor="title-id" style={{ width: "10%" }}>
+								Title :{" "}
+							</label>
+							<input
+								id="title-id"
+								style={{ padding: "5px", width: "90%", marginBottom: "5px" }}
+								placeholder="Enter the blog title..."
+								value={title}
+								onChange={(e) => setTitle(e.target.value)}
+							/>
+							<ReactQuill
+								theme="snow"
+								value={value}
+								onChange={setValue}
+								className="editor-input"
+								modules={modules}
+							/>
+						</div>
+					</Collapse>
+					<Collapse in={!isEditorMode} orientation="horizontal">
+						<div
+							className={`${styles.preview} ql-editor`}
+							dangerouslySetInnerHTML={{ __html: value }}
+						></div>
+						{value.length === 0 && <h1>Empty blog</h1>}
+					</Collapse>
 				</div>
 				<button onClick={handleSave}>Save</button>
 				<Snackbar
