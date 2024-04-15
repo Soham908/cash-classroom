@@ -18,7 +18,7 @@ import Chatbot from "./components/chatbot/Chatbot";
 import Testing from "./Testing";
 import Calculator from "./pages/calculators/Calculator";
 import CreateBlog from "./pages/Blogs/createBlog/CreateBlog";
-import UI_Explaination from "./pages/UI-Explaination";
+import UI_Explanation from "./pages/ui-explanation/UI-Explanation";
 
 function App() {
 	const location = useLocation();
@@ -52,7 +52,7 @@ function App() {
 				<Route path="testing" element={<Testing />} />
 				<Route path="//calculators" element={<Calculator />} />
 				<Route path="/create-blog" element={<CreateBlog />} />
-				<Route path="/ui-explanation" element={<UI_Explaination />} />
+				<Route path="/ui-explanation" element={<UI_Explanation />} />
 				<Route path="*" element={<NoMatch />} />
 			</Routes>
 			{showChatbot && <Chatbot />}

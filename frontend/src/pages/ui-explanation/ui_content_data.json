@@ -1,0 +1,213 @@
+{
+  "Dashboard": {
+    "image": "/ui-exp-dashboard.png",
+    "buttonDetails": [
+      {
+        "id": 1,
+        "title": "Watchlist",
+        "explanation": "A watchlist allows users to create and maintain a personalized list of stocks or securities.",
+        "buttonPosition": {
+          "position": "absolute",
+          "bottom": "7.5%",
+          "left": "15%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Market Depth",
+        "explanation": "Market depth in Zerodha UI shows the current buying and selling interest for a stock, helping traders understand supply and demand.",
+        "buttonPosition": {
+          "position": "absolute",
+          "bottom": "57%",
+          "left": "15%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Timeframe",
+        "explanation": "Enables users to select a specific time interval, with each candlestick representing price movements over that chosen timeframe, such as 5 minutes.",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "13%",
+          "left": "48%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Current Price",
+        "explanation": "The current price reflects the most recent trading price of a security, providing real-time market value.",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "13%",
+          "right": "23%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Moving Average",
+        "explanation": "The 30-minute moving average calculates the average price of a security over a 30-minute period, aiding in trend identification and analysis.",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "23%",
+          "right": "24%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 6,
+        "title": "Volume",
+        "explanation": "Volume represents the total number of shares traded during a specified period, higher the volume higher the liquidity.",
+        "buttonPosition": {
+          "position": "absolute",
+          "bottom": "17%",
+          "right": "24%",
+          "color": "white"
+        }
+      }
+    ]
+  },
+  "Buy Shares": {
+    "image": "/ui-exp-buyShare.png",
+    "buttonDetails": [
+      {
+        "id": 1,
+        "title": "NSE, BSE",
+        "explanation": "This button position selects the exchange, allowing for BSE or NSE selection.",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "11%",
+          "left": "41.8%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 2,
+        "title": "CNC, MIS",
+        "explanation": "This button selects between CNC (delivery) and MIS (intraday) order types for executing trades.",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "33.3%",
+          "left": "51.7%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 3,
+        "explanation": "Selecting this button enables stop loss and helps managing risk.",
+        "title": "Stop Loss",
+        "buttonPosition": {
+          "position": "absolute",
+          "bottom": "34.1%",
+          "right": "31%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 4,
+        "explanation": "This button shows the total amount payable and associated charges for the transaction.",
+        "title": "Amount Payable",
+        "buttonPosition": {
+          "position": "absolute",
+          "bottom": "8.7%",
+          "left": "43%",
+          "color": "white"
+        }
+      }
+    ],
+    "buttonDetailsMD": [
+      {
+        "id": 1,
+        "explanation": "This button position is for selecting the exchange (BSE or NSE).",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "10.8%",
+          "left": "37.7%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 2,
+        "explanation": "This button is for selecting order types (CNC and MIS) and their purpose.",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "32.3%",
+          "left": "52.4%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 3,
+        "explanation": "Explanation about stop loss and its importance.",
+        "buttonPosition": {
+          "position": "absolute",
+          "bottom": "33%",
+          "right": "22%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 4,
+        "explanation": "Information about total amount and charges.",
+        "buttonPosition": {
+          "position": "absolute",
+          "bottom": "8.7%",
+          "left": "39.5%",
+          "color": "white"
+        }
+      }
+    ]
+  },
+  "OrderBook": {
+    "image": "/ui-exp-orderbook.png",
+    "buttonDetails": [
+      {
+        "id": 1,
+        "title": "Share Selection",
+        "explanation": "The symbol of the share on which order was executed.",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "30%",
+          "left": "29.5%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Order Type",
+        "explanation": "Which type of order was it, was it delivery CNC or intraday MIS.",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "30%",
+          "left": "46.5%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Order Status",
+        "explanation": "Indicates the current status of the order, was the order completed or pending.",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "30%",
+          "right": "9%",
+          "color": "white"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Contract Note",
+        "explanation": "Provides a summary of charges associated with each order.",
+        "buttonPosition": {
+          "position": "absolute",
+          "top": "20%",
+          "right": "23%",
+          "color": "white"
+        }
+      }
+    ]
+  }
+}
