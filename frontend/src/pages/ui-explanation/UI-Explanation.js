@@ -24,13 +24,11 @@ const UI_Explanation = () => {
     contentJson.Dashboard.buttonDetails
   );
 
-  const handleNext = () => {
-    if (currentButtonId < 4) {
-      setCurrentButtonId(currentButtonId + 1);
-      setContentStep(currentButtonId + 1);
-      setAnchorEl(document.getElementById(`button-${currentButtonId + 1}`));
+  const handleChangePopperPosition = (changeValue) => {
+      setCurrentButtonId(currentButtonId + changeValue);
+      setContentStep(currentButtonId + changeValue);
+      setAnchorEl(document.getElementById(`button-${currentButtonId + changeValue}`));
       setOpen(true);
-    }
   };
 
   const handleClose = () => {
@@ -141,14 +139,17 @@ const UI_Explanation = () => {
             >
               <CloseIcon />
             </IconButton>
-            <Typography variant="h5" > { currentUI[currentButtonId - 1].title } </Typography>
+            <Typography variant="h5" > { currentUI[currentButtonId - 1]?.title } </Typography>
             <Typography variant="subtitle1" style={{ marginTop: "16px" }}>
               {currentUI[currentButtonId - 1]?.explanation}
             </Typography>
             <Box
               sx={{ display: "flex", justifyContent: "flex-end", marginTop: 1 }}
             >
-              <Button onClick={handleNext} disabled={currentButtonId === 4}>
+              <Button onClick={() => handleChangePopperPosition(-1)} disabled={currentButtonId === 1}>
+                Previous
+              </Button>
+              <Button onClick={() => handleChangePopperPosition(1)} disabled={currentButtonId === currentUI.length}>
                 Next
               </Button>
             </Box>
