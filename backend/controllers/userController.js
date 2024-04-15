@@ -27,24 +27,28 @@ exports.registerOTP = async (req, res) => {
 				message: "User already exists",
 			});
 		} else {
-			const user = await RegisterOTP.create({
-				email: req.body.email,
-				otp: otp,
-			});
-			if (user) {
-				const response = await sendMail(req.body.email, otp);
-				console.log(response);
-				if (response.success) {
-					return res.json({
-						success: true,
-						message: "OTP has been sent to the mail " + req.body.email,
-					});
-				} else {
-					return res.json({
-						success: true,
-						message: "Server down",
-					});
-				}
+			let register_user;
+			register_user = await RegisterOTP.findOne({ email: req.body.email });
+			if (register_user) {
+				register_user = await RegisterOTP.findByIdAndUpdate(
+					register_user._id,
+					{ otp: otp },
+					{ new: true }
+				);
+			} else {
+				register_user = await RegisterOTP.create({
+					email: req.body.email,
+					otp: otp,
+				});
+			}
+
+			const response = await sendMail(req.body.email, otp);
+			console.log(response);
+			if (response.success) {
+				return res.json({
+					success: true,
+					message: "OTP has been sent to the mail " + req.body.email,
+				});
 			} else {
 				return res.json({
 					success: false,
@@ -63,17 +67,23 @@ exports.registerOTP = async (req, res) => {
 
 exports.register = async (req, res) => {
 	try {
-		console.log(req.body);
+		const register_user = await RegisterOTP.findOne({ email: req.body.email });
+		if (register_user.otp != req.body.otp * 1) {
+			return res.json({
+				success: false,
+				message: "Wrong OTP",
+			});
+		}
 		const { name, email, password } = req.body;
 		const hashedPassword = await bcrypt.hash(password, 12);
 
-		const existingUser = await Users.findOne({ email });
-		if (existingUser) {
-			return res.json({
-				success: false,
-				message: "User already exists",
-			});
-		}
+		// const existingUser = await Users.findOne({ email });
+		// if (existingUser) {
+		// 	return res.json({
+		// 		success: false,
+		// 		message: "User already exists",
+		// 	});
+		// }
 
 		const createdUser = await Users.create({
 			name,
@@ -81,12 +91,11 @@ exports.register = async (req, res) => {
 			password: hashedPassword,
 		});
 		const token = signToken(createdUser._id);
-
+		const userObject = createdUser.toObject();
+		delete userObject.password;
 		res.json({
 			success: true,
-			data: {
-				token,
-			},
+			userObject,
 		});
 	} catch (err) {
 		console.log(err);
