@@ -1,11 +1,64 @@
 const Users = require("./../models/users");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const RegisterOTP = require("./../models/register_otp");
+const { sendMail } = require("./../utils/gmail");
 
 const signToken = (id) => {
 	return jwt.sign({ id }, process.env.JWT_SECRET, {
 		expiresIn: "90d",
 	});
+};
+
+function generateRandomNumber() {
+	// Generate a random number between 1000 and 9999 (inclusive)
+	const randomNumber = Math.floor(Math.random() * 9000) + 1000;
+
+	return randomNumber.toString(); // Convert number to string
+}
+
+exports.registerOTP = async (req, res) => {
+	try {
+		const otp = generateRandomNumber();
+		const user = await Users.findOne({ email: req.body.email });
+		if (user) {
+			return res.json({
+				success: false,
+				message: "User already exists",
+			});
+		} else {
+			const user = await RegisterOTP.create({
+				email: req.body.email,
+				otp: otp,
+			});
+			if (user) {
+				const response = await sendMail(req.body.email, otp);
+				console.log(response);
+				if (response.success) {
+					return res.json({
+						success: true,
+						message: "OTP has been sent to the mail " + req.body.email,
+					});
+				} else {
+					return res.json({
+						success: true,
+						message: "Server down",
+					});
+				}
+			} else {
+				return res.json({
+					success: false,
+					message: "Server down",
+				});
+			}
+		}
+	} catch (err) {
+		console.log(err);
+		res.json({
+			success: false,
+			err: err,
+		});
+	}
 };
 
 exports.register = async (req, res) => {
