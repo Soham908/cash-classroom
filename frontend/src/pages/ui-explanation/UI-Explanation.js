@@ -16,17 +16,15 @@ import contentJson from "./ui_content_data.json";
 
 const UI_Explanation = () => {
   const [anchorEl, setAnchorEl] = useState(null);
-  const [currentButtonId, setCurrentButtonId] = useState(0);
+  const [currentButtonId, setCurrentButtonId] = useState(1);
   const [open, setOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState("ui-exp-dashboard.png");
-  const [contentStep, setContentStep] = useState();
   const [currentUI, setCurrentUI] = useState(
     contentJson.Dashboard.buttonDetails
   );
 
   const handleChangePopperPosition = (changeValue) => {
       setCurrentButtonId(currentButtonId + changeValue);
-      setContentStep(currentButtonId + changeValue);
       setAnchorEl(document.getElementById(`button-${currentButtonId + changeValue}`));
       setOpen(true);
   };
@@ -156,7 +154,11 @@ const UI_Explanation = () => {
           </Paper>
         </Popper>
       </div>
-      <Button onClick={() => {}}>Take a guide tour</Button>
+      <Button onClick={() => {
+        setCurrentButtonId(1);
+        setAnchorEl(document.getElementById(`button-${1}`));
+        setOpen(true);
+      }}>Take a guide tour</Button>
     </>
   );
 };
