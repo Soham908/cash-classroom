@@ -31,7 +31,7 @@ const GoalComponent = ({ goalData, handleSavedValue, refresh }) => {
 					variant="outlined"
 					size="sm"
 					thickness={24}
-					value={Number((goalData.currentAmount / goalData.target) * 100)}
+					value={Number((goalData?.currentAmount / goalData?.target) * 100)}
 					sx={{
 						"--LinearProgress-radius": "20px",
 						"--LinearProgress-thickness": "24px",
@@ -46,9 +46,9 @@ const GoalComponent = ({ goalData, handleSavedValue, refresh }) => {
 							textAlign: "start",
 						}}
 					>
-						{goalData.currentAmount === goalData.target
+						{goalData?.currentAmount === goalData?.target
 							? "Goal Completed"
-							: `${goalData.currentAmount} / ${goalData.target}`}
+							: `${goalData?.currentAmount} / ${goalData?.target}`}
 					</Typography>
 				</LinearProgress>
 			</CardContent>
@@ -58,17 +58,17 @@ const GoalComponent = ({ goalData, handleSavedValue, refresh }) => {
 					type="Number"
 					onChange={(e) => setAmountUpdate(e.target.value)}
 					value={amountUpdate}
-					disabled={goalData.target === goalData.currentAmount}
+					disabled={goalData?.target === goalData?.currentAmount}
 					endDecorator={
 						<Button
 							variant="soft"
 							size="sm"
 							onClick={() =>
 								handleSavedValue({
-									id: goalData._id,
+									id: goalData?._id,
 									updateAmount: amountUpdate,
-									goalTarget: goalData.target,
-									goalCurrentAmt: goalData.currentAmount,
+									goalTarget: goalData?.target,
+									goalCurrentAmt: goalData?.currentAmount,
 								})
 							}
 						>
@@ -78,13 +78,13 @@ const GoalComponent = ({ goalData, handleSavedValue, refresh }) => {
 				/>
 				<DeleteForeverIcon
 					onClick={async () => {
-						const response = await deleteGoal(goalData._id);
+						const response = await deleteGoal(goalData?._id);
 						console.log(response);
 						refresh((p) => !p);
 					}}
 				/>
 			</CardActions>
-			<p style={{ textAlign: "center" }}>{goalData.name}</p>
+			<p style={{ textAlign: "center" }}>{goalData?.name}</p>
 		</Card>
 	);
 };

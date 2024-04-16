@@ -2,8 +2,11 @@
 import { useEffect, useState } from "react";
 import { ProtectRoutes } from "../manageRoutes/protectRoutes";
 import { useAuthStore } from "../store/store";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { unEnrollCourse } from "../actions/userActions";
+import Certificate from "../components/Certificate";
+import FinanceGoals from "./finance-goals/FinanceGoals";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 const Profile = () => {
 
     const userAuthStateData = useAuthStore.getState().user
@@ -35,6 +38,11 @@ const Profile = () => {
             }
             <h4> Lessons Completed : { userAuthStateData?.data?.lessonsCompleted?.length } </h4>
 
+            {/* <Certificate /> */}
+            <PDFDownloadLink document={<Certificate />} fileName={"certificate.pdf"}>
+            {({ loading }) => (loading ? 'Generating...' : 'Download Certificate')}
+          </PDFDownloadLink>
+            <FinanceGoals />
         </ProtectRoutes>
     )
 }
