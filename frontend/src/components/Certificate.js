@@ -3,10 +3,9 @@ import certImage from "./courseCompletionCertificate2.png"
 import { useAuthStore } from "../store/store";
 
 
-const Certificate = () => {
+const Certificate = ({courseName}) => {
   const userAuthStateData = useAuthStore.getState().user
 
-  console.log(userAuthStateData);
   return (
     <Document>
     <Page size={{ width: 650, height: 450 }}>
@@ -28,7 +27,7 @@ const Certificate = () => {
             left:"38%",fontSize: 16, fontWeight: 'bold'
         }}
       >
-        Option Trading course.
+        {courseName} course
       </Text>
     </Page>
   </Document>
