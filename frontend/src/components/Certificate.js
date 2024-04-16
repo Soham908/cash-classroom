@@ -6,7 +6,6 @@ import { useAuthStore } from "../store/store";
 const Certificate = ({courseName}) => {
   const userAuthStateData = useAuthStore.getState().user
 
-  console.log(userAuthStateData);
   return (
     <Document>
     <Page size={{ width: 650, height: 450 }}>
