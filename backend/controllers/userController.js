@@ -1,6 +1,8 @@
 const Users = require("./../models/users");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const RegisterOTP = require("./../models/register_otp");
+const { sendMail } = require("./../utils/gmail");
 
 const signToken = (id) => {
 	return jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -8,19 +10,80 @@ const signToken = (id) => {
 	});
 };
 
-exports.register = async (req, res) => {
-	try {
-		console.log(req.body);
-		const { name, email, password } = req.body;
-		const hashedPassword = await bcrypt.hash(password, 12);
+function generateRandomNumber() {
+	// Generate a random number between 1000 and 9999 (inclusive)
+	const randomNumber = Math.floor(Math.random() * 9000) + 1000;
 
-		const existingUser = await Users.findOne({ email });
-		if (existingUser) {
+	return randomNumber.toString(); // Convert number to string
+}
+
+exports.registerOTP = async (req, res) => {
+	try {
+		const otp = generateRandomNumber();
+		const user = await Users.findOne({ email: req.body.email });
+		if (user) {
 			return res.json({
 				success: false,
 				message: "User already exists",
 			});
+		} else {
+			let register_user;
+			register_user = await RegisterOTP.findOne({ email: req.body.email });
+			if (register_user) {
+				register_user = await RegisterOTP.findByIdAndUpdate(
+					register_user._id,
+					{ otp: otp },
+					{ new: true }
+				);
+			} else {
+				register_user = await RegisterOTP.create({
+					email: req.body.email,
+					otp: otp,
+				});
+			}
+
+			const response = await sendMail(req.body.email, otp);
+			console.log(response);
+			if (response.success) {
+				return res.json({
+					success: true,
+					message: "OTP has been sent to the mail " + req.body.email,
+				});
+			} else {
+				return res.json({
+					success: false,
+					message: "Server down",
+				});
+			}
 		}
+	} catch (err) {
+		console.log(err);
+		res.json({
+			success: false,
+			err: err,
+		});
+	}
+};
+
+exports.register = async (req, res) => {
+	try {
+		const register_user = await RegisterOTP.findOne({ email: req.body.email });
+		if (register_user.otp != req.body.otp * 1) {
+			return res.json({
+				success: false,
+				message: "Wrong OTP",
+			});
+		}
+		const { name, email, password } = req.body;
+		const hashedPassword = await bcrypt.hash(password, 12);
+
+		// const existingUser = await Users.findOne({ email });
+		// if (existingUser) {
+		// 	return res.json({
+		// 		success: false,
+		// 		message: "User already exists",
+		// 	});
+		// }
 
 		const createdUser = await Users.create({
 			name,
@@ -28,12 +91,11 @@ exports.register = async (req, res) => {
 			password: hashedPassword,
 		});
 		const token = signToken(createdUser._id);
-
+		const userObject = createdUser.toObject();
+		delete userObject.password;
 		res.json({
 			success: true,
-			data: {
-				token,
-			},
+			userObject,
 		});
 	} catch (err) {
 		console.log(err);

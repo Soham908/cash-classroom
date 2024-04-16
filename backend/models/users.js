@@ -65,6 +65,9 @@ const userSchema = new mongoose.Schema({
 	},
 	enrolledCourses: [enrollCourseSchema],
 	lessonsCompleted: [lesson],
+	otp: {
+		type: Number,
+	},
 });
 
 const users = mongoose.model("Users", userSchema);
