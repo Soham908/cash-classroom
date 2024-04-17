@@ -28,7 +28,7 @@ const FinanceGoals = () => {
 	useEffect(() => {
 		const fetchGoals = async () => {
 			const response = await fetchGoalsById(user?.data?._id);
-			setGoals(response.goals);
+			setGoals(response?.goals);
 		};
 		fetchGoals();
 	}, [refresh]);
@@ -107,21 +107,21 @@ const FinanceGoals = () => {
 				<TextField
 					label="Name"
 					name="name"
-					value={goalFormData.name}
+					value={goalFormData?.name}
 					onChange={(e) => handleGoalsFormChange(e)}
 				/>
 				<TextField
 					label="Target"
 					name="target"
 					type="number"
-					value={goalFormData.target}
+					value={goalFormData?.target}
 					onChange={(e) => handleGoalsFormChange(e)}
 				/>
 				<TextField
 					label="Current Amount"
 					name="currentAmount"
 					type="number"
-					value={goalFormData.currentAmount}
+					value={goalFormData?.currentAmount}
 					onChange={(e) => handleGoalsFormChange(e)}
 				/>
 				<Button
@@ -134,7 +134,7 @@ const FinanceGoals = () => {
 			</div>
 
 			<div className={styles.goalsContainer}>
-				{goals.map((goalData, index) => (
+				{goals?.map((goalData, index) => (
 					<GoalComponent
 						refresh={setRefresh}
 						key={index}
