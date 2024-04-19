@@ -119,11 +119,11 @@ const CreateBlog = () => {
 						</div>
 					</Collapse>
 					<Collapse in={!isEditorMode} orientation="horizontal">
+						{value.length === 0 && <h1>Blog empty</h1>}
 						<div
 							className={`${styles.preview} ql-editor`}
 							dangerouslySetInnerHTML={{ __html: value }}
 						></div>
-						{value.length === 0 && <h1>Empty blog</h1>}
 					</Collapse>
 				</div>
 				<button onClick={handleSave}>Save</button>
