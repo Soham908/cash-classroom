@@ -8,7 +8,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
 import LessonPage from "./pages/lesson/LessonPage";
 import NoMatch from "./components/NoMatch";
-import Profile from "./pages/Profile";
+import Profile from "./pages/profile/Profile";
 import Blogs from "./pages/Blogs/Blogs";
 import BlogDetails from "./pages/Blogs/BlogDetails/BlogDetails";
 import Quiz from "./pages/quiz/Quiz";
