@@ -50,19 +50,19 @@ const Navbar = ({ path }) => {
 				</NavLink>
 				<NavLink
 					className={`${styles.link} ${
-						path === "/profile" ? styles.active : ""
-					}`}
-					to="/profile"
-				>
-					Profile
-				</NavLink>
-				<NavLink
-					className={`${styles.link} ${
 						path === "/ui-explanation" ? styles.active : ""
 					}`}
 					to="/ui-explanation"
 				>
 					UI
+				</NavLink>
+				<NavLink
+					className={`${styles.link} ${
+						path === "/profile" ? styles.active : ""
+					}`}
+					to="/profile"
+				>
+					Profile
 				</NavLink>
 			</div>
 			{user && (

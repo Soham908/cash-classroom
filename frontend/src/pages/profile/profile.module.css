@@ -1,0 +1,51 @@
+.userDetails {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.userAvatar {
+	/* align-self: center; */
+	border: 1px solid #dcdcdc;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.fileInput {
+	margin-left: 30px;
+}
+
+.userNameContainer {
+	display: flex;
+	align-items: center;
+}
+
+.edit {
+	margin-right: 400px;
+	align-self: flex-end;
+}
+
+.coursesContainer {
+	display: flex;
+	gap: 20px;
+}
+
+.editForm {
+	border: 1px solid #dcdcdc;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.editForm button {
+	padding: 10px 20px;
+	width: 15%;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	background-color: #06d6a0;
+}

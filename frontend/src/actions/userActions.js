@@ -80,3 +80,15 @@ export const updateMilestone = async (data) => {
 		console.log(error);
 	}
 };
+
+export const userProfileUpdate = async (data) => {
+	try {
+		const response = await axios.post(
+			`${ENDPOINT_URL}/auth/update-profile`,
+			data
+		);
+		return response.data;
+	} catch (error) {
+		console.log(error);
+	}
+};

@@ -81,6 +81,7 @@ const Dashboard = () => {
 	return (
 		<div className={styles.homeComponent}>
 			<h1 className={styles.dashboardTitle}>How does the App work?</h1>
+			<GoalComponent />
 			{!user && <FirstSection />}
 			<SecondSection />
 			<ThirdSection />

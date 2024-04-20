@@ -96,7 +96,7 @@ exports.register = async (req, res) => {
 		res.json({
 			success: true,
 			userObject,
-			token
+			token,
 		});
 	} catch (err) {
 		console.log(err);
@@ -257,6 +257,31 @@ exports.updateUserCourseMilestones = async (req, res) => {
 		res.json({
 			success: false,
 			error,
+		});
+	}
+};
+
+exports.updateUserProfile = async (req, res) => {
+	try {
+		const userImagePath = req.file.path;
+
+		const user = await Users.findByIdAndUpdate(
+			req.body.id,
+			{ $set: { name: req.body.name, userImage: userImagePath } },
+			{ new: true }
+		);
+
+		const userObject = user.toObject();
+		delete userObject.password;
+		res.json({
+			success: true,
+			userObject,
+		});
+	} catch (err) {
+		console.log(err);
+		res.json({
+			success: false,
+			err,
 		});
 	}
 };

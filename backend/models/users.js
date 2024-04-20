@@ -68,6 +68,9 @@ const userSchema = new mongoose.Schema({
 	otp: {
 		type: Number,
 	},
+	userImage: {
+		type: String,
+	},
 });
 
 const users = mongoose.model("Users", userSchema);
