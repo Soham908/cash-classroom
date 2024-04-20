@@ -57,7 +57,7 @@ function App() {
 			</Routes>
 			{showChatbot && <Chatbot />}
 
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }

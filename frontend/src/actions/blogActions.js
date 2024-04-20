@@ -5,7 +5,12 @@ export const createBlog = async (data) => {
 	try {
 		const response = await axios.post(
 			`${ENDPOINT_URL}/blogs/create-blog`,
-			data
+			data,
+			{
+				headers: {
+					"Content-Type": "mutlipart/form-data",
+				},
+			}
 		);
 		return response.data;
 	} catch (error) {
