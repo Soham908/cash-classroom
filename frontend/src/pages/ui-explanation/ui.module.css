@@ -1,0 +1,9 @@
+.container {
+	padding: 50px 100px;
+}
+
+.inputContainer {
+	margin-left: 50px;
+	display: flex;
+	gap: 100px;
+}
