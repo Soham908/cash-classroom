@@ -1,9 +1,12 @@
 const Blog = require("./../models/blog");
+
 exports.createBlog = async (req, res) => {
 	try {
+		const imagePath = req.file.path;
+		console.log(imagePath);
 		const blog = await Blog.create({
 			userId: req.body.userId,
-			img: req.body.img,
+			img: imagePath,
 			userName: req.body.userName,
 			minRead: req.body.minRead,
 			blogHtml: req.body.blogHtml,

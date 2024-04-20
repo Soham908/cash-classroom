@@ -7,7 +7,7 @@ import { createBlog, updateBlog } from "./../../../actions/blogActions";
 import { useAuthStore } from "../../../store/store";
 import TextField from "@mui/material/TextField";
 import { Snackbar } from "@mui/joy";
-import { useLocation,useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Collapse from "@mui/material/Collapse";
 
 const modules = {
@@ -27,10 +27,10 @@ const modules = {
 };
 
 const CreateBlog = () => {
-	const navigate = useNavigate()
+	const navigate = useNavigate();
 	const location = useLocation().state;
 	const mode = location ? "edit" : "create";
-
+	const [selectedImage, setSelectedImage] = useState(null);
 	const user = useAuthStore.getState().user;
 	const [snackBarOpen, setSnackBarOpen] = useState(false);
 	const [snackBarMessage, setSnackBarMessage] = useState("");
@@ -60,17 +60,18 @@ const CreateBlog = () => {
 		} else {
 			const readingTime = calculateReadingTime(value);
 			if (mode === "create") {
-				const response = await createBlog({
-					userId: user.data._id,
-					userName: user.data.name,
-					minRead: readingTime,
-					blogHtml: value,
-					title: title,
-				});
+				const formData = new FormData();
+				formData.append("image", selectedImage);
+				formData.append("userId", user.data._id);
+				formData.append("userName", user.data.name);
+				formData.append("minRead", readingTime);
+				formData.append("blogHtml", value);
+				formData.append("title", title);
+				const response = await createBlog(formData);
 				if (response.success) {
 					setSnackBarMessage("Blog created");
 					setSnackBarOpen(true);
-					navigate("/blogs")
+					navigate("/blogs");
 				}
 			} else {
 				const response = await updateBlog({
@@ -91,7 +92,9 @@ const CreateBlog = () => {
 			}
 		}
 	};
-
+	const handleImageChange = (e) => {
+		setSelectedImage(e.target.files[0]);
+	};
 	return (
 		<ProtectRoutes>
 			<div className={styles.container}>
@@ -111,6 +114,20 @@ const CreateBlog = () => {
 								value={title}
 								onChange={(e) => setTitle(e.target.value)}
 							/>
+							<br />
+							{mode === "create" ? (
+								<>
+									<label htmlFor="image">Blog Banner : </label>
+									<input
+										id="image"
+										type="file"
+										name="image"
+										onChange={handleImageChange}
+									/>
+								</>
+							) : (
+								""
+							)}
 							<ReactQuill
 								theme="snow"
 								value={value}

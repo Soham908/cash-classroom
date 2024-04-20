@@ -40,5 +40,7 @@
 
 .preview {
 	padding: 0 10px;
-	border: 1px solid black;
+	border-radius: 10px;
+	border: 2px solid #dcdcdc;
+	/* background-color: #dcdcdc; */
 }

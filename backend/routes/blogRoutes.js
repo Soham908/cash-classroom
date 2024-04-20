@@ -1,12 +1,34 @@
-const express = require("express")
-const {createBlog,updateBlog,deleteBlog,getAllBlogs,getBlogById } = require("./../controllers/blogController")
+const express = require("express");
+const multer = require("multer");
+const path = require("path");
+const {
+	createBlog,
+	updateBlog,
+	deleteBlog,
+	getAllBlogs,
+	getBlogById,
+} = require("./../controllers/blogController");
 
-const router = express.Router()
+const storage = multer.diskStorage({
+	destination: function (req, file, cb) {
+		cb(null, "images/");
+	},
+	filename: function (req, file, cb) {
+		cb(
+			null,
+			file.fieldname + "-" + Date.now() + path.extname(file.originalname)
+		);
+	},
+});
 
-router.post("/create-blog",createBlog)
-router.patch("/update-blog",updateBlog)
-router.delete("/delete-blog/:blogId",deleteBlog)
-router.get("/get-all-blogs",getAllBlogs)
-router.get("/get-blog-by-id/:blogId",getBlogById)
+const upload = multer({ storage: storage });
 
-module.exports = router
+const router = express.Router();
+
+router.post("/create-blog", upload.single("image"), createBlog);
+router.patch("/update-blog", updateBlog);
+router.delete("/delete-blog/:blogId", deleteBlog);
+router.get("/get-all-blogs", getAllBlogs);
+router.get("/get-blog-by-id/:blogId", getBlogById);
+
+module.exports = router;

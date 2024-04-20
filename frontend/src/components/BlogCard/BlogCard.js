@@ -14,13 +14,15 @@ const BlogCard = ({ blog }) => {
 	const handleReadMore = () => {
 		navigate(`/blogs/${blog._id}`);
 	};
+	console.log(blog);
 	return (
 		<Card sx={{ padding: "10px" }}>
 			<CardActionArea onClick={handleReadMore}>
 				<CardMedia
+					sx={{ maxWidth: "300px" }}
 					component="img"
 					height="200"
-					image={`http://localhost:7000/images/${blog?.img}`}
+					image={`http://localhost:7000/${blog?.img}`}
 					alt="blog title"
 				/>
 				<CardContent>
