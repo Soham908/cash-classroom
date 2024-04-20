@@ -96,6 +96,7 @@ exports.register = async (req, res) => {
 		res.json({
 			success: true,
 			userObject,
+			token
 		});
 	} catch (err) {
 		console.log(err);

@@ -7,7 +7,7 @@ import { createBlog, updateBlog } from "./../../../actions/blogActions";
 import { useAuthStore } from "../../../store/store";
 import TextField from "@mui/material/TextField";
 import { Snackbar } from "@mui/joy";
-import { useLocation } from "react-router-dom";
+import { useLocation,useNavigate } from "react-router-dom";
 import Collapse from "@mui/material/Collapse";
 
 const modules = {
@@ -27,6 +27,7 @@ const modules = {
 };
 
 const CreateBlog = () => {
+	const navigate = useNavigate()
 	const location = useLocation().state;
 	const mode = location ? "edit" : "create";
 
@@ -69,6 +70,7 @@ const CreateBlog = () => {
 				if (response.success) {
 					setSnackBarMessage("Blog created");
 					setSnackBarOpen(true);
+					navigate("/blogs")
 				}
 			} else {
 				const response = await updateBlog({
