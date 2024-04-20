@@ -56,6 +56,14 @@ const Navbar = ({ path }) => {
 				>
 					Profile
 				</NavLink>
+				<NavLink
+					className={`${styles.link} ${
+						path === "/ui-explanation" ? styles.active : ""
+					}`}
+					to="/ui-explanation"
+				>
+					UI
+				</NavLink>
 			</div>
 			{user && (
 				<Button
@@ -72,38 +80,3 @@ const Navbar = ({ path }) => {
 };
 
 export default Navbar;
-
-// import { NavLink } from "react-router-dom"
-// import React from 'react';
-// import { AppBar, Toolbar, Typography } from '@mui/material';
-// import { useNavigate } from "react-router-dom";
-// import { useAuthStore } from "../../store/store";
-// import styles from "./navbar.module.css"
-// const Navbar = () => {
-//   const navigate = useNavigate()
-//   const setStateUser = useAuthStore(state=>state.setUser)
-//   const activeStyle = {
-//     textDecoration : "underline",
-//     fontWeight : "bold",
-//     color : "red"
-//     }
-
-//   const logout = () => {
-//     setStateUser(null)
-//     localStorage.setItem("userData","")
-//     navigate("/")
-//   }
-//   return (
-//     <nav className={styles.container}>
-//             <div className={styles.links}>
-//               <NavLink className={({isActive})=>isActive ? styles.active : styles.link}   to="/dashboard">Dashboard</NavLink>
-//               <NavLink className={({isActive})=>isActive ? styles.active : styles.link} to="/courses">Courses</NavLink>
-//               <NavLink className={({isActive})=>isActive ? styles.active : styles.link} to="/profile">Profile</NavLink>
-//               <NavLink className={({isActive})=>isActive ? styles.active : styles.link} to="/blogs">Blogs</NavLink>
-//             </div>
-//             <button onClick={logout}>Logout</button>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
