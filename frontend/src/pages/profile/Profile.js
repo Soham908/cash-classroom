@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ProtectRoutes } from "../../manageRoutes/protectRoutes";
 import { useAuthStore } from "../../store/store";
 import { userProfileUpdate } from "./../../actions/userActions";
-// import Collapse from "@mui/material";
+import { Snackbar } from "@mui/joy";
 import {
 	Button,
 	Card,
@@ -55,11 +55,13 @@ const Profile = () => {
 		formData.append("name", userName);
 		formData.append("id", userAuthStateData?.data?._id);
 		const response = await userProfileUpdate(formData);
-		localStorage.setItem(
-			"userData",
-			JSON.stringify({ ...userAuthStateData, data: response.userObject })
-		);
-		setUserStoreState({ ...userAuthStateData, data: response.userObject });
+		if (response.success) {
+			localStorage.setItem(
+				"userData",
+				JSON.stringify({ ...userAuthStateData, data: response.userObject })
+			);
+			setUserStoreState({ ...userAuthStateData, data: response.userObject });
+		}
 		setShowEditUserForm((p) => false);
 	};
 	return (
@@ -106,7 +108,7 @@ const Profile = () => {
 				<hr />
 
 				<div className={styles.coursesContainer}>
-					{userAuthStateData.data.enrolledCourses?.map((value, index) => {
+					{userAuthStateData?.data?.enrolledCourses?.map((value, index) => {
 						const progressPercentage = Number(
 							(value.lessonsCompleted / value.totalLessons) * 100
 						);

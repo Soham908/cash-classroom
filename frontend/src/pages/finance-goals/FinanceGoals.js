@@ -132,7 +132,7 @@ const FinanceGoals = () => {
 					Create Goal
 				</Button>
 			</div>
-			{goals.length > 0 ? (
+			{goals?.length > 0 ? (
 				<div className={styles.goalsContainer}>
 					{goals?.map((goalData, index) => (
 						<GoalComponent
