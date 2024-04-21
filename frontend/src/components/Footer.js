@@ -69,7 +69,7 @@ export default function App() {
 							<h6 className="text-uppercase fw-bold mb-4">Products</h6>
 							<p>
 								<span
-									style={{ textDecoration: "underline" }}
+									style={{ textDecoration: "underline", cursor: "pointer" }}
 									className="text-reset"
 									onClick={() => navigate("/courses")}
 								>
@@ -78,7 +78,7 @@ export default function App() {
 							</p>
 							<p>
 								<span
-									style={{ textDecoration: "underline" }}
+									style={{ textDecoration: "underline", cursor: "pointer" }}
 									className="text-reset"
 									onClick={() => navigate("/blogs")}
 								>
@@ -87,7 +87,7 @@ export default function App() {
 							</p>
 							<p>
 								<span
-									style={{ textDecoration: "underline" }}
+									style={{ textDecoration: "underline", cursor: "pointer" }}
 									className="text-reset"
 									onClick={() => navigate("/calculators")}
 								>
@@ -96,7 +96,7 @@ export default function App() {
 							</p>
 							<p>
 								<span
-									style={{ textDecoration: "underline" }}
+									style={{ textDecoration: "underline", cursor: "pointer" }}
 									className="text-reset"
 									onClick={() => navigate("/ui-explanation")}
 								>
