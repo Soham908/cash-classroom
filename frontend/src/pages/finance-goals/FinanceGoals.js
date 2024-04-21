@@ -132,17 +132,22 @@ const FinanceGoals = () => {
 					Create Goal
 				</Button>
 			</div>
-
-			<div className={styles.goalsContainer}>
-				{goals?.map((goalData, index) => (
-					<GoalComponent
-						refresh={setRefresh}
-						key={index}
-						goalData={goalData}
-						handleSavedValue={handleSavedValue}
-					/>
-				))}
-			</div>
+			{goals?.length > 0 ? (
+				<div className={styles.goalsContainer}>
+					{goals?.map((goalData, index) => (
+						<GoalComponent
+							refresh={setRefresh}
+							key={index}
+							goalData={goalData}
+							handleSavedValue={handleSavedValue}
+						/>
+					))}
+				</div>
+			) : (
+				<div className={styles.goalsIllustrationContainer}>
+					<img src="/goals3.avif" alt="goals empty banner" />
+				</div>
+			)}
 			<Snackbar
 				anchorOrigin={{ vertical: "top", horizontal: "center" }}
 				open={snackBarOpen}

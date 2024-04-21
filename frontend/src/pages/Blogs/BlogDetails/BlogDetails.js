@@ -44,6 +44,9 @@ const BlogDetails = () => {
 				className={`${styles.blogContainer} ql-editor`}
 				dangerouslySetInnerHTML={{ __html: blog?.blogHtml }}
 			></div>
+			<p className={styles.author}>
+				<span>---</span> {blog?.userName}
+			</p>
 			<hr />
 		</div>
 	);
