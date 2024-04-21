@@ -21,7 +21,7 @@ export default function App() {
 				</div>
 
 				<div>
-					<a href="" className="me-4 text-reset">
+					{/* <a href="" className="me-4 text-reset">
 						<MDBIcon fab icon="facebook-f" />
 					</a>
 					<a href="" className="me-4 text-reset">
@@ -32,11 +32,19 @@ export default function App() {
 					</a>
 					<a href="" className="me-4 text-reset">
 						<MDBIcon fab icon="instagram" />
-					</a>
-					<a href="" className="me-4 text-reset">
+					</a> */}
+					<a
+						href="https://www.linkedin.com/in/jaswant-rajput-a0117122b/"
+						target="_blank"
+						className="me-4 text-reset"
+					>
 						<MDBIcon fab icon="linkedin" />
 					</a>
-					<a href="" className="me-4 text-reset">
+					<a
+						href="https://github.com/jaswant-rajput"
+						className="me-4 text-reset"
+						target="_blank"
+					>
 						<MDBIcon fab icon="github" />
 					</a>
 				</div>
@@ -147,9 +155,12 @@ export default function App() {
 				style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
 			>
 				© 2024 Copyright:
-				<a className="text-reset fw-bold" href="">
+				<span
+					className="text-reset fw-bold"
+					style={{ textDecoration: "underline" }}
+				>
 					Cash Classroom
-				</a>
+				</span>
 			</div>
 		</MDBFooter>
 	);
