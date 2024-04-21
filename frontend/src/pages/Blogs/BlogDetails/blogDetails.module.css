@@ -20,3 +20,11 @@
 	height: 90%;
 	/* border: 1px solid black; */
 }
+
+.author {
+	align-self: flex-end;
+}
+
+.author span {
+	letter-spacing: -2px;
+}

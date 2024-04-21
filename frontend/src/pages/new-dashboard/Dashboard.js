@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import styles from "./dashboard.module.css";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../store/store";
-import GoalComponent from "../finance-goals/FinanceGoals";
+import FinanceGoals from "../finance-goals/FinanceGoals";
 
 const Dashboard = () => {
 	const navigate = useNavigate();
@@ -78,13 +78,32 @@ const Dashboard = () => {
 		);
 	};
 
+	const BlogsSection = () => {
+		return (
+			<div className={styles.firstSection}>
+				<div className={styles.firstSectionImage}>
+					<img src="/blog-home-page.avif" alt="blog page banner" />
+				</div>
+				<div className={styles.firstSectionText}>
+					<h3>Blogs</h3>
+					<p>
+						Explore the realm of knowledge with our captivating blogs! Dive into
+						a collection of insightful articles designed to enlighten and
+						entertain. Click here to discover our latest blog posts!
+					</p>
+					<button onClick={() => navigate("/blogs")}>Click here</button>
+				</div>
+			</div>
+		);
+	};
 	return (
 		<div className={styles.homeComponent}>
 			<h1 className={styles.dashboardTitle}>How does the App work?</h1>
-			<GoalComponent />
+			{user && <FinanceGoals />}
 			{!user && <FirstSection />}
 			<SecondSection />
 			<ThirdSection />
+			<BlogsSection />
 		</div>
 	);
 };

@@ -57,6 +57,9 @@ const CreateBlog = () => {
 		} else if (value === "") {
 			setSnackBarMessage("Blog content can't be empty");
 			setSnackBarOpen((p) => true);
+		} else if (!selectedImage) {
+			setSnackBarMessage("Select a cover image for the blog");
+			setSnackBarOpen((p) => true);
 		} else {
 			const readingTime = calculateReadingTime(value);
 			if (mode === "create") {

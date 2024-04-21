@@ -56,14 +56,16 @@ const Navbar = ({ path }) => {
 				>
 					UI
 				</NavLink>
-				<NavLink
-					className={`${styles.link} ${
-						path === "/profile" ? styles.active : ""
-					}`}
-					to="/profile"
-				>
-					Profile
-				</NavLink>
+				{path !== "/" && user && (
+					<NavLink
+						className={`${styles.link} ${
+							path === "/profile" ? styles.active : ""
+						}`}
+						to="/profile"
+					>
+						Profile
+					</NavLink>
+				)}
 			</div>
 			{user && (
 				<Button
