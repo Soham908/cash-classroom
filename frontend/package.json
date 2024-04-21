@@ -19,6 +19,7 @@
     "exa-js": "^1.0.12",
     "froala-editor": "^4.2.0",
     "marked": "^12.0.1",
+    "mdb-react-ui-kit": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-draft-wysiwyg": "^1.15.0",
