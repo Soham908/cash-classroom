@@ -32,3 +32,8 @@
 	padding-left: 20px;
 	font-size: 20px;
 }
+
+.secondContainer {
+	display: flex;
+	align-items: center;
+}

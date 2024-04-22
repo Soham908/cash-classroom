@@ -39,3 +39,53 @@ tr:hover {
 	display: flex;
 	justify-content: space-between;
 }
+
+.commentsContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.commentsInputContainer {
+	display: flex;
+	align-items: center;
+	border: 2px solid #06d6a0;
+	border-radius: 5px;
+}
+
+.commentsInputContainer input {
+	padding: 10px 15px;
+	width: 90%;
+	border: none;
+}
+
+.sendIcon {
+	margin-left: 20px;
+}
+
+.actualCommentsContainer {
+	display: flex;
+	gap: 5px;
+	padding: 10px 20px;
+	flex-direction: column;
+	border: 3px solid #06d6a0;
+	border-radius: 5px;
+}
+
+.quizBtn {
+	color: black;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: #06d6a0;
+}
+.quizBtn:hover {
+	background-color: #14605b;
+	color: white;
+}
+
+.actualCommentsContainer p {
+	padding: 5px 15px;
+	border-radius: 10px;
+	border: 1px solid #dcdcdc;
+}
