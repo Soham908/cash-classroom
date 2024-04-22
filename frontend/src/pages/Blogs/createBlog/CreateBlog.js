@@ -101,7 +101,10 @@ const CreateBlog = () => {
 	return (
 		<ProtectRoutes>
 			<div className={styles.container}>
-				<button onClick={() => setIsEditorMode((p) => !p)}>
+				<button
+					className={styles.modeButton}
+					onClick={() => setIsEditorMode((p) => !p)}
+				>
 					{isEditorMode ? "View Mode" : "Editor Mode"}
 				</button>
 				<div className={styles.row}>
