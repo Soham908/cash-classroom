@@ -8,7 +8,7 @@
     "@mdxeditor/editor": "^2.20.1",
     "@mui/icons-material": "^5.15.15",
     "@mui/joy": "^5.0.0-beta.29",
-    "@mui/material": "^5.15.12",
+    "@mui/material": "^5.15.15",
     "@mui/x-charts": "^6.19.5",
     "@react-pdf/renderer": "^3.4.2",
     "@testing-library/jest-dom": "^5.17.0",

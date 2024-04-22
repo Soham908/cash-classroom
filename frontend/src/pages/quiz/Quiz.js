@@ -26,6 +26,7 @@ const Quiz = () => {
 	const [totalQuestions, setTotalQuestions] = useState(0);
 	const [showMarks, setShowMarks] = useState(false);
 	const [quizMarks, setQuizMarks] = useState(0);
+	const [lessonPass, setLessonPass] = useState(false)
 	var count = 0;
 	const navigate = useNavigate()
 
@@ -78,13 +79,16 @@ const Quiz = () => {
 
 	const handleSubmit = () => {
 		const marks = checkQuizAnswer();
-		lessonComplete(marks);
-		setAllQuestionAttempt((prev) => !prev);
+		if (marks >= (totalQuestions * 40 / 100) ){
+			lessonComplete(marks);
+			setLessonPass(true)
+		}
+		else setLessonPass(false)
+		console.log(marks, totalQuestions * 40 / 100);
 		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
 	const handleReTakeQuiz = () => {
 		checkQuizAnswer();
-		setAllQuestionAttempt((prev) => !prev);
 	};
 
 	const checkQuizAnswer = () => {
@@ -96,6 +100,7 @@ const Quiz = () => {
 		}
 		setQuizMarks(count);
 		setShowMarks(true);
+		setAllQuestionAttempt((prev) => !prev);
 		return count;
 	};
 
@@ -136,7 +141,12 @@ const Quiz = () => {
 		<div className={styles.container}>
 			{showMarks && (
 				<div>
-				<h2> Congrats you completed this lesson, go on to the next lesson </h2>
+					{
+						lessonPass ? (
+							<h2> Congrats you completed this lesson, go on to the next lesson </h2>
+						):
+						<h2> You did not complete the lesson, complete the quiz with more than 40% accuracy </h2>
+					}
 				<h3>
 					{" "}
 					Your Marks are : {quizMarks}/{totalQuestions} 
