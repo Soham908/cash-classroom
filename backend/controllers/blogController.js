@@ -94,3 +94,21 @@ exports.getBlogById = async (req, res) => {
 		});
 	}
 };
+
+exports.appendComment = async (req, res) => {
+	try {
+		console.log(req.body);
+		const updatedBlog = await Blog.findByIdAndUpdate(
+			req.body._id,
+			{ $push: { comments: req.body.commentObj } },
+			{ new: true }
+		);
+		res.json({
+			success: true,
+			updatedBlog,
+		});
+	} catch (error) {
+		console.log(error);
+		res.json({ success: false });
+	}
+};

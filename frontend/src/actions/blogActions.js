@@ -60,3 +60,15 @@ export const deleteBlogById = async (blogId) => {
 		console.log(err);
 	}
 };
+
+export const addComment = async (data) => {
+	try {
+		const response = await axios.patch(
+			`${ENDPOINT_URL}/blogs/add-comment`,
+			data
+		);
+		return response.data;
+	} catch (error) {
+		console.error("Error:", error.message);
+	}
+};
