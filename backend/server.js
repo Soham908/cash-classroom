@@ -34,17 +34,9 @@ mongoose
 	.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
 	.then(() => console.log("connected"))
 	.catch((err) => console.log(err));
-// const db = mongoose.connection;
 
-// db.on("error", (error) => {
-// 	console.error("MongoDB connection error:", error);
-// });
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
-// db.once("open", () => {
-// 	console.log("Connected to MongoDB");
-// });
-
-// Start the server
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
 	console.log(`Server is running on port ${port}`);
