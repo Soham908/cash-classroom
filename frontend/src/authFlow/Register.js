@@ -21,10 +21,10 @@ const Register = () => {
 
 	const navigate = useNavigate();
 	const [formData, setFormData] = useState({
-		name: "jaswant",
+		name: "",
 		email: state && state.email ? state.email : "",
-		password: "12345678",
-		confirmPassword: "12345678",
+		password: "",
+		confirmPassword: "",
 	});
 
 	const [showPassword, setShowPassword] = useState(false);
