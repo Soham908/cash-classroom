@@ -15,7 +15,7 @@ require("dotenv").config(); // Load environment variables from a .env file
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: "https://cash-classroom.vercel.app" }));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use("/auth", userRouter);
