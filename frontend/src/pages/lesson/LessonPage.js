@@ -8,14 +8,16 @@ import {
 import { Button } from "@mui/material";
 import { userCompleteLesson, updateMilestone } from "../../actions/userActions";
 import { useAuthStore } from "../../store/store";
-import Milestone from "../../components/MIlestone";
 import styles from "./lesson.module.css";
+import SendIcon from "@mui/icons-material/Send";
+import { Snackbar } from "@mui/joy";
 
 const LessonPage = () => {
 	const user = useAuthStore.getState().user;
 	const navigate = useNavigate();
 	const location = JSON.parse(localStorage.getItem("currentLesson"));
-
+	const [snackBarOpen, setSnackBarOpen] = useState(false);
+	const [snackBarMessage, setSnackbarMessage] = useState("");
 	const [lessonData, setLessonData] = useState(null);
 	const [comment, setComment] = useState("");
 	const setStateUser = useAuthStore((state) => state.setUser);
@@ -87,15 +89,23 @@ const LessonPage = () => {
 	};
 
 	const submitComment = async () => {
-		const response = await addComment({
-			_id: lessonData._id,
-			commentObj: {
-				comment,
-				userId: user?.data?._id,
-				userName: user?.data?.name,
-			},
-		});
-		setLessonData(response.updatedLesson);
+		if (comment === "") {
+			setSnackbarMessage("Comment can't be empty!");
+			setSnackBarOpen((p) => true);
+		} else {
+			const response = await addComment({
+				_id: lessonData._id,
+				commentObj: {
+					comment,
+					userId: user?.data?._id,
+					userName: user?.data?.name,
+				},
+			});
+			setLessonData(response.updatedLesson);
+			setSnackbarMessage("Comment Added");
+			setSnackBarOpen((p) => true);
+			setComment("");
+		}
 	};
 	const toNextLesson = async () => {
 		if (lessonData.order >= 1) setDisablePreviousLessonButton(false);
@@ -109,7 +119,7 @@ const LessonPage = () => {
 			lesson: response.nextLesson.lesson,
 			course: response.nextLesson.course,
 			numChapters: location.numChapters,
-			order: response.nextLesson.order
+			order: response.nextLesson.order,
 		};
 		localStorage.setItem("currentLesson", JSON.stringify(state));
 	};
@@ -161,33 +171,55 @@ const LessonPage = () => {
 			</div>
 			<hr />
 			<div dangerouslySetInnerHTML={{ __html: lessonData?.htmlContent }} />
-			<div>
-				<Button
-					variant="contained"
+
+			<div className={styles.commentsContainer}>
+				<button
+					className={styles.quizBtn}
 					onClick={takeQuiz}
 					disabled={isQuizCompleted}
 				>
 					{" "}
 					Take Quiz{" "}
-				</Button>
-				<h1>Comments : </h1>
-				{lessonData?.comments.map((comment) => (
-					<div style={{ border: "1px solid " }}>
-						<p>
-							{" "}
-							{comment.userName} : {comment.comment}
-						</p>
+				</button>
+				<h3>Comments : </h3>
+				<div className={styles.commentsInputContainer}>
+					{/* <label htmlFor="comment">Write comment : </label> */}
+					<input
+						id="comment"
+						type="text"
+						placeholder="Add a comment"
+						value={comment}
+						onChange={(e) => setComment(e.target.value)}
+					/>
+					{/* <button onClick={submitComment} disabled={comment === ""}>
+							Submit
+						</button> */}
+					<SendIcon
+						color="success"
+						className={styles.sendIcon}
+						onClick={submitComment}
+					/>
+				</div>
+				{lessonData?.comments?.length > 0 && (
+					<div className={styles.actualCommentsContainer}>
+						{lessonData?.comments?.map((comment) => (
+							<p>
+								{" "}
+								{comment.userName} : {comment.comment}
+							</p>
+						))}
 					</div>
-				))}
-				Write comment :{" "}
-				<input
-					type="text"
-					value={comment}
-					onChange={(e) => setComment(e.target.value)}
-				/>
-				<button onClick={submitComment}>Submit</button>
+				)}
 			</div>
-			{}
+
+			<Snackbar
+				anchorOrigin={{ vertical: "top", horizontal: "center" }}
+				open={snackBarOpen}
+				autoHideDuration={1500}
+				onClose={() => setSnackBarOpen(false)}
+			>
+				{snackBarMessage}
+			</Snackbar>
 		</div>
 	);
 };

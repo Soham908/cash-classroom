@@ -17,8 +17,8 @@ const Login = () => {
 	const [snackBarMessage, setSnackbarMessage] = useState("");
 	const navigate = useNavigate();
 	const [formData, setFormData] = useState({
-		email: "j1@gmail.com",
-		password: "12345678",
+		email: "",
+		password: "",
 	});
 
 	const [showPassword, setShowPassword] = useState(false);

@@ -68,14 +68,19 @@ const Navbar = ({ path }) => {
 				)}
 			</div>
 			{user && (
-				<Button
-					sx={{ marginLeft: 2 }}
-					variant="plain"
-					color="neutral"
-					onClick={logout}
-				>
-					Logout
-				</Button>
+				<div className={styles.secondContainer}>
+					{user && (
+						<h5 style={{ marginTop: "5px" }}>Welcome {user?.data?.name}</h5>
+					)}
+					<Button
+						sx={{ marginLeft: 2 }}
+						variant="plain"
+						color="neutral"
+						onClick={logout}
+					>
+						Logout
+					</Button>
+				</div>
 			)}
 		</nav>
 	);

@@ -105,7 +105,7 @@ export default function Chatbot() {
 						<SendIcon
 							variant="contained"
 							color="primary"
-							sx={{ height: "35px", padding: "0px 10px" }}
+							sx={{ height: "35px", marginLeft: "5px" }}
 							onClick={(e) => {
 								if (input) {
 									setHistory((prev) => [
