@@ -18,7 +18,11 @@ const app = express();
 
 app.use(
 	cors({
-		origin: ["https://cash-classroom.vercel.app", "http://localhost:5173"],
+		origin: [
+			"https://cash-classroom.vercel.app",
+			"http://localhost:5173",
+			"https://warm-snickerdoodle-ee4999.netlify.app",
+		],
 	})
 );
 app.use(morgan("dev"));
