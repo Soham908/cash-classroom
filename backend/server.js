@@ -21,7 +21,8 @@ app.use(
 		origin: [
 			"https://cash-classroom.vercel.app",
 			"http://localhost:5173",
-			"https://warm-snickerdoodle-ee4999.netlify.app",
+			// "https://warm-snickerdoodle-ee4999.netlify.app",
+			"https://main--warm-snickerdoodle-ee4999.netlify.app",
 		],
 	})
 );
