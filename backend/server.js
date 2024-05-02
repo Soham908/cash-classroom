@@ -10,12 +10,17 @@ const lessonRouter = require("./routes/lessonRoute");
 const goalsRouter = require("./routes/goalRoutes");
 const blogsRouter = require("./routes/blogRoutes");
 const chatRouter = require("./routes/chatRoutes");
+const movieRouter = require("./routes/moviePitchRoutes");
 
 require("dotenv").config(); // Load environment variables from a .env file
 
 const app = express();
 
-app.use(cors({ origin: "https://cash-classroom.vercel.app" }));
+app.use(
+	cors({
+		origin: ["https://cash-classroom.vercel.app", "http://localhost:5173"],
+	})
+);
 app.use(morgan("dev"));
 app.use(express.json());
 app.use("/auth", userRouter);
@@ -25,7 +30,8 @@ app.use("/lesson", lessonRouter);
 app.use("/goals", goalsRouter);
 app.use("/blogs", blogsRouter);
 app.use("/chat", chatRouter);
-
+//another project api
+app.use("/movies", movieRouter);
 const imagesPath = path.join(__dirname, "images");
 app.use("/images", express.static(imagesPath));
 
