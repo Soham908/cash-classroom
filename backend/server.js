@@ -25,7 +25,9 @@ app.use(
 		],
 	})
 );
-app.use(morgan("dev"));
+
+//main--warm-snickerdoodle-ee4999.netlify.app
+https: app.use(morgan("dev"));
 app.use(express.json());
 app.use("/auth", userRouter);
 app.use("/data", dataRouter);
